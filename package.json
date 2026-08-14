@@ -1,0 +1,9 @@
+{
+  "name": "porodicno-stablo-zehic",
+  "version": "1.0.0",
+  "description": "Porodično Stablo Zehić - Interaktivni Rodoslov i SQL Baza",
+  "main": "index.html",
+  "scripts": {
+    "start": "python server.py"
+  }
+}

@@ -1,0 +1,2763 @@
+{
+  "title": "Arbre Généalogique de la Famille - Descendance d'Ibrahim",
+  "root": {
+    "id": "ibrahim_0",
+    "name": "Ibrahim",
+    "role": "Patrijarh (Osnivač loze Zehić)",
+    "gen": 1,
+    "branch": "root",
+    "dates": "",
+    "notes": "",
+    "children_branches": [
+      {
+        "branch_name": "Grana Adem",
+        "branch_color": "emerald",
+        "id": "adem_branch",
+        "person": {
+          "id": "adem_1",
+          "name": "Adem",
+          "dates": "1855 – 1938",
+          "notes": "",
+          "gen": 2,
+          "spouse": {
+            "name": "Mejra",
+            "dates": "",
+            "notes": "Supruga",
+            "gender": "F"
+          },
+          "children": [
+            {
+              "id": "avdo_adem",
+              "name": "Avdo",
+              "dates": "1887 – 1957",
+              "gen": 3,
+              "spouse": {
+                "name": "Azemina",
+                "notes": "r. Husejnović",
+                "gender": "F"
+              },
+              "children": [
+                {
+                  "id": "osman_avdo_adem",
+                  "name": "Osman",
+                  "dates": "",
+                  "notes": "n. Poginuo",
+                  "gen": 4,
+                  "gender": "M"
+                },
+                {
+                  "id": "nurija_avdo_adem",
+                  "name": "Nurija",
+                  "dates": "",
+                  "notes": "n. Poginuo",
+                  "gen": 4,
+                  "gender": "M"
+                },
+                {
+                  "id": "hatidza_avdo_adem",
+                  "name": "Hatidza",
+                  "dates": "",
+                  "notes": "",
+                  "gen": 4,
+                  "gender": "F"
+                },
+                {
+                  "id": "beriz_avdo_adem",
+                  "name": "Beriz",
+                  "dates": "",
+                  "gen": 4,
+                  "spouse": {
+                    "name": "Nura",
+                    "notes": "Supruga",
+                    "gender": "F"
+                  },
+                  "children": [
+                    {
+                      "id": "seida_beriz",
+                      "name": "Seida",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "bahrija_beriz",
+                      "name": "Bahrija",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "hatidza_beriz",
+                      "name": "Hatidža",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "zemina_beriz",
+                      "name": "Zemina",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "dzevad_beriz",
+                      "name": "Dževad",
+                      "gen": 5,
+                      "children": [
+                        {
+                          "id": "beriz_dzevad",
+                          "name": "Beriz",
+                          "gen": 6,
+                          "gender": "M"
+                        },
+                        {
+                          "id": "nedzad_dzevad",
+                          "name": "Nedžad",
+                          "gen": 6,
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    },
+                    {
+                      "id": "halida_beriz",
+                      "name": "Halida",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "nesad_beriz",
+                      "name": "Nešad",
+                      "gen": 5,
+                      "children": [
+                        {
+                          "id": "azra_nesad",
+                          "name": "Azra",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "almedina_nesad",
+                          "name": "Almedina",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "kenan_nesad",
+                          "name": "Kenan",
+                          "gen": 6,
+                          "gender": "M"
+                        },
+                        {
+                          "id": "dzenan_nesad",
+                          "name": "Dženan",
+                          "gen": 6,
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    }
+                  ],
+                  "gender": "M"
+                }
+              ],
+              "gender": "M"
+            },
+            {
+              "id": "mujo_adem",
+              "name": "Mujo",
+              "dates": "1897 – 1934",
+              "gen": 3,
+              "spouse": {
+                "name": "Šemsa",
+                "notes": "r. Husejnovca",
+                "gender": "F"
+              },
+              "children": [
+                {
+                  "id": "husnija_mujo",
+                  "name": "Husnija",
+                  "dates": "1925 – 1988",
+                  "gen": 4,
+                  "spouse": {
+                    "name": "Sajda",
+                    "dates": "1926 – 1999",
+                    "notes": "r. Čilašević",
+                    "gender": "F"
+                  },
+                  "children": [
+                    {
+                      "id": "fahrudin_husnija",
+                      "name": "Fahrudin",
+                      "gen": 5,
+                      "spouse": {
+                        "name": "Mulfeta",
+                        "notes": "r. Sniježnica",
+                        "gender": "F"
+                      },
+                      "children": [
+                        {
+                          "id": "zaim_fahrudin",
+                          "name": "Zaim",
+                          "gen": 6,
+                          "spouse": {
+                            "name": "Samra",
+                            "notes": "r. Glinje",
+                            "gender": "F"
+                          },
+                          "children": [
+                            {
+                              "id": "armin_zaim",
+                              "name": "Armin",
+                              "gen": 7,
+                              "gender": "M"
+                            }
+                          ],
+                          "gender": "M"
+                        },
+                        {
+                          "id": "emina_fahrudin",
+                          "name": "Emina",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "vahidin_fahrudin",
+                          "name": "Vahidin",
+                          "gen": 6,
+                          "spouse": {
+                            "name": "Nedžmira",
+                            "notes": "Supruga",
+                            "gender": "F"
+                          },
+                          "children": [
+                            {
+                              "id": "esma_vahidin",
+                              "name": "Esma",
+                              "gen": 7,
+                              "gender": "F"
+                            },
+                            {
+                              "id": "sajda_vahidin",
+                              "name": "Sajda",
+                              "gen": 7,
+                              "gender": "F"
+                            }
+                          ],
+                          "gender": "M"
+                        },
+                        {
+                          "id": "adnan_fahrudin",
+                          "name": "Adnan",
+                          "gen": 6,
+                          "spouse": {
+                            "name": "Mirela",
+                            "notes": "Supruga",
+                            "gender": "F"
+                          },
+                          "children": [
+                            {
+                              "id": "adel_adnan",
+                              "name": "Adel",
+                              "gen": 7,
+                              "gender": "M"
+                            },
+                            {
+                              "id": "meliha_adnan",
+                              "name": "Meliha",
+                              "gen": 7,
+                              "gender": "F"
+                            },
+                            {
+                              "id": "vedad_adnan",
+                              "name": "Vedad",
+                              "gen": 7,
+                              "gender": "M"
+                            }
+                          ],
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    },
+                    {
+                      "id": "semsa_husnija",
+                      "name": "Šemsa",
+                      "notes": "u. Bilalić",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "zurijeta_husnija",
+                      "name": "Zurijeta",
+                      "notes": "u. Hadžić",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "nura_husnija",
+                      "name": "Nura",
+                      "notes": "u. Aljić",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "mensura_husnija",
+                      "name": "Mensura",
+                      "notes": "u. Omerović",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "izeta_husnija",
+                      "name": "Izeta",
+                      "notes": "u. Murtić",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "hatidza_husnija",
+                      "name": "Hatidža",
+                      "notes": "u. Redžić",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "fatima_husnija",
+                      "name": "Fatima",
+                      "notes": "u. Alić",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "kadraga_husnija",
+                      "name": "Kadraga",
+                      "gen": 5,
+                      "spouse": {
+                        "name": "Zekira",
+                        "notes": "r. Janja",
+                        "gender": "F"
+                      },
+                      "children": [
+                        {
+                          "id": "azra_kadraga",
+                          "name": "Azra",
+                          "notes": "r. Zehić",
+                          "gen": 6,
+                          "spouse": {
+                            "name": "Mirza Halilović",
+                            "notes": "Suprug",
+                            "gender": "M"
+                          },
+                          "children": [
+                            {
+                              "id": "hamza_mirza",
+                              "name": "Hamza",
+                              "gen": 7,
+                              "gender": "M"
+                            }
+                          ],
+                          "gender": "F"
+                        },
+                        {
+                          "id": "samir_kadraga",
+                          "name": "Samir",
+                          "gen": 6,
+                          "spouse": {
+                            "name": "Merima",
+                            "notes": "Supruga",
+                            "gender": "F"
+                          },
+                          "children": [
+                            {
+                              "id": "adna_samir",
+                              "name": "Adna",
+                              "gen": 7,
+                              "gender": "F"
+                            }
+                          ],
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    }
+                  ],
+                  "gender": "M"
+                },
+                {
+                  "id": "hadzaga_mujo",
+                  "name": "Hadžaga",
+                  "gen": 4,
+                  "spouse": {
+                    "name": "Zarfa",
+                    "notes": "r. T. Brdo",
+                    "gender": "F"
+                  },
+                  "children": [
+                    {
+                      "id": "sadik_hadzaga",
+                      "name": "Sadik",
+                      "gen": 5,
+                      "children": [
+                        {
+                          "id": "meliha_sadik",
+                          "name": "Meliha",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "hido_sadik",
+                          "name": "Hido",
+                          "gen": 6,
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    },
+                    {
+                      "id": "zlatka_hadzaga",
+                      "name": "Zlatka",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "sadika_hadzaga",
+                      "name": "Sadika",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "mineta_hadzaga",
+                      "name": "Mineta",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "asmir_hadzaga",
+                      "name": "Asmir",
+                      "gen": 5,
+                      "children": [
+                        {
+                          "id": "amra_asmir",
+                          "name": "Amra",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "amir_asmir",
+                          "name": "Amir",
+                          "gen": 6,
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    },
+                    {
+                      "id": "azra_hadzaga",
+                      "name": "Azra",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "zikreta_hadzaga",
+                      "name": "Zikreta",
+                      "gen": 5,
+                      "gender": "F"
+                    }
+                  ],
+                  "gender": "M"
+                },
+                {
+                  "id": "saban_mujo",
+                  "name": "Šaban",
+                  "gen": 4,
+                  "gender": "M"
+                },
+                {
+                  "id": "dzemila_mujo",
+                  "name": "Džemila",
+                  "gen": 4,
+                  "gender": "F"
+                },
+                {
+                  "id": "harnaga_mujo",
+                  "name": "Harnaga",
+                  "gen": 4,
+                  "spouse": {
+                    "name": "Hatidža",
+                    "notes": "Supruga",
+                    "gender": "F"
+                  },
+                  "children": [
+                    {
+                      "id": "halida_harnaga",
+                      "name": "Halida",
+                      "notes": "u. Smajić",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "dzemila_harnaga",
+                      "name": "Džemila",
+                      "notes": "u. Haić",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "izeta_harnaga",
+                      "name": "Izeta",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "izet_harnaga",
+                      "name": "Izet",
+                      "gen": 5,
+                      "children": [
+                        {
+                          "id": "admir_izet_h",
+                          "name": "Admir",
+                          "gen": 6,
+                          "children": [
+                            {
+                              "id": "emrah_admir_h",
+                              "name": "Emrah",
+                              "gen": 7,
+                              "gender": "M"
+                            },
+                            {
+                              "id": "emina_admir_h",
+                              "name": "Emina",
+                              "gen": 7,
+                              "gender": "F"
+                            }
+                          ],
+                          "gender": "M"
+                        },
+                        {
+                          "id": "sabina_izet_h",
+                          "name": "Sabina",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "emina_izet_h",
+                          "name": "Emina",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "haris_izet_h",
+                          "name": "Haris",
+                          "gen": 6,
+                          "children": [
+                            {
+                              "id": "benjamin_haris",
+                              "name": "Benjamin",
+                              "gen": 7,
+                              "gender": "M"
+                            },
+                            {
+                              "id": "hana_haris",
+                              "name": "Hana",
+                              "gen": 7,
+                              "gender": "F"
+                            }
+                          ],
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    }
+                  ],
+                  "gender": "M"
+                }
+              ],
+              "gender": "M"
+            },
+            {
+              "id": "sajtan_adem",
+              "name": "Sajtan",
+              "gen": 3,
+              "spouse": {
+                "name": "Zemina",
+                "notes": "r. Bešići",
+                "gender": "F"
+              },
+              "children": [
+                {
+                  "id": "began_sajtan",
+                  "name": "Began",
+                  "gen": 4,
+                  "spouse": {
+                    "name": "Zilka",
+                    "notes": "Supruga",
+                    "gender": "F"
+                  },
+                  "children": [
+                    {
+                      "id": "begajeta_began",
+                      "name": "Begajeta",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "biba_began",
+                      "name": "Biba",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "sefik_began",
+                      "name": "Šefik",
+                      "gen": 5,
+                      "children": [
+                        {
+                          "id": "amela_sefik",
+                          "name": "Amela",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "jasmin_sefik",
+                          "name": "Jasmin",
+                          "gen": 6,
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    }
+                  ],
+                  "gender": "M"
+                },
+                {
+                  "id": "mustafa_sajtan",
+                  "name": "Mustafa",
+                  "gen": 4,
+                  "spouse": {
+                    "name": "Šuhra",
+                    "notes": "Supruga",
+                    "gender": "F"
+                  },
+                  "children": [
+                    {
+                      "id": "saban_mustafa",
+                      "name": "Šaban",
+                      "gen": 5,
+                      "children": [
+                        {
+                          "id": "azra_saban_m",
+                          "name": "Azra",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "aida_saban_m",
+                          "name": "Aida",
+                          "gen": 6,
+                          "gender": "F"
+                        }
+                      ],
+                      "gender": "M"
+                    },
+                    {
+                      "id": "zemina_mustafa",
+                      "name": "Zemina",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "hasiba_mustafa",
+                      "name": "Hasiba",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "sumbila_mustafa",
+                      "name": "Sumbila",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "sena_mustafa",
+                      "name": "Sena",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "bekrija_mustafa",
+                      "name": "Bekrija",
+                      "gen": 5,
+                      "children": [
+                        {
+                          "id": "selma_bekrija",
+                          "name": "Selma",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "vahida_bekrija",
+                          "name": "Vahida",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "vahidin_bekrija",
+                          "name": "Vahidin",
+                          "gen": 6,
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    }
+                  ],
+                  "gender": "M"
+                },
+                {
+                  "id": "kcerka_sajtan",
+                  "name": "Kćerka",
+                  "gen": 4,
+                  "notes": "(Non nommée)",
+                  "gender": "F"
+                },
+                {
+                  "id": "fata_sajtan",
+                  "name": "Fata",
+                  "gen": 4,
+                  "gender": "F"
+                },
+                {
+                  "id": "ismet_sajtan",
+                  "name": "Ismet",
+                  "gen": 4,
+                  "spouse": {
+                    "name": "Hajrija",
+                    "notes": "Supruga",
+                    "gender": "F"
+                  },
+                  "gender": "M"
+                },
+                {
+                  "id": "selima_sajtan",
+                  "name": "Selima",
+                  "gen": 4,
+                  "gender": "F"
+                },
+                {
+                  "id": "fatima_sajtan",
+                  "name": "Fatima",
+                  "gen": 4,
+                  "gender": "F"
+                },
+                {
+                  "id": "izet_sajtan",
+                  "name": "Izet",
+                  "gen": 4,
+                  "children": [
+                    {
+                      "id": "senada_izet_s",
+                      "name": "Senada",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "senad_izet_s",
+                      "name": "Senad",
+                      "gen": 5,
+                      "children": [
+                        {
+                          "id": "ajla_senad_s",
+                          "name": "Ajla",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "najla_senad_s",
+                          "name": "Najla",
+                          "gen": 6,
+                          "gender": "F"
+                        }
+                      ],
+                      "gender": "M"
+                    }
+                  ],
+                  "gender": "M"
+                },
+                {
+                  "id": "muzijet_sajtan",
+                  "name": "Muzijet",
+                  "gen": 4,
+                  "children": [
+                    {
+                      "id": "almir_muzijet",
+                      "name": "Almir",
+                      "gen": 5,
+                      "children": [
+                        {
+                          "id": "anela_almir_m",
+                          "name": "Anela",
+                          "gen": 6,
+                          "gender": "F"
+                        }
+                      ],
+                      "gender": "M"
+                    },
+                    {
+                      "id": "admir_muzijet",
+                      "name": "Admir",
+                      "gen": 5,
+                      "children": [
+                        {
+                          "id": "dalila_admir_m",
+                          "name": "Dalila",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "ilda_admir_m",
+                          "name": "Ilda",
+                          "gen": 6,
+                          "gender": "F"
+                        }
+                      ],
+                      "gender": "M"
+                    }
+                  ],
+                  "gender": "M"
+                }
+              ],
+              "gender": "M"
+            },
+            {
+              "id": "ibrahim_adem",
+              "name": "Ibrahim",
+              "gen": 3,
+              "spouse": {
+                "name": "Rukija",
+                "notes": "r. Brčko",
+                "gender": "F"
+              },
+              "children": [
+                {
+                  "id": "pasaga_ibrahim",
+                  "name": "Pašaga",
+                  "gen": 4,
+                  "spouse": {
+                    "name": "Nesiba",
+                    "notes": "r. Bešići",
+                    "gender": "F"
+                  },
+                  "children": [
+                    {
+                      "id": "ibrahim_pasaga",
+                      "name": "Ibrahim",
+                      "gen": 5,
+                      "spouse": {
+                        "name": "Mina",
+                        "notes": "r. T. Brdo",
+                        "gender": "F"
+                      },
+                      "children": [
+                        {
+                          "id": "amira_ibrahim_p",
+                          "name": "Amira",
+                          "gen": 6,
+                          "gender": "M"
+                        },
+                        {
+                          "id": "bahira_ibrahim_p",
+                          "name": "Bahira",
+                          "gen": 6,
+                          "gender": "M"
+                        },
+                        {
+                          "id": "sahza_ibrahim_p",
+                          "name": "Šahza",
+                          "gen": 6,
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    },
+                    {
+                      "id": "mina_pasaga",
+                      "name": "Mina",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "muniba_pasaga",
+                      "name": "Muniba",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "rukija_pasaga",
+                      "name": "Rukija",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "tima_pasaga",
+                      "name": "Tima",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "cido_pasaga",
+                      "name": "Ćido",
+                      "gen": 5,
+                      "spouse": {
+                        "name": "Ramiza",
+                        "notes": "Supruga",
+                        "gender": "F"
+                      },
+                      "children": [
+                        {
+                          "id": "jasmina_cido",
+                          "name": "Jasmina",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "azemina_cido",
+                          "name": "Azemina",
+                          "gen": 6,
+                          "gender": "F"
+                        }
+                      ],
+                      "gender": "M"
+                    },
+                    {
+                      "id": "halil_pasaga",
+                      "name": "Halil",
+                      "gen": 5,
+                      "spouse": {
+                        "name": "Mina",
+                        "notes": "Supruga",
+                        "gender": "F"
+                      },
+                      "children": [
+                        {
+                          "id": "nedzad_halil_p",
+                          "name": "Nedžad",
+                          "gen": 6,
+                          "children": [
+                            {
+                              "id": "erna_nedzad_h",
+                              "name": "Erna",
+                              "gen": 7,
+                              "gender": "F"
+                            },
+                            {
+                              "id": "lejla_nedzad_h",
+                              "name": "Lejla",
+                              "gen": 7,
+                              "gender": "F"
+                            }
+                          ],
+                          "gender": "M"
+                        },
+                        {
+                          "id": "nesad_halil_p",
+                          "name": "Nešad",
+                          "gen": 6,
+                          "children": [
+                            {
+                              "id": "armina_nesad_h",
+                              "name": "Armina",
+                              "gen": 7,
+                              "gender": "F"
+                            },
+                            {
+                              "id": "armin_nesad_h",
+                              "name": "Armin",
+                              "gen": 7,
+                              "children": [
+                                {
+                                  "id": "benjamin_armin_h",
+                                  "name": "Benjamin",
+                                  "gen": 8,
+                                  "gender": "M"
+                                },
+                                {
+                                  "id": "adem_armin_h",
+                                  "name": "Adem",
+                                  "gen": 8,
+                                  "gender": "M"
+                                }
+                              ],
+                              "gender": "M"
+                            }
+                          ],
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    }
+                  ],
+                  "gender": "F"
+                },
+                {
+                  "id": "adem_ibrahim_a",
+                  "name": "Adem",
+                  "notes": "n. Poginuo",
+                  "gen": 4,
+                  "gender": "M"
+                },
+                {
+                  "id": "halil_ibrahim_a",
+                  "name": "Halil",
+                  "notes": "n. Poginuo",
+                  "gen": 4,
+                  "gender": "M"
+                },
+                {
+                  "id": "zumra_ibrahim_a",
+                  "name": "Zumra",
+                  "gen": 4,
+                  "gender": "F"
+                },
+                {
+                  "id": "sevka_ibrahim_a",
+                  "name": "Ševka",
+                  "gen": 4,
+                  "gender": "F"
+                },
+                {
+                  "id": "izeta_ibrahim_a",
+                  "name": "Izeta",
+                  "gen": 4,
+                  "gender": "F"
+                },
+                {
+                  "id": "zineta_ibrahim_a",
+                  "name": "Zineta",
+                  "gen": 4,
+                  "gender": "F"
+                },
+                {
+                  "id": "atlaga_ibrahim_a",
+                  "name": "Atlaga",
+                  "gen": 4,
+                  "spouse": {
+                    "name": "Munira",
+                    "notes": "r. Bilalići",
+                    "gender": "F"
+                  },
+                  "children": [
+                    {
+                      "id": "nuraga_atlaga",
+                      "name": "Nuraga",
+                      "gen": 5,
+                      "spouse": {
+                        "name": "Elvira",
+                        "notes": "Supruga",
+                        "gender": "F"
+                      },
+                      "children": [
+                        {
+                          "id": "azra_nuraga",
+                          "name": "Azra",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "aida_nuraga",
+                          "name": "Aida",
+                          "gen": 6,
+                          "gender": "F"
+                        }
+                      ],
+                      "gender": "M"
+                    },
+                    {
+                      "id": "kada_atlaga",
+                      "name": "Kada",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "suada_atlaga",
+                      "name": "Suada",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "adem_atlaga",
+                      "name": "Adem",
+                      "gen": 5,
+                      "spouse": {
+                        "name": "Velida",
+                        "notes": "Supruga",
+                        "gender": "F"
+                      },
+                      "children": [
+                        {
+                          "id": "adisa_adem_at",
+                          "name": "Adisa",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "admir_adem_at",
+                          "name": "Admir",
+                          "gen": 6,
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    },
+                    {
+                      "id": "beslaga_atlaga",
+                      "name": "Bešlaga",
+                      "gen": 5,
+                      "children": [
+                        {
+                          "id": "edin_beslaga",
+                          "name": "Edin",
+                          "gen": 6,
+                          "children": [
+                            {
+                              "id": "sumeja_edin_b",
+                              "name": "Sumeja",
+                              "gen": 7,
+                              "gender": "F"
+                            },
+                            {
+                              "id": "harun_edin_b",
+                              "name": "Harun",
+                              "gen": 7,
+                              "gender": "M"
+                            }
+                          ],
+                          "gender": "M"
+                        },
+                        {
+                          "id": "enver_beslaga",
+                          "name": "Enver",
+                          "gen": 6,
+                          "gender": "M"
+                        },
+                        {
+                          "id": "ismail_beslaga",
+                          "name": "Ismail",
+                          "gen": 6,
+                          "gender": "M"
+                        },
+                        {
+                          "id": "amina_beslaga",
+                          "name": "Amina",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "omer_beslaga",
+                          "name": "Omer",
+                          "gen": 6,
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    }
+                  ],
+                  "gender": "M"
+                }
+              ],
+              "gender": "M"
+            }
+          ],
+          "gender": "M"
+        }
+      },
+      {
+        "branch_name": "Grana Meho",
+        "branch_color": "amber",
+        "id": "meho_branch",
+        "person": {
+          "id": "meho_1",
+          "name": "Meho",
+          "dates": "1867 – 1941",
+          "gen": 2,
+          "spouse": {
+            "name": "Cura",
+            "notes": "Supruga",
+            "gender": "F"
+          },
+          "children": [
+            {
+              "id": "mehmed_meho",
+              "name": "Mehmed",
+              "dates": "1903 – 1945",
+              "gen": 3,
+              "children": [
+                {
+                  "id": "bijader_mehmed_m",
+                  "name": "Bijader",
+                  "gen": 4,
+                  "spouse": {
+                    "name": "Zumreta",
+                    "notes": "Supruga",
+                    "gender": "F"
+                  },
+                  "children": [
+                    {
+                      "id": "mensura_bijader",
+                      "name": "Mensura",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "mirsad_bijader",
+                      "name": "Mirsad",
+                      "gen": 5,
+                      "gender": "M"
+                    },
+                    {
+                      "id": "mehmed_bijader",
+                      "name": "Mehmed",
+                      "gen": 5,
+                      "spouse": {
+                        "name": "Zumra",
+                        "notes": "Supruga",
+                        "gender": "F"
+                      },
+                      "children": [
+                        {
+                          "id": "meliha_mehmed_b",
+                          "name": "Meliha",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "emina_mehmed_b",
+                          "name": "Emina",
+                          "gen": 6,
+                          "gender": "F"
+                        }
+                      ],
+                      "gender": "M"
+                    }
+                  ],
+                  "gender": "M"
+                },
+                {
+                  "id": "velida_mehmed_m",
+                  "name": "Velida",
+                  "gen": 4,
+                  "gender": "F"
+                },
+                {
+                  "id": "fadila_mehmed_m",
+                  "name": "Fadila",
+                  "gen": 4,
+                  "gender": "F"
+                },
+                {
+                  "id": "velid_mehmed_m",
+                  "name": "Velid",
+                  "gen": 4,
+                  "gender": "M"
+                },
+                {
+                  "id": "zedin_mehmed_m",
+                  "name": "Zedin",
+                  "gen": 4,
+                  "children": [
+                    {
+                      "id": "velid_zedin",
+                      "name": "Velid",
+                      "gen": 5,
+                      "spouse": {
+                        "name": "Marica",
+                        "notes": "Supruga",
+                        "gender": "F"
+                      },
+                      "children": [
+                        {
+                          "id": "nenad_velid_z",
+                          "name": "Nenad",
+                          "gen": 6,
+                          "gender": "M"
+                        },
+                        {
+                          "id": "senad_velid_z",
+                          "name": "Senad",
+                          "gen": 6,
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    },
+                    {
+                      "id": "zineta_zedin",
+                      "name": "Zineta",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "zehrija_zedin",
+                      "name": "Zehrija",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "zehrudin_zedin",
+                      "name": "Zehrudin",
+                      "gen": 5,
+                      "spouse": {
+                        "name": "Elvira",
+                        "notes": "Supruga",
+                        "gender": "F"
+                      },
+                      "children": [
+                        {
+                          "id": "samira_zehrudin",
+                          "name": "Samira",
+                          "gen": 6,
+                          "gender": "M"
+                        },
+                        {
+                          "id": "alisa_zehrudin",
+                          "name": "Alisa",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "elvis_zehrudin",
+                          "name": "Elvis",
+                          "gen": 6,
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    }
+                  ],
+                  "gender": "M"
+                }
+              ],
+              "gender": "M"
+            },
+            {
+              "id": "sinan_meho",
+              "name": "Sinan",
+              "dates": "1907 – 1984",
+              "gen": 3,
+              "spouse": {
+                "name": "Aiša",
+                "notes": "Supruga",
+                "gender": "F"
+              },
+              "children": [
+                {
+                  "id": "asim_sinan",
+                  "name": "Asim",
+                  "gen": 4,
+                  "spouse": {
+                    "name": "Zorka",
+                    "notes": "Supruga",
+                    "gender": "F"
+                  },
+                  "children": [
+                    {
+                      "id": "jasmina_asim",
+                      "name": "Jasmina",
+                      "gen": 5,
+                      "gender": "F"
+                    }
+                  ],
+                  "gender": "M"
+                },
+                {
+                  "id": "rasid_sinan",
+                  "name": "Rašid",
+                  "gen": 4,
+                  "spouse": {
+                    "name": "Kaima",
+                    "notes": "Supruga",
+                    "gender": "F"
+                  },
+                  "children": [
+                    {
+                      "id": "lejla_rasid",
+                      "name": "Lejla",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "jasmin_rasid",
+                      "name": "Jasmin",
+                      "gen": 5,
+                      "children": [
+                        {
+                          "id": "kaima_jasmin_r",
+                          "name": "Kaima",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "kemal_jasmin_r",
+                          "name": "Kemal",
+                          "gen": 6,
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    }
+                  ],
+                  "gender": "M"
+                },
+                {
+                  "id": "ahmo_sinan",
+                  "name": "Ahmo",
+                  "gen": 4,
+                  "spouse": {
+                    "name": "Hiba",
+                    "notes": "Supruga",
+                    "gender": "F"
+                  },
+                  "children": [
+                    {
+                      "id": "hida_ahmo",
+                      "name": "Hida",
+                      "gen": 5,
+                      "gender": "M"
+                    },
+                    {
+                      "id": "nijaz_ahmo",
+                      "name": "Nijaz",
+                      "gen": 5,
+                      "spouse": {
+                        "name": "Arifa",
+                        "notes": "Supruga",
+                        "gender": "F"
+                      },
+                      "children": [
+                        {
+                          "id": "ervin_nijaz_a",
+                          "name": "Ervin",
+                          "gen": 6,
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    }
+                  ],
+                  "gender": "M"
+                },
+                {
+                  "id": "safa_sinan",
+                  "name": "Safa",
+                  "gen": 4,
+                  "gender": "F"
+                },
+                {
+                  "id": "esad_sinan",
+                  "name": "Esad",
+                  "gen": 4,
+                  "spouse": {
+                    "name": "Nesiba",
+                    "notes": "Supruga",
+                    "gender": "F"
+                  },
+                  "children": [
+                    {
+                      "id": "safet_esad",
+                      "name": "Safet",
+                      "gen": 5,
+                      "spouse": {
+                        "name": "Maida",
+                        "notes": "Supruga",
+                        "gender": "F"
+                      },
+                      "children": [
+                        {
+                          "id": "sabina_safet",
+                          "name": "Sabina",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "emir_safet",
+                          "name": "Emir",
+                          "gen": 6,
+                          "gender": "M"
+                        },
+                        {
+                          "id": "semir_safet",
+                          "name": "Semir",
+                          "gen": 6,
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    },
+                    {
+                      "id": "ahmet_esad",
+                      "name": "Ahmet",
+                      "gen": 5,
+                      "spouse": {
+                        "name": "Mejrema",
+                        "notes": "Supruga",
+                        "gender": "F"
+                      },
+                      "children": [
+                        {
+                          "id": "mirsad_ahmet",
+                          "name": "Mirsad",
+                          "gen": 6,
+                          "gender": "M"
+                        },
+                        {
+                          "id": "mensur_ahmet",
+                          "name": "Mensur",
+                          "gen": 6,
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    }
+                  ],
+                  "gender": "M"
+                }
+              ],
+              "gender": "M"
+            },
+            {
+              "id": "mejra_meho",
+              "name": "Mejra",
+              "gen": 3,
+              "gender": "F"
+            },
+            {
+              "id": "huso_meho",
+              "name": "Huso",
+              "dates": "1913 – 1998",
+              "gen": 3,
+              "spouse": {
+                "name": "Hanka",
+                "notes": "Supruga",
+                "gender": "F"
+              },
+              "children": [
+                {
+                  "id": "pasa_huso",
+                  "name": "Paša",
+                  "gen": 4,
+                  "gender": "F"
+                },
+                {
+                  "id": "nura_huso",
+                  "name": "Nura",
+                  "gen": 4,
+                  "gender": "F"
+                },
+                {
+                  "id": "zemina_huso",
+                  "name": "Zemina",
+                  "gen": 4,
+                  "gender": "F"
+                },
+                {
+                  "id": "mehan_huso",
+                  "name": "Mehan",
+                  "gen": 4,
+                  "spouse": {
+                    "name": "Fadila",
+                    "notes": "Supruga",
+                    "gender": "F"
+                  },
+                  "children": [
+                    {
+                      "id": "mevlida_mehan",
+                      "name": "Mevlida",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "eldina_mehan",
+                      "name": "Eldina",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "mensur_mehan",
+                      "name": "Mensur",
+                      "gen": 5,
+                      "spouse": {
+                        "name": "Nermina",
+                        "notes": "Supruga",
+                        "gender": "F"
+                      },
+                      "children": [
+                        {
+                          "id": "ajla_mensur_m",
+                          "name": "Ajla",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "lejla_mensur_m",
+                          "name": "Lejla",
+                          "gen": 6,
+                          "gender": "F"
+                        }
+                      ],
+                      "gender": "M"
+                    }
+                  ],
+                  "gender": "M"
+                }
+              ],
+              "gender": "M"
+            }
+          ],
+          "gender": "M"
+        }
+      },
+      {
+        "branch_name": "Grana Osman",
+        "branch_color": "sky",
+        "id": "osman_branch",
+        "person": {
+          "id": "osman_1",
+          "name": "Osman",
+          "dates": "1860 – 1937",
+          "gen": 2,
+          "spouse": {
+            "name": "Hata",
+            "notes": "Supruga",
+            "gender": "F"
+          },
+          "children": [
+            {
+              "id": "fatima_osman_luke",
+              "name": "Fatima",
+              "notes": "u. Luke",
+              "gen": 3,
+              "gender": "F"
+            },
+            {
+              "id": "avdo_osman",
+              "name": "Avdo",
+              "dates": "1887 – 1942",
+              "gen": 3,
+              "spouse": {
+                "name": "Mejra",
+                "notes": "Supruga",
+                "gender": "F"
+              },
+              "children": [
+                {
+                  "id": "sukrija_avdo_o",
+                  "name": "Šukrija",
+                  "gen": 4,
+                  "spouse": {
+                    "name": "Fehma",
+                    "notes": "Supruga",
+                    "gender": "F"
+                  },
+                  "children": [
+                    {
+                      "id": "azra_sukrija",
+                      "name": "Azra",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "nijaz_sukrija",
+                      "name": "Nijaz",
+                      "gen": 5,
+                      "children": [
+                        {
+                          "id": "alen_nijaz_s",
+                          "name": "Alen",
+                          "gen": 6,
+                          "gender": "M"
+                        },
+                        {
+                          "id": "admir_nijaz_s",
+                          "name": "Admir",
+                          "gen": 6,
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    }
+                  ],
+                  "gender": "M"
+                },
+                {
+                  "id": "mehmed_avdo_o",
+                  "name": "Mehmed",
+                  "notes": "n. Poginuo u saobraćajnoj nesreći",
+                  "gen": 4,
+                  "gender": "M"
+                },
+                {
+                  "id": "omer_avdo_o",
+                  "name": "Omer",
+                  "gen": 4,
+                  "spouse": {
+                    "name": "Fatima",
+                    "notes": "Supruga",
+                    "gender": "F"
+                  },
+                  "gender": "M"
+                },
+                {
+                  "id": "salkan_avdo_o",
+                  "name": "Salkan",
+                  "gen": 4,
+                  "spouse": {
+                    "name": "Havka",
+                    "notes": "Supruga",
+                    "gender": "F"
+                  },
+                  "children": [
+                    {
+                      "id": "zekerijah_salkan",
+                      "name": "Zekerijah",
+                      "gen": 5,
+                      "children": [
+                        {
+                          "id": "mersudin_zekerijah",
+                          "name": "Mersudin",
+                          "gen": 6,
+                          "children": [
+                            {
+                              "id": "majda_mersudin",
+                              "name": "Majda",
+                              "gen": 7,
+                              "gender": "M"
+                            },
+                            {
+                              "id": "adi_mersudin",
+                              "name": "Adi",
+                              "gen": 7,
+                              "gender": "M"
+                            }
+                          ],
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    },
+                    {
+                      "id": "avdo_salkan",
+                      "name": "Avdo",
+                      "gen": 5,
+                      "children": [
+                        {
+                          "id": "aida_avdo_s",
+                          "name": "Aida",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "larisa_avdo_s",
+                          "name": "Larisa",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "vahid_avdo_s",
+                          "name": "Vahid",
+                          "gen": 6,
+                          "children": [
+                            {
+                              "id": "alina_vahid",
+                              "name": "Alina",
+                              "gen": 7,
+                              "gender": "F"
+                            },
+                            {
+                              "id": "ajla_vahid",
+                              "name": "Ajla",
+                              "gen": 7,
+                              "gender": "F"
+                            }
+                          ],
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    },
+                    {
+                      "id": "zekija_salkan",
+                      "name": "Zekija",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "sevludin_salkan",
+                      "name": "Sevludin",
+                      "gen": 5,
+                      "children": [
+                        {
+                          "id": "adisa_sevludin",
+                          "name": "Adisa",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "amela_sevludin",
+                          "name": "Amela",
+                          "gen": 6,
+                          "gender": "F"
+                        }
+                      ],
+                      "gender": "M"
+                    },
+                    {
+                      "id": "enes_salkan",
+                      "name": "Enes",
+                      "gen": 5,
+                      "gender": "M"
+                    },
+                    {
+                      "id": "bego_salkan",
+                      "name": "Bego",
+                      "gen": 5,
+                      "gender": "M"
+                    },
+                    {
+                      "id": "mirsad_salkan",
+                      "name": "Mirsad",
+                      "gen": 5,
+                      "gender": "M"
+                    },
+                    {
+                      "id": "muhidin_salkan",
+                      "name": "Muhidin",
+                      "gen": 5,
+                      "children": [
+                        {
+                          "id": "sanela_muhidin",
+                          "name": "Sanela",
+                          "gen": 6,
+                          "gender": "M"
+                        },
+                        {
+                          "id": "jasmin_muhidin",
+                          "name": "Jasmin",
+                          "gen": 6,
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    }
+                  ],
+                  "gender": "M"
+                }
+              ],
+              "gender": "M"
+            },
+            {
+              "id": "sahbaz_osman",
+              "name": "Šahbaz",
+              "dates": "1910 – 1998",
+              "gen": 3,
+              "spouse": {
+                "name": "Emka",
+                "notes": "Supruga",
+                "gender": "F"
+              },
+              "children": [
+                {
+                  "id": "osman_sahbaz",
+                  "name": "Osman",
+                  "gen": 4,
+                  "spouse": {
+                    "name": "Nura",
+                    "notes": "Supruga",
+                    "gender": "F"
+                  },
+                  "children": [
+                    {
+                      "id": "vaila_osman_s",
+                      "name": "Vaila",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "zekira_osman_s",
+                      "name": "Zekira",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "azra_osman_s",
+                      "name": "Azra",
+                      "gen": 5,
+                      "gender": "F"
+                    }
+                  ],
+                  "gender": "M"
+                },
+                {
+                  "id": "sevko_sahbaz",
+                  "name": "Ševko",
+                  "gen": 4,
+                  "spouse": {
+                    "name": "Džemila",
+                    "notes": "Supruga",
+                    "gender": "F"
+                  },
+                  "children": [
+                    {
+                      "id": "nermin_sevko",
+                      "name": "Nermin",
+                      "gen": 5,
+                      "children": [
+                        {
+                          "id": "benjamin_nermin_s",
+                          "name": "Benjamin",
+                          "gen": 6,
+                          "gender": "M"
+                        },
+                        {
+                          "id": "albin_nermin_s",
+                          "name": "Albin",
+                          "gen": 6,
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    },
+                    {
+                      "id": "elvedina_sevko",
+                      "name": "Elvedina",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "elvedin_sevko",
+                      "name": "Elvedin",
+                      "gen": 5,
+                      "children": [
+                        {
+                          "id": "emrah_elvedin",
+                          "name": "Emrah",
+                          "gen": 6,
+                          "gender": "M"
+                        },
+                        {
+                          "id": "amel_elvedin",
+                          "name": "Amel",
+                          "gen": 6,
+                          "gender": "M"
+                        },
+                        {
+                          "id": "emina_elvedin",
+                          "name": "Emina",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "adina_elvedin",
+                          "name": "Adina",
+                          "gen": 6,
+                          "gender": "F"
+                        }
+                      ],
+                      "gender": "M"
+                    }
+                  ],
+                  "gender": "M"
+                },
+                {
+                  "id": "sefika_sahbaz",
+                  "name": "Šefika",
+                  "gen": 4,
+                  "gender": "F"
+                },
+                {
+                  "id": "mina_sahbaz",
+                  "name": "Mina",
+                  "gen": 4,
+                  "gender": "F"
+                },
+                {
+                  "id": "ohro_sahbaz",
+                  "name": "Ohro",
+                  "gen": 4,
+                  "spouse": {
+                    "name": "Nizama",
+                    "notes": "Supruga",
+                    "gender": "F"
+                  },
+                  "children": [
+                    {
+                      "id": "dzevad_ohro",
+                      "name": "Dževad",
+                      "gen": 5,
+                      "children": [
+                        {
+                          "id": "elma_dzevad_o",
+                          "name": "Elma",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "mirsad_dzevad_o",
+                          "name": "Mirsad",
+                          "gen": 6,
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    },
+                    {
+                      "id": "nedzad_ohro",
+                      "name": "Nedžad",
+                      "gen": 5,
+                      "children": [
+                        {
+                          "id": "tarik_nedzad_o",
+                          "name": "Tarik",
+                          "gen": 6,
+                          "gender": "M"
+                        },
+                        {
+                          "id": "arnis_nedzad_o",
+                          "name": "Arnis",
+                          "gen": 6,
+                          "children": [
+                            {
+                              "id": "idriz_arnis",
+                              "name": "Idriz",
+                              "gen": 7,
+                              "gender": "M"
+                            }
+                          ],
+                          "gender": "M"
+                        },
+                        {
+                          "id": "armin_nedzad_o",
+                          "name": "Armin",
+                          "gen": 6,
+                          "children": [
+                            {
+                              "id": "zejn_armin_o",
+                              "name": "Zejn",
+                              "gen": 7,
+                              "gender": "M"
+                            },
+                            {
+                              "id": "hamza_armin_o",
+                              "name": "Hamza",
+                              "gen": 7,
+                              "gender": "M"
+                            },
+                            {
+                              "id": "zekerijah_armin_o",
+                              "name": "Zekerijah",
+                              "gen": 7,
+                              "gender": "M"
+                            }
+                          ],
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    }
+                  ],
+                  "gender": "M"
+                }
+              ],
+              "gender": "M"
+            },
+            {
+              "id": "sacir_osman",
+              "name": "Šaćir",
+              "dates": "1914 – 1999",
+              "gen": 3,
+              "spouse": {
+                "name": "Alta",
+                "notes": "Supruga",
+                "gender": "F"
+              },
+              "children": [
+                {
+                  "id": "mevla_sacir",
+                  "name": "Mevla",
+                  "gen": 4,
+                  "gender": "F",
+                  "notes": "u. Šahići-Centar"
+                },
+                {
+                  "id": "seida_sacir",
+                  "name": "Seida",
+                  "gen": 4,
+                  "gender": "F",
+                  "notes": "u. Šepak"
+                },
+                {
+                  "id": "avdo_sacir",
+                  "name": "Avdo",
+                  "gen": 4,
+                  "spouse": {
+                    "name": "Izeta",
+                    "notes": "Supruga",
+                    "gender": "F"
+                  },
+                  "children": [
+                    {
+                      "id": "izudin_avdo_sacir",
+                      "name": "Izudin",
+                      "gen": 5,
+                      "children": [
+                        {
+                          "id": "alma_izudin",
+                          "name": "Alma",
+                          "gen": 6,
+                          "gender": "F",
+                          "notes": "u. Brnjik",
+                          "children": [
+                            {
+                              "id": "adin_alma",
+                              "name": "Adin",
+                              "gen": 7,
+                              "gender": "M",
+                              "notes": ""
+                            }
+                          ]
+                        },
+                        {
+                          "id": "amra_izudin",
+                          "name": "Amra",
+                          "gen": 6,
+                          "gender": "F",
+                          "notes": "u. Mumbašići",
+                          "children": [
+                            {
+                              "id": "faris_amra",
+                              "name": "Faris",
+                              "gen": 7,
+                              "gender": "M",
+                              "notes": ""
+                            }
+                          ]
+                        }
+                      ],
+                      "gender": "M",
+                      "spouse": {
+                        "name": "Maksida",
+                        "notes": "Supruga",
+                        "gender": "F"
+                      }
+                    },
+                    {
+                      "id": "mevludin_avdo_sacir",
+                      "name": "Mevludin",
+                      "gen": 5,
+                      "children": [
+                        {
+                          "id": "samra_mevludin",
+                          "name": "Samra",
+                          "gen": 6,
+                          "gender": "F",
+                          "notes": "u. Bijeljina",
+                          "children": [
+                            {
+                              "id": "ajla_samra",
+                              "name": "Ajla",
+                              "gen": 7,
+                              "gender": "F",
+                              "notes": ""
+                            },
+                            {
+                              "id": "dzenan_samra",
+                              "name": "Dženan",
+                              "gen": 7,
+                              "gender": "M",
+                              "notes": ""
+                            }
+                          ]
+                        },
+                        {
+                          "id": "asmir_mevludin",
+                          "name": "Asmir",
+                          "gen": 6,
+                          "children": [
+                            {
+                              "id": "lejla_asmir_m",
+                              "name": "Lejla",
+                              "gen": 7,
+                              "gender": "F"
+                            }
+                          ],
+                          "gender": "M",
+                          "spouse": {
+                            "name": "Admira",
+                            "notes": "Supruga",
+                            "gender": "F"
+                          }
+                        }
+                      ],
+                      "gender": "M",
+                      "spouse": {
+                        "name": "Remzija",
+                        "notes": "Supruga",
+                        "gender": "F"
+                      }
+                    }
+                  ],
+                  "gender": "M"
+                },
+                {
+                  "id": "azijada_sacir",
+                  "name": "Azijada",
+                  "gen": 4,
+                  "gender": "F",
+                  "notes": "u. Atmačići"
+                },
+                {
+                  "id": "omer_sacir",
+                  "name": "Omer",
+                  "gen": 4,
+                  "spouse": {
+                    "name": "Fatima",
+                    "notes": "Supruga",
+                    "gender": "F"
+                  },
+                  "children": [
+                    {
+                      "id": "zekira_omer_sacir",
+                      "name": "Zekira",
+                      "gen": 5,
+                      "gender": "F",
+                      "notes": "u. Čelić",
+                      "children": [
+                        {
+                          "id": "aldin_zekira",
+                          "name": "Aldin",
+                          "gen": 6,
+                          "gender": "M",
+                          "notes": ""
+                        },
+                        {
+                          "id": "naida_zekira",
+                          "name": "Naida",
+                          "gen": 6,
+                          "gender": "F",
+                          "notes": ""
+                        }
+                      ]
+                    },
+                    {
+                      "id": "zehrina_omer_sacir",
+                      "name": "Zehrina",
+                      "gen": 5,
+                      "gender": "F",
+                      "notes": "u. Kozluk",
+                      "children": [
+                        {
+                          "id": "emina_zehrina",
+                          "name": "Emina",
+                          "gen": 6,
+                          "gender": "F",
+                          "notes": ""
+                        },
+                        {
+                          "id": "edina_zehrina",
+                          "name": "Edina",
+                          "gen": 6,
+                          "gender": "F",
+                          "notes": ""
+                        }
+                      ]
+                    },
+                    {
+                      "id": "nermina_omer_sacir",
+                      "name": "Nermina",
+                      "gen": 5,
+                      "gender": "F",
+                      "notes": "u. Glinje",
+                      "children": [
+                        {
+                          "id": "almin_nermina",
+                          "name": "Almin",
+                          "gen": 6,
+                          "gender": "M",
+                          "notes": ""
+                        },
+                        {
+                          "id": "kenan_nermina",
+                          "name": "Kenan",
+                          "gen": 6,
+                          "gender": "M",
+                          "notes": ""
+                        },
+                        {
+                          "id": "neyla_nermina",
+                          "name": "Neyla",
+                          "gen": 6,
+                          "gender": "F",
+                          "notes": ""
+                        }
+                      ]
+                    },
+                    {
+                      "id": "nermin_omer_sacir",
+                      "name": "Nermin",
+                      "gen": 5,
+                      "children": [
+                        {
+                          "id": "ajlin_nermin_os",
+                          "name": "Aylin",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "davud_nermin_os",
+                          "name": "Dawud",
+                          "gen": 6,
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M",
+                      "spouse": {
+                        "name": "Ševala",
+                        "notes": "Supruga",
+                        "gender": "F"
+                      }
+                    }
+                  ],
+                  "gender": "M",
+                  "notes": "n. Poginuo 1995",
+                  "dates": "1995"
+                }
+              ],
+              "gender": "M"
+            },
+            {
+              "id": "muharem_osman",
+              "name": "Muharem",
+              "gen": 3,
+              "spouse": {
+                "name": "Mejra",
+                "notes": "Supruga",
+                "gender": "F"
+              },
+              "children": [
+                {
+                  "id": "resid_muharem",
+                  "name": "Rešid",
+                  "gen": 4,
+                  "spouse": {
+                    "name": "Aiša",
+                    "notes": "Supruga",
+                    "gender": "F"
+                  },
+                  "children": [
+                    {
+                      "id": "zikreta_resid",
+                      "name": "Zikreta",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "zekerijah_resid",
+                      "name": "Zekerijah",
+                      "gen": 5,
+                      "gender": "M"
+                    },
+                    {
+                      "id": "mensur_resid",
+                      "name": "Mensur",
+                      "gen": 5,
+                      "gender": "M"
+                    }
+                  ],
+                  "gender": "M"
+                },
+                {
+                  "id": "rasim_muharem",
+                  "name": "Rasim",
+                  "gen": 4,
+                  "spouse": {
+                    "name": "Kadira",
+                    "notes": "Supruga",
+                    "gender": "F"
+                  },
+                  "children": [
+                    {
+                      "id": "ramiz_rasim",
+                      "name": "Ramiz",
+                      "gen": 5,
+                      "children": [
+                        {
+                          "id": "selma_ramiz_poginula",
+                          "name": "Selma",
+                          "notes": "n. Poginula",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "almir_ramiz",
+                          "name": "Almir",
+                          "gen": 6,
+                          "children": [
+                            {
+                              "id": "amra_almir_r",
+                              "name": "Amra",
+                              "gen": 7,
+                              "gender": "F"
+                            },
+                            {
+                              "id": "adna_almir_r",
+                              "name": "Adna",
+                              "gen": 7,
+                              "gender": "F"
+                            }
+                          ],
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    },
+                    {
+                      "id": "hanifa_rasim",
+                      "name": "Hanifa",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "dzemila_rasim",
+                      "name": "Džemila",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "rizvo_rasim",
+                      "name": "Rizvo",
+                      "gen": 5,
+                      "children": [
+                        {
+                          "id": "sanela_rizvo",
+                          "name": "Sanela",
+                          "gen": 6,
+                          "gender": "M"
+                        },
+                        {
+                          "id": "admira_rizvo",
+                          "name": "Admira",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "admir_rizvo",
+                          "name": "Admir",
+                          "gen": 6,
+                          "children": [
+                            {
+                              "id": "armina_admir_r",
+                              "name": "Armina",
+                              "gen": 7,
+                              "gender": "F"
+                            },
+                            {
+                              "id": "amina_admir_r",
+                              "name": "Amina",
+                              "gen": 7,
+                              "gender": "F"
+                            }
+                          ],
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    },
+                    {
+                      "id": "irfan_rasim",
+                      "name": "Irfan",
+                      "gen": 5,
+                      "children": [
+                        {
+                          "id": "sabina_irfan",
+                          "name": "Sabina",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "jasmina_irfan",
+                          "name": "Jasmina",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "jasmin_irfan",
+                          "name": "Jasmin",
+                          "gen": 6,
+                          "children": [
+                            {
+                              "id": "konstantin_jasmin_i",
+                              "name": "Konstantin",
+                              "gen": 7,
+                              "gender": "M"
+                            },
+                            {
+                              "id": "viktor_jasmin_i",
+                              "name": "Viktor",
+                              "gen": 7,
+                              "gender": "M"
+                            }
+                          ],
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    }
+                  ],
+                  "gender": "M"
+                },
+                {
+                  "id": "hanka_muharem",
+                  "name": "Hanka",
+                  "gen": 4,
+                  "gender": "F"
+                },
+                {
+                  "id": "malka_muharem",
+                  "name": "Malka",
+                  "gen": 4,
+                  "gender": "F"
+                },
+                {
+                  "id": "tifa_muharem",
+                  "name": "Tifa",
+                  "gen": 4,
+                  "gender": "F"
+                },
+                {
+                  "id": "mehmedalija_muharem",
+                  "name": "Mehmedalija",
+                  "gen": 4,
+                  "spouse": {
+                    "name": "Rajfa",
+                    "notes": "Supruga",
+                    "gender": "F"
+                  },
+                  "children": [
+                    {
+                      "id": "seudin_mehmedalija",
+                      "name": "Seudin",
+                      "gen": 5,
+                      "children": [
+                        {
+                          "id": "suvad_seudin",
+                          "name": "Suvad",
+                          "gen": 6,
+                          "children": [
+                            {
+                              "id": "sara_suvad",
+                              "name": "Sara",
+                              "gen": 7,
+                              "gender": "F"
+                            },
+                            {
+                              "id": "malik_suvad",
+                              "name": "Malik",
+                              "gen": 7,
+                              "gender": "M"
+                            }
+                          ],
+                          "gender": "M"
+                        },
+                        {
+                          "id": "dzevida_seudin",
+                          "name": "Dževida",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "dzevad_seudin",
+                          "name": "Dževad",
+                          "gen": 6,
+                          "children": [
+                            {
+                              "id": "eldin_dzevad_s",
+                              "name": "Eldin",
+                              "gen": 7,
+                              "gender": "M"
+                            },
+                            {
+                              "id": "anel_dzevad_s",
+                              "name": "Anel",
+                              "gen": 7,
+                              "gender": "M"
+                            },
+                            {
+                              "id": "elma_dzevad_s",
+                              "name": "Elma",
+                              "gen": 7,
+                              "gender": "F"
+                            }
+                          ],
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    },
+                    {
+                      "id": "remza_mehmedalija",
+                      "name": "Remza",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "jusuf_mehmedalija",
+                      "name": "Jusuf",
+                      "gen": 5,
+                      "children": [
+                        {
+                          "id": "emina_jusuf",
+                          "name": "Emina",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "mehmedalija_jusuf",
+                          "name": "Mehmedalija",
+                          "gen": 6,
+                          "gender": "M"
+                        },
+                        {
+                          "id": "amir_jusuf",
+                          "name": "Amir",
+                          "gen": 6,
+                          "gender": "M"
+                        },
+                        {
+                          "id": "amra_jusuf",
+                          "name": "Amra",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "almedina_jusuf",
+                          "name": "Almedina",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "senad_jusuf",
+                          "name": "Senad",
+                          "gen": 6,
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    },
+                    {
+                      "id": "nasiha_mehmedalija",
+                      "name": "Nasiha",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "sefik_mehmedalija",
+                      "name": "Šefik",
+                      "gen": 5,
+                      "children": [
+                        {
+                          "id": "edina_sefik_m",
+                          "name": "Edina",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "edin_sefik_m",
+                          "name": "Edin",
+                          "gen": 6,
+                          "spouse": {
+                            "name": "Mubina",
+                            "notes": "Supruga",
+                            "gender": "F"
+                          },
+                          "children": [
+                            {
+                              "id": "dzenana_edin_s",
+                              "name": "Dženana",
+                              "gen": 7,
+                              "gender": "F"
+                            },
+                            {
+                              "id": "mirsad_edin_s",
+                              "name": "Mirsad",
+                              "gen": 7,
+                              "gender": "M"
+                            },
+                            {
+                              "id": "elmir_edin_s",
+                              "name": "Elmir",
+                              "gen": 7,
+                              "gender": "M"
+                            },
+                            {
+                              "id": "elma_edin_s",
+                              "name": "Elma",
+                              "gen": 7,
+                              "gender": "F"
+                            },
+                            {
+                              "id": "adis_edin_s",
+                              "name": "Adis",
+                              "gen": 7,
+                              "children": [
+                                {
+                                  "id": "maja_adis",
+                                  "name": "Maja",
+                                  "gen": 8,
+                                  "gender": "F"
+                                }
+                              ],
+                              "gender": "M"
+                            }
+                          ],
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    }
+                  ],
+                  "gender": "M"
+                }
+              ],
+              "gender": "M"
+            }
+          ],
+          "gender": "M"
+        }
+      },
+      {
+        "branch_name": "Grana Nurif",
+        "branch_color": "rose",
+        "id": "nurif_branch",
+        "person": {
+          "id": "nurif_1",
+          "name": "Nurif",
+          "dates": "r. 1863",
+          "notes": "nije se ženio",
+          "gen": 2,
+          "children": [],
+          "gender": "M"
+        }
+      },
+      {
+        "branch_name": "Grana Paša",
+        "branch_color": "violet",
+        "id": "pasa_branch",
+        "person": {
+          "id": "pasa_1",
+          "name": "Paša",
+          "dates": "",
+          "notes": "udata u Glinje u porodicu Hrustanović",
+          "gen": 2,
+          "children": [],
+          "gender": "F"
+        }
+      }
+    ],
+    "gender": "M"
+  }
+}
