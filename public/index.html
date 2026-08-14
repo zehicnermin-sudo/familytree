@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORODIČNO STABLO ZEHIĆ - SQL Baza &amp; Interaktivni Prikaz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0b0f19;
+            --surface: #1e293b;
+            --surface-hover: #334155;
+            --surface-card: #0f172a;
+            --primary: #3b82f6;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --male-blue: #1d4ed8;
+            --male-bg: #dbeafe;
+            --female-pink: #be185d;
+            --female-bg: #fce7f3;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-main);
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 50;
+            gap: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+        }
+        .brand h1 {
+            font-size: 1.05rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #ffffff, #cbd5e1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 0.5px;
+        }
+        .brand p {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+        .btn-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .tab-btn {
+            background: var(--surface);
+            color: var(--text-main);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            padding: 7px 14px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .tab-btn:hover {
+            background: var(--surface-hover);
+            transform: translateY(-1px);
+        }
+        .tab-btn.active {
+            background: #2563eb;
+            border-color: #60a5fa;
+            color: #fff;
+            box-shadow: 0 0 14px rgba(37, 99, 235, 0.45);
+        }
+        .tab-btn.focus-btn {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            border: 1px solid #3b82f6;
+            color: #93c5fd;
+        }
+        .tab-btn.focus-btn:hover {
+            background: #2563eb;
+            color: #fff;
+            box-shadow: 0 0 16px rgba(59, 130, 246, 0.5);
+        }
+        .tab-btn.sql-btn {
+            background: linear-gradient(135deg, #065f46, #047857);
+            border: 1px solid #34d399;
+            color: #ecfdf5;
+        }
+        .tab-btn.sql-btn:hover {
+            background: #059669;
+            box-shadow: 0 0 16px rgba(52, 211, 153, 0.4);
+        }
+        .badge {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 2px 7px;
+            border-radius: 12px;
+            font-size: 0.7rem;
+        }
+        .search-container {
+            position: relative;
+        }
+        .search-box {
+            background: var(--surface);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 8px;
+            padding: 7px 12px 7px 34px;
+            color: #fff;
+            font-size: 0.82rem;
+            width: 230px;
+            outline: none;
+            transition: all 0.2s;
+        }
+        .search-box:focus {
+            width: 280px;
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+        }
+        .search-icon {
+            position: absolute;
+            left: 11px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+            pointer-events: none;
+        }
+        .dropdown {
+            position: absolute;
+            top: 42px;
+            right: 0;
+            width: 380px;
+            max-height: 440px;
+            overflow-y: auto;
+            background: var(--surface-card);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            box-shadow: 0 16px 40px rgba(0,0,0,0.7);
+            display: none;
+            flex-direction: column;
+            z-index: 100;
+        }
+        .dropdown-item {
+            padding: 10px 14px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            cursor: pointer;
+            transition: background 0.15s;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .dropdown-item:hover {
+            background: var(--surface-hover);
+        }
+        .dropdown-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .dropdown-name {
+            font-weight: 800;
+            font-size: 0.92rem;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .dropdown-name.male { color: #60a5fa; }
+        .dropdown-name.female { color: #f472b6; }
+        
+        .tag-pill {
+            font-size: 0.68rem;
+            font-weight: 700;
+            padding: 2px 7px;
+            border-radius: 6px;
+        }
+        .tag-branch { background: rgba(59, 130, 246, 0.15); color: #93c5fd; border: 1px solid rgba(59, 130, 246, 0.3); }
+        .tag-gen { background: rgba(255, 255, 255, 0.1); color: #cbd5e1; }
+        .tag-note { background: rgba(239, 68, 68, 0.15); color: #fca5a5; border: 1px solid rgba(239, 68, 68, 0.3); }
+
+        .dropdown-meta {
+            font-size: 0.74rem;
+            color: var(--text-muted);
+            line-height: 1.3;
+        }
+        #canvasViewport {
+            flex: 1;
+            position: relative;
+            background: #f1f5f9;
+            overflow: hidden;
+            cursor: grab;
+        }
+        #canvasViewport:active {
+            cursor: grabbing;
+        }
+        #svgWrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform-origin: 0 0;
+            will-change: transform;
+        }
+        #svgWrapper.smooth-transition {
+            transition: transform 0.45s cubic-bezier(0.2, 0.9, 0.3, 1);
+        }
+        .controls-toolbar {
+            position: absolute;
+            bottom: 24px;
+            right: 24px;
+            background: rgba(15, 23, 42, 0.92);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 14px;
+            padding: 6px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+            z-index: 40;
+        }
+        .tool-btn {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--surface);
+            color: var(--text-main);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 800;
+            font-size: 1.1rem;
+            transition: all 0.15s;
+        }
+        .tool-btn:hover {
+            background: #2563eb;
+            color: #fff;
+        }
+        .info-pill {
+            position: absolute;
+            bottom: 24px;
+            left: 24px;
+            background: rgba(15, 23, 42, 0.92);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 12px;
+            padding: 10px 18px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            display: flex;
+            gap: 16px;
+            z-index: 40;
+        }
+        .info-pill strong {
+            color: #fff;
+        }
+
+        /* SQL Database Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(8px);
+            z-index: 200;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+        .modal-content {
+            background: #0f172a;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 16px;
+            width: 100%;
+            max-width: 1000px;
+            max-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 24px 60px rgba(0,0,0,0.8);
+            overflow: hidden;
+        }
+        .modal-header {
+            padding: 16px 24px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .modal-header h2 {
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .close-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+            font-size: 1.4rem;
+            cursor: pointer;
+            padding: 4px;
+        }
+        .close-btn:hover { color: #fff; }
+
+        .modal-filters {
+            padding: 14px 24px;
+            background: #1e293b;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .filter-input, .filter-select {
+            background: #0f172a;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #fff;
+            padding: 7px 12px;
+            border-radius: 8px;
+            font-size: 0.82rem;
+            outline: none;
+        }
+        .filter-input { flex: 1; min-width: 180px; }
+        .filter-select { cursor: pointer; }
+
+        .modal-table-container {
+            flex: 1;
+            overflow-y: auto;
+            padding: 0;
+        }
+        .sql-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.82rem;
+            text-align: left;
+        }
+        .sql-table th {
+            background: #1e293b;
+            padding: 10px 14px;
+            color: #94a3b8;
+            font-weight: 700;
+            position: sticky;
+            top: 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .sql-table td {
+            padding: 10px 14px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            color: #e2e8f0;
+        }
+        .sql-table tr:hover {
+            background: rgba(255, 255, 255, 0.04);
+        }
+        .jump-btn {
+            background: #2563eb;
+            color: #fff;
+            border: none;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.74rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .jump-btn:hover {
+            background: #3b82f6;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <h1>PORODIČNO STABLO ZEHIĆ</h1>
+            <p>Potomstvo Ibrahima Zehića • 8 Generacija • SQL Baza (416 Zapisa)</p>
+        </div>
+
+        <div class="btn-group">
+            <button id="tabPoster" class="tab-btn active" onclick="loadTree('Porodicno_Stablo_Zehic_A0.svg', this, 'main')">🌳 Glavni Poster A0/A1 <span class="badge">401</span></button>
+            <button id="tabAdem" class="tab-btn" onclick="loadTree('Branche_Adem.svg', this, 'branch')" style="border-left: 3px solid #16a34a;">Grana Adem <span class="badge">177</span></button>
+            <button id="tabOsman" class="tab-btn" onclick="loadTree('Branche_Osman.svg', this, 'branch')" style="border-left: 3px solid #0284c7;">Grana Osman <span class="badge">152</span></button>
+            <button id="tabMeho" class="tab-btn" onclick="loadTree('Branche_Meho.svg', this, 'branch')" style="border-left: 3px solid #d97706;">Grana Meho <span class="badge">69</span></button>
+        </div>
+
+        <div class="btn-group">
+            <div class="search-container">
+                <span class="search-icon">🔍</span>
+                <input type="text" class="search-box" id="searchInput" placeholder="SQL Pretraga imena, supružnika..." oninput="onSqlSearch(this.value)">
+                <div class="dropdown" id="searchDropdown"></div>
+            </div>
+            <button class="tab-btn sql-btn" onclick="openSqlModal()" title="Otvori tabelarni pregled SQL baze">📊 SQL Baza</button>
+            <button class="tab-btn focus-btn" onclick="clickCentarButton()" title="Fokusiraj direktno na Ibrahima">👑 Centar</button>
+            <button class="tab-btn" onclick="window.print()" title="Štampaj ili sačuvaj u PDF">🖨 Štampaj (A0/A1)</button>
+        </div>
+    </header>
+
+    <div id="canvasViewport">
+        <div id="svgWrapper"></div>
+    </div>
+
+    <div class="controls-toolbar">
+        <button class="tool-btn" onclick="zoom(1.35)" title="Zoomiraj (ili točkić miša)">+</button>
+        <button class="tool-btn" onclick="zoom(0.74)" title="Odalji">−</button>
+        <button class="tool-btn" onclick="clickCentarButton()" title="Fokus na Ibrahima">👑</button>
+        <button class="tool-btn" onclick="fitView()" title="Cjelokupan pregled">⛶</button>
+    </div>
+
+    <div class="info-pill">
+        <div>Zoom: <strong id="zoomLevel">100%</strong></div>
+        <div>SQL Baza: <strong>416 članova</strong></div>
+        <div>Prikaz: <strong id="viewName">Glavni Poster A0/A1</strong></div>
+    </div>
+
+    <!-- SQL Database Modal -->
+    <div class="modal-overlay" id="sqlModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>📊 SQL Baza Članova — Porodično Stablo Zehić</h2>
+                <button class="close-btn" onclick="closeSqlModal()">✕</button>
+            </div>
+            <div class="modal-filters">
+                <input type="text" class="filter-input" id="tableFilterInput" placeholder="Pretraži po imenu, roditelju, supružniku, napomeni..." oninput="filterSqlTable()">
+                <select class="filter-select" id="tableBranchSelect" onchange="filterSqlTable()">
+                    <option value="">Sve Grane</option>
+                    <option value="Grana Adem">Grana Adem</option>
+                    <option value="Grana Osman">Grana Osman</option>
+                    <option value="Grana Meho">Grana Meho</option>
+                    <option value="Grana Nurif">Grana Nurif</option>
+                    <option value="Grana Paša">Grana Paša</option>
+                </select>
+                <select class="filter-select" id="tableGenderSelect" onchange="filterSqlTable()">
+                    <option value="">Svi Spolovi</option>
+                    <option value="M">Muški (M)</option>
+                    <option value="Ž">Ženski (Ž)</option>
+                </select>
+                <select class="filter-select" id="tableGenSelect" onchange="filterSqlTable()">
+                    <option value="">Sve Generacije</option>
+                    <option value="1">Gen 1</option>
+                    <option value="2">Gen 2</option>
+                    <option value="3">Gen 3</option>
+                    <option value="4">Gen 4</option>
+                    <option value="5">Gen 5</option>
+                    <option value="6">Gen 6</option>
+                    <option value="7">Gen 7</option>
+                    <option value="8">Gen 8</option>
+                </select>
+            </div>
+            <div class="modal-table-container">
+                <table class="sql-table">
+                    <thead>
+                        <tr>
+                            <th>Ime</th>
+                            <th>Spol</th>
+                            <th>Generacija</th>
+                            <th>Grana</th>
+                            <th>Roditelj</th>
+                            <th>Supružnik</th>
+                            <th>Napomene / Lokacija</th>
+                            <th>Akcija</th>
+                        </tr>
+                    </thead>
+                    <tbody id="sqlTableBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let scale = 0.85;
+        let posX = 0;
+        let posY = 0;
+        let isDragging = false;
+        let startX, startY;
+        let currentSvgUrl = 'Porodicno_Stablo_Zehic_A0.svg';
+        let svgElement = null;
+        let allSqlMembers = [];
+
+        const viewport = document.getElementById('canvasViewport');
+        const wrapper = document.getElementById('svgWrapper');
+        const zoomLabel = document.getElementById('zoomLevel');
+        const viewLabel = document.getElementById('viewName');
+
+        function updateTransform() {
+            wrapper.style.transform = `translate(${posX}px, ${posY}px) scale(${scale})`;
+            zoomLabel.textContent = Math.round(scale * 100) + '%';
+        }
+
+        function triggerSmoothTransition() {
+            wrapper.classList.add('smooth-transition');
+            setTimeout(() => {
+                wrapper.classList.remove('smooth-transition');
+            }, 460);
+        }
+
+        function loadTree(url, btnElement, mode) {
+            currentSvgUrl = url;
+            if (btnElement) {
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                btnElement.classList.add('active');
+            }
+            if (url.includes('Adem')) viewLabel.textContent = 'Grana Adem';
+            else if (url.includes('Osman')) viewLabel.textContent = 'Grana Osman';
+            else if (url.includes('Meho')) viewLabel.textContent = 'Grana Meho';
+            else viewLabel.textContent = 'Glavni Poster A0/A1';
+
+            fetch(url)
+                .then(res => res.text())
+                .then(svgText => {
+                    wrapper.innerHTML = svgText;
+                    svgElement = wrapper.querySelector('svg');
+                    
+                    if (mode === 'branch') {
+                        focusBranchStart();
+                    } else {
+                        focusIbrahimDirect();
+                    }
+                });
+        }
+
+        function focusBranchStart() {
+            triggerSmoothTransition();
+            scale = 0.92;
+            const vw = viewport.clientWidth;
+            const vh = viewport.clientHeight;
+
+            if (svgElement) {
+                const firstCard = svgElement.querySelector('g[transform]');
+                let targetY = 320;
+                if (firstCard) {
+                    const tr = firstCard.getAttribute('transform');
+                    const m = tr ? tr.match(/translate\(([^,]+),\s*([^)]+)\)/) : null;
+                    if (m) {
+                        targetY = parseFloat(m[2]) + 40;
+                    }
+                }
+                posX = 80;
+                posY = vh / 2 - targetY * scale;
+            }
+            updateTransform();
+        }
+
+        function clickCentarButton() {
+            if (currentSvgUrl !== 'Porodicno_Stablo_Zehic_A0.svg' && currentSvgUrl !== 'Arbre_Genealogique_A0_Bilateral.svg') {
+                const mainBtn = document.getElementById('tabPoster');
+                loadTree('Porodicno_Stablo_Zehic_A0.svg', mainBtn, 'main');
+                return;
+            }
+            focusIbrahimDirect();
+        }
+
+        function focusIbrahimDirect() {
+            triggerSmoothTransition();
+            scale = 1.1;
+            const vw = viewport.clientWidth;
+            const vh = viewport.clientHeight;
+
+            if (svgElement) {
+                let targetX = null;
+                let targetY = null;
+
+                const groups = svgElement.querySelectorAll('g[transform]');
+                for (let g of groups) {
+                    const txt = g.textContent;
+                    if (txt.includes('Ibrahim') && (txt.includes('Osnivač') || txt.includes('👑'))) {
+                        const tr = g.getAttribute('transform');
+                        const m = tr ? tr.match(/translate\(([^,]+),\s*([^)]+)\)/) : null;
+                        if (m) {
+                            targetX = parseFloat(m[1]) + 119;
+                            targetY = parseFloat(m[2]) + 45;
+                            break;
+                        }
+                    }
+                }
+
+                if (targetX !== null && targetY !== null) {
+                    posX = vw / 2 - targetX * scale;
+                    posY = vh / 2 - targetY * scale;
+                } else {
+                    const vb = svgElement.viewBox.baseVal;
+                    posX = vw / 2 - (vb.width / 2) * scale;
+                    posY = vh / 2 - (vb.height / 2) * scale;
+                }
+            }
+            updateTransform();
+        }
+
+        function zoom(factor, clientX, clientY) {
+            let oldScale = scale;
+            let newScale = scale * factor;
+            newScale = Math.min(Math.max(0.04, newScale), 10.0);
+            
+            if (clientX !== undefined && clientY !== undefined) {
+                const rect = viewport.getBoundingClientRect();
+                const mouseX = clientX - rect.left;
+                const mouseY = clientY - rect.top;
+                posX = mouseX - (mouseX - posX) * (newScale / oldScale);
+                posY = mouseY - (mouseY - posY) * (newScale / oldScale);
+            } else {
+                const vw = viewport.clientWidth;
+                const vh = viewport.clientHeight;
+                posX = vw / 2 - (vw / 2 - posX) * (newScale / oldScale);
+                posY = vh / 2 - (vh / 2 - posY) * (newScale / oldScale);
+            }
+            scale = newScale;
+            updateTransform();
+        }
+
+        function fitView() {
+            if (!svgElement) return;
+            triggerSmoothTransition();
+            const vb = svgElement.viewBox.baseVal;
+            const vw = viewport.clientWidth;
+            const vh = viewport.clientHeight;
+            scale = Math.min(vw / vb.width, vh / vb.height) * 0.94;
+            posX = vw / 2 - (vb.x + vb.width / 2) * scale;
+            posY = 20;
+            updateTransform();
+        }
+
+        viewport.addEventListener('mousedown', (e) => {
+            if (e.target.closest('.controls-toolbar') || e.target.closest('.info-pill') || e.target.closest('.modal-overlay')) return;
+            isDragging = true;
+            startX = e.clientX - posX;
+            startY = e.clientY - posY;
+        });
+
+        window.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+            posX = e.clientX - startX;
+            posY = e.clientY - startY;
+            updateTransform();
+        });
+
+        window.addEventListener('mouseup', () => {
+            isDragging = false;
+        });
+
+        viewport.addEventListener('wheel', (e) => {
+            e.preventDefault();
+            const factor = e.deltaY < 0 ? 1.18 : 0.84;
+            zoom(factor, e.clientX, e.clientY);
+        }, { passive: false });
+
+        // SQL API Search
+        function onSqlSearch(val) {
+            const dropdown = document.getElementById('searchDropdown');
+            if (!val || val.trim().length < 2) {
+                dropdown.style.display = 'none';
+                return;
+            }
+            val = val.trim();
+
+            fetch(`/api/search?q=${encodeURIComponent(val)}`)
+                .then(r => r.json())
+                .then(data => {
+                    const results = data.results || [];
+                    if (results.length > 0) {
+                        dropdown.innerHTML = results.slice(0, 10).map(m => {
+                            const isM = m.spol === 'M';
+                            const genderClass = isM ? 'male' : 'female';
+                            const genderIcon = isM ? '🔵' : '🌸';
+                            const noteHtml = m.napomene ? `<span class="tag-pill tag-note">${m.napomene}</span>` : '';
+                            const spouseHtml = m.supruznik_ime ? `<div class="dropdown-meta">💍 Supružnik: <strong>${m.supruznik_ime}</strong></div>` : '';
+                            const parentHtml = m.ime_roditelja ? `<div class="dropdown-meta">👨‍👩‍👧 Roditelj: <strong>${m.ime_roditelja}</strong></div>` : '';
+
+                            return `
+                                <div class="dropdown-item" onclick="locateMemberOnTree('${m.ime}', '${m.grana}')">
+                                    <div class="dropdown-header">
+                                        <span class="dropdown-name ${genderClass}">${genderIcon} ${m.ime}</span>
+                                        <div style="display:flex; gap:4px;">
+                                            <span class="tag-pill tag-gen">GEN. ${m.generacija}</span>
+                                            <span class="tag-pill tag-branch">${m.grana}</span>
+                                            ${noteHtml}
+                                        </div>
+                                    </div>
+                                    ${parentHtml}
+                                    ${spouseHtml}
+                                </div>
+                            `;
+                        }).join('');
+                        dropdown.style.display = 'flex';
+                    } else {
+                        dropdown.innerHTML = '<div class="dropdown-item" style="color:#94a3b8;">Nema pronađenih članova u SQL bazi</div>';
+                        dropdown.style.display = 'flex';
+                    }
+                })
+                .catch(err => {
+                    // Fallback to DOM search
+                    onDomSearch(val);
+                });
+        }
+
+        function onDomSearch(val) {
+            const dropdown = document.getElementById('searchDropdown');
+            val = val.toLowerCase().trim();
+            const cards = wrapper.querySelectorAll('g[transform]');
+            const results = [];
+
+            cards.forEach(card => {
+                const texts = card.querySelectorAll('text');
+                texts.forEach(t => {
+                    const name = t.textContent.trim();
+                    const fontSize = parseFloat(t.getAttribute('font-size') || "0");
+                    if (name.toLowerCase().includes(val) && fontSize >= 13) {
+                        const tr = card.getAttribute('transform');
+                        const m = tr ? tr.match(/translate\(([^,]+),\s*([^)]+)\)/) : null;
+                        if (m && !results.some(r => r.name === name)) {
+                            results.push({
+                                name: name,
+                                x: parseFloat(m[1]),
+                                y: parseFloat(m[2])
+                            });
+                        }
+                    }
+                });
+            });
+
+            if (results.length > 0) {
+                dropdown.innerHTML = results.slice(0, 10).map(r => `
+                    <div class="dropdown-item" onclick="focusCoords(${r.x}, ${r.y})">
+                        <div class="dropdown-name" style="color:#60a5fa;">${r.name}</div>
+                        <div class="dropdown-meta">Kliknite za prikaz na stablu</div>
+                    </div>
+                `).join('');
+                dropdown.style.display = 'flex';
+            } else {
+                dropdown.innerHTML = '<div class="dropdown-item" style="color:#94a3b8;">Nema rezultata</div>';
+                dropdown.style.display = 'flex';
+            }
+        }
+
+        function locateMemberOnTree(name, grana) {
+            document.getElementById('searchDropdown').style.display = 'none';
+            // Search inside current SVG
+            const cards = wrapper.querySelectorAll('g[transform]');
+            let target = null;
+
+            cards.forEach(card => {
+                const texts = card.querySelectorAll('text');
+                texts.forEach(t => {
+                    if (t.textContent.trim().toLowerCase() === name.toLowerCase()) {
+                        const tr = card.getAttribute('transform');
+                        const m = tr ? tr.match(/translate\(([^,]+),\s*([^)]+)\)/) : null;
+                        if (m) {
+                            target = { x: parseFloat(m[1]), y: parseFloat(m[2]) };
+                        }
+                    }
+                });
+            });
+
+            if (target) {
+                focusCoords(target.x, target.y);
+            } else {
+                // If not found in current SVG (e.g. on single branch), switch to main poster
+                const mainBtn = document.getElementById('tabPoster');
+                loadTree('Porodicno_Stablo_Zehic_A0.svg', mainBtn, 'main');
+                setTimeout(() => {
+                    locateMemberOnTree(name, grana);
+                }, 400);
+            }
+        }
+
+        function focusCoords(x, y) {
+            triggerSmoothTransition();
+            scale = 1.35;
+            const vw = viewport.clientWidth;
+            const vh = viewport.clientHeight;
+            posX = vw / 2 - (x + 119) * scale;
+            posY = vh / 2 - (y + 35) * scale;
+            updateTransform();
+        }
+
+        // SQL Modal Management
+        function openSqlModal() {
+            document.getElementById('sqlModal').style.display = 'flex';
+            if (allSqlMembers.length === 0) {
+                fetch('/api/members')
+                    .then(r => r.json())
+                    .then(data => {
+                        allSqlMembers = data.members || [];
+                        renderSqlTable(allSqlMembers);
+                    });
+            } else {
+                filterSqlTable();
+            }
+        }
+
+        function closeSqlModal() {
+            document.getElementById('sqlModal').style.display = 'none';
+        }
+
+        function filterSqlTable() {
+            const q = document.getElementById('tableFilterInput').value.toLowerCase().trim();
+            const branch = document.getElementById('tableBranchSelect').value;
+            const gender = document.getElementById('tableGenderSelect').value;
+            const gen = document.getElementById('tableGenSelect').value;
+
+            const filtered = allSqlMembers.filter(m => {
+                if (branch && m.grana !== branch) return false;
+                if (gender && m.spol !== gender) return false;
+                if (gen && String(m.generacija) !== gen) return false;
+                if (q) {
+                    const matchName = m.ime && m.ime.toLowerCase().includes(q);
+                    const matchParent = m.ime_roditelja && m.ime_roditelja.toLowerCase().includes(q);
+                    const matchSpouse = m.supruznik_ime && m.supruznik_ime.toLowerCase().includes(q);
+                    const matchNotes = m.napomene && m.napomene.toLowerCase().includes(q);
+                    if (!matchName && !matchParent && !matchSpouse && !matchNotes) return false;
+                }
+                return true;
+            });
+
+            renderSqlTable(filtered);
+        }
+
+        function renderSqlTable(members) {
+            const tbody = document.getElementById('sqlTableBody');
+            tbody.innerHTML = members.slice(0, 100).map(m => {
+                const isM = m.spol === 'M';
+                const genderBadge = isM ? '<span style="color:#60a5fa; font-weight:800;">🔵 M</span>' : '<span style="color:#f472b6; font-weight:800;">🌸 Ž</span>';
+                const notes = m.napomene || '-';
+                const parent = m.ime_roditelja || '-';
+                const spouse = m.supruznik_ime || '-';
+
+                return `
+                    <tr>
+                        <td><strong>${m.ime}</strong></td>
+                        <td>${genderBadge}</td>
+                        <td>GEN. ${m.generacija}</td>
+                        <td><span class="tag-pill tag-branch">${m.grana}</span></td>
+                        <td>${parent}</td>
+                        <td>${spouse}</td>
+                        <td>${notes}</td>
+                        <td>
+                            <button class="jump-btn" onclick="closeSqlModal(); locateMemberOnTree('${m.ime}', '${m.grana}')">Prikaži</button>
+                        </td>
+                    </tr>
+                `;
+            }).join('');
+        }
+
+        // Initialize on main tree
+        loadTree('Porodicno_Stablo_Zehic_A0.svg', document.getElementById('tabPoster'), 'main');
+    </script>
+</body>
+</html>
