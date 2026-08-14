@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    <title>PORODIČNO STABLO ZEHIĆ - Bilateralni Poster &amp; SQL Baza</title>
+    <title>PORODIČNO STABLO ZEHIĆ - Bilateralni Poster &amp; Baza Članova</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="members_data.js"></script>
     <script src="tree_coords.js"></script>
@@ -698,12 +698,12 @@
         <div class="btn-group">
             <div class="search-container">
                 <span class="search-icon">🔍</span>
-                <input type="text" class="search-box" id="desktopSearchInput" placeholder="SQL Pretraga..." oninput="onSqlSearch(this.value, 'desktopSearchDropdown')">
+                <input type="text" class="search-box" id="desktopSearchInput" placeholder="Pretraži člana..." oninput="onSqlSearch(this.value, 'desktopSearchDropdown')">
                 <div class="dropdown" id="desktopSearchDropdown"></div>
             </div>
             <button class="tab-btn info-btn" onclick="openWelcomeModal()" title="O projektu i poruka o rodbinskim vezama">📜 O Projektu</button>
             <button class="tab-btn pdf-btn" onclick="openDownloadModal()" title="Preuzmi PDF u A3 ili A0/A1 formatu">📥 Preuzmi PDF</button>
-            <button class="tab-btn sql-btn" onclick="openSqlModal()" title="Otvori tabelarni pregled SQL baze">📊 SQL Baza</button>
+            <button class="tab-btn sql-btn" onclick="openSqlModal()" title="Tabelarni pregled i pretraga svih 416 članova">📋 Baza Članova</button>
             <button class="tab-btn focus-btn" onclick="clickCentarButton()" title="Fokusiraj direktno na Ibrahima">👑 Centar</button>
         </div>
     </header>
@@ -769,7 +769,7 @@
                         <span>📥 Preuzmi PDF (A3 / A0)</span>
                     </button>
                     <button class="drawer-item-btn" onclick="openSqlModal(); closeDrawer();" style="background: linear-gradient(135deg, #065f46, #047857); color:#fff;">
-                        <span>📊 SQL Baza Članova</span>
+                        <span>📋 Baza Članova (416)</span>
                     </button>
                     <button class="drawer-item-btn" onclick="openWelcomeModal(); closeDrawer();">
                         <span>📜 O Projektu &amp; Zasluge</span>
@@ -801,7 +801,7 @@
     <!-- Desktop Info Pill -->
     <div class="info-pill">
         <div>Zoom: <strong id="zoomLevel">100%</strong></div>
-        <div>SQL Baza: <strong>416 članova</strong></div>
+        <div>Ukupno: <strong>416 članova</strong></div>
         <div>Prikaz: <strong id="viewName">Bilateralni Poster A0/A1</strong></div>
     </div>
 
@@ -892,11 +892,11 @@
         </div>
     </div>
 
-    <!-- 3. SQL Database Modal -->
+    <!-- 3. Members Database Modal -->
     <div class="modal-overlay" id="sqlModal" onclick="if(event.target===this) closeSqlModal()">
         <div class="modal-content">
             <div class="modal-header">
-                <h2>📊 SQL Baza Članova — Porodično Stablo Zehić</h2>
+                <h2>📋 Baza Članova — Porodično Stablo Zehić</h2>
                 <button class="close-btn" onclick="closeSqlModal()">✕</button>
             </div>
             <div class="modal-filters">
