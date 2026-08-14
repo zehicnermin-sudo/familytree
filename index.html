@@ -1269,39 +1269,56 @@
             document.querySelectorAll('.dropdown').forEach(d => d.style.display = 'none');
             closeDrawer();
 
-            if (!treeCoords) {
+            const executeLocate = (coordsObj) => {
+                if (currentTreeMode !== 'main') {
+                    loadTree('Porodicno_Stablo_Zehic_A0.svg', null, 'main', 4546, 8504);
+                }
+
+                const mainNodes = (coordsObj && coordsObj.main) ? coordsObj.main.nodes : [];
+                const cleanQuery = (name || '').toLowerCase().trim();
+                
+                // 1. Exact match on name or spouse
+                let target = mainNodes.find(n => n.name.toLowerCase().trim() === cleanQuery || (n.spouse && n.spouse.toLowerCase().trim() === cleanQuery));
+                
+                // 2. Substring match
+                if (!target) {
+                    target = mainNodes.find(n => n.name.toLowerCase().includes(cleanQuery) || cleanQuery.includes(n.name.toLowerCase()));
+                }
+                
+                // 3. Match first word (first name)
+                if (!target) {
+                    const firstWord = cleanQuery.split(' ')[0];
+                    if (firstWord.length >= 3) {
+                        target = mainNodes.find(n => n.name.toLowerCase().startsWith(firstWord) || (n.spouse && n.spouse.toLowerCase().startsWith(firstWord)));
+                    }
+                }
+
+                if (target) {
+                    focusCoords(target.cx, target.cy);
+                } else {
+                    console.warn("Target not found for:", name);
+                    focusIbrahimDirect();
+                }
+            };
+
+            if (treeCoords && treeCoords.main) {
+                executeLocate(treeCoords);
+            } else {
                 fetch('data/tree_coords.json')
                     .then(r => r.json())
                     .then(data => {
                         treeCoords = data;
-                        doLocate(name, grana);
+                        executeLocate(data);
                     })
                     .catch(() => {
-                        doLocate(name, grana);
+                        focusIbrahimDirect();
                     });
-            } else {
-                doLocate(name, grana);
-            }
-        }
-
-        function doLocate(name, grana) {
-            if (currentTreeMode !== 'main') {
-                loadTree('Porodicno_Stablo_Zehic_A0.svg', null, 'main', 4546, 8504);
-            }
-
-            const mainNodes = (treeCoords && treeCoords.main) ? treeCoords.main.nodes : [];
-            const target = mainNodes.find(n => n.name.toLowerCase() === name.toLowerCase() || (n.spouse && n.spouse.toLowerCase() === name.toLowerCase()));
-
-            if (target) {
-                focusCoords(target.cx, target.cy);
-            } else {
-                focusIbrahimDirect();
             }
         }
 
         function focusCoords(cx, cy) {
             triggerSmoothTransition();
-            scale = isMobile() ? 1.65 : 1.35;
+            scale = isMobile() ? 1.55 : 1.25;
             const vw = viewport.clientWidth || window.innerWidth;
             const vh = viewport.clientHeight || (window.innerHeight - 60);
             
@@ -1315,7 +1332,7 @@
             targetPin.style.display = 'block';
             setTimeout(() => {
                 targetPin.style.display = 'none';
-            }, 3500);
+            }, 4500);
         }
 
         // Welcome Modal
