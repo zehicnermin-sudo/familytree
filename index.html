@@ -488,9 +488,9 @@
         </div>
 
         <div class="btn-group">
-            <button id="tabPoster" class="tab-btn active" onclick="loadTree('Porodicno_Stablo_Zehic_A0.svg', this, 'main')">🌳 Bilateralni Poster A0/A1 <span class="badge">401</span></button>
+            <button id="tabPoster" class="tab-btn active" onclick="loadTree('Porodicno_Stablo_Zehic_A0.svg', this, 'main')">🌳 Bilateralni Poster A0/A1 <span class="badge">416</span></button>
             <button id="tabAdem" class="tab-btn" onclick="loadTree('Branche_Adem.svg', this, 'branch')" style="border-left: 3px solid #16a34a;">Grana Adem <span class="badge">177</span></button>
-            <button id="tabOsman" class="tab-btn" onclick="loadTree('Branche_Osman.svg', this, 'branch')" style="border-left: 3px solid #0284c7;">Grana Osman <span class="badge">152</span></button>
+            <button id="tabOsman" class="tab-btn" onclick="loadTree('Branche_Osman.svg', this, 'branch')" style="border-left: 3px solid #0284c7;">Grana Osman <span class="badge">167</span></button>
             <button id="tabMeho" class="tab-btn" onclick="loadTree('Branche_Meho.svg', this, 'branch')" style="border-left: 3px solid #d97706;">Grana Meho <span class="badge">69</span></button>
         </div>
 
@@ -556,7 +556,7 @@
 
                 <!-- Grana Osman -->
                 <div class="download-card" style="border-top: 3px solid #0284c7;">
-                    <div class="download-title">🌊 Grana Osman (152 člana)</div>
+                    <div class="download-title">🌊 Grana Osman (167 članova)</div>
                     <div class="download-desc">Horizontalno stablo loze Osmana i Hate kroz generacije.</div>
                     <div class="download-actions">
                         <a href="Grana_Osman_A3.pdf" download="Grana_Osman_A3.pdf" class="btn-download-a3">📄 Format A3</a>
@@ -672,9 +672,9 @@
             }
 
             if (url.includes('Adem')) viewLabel.textContent = 'Grana Adem (177)';
-            else if (url.includes('Osman')) viewLabel.textContent = 'Grana Osman (152)';
+            else if (url.includes('Osman')) viewLabel.textContent = 'Grana Osman (167)';
             else if (url.includes('Meho')) viewLabel.textContent = 'Grana Meho (69)';
-            else viewLabel.textContent = 'Bilateralni Poster A0/A1 (401)';
+            else viewLabel.textContent = 'Bilateralni Poster A0/A1 (416)';
 
             fetch(url)
                 .then(res => res.text())
