@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <title>PORODIČNO STABLO ZEHIĆ - Bilateralni Poster &amp; SQL Baza</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="members_data.js"></script>
+    <script src="tree_coords.js"></script>
     <style>
         :root {
             --bg-dark: #0b0f19;
@@ -1323,17 +1325,26 @@
                 }
             };
 
-            if (treeCoords && treeCoords.main) {
-                executeLocate(treeCoords);
+            const directCoords = window.ZEHIC_TREE_COORDS || treeCoords;
+            if (directCoords && directCoords.main) {
+                executeLocate(directCoords);
             } else {
-                fetch('data/tree_coords.json')
+                fetch('tree_coords.json')
                     .then(r => r.json())
                     .then(data => {
                         treeCoords = data;
                         executeLocate(data);
                     })
                     .catch(() => {
-                        focusIbrahimDirect();
+                        fetch('data/tree_coords.json')
+                            .then(r => r.json())
+                            .then(data => {
+                                treeCoords = data;
+                                executeLocate(data);
+                            })
+                            .catch(() => {
+                                focusIbrahimDirect();
+                            });
                     });
             }
         }

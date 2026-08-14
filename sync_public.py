@@ -1,26 +1,39 @@
 # -*- coding: utf-8 -*-
-"""
-Sync all web assets to public folder and configure vercel.json for 100% reliable routing
-"""
-import os
 import shutil
+import os
 
-os.makedirs("public", exist_ok=True)
-
-# Copy all static assets to public as well
-static_files = [
+files_to_sync = [
     "index.html",
+    "tree_coords.js",
+    "members_data.js",
+    "tree_coords.json",
     "Porodicno_Stablo_Zehic_A0.svg",
-    "Arbre_Genealogique_A0_Bilateral.svg",
-    "Arbre_Genealogique_Complet.svg",
     "Branche_Adem.svg",
     "Branche_Osman.svg",
-    "Branche_Meho.svg"
+    "Branche_Meho.svg",
+    "Porodicno_Stablo_Zehic_A3.pdf",
+    "Grana_Adem_A3.pdf",
+    "Grana_Osman_A3.pdf",
+    "Grana_Meho_A3.pdf",
+    "Porodicno_Stablo_Zehic_A0.pdf",
+    "Grana_Adem.pdf",
+    "Grana_Osman.pdf",
+    "Grana_Meho.pdf"
 ]
 
-for f in static_files:
+os.makedirs("public", exist_ok=True)
+os.makedirs("public/data", exist_ok=True)
+
+for f in files_to_sync:
     if os.path.exists(f):
         shutil.copy(f, os.path.join("public", f))
-        print(f"Copied {f} -> public/{f}")
 
-print("Static assets synced to public/ successfully!")
+if os.path.exists("data/members.json"):
+    shutil.copy("data/members.json", "public/data/members.json")
+    shutil.copy("data/members.json", "public/members.json")
+
+if os.path.exists("data/tree_coords.json"):
+    shutil.copy("data/tree_coords.json", "public/data/tree_coords.json")
+    shutil.copy("data/tree_coords.json", "public/tree_coords.json")
+
+print("All assets successfully synced to public/ directory!")
