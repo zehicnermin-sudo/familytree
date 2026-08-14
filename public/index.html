@@ -19,14 +19,15 @@
         
         html, body {
             width: 100%;
-            height: 100%;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
             overflow: hidden;
-            background: var(--bg-dark);
+            background: #0f172a;
             color: var(--text-main);
             font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             display: flex;
             flex-direction: column;
-            position: fixed;
         }
 
         /* ══════════════════════════════════════════════════════
@@ -107,13 +108,13 @@
             background: #2563eb;
             color: #fff;
             border: 1px solid #60a5fa;
-            width: 38px;
-            height: 38px;
+            width: 40px;
+            height: 40px;
             border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.25rem;
+            font-size: 1.3rem;
             cursor: pointer;
             box-shadow: 0 2px 10px rgba(37, 99, 235, 0.35);
         }
@@ -141,8 +142,8 @@
             position: fixed;
             top: 0;
             right: 0;
-            width: 82vw;
-            max-width: 330px;
+            width: 84vw;
+            max-width: 340px;
             height: 100%;
             background: #0f172a;
             border-left: 1px solid rgba(255, 255, 255, 0.15);
@@ -174,13 +175,13 @@
             background: rgba(255,255,255,0.08);
             border: 1px solid rgba(255,255,255,0.15);
             color: #cbd5e1;
-            width: 34px;
-            height: 34px;
+            width: 36px;
+            height: 36px;
             border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.1rem;
+            font-size: 1.15rem;
             cursor: pointer;
         }
         .drawer-content {
@@ -207,7 +208,7 @@
             background: var(--surface);
             color: #f8fafc;
             border: 1px solid rgba(255, 255, 255, 0.08);
-            padding: 11px 14px;
+            padding: 12px 14px;
             border-radius: 10px;
             font-size: 0.86rem;
             font-weight: 700;
@@ -352,10 +353,12 @@
         .dropdown-meta { font-size: 0.74rem; color: var(--text-muted); }
 
         /* ══════════════════════════════════════════════════════
-           CANVAS VIEWPORT & ANTI-FLICKER HARDWARE ACCELERATION
+           CANVAS VIEWPORT
            ══════════════════════════════════════════════════════ */
         #canvasViewport {
             flex: 1;
+            width: 100%;
+            height: 100%;
             position: relative;
             background: #f1f5f9;
             overflow: hidden;
@@ -363,9 +366,6 @@
             touch-action: none;
             user-select: none;
             -webkit-user-select: none;
-            /* Hardware acceleration context */
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
         }
         #canvasViewport:active { cursor: grabbing; }
 
@@ -374,14 +374,11 @@
             top: 0;
             left: 0;
             transform-origin: 0 0;
-            /* Anti-flickering properties */
             will-change: transform;
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-            -webkit-perspective: 1000;
-            perspective: 1000;
-            transform-style: preserve-3d;
-            -webkit-transform-style: preserve-3d;
+            display: inline-block;
+        }
+        #svgWrapper svg {
+            display: block;
         }
         #svgWrapper.smooth-transition {
             transition: transform 0.35s cubic-bezier(0.2, 0.9, 0.3, 1);
@@ -678,7 +675,7 @@
         </div>
     </header>
 
-    <!-- 2. MOBILE TOP BAR (Za mobitele - Čisti minimalistički vrh sa ☰ dugmetom) -->
+    <!-- 2. MOBILE TOP BAR (Za mobitele) -->
     <header class="mobile-header">
         <div class="mobile-brand" onclick="clickCentarButton()">
             <h1>PORODIČNO STABLO ZEHIĆ</h1>
@@ -910,7 +907,6 @@
         let currentSvgUrl = 'Porodicno_Stablo_Zehic_A0.svg';
         let svgElement = null;
         let allSqlMembers = [];
-        let rafId = null;
 
         const viewport = document.getElementById('canvasViewport');
         const wrapper = document.getElementById('svgWrapper');
@@ -921,15 +917,9 @@
             return window.innerWidth <= 900;
         }
 
-        // Hardware-accelerated 3D Transform to prevent any GPU flickering
-        function renderTransform() {
-            wrapper.style.transform = `translate3d(${posX}px, ${posY}px, 0) scale(${scale})`;
+        function updateTransform() {
+            wrapper.style.transform = `translate(${posX}px, ${posY}px) scale(${scale})`;
             if (zoomLabel) zoomLabel.textContent = Math.round(scale * 100) + '%';
-        }
-
-        function requestUpdateTransform() {
-            if (rafId) cancelAnimationFrame(rafId);
-            rafId = requestAnimationFrame(renderTransform);
         }
 
         function triggerSmoothTransition() {
@@ -961,25 +951,32 @@
             syncActiveTabs(url);
 
             fetch(url)
-                .then(res => res.text())
+                .then(res => {
+                    if (!res.ok) throw new Error("HTTP error " + res.status);
+                    return res.text();
+                })
                 .then(svgText => {
                     wrapper.innerHTML = svgText;
                     svgElement = wrapper.querySelector('svg');
                     
-                    if (mode === 'branch') {
-                        focusBranchStart();
-                    } else {
-                        focusIbrahimDirect();
-                    }
+                    setTimeout(() => {
+                        if (mode === 'branch') {
+                            focusBranchStart();
+                        } else {
+                            focusIbrahimDirect();
+                        }
+                    }, 50);
+                })
+                .catch(err => {
+                    console.error("Error loading SVG:", err);
                 });
         }
 
         function focusBranchStart() {
             triggerSmoothTransition();
-            // Higher scale on mobile for instant crisp readability
-            scale = isMobile() ? 1.45 : 0.95;
-            const vw = viewport.clientWidth;
-            const vh = viewport.clientHeight;
+            scale = isMobile() ? 1.4 : 0.95;
+            const vw = viewport.clientWidth || window.innerWidth;
+            const vh = viewport.clientHeight || (window.innerHeight - 60);
 
             if (svgElement) {
                 const firstCard = svgElement.querySelector('g[transform]');
@@ -994,7 +991,7 @@
                 posX = isMobile() ? 20 : 80;
                 posY = vh / 2 - targetY * scale;
             }
-            renderTransform();
+            updateTransform();
         }
 
         function clickCentarButton() {
@@ -1007,15 +1004,14 @@
 
         function focusIbrahimDirect() {
             triggerSmoothTransition();
-            // On mobile start at scale 1.55 so names are huge & crystal clear
-            scale = isMobile() ? 1.55 : 1.05;
-            const vw = viewport.clientWidth;
-            const vh = viewport.clientHeight;
+            scale = isMobile() ? 1.45 : 1.05;
+            const vw = viewport.clientWidth || window.innerWidth;
+            const vh = viewport.clientHeight || (window.innerHeight - 60);
+
+            let targetX = 2154 + 119;
+            let targetY = 4297 + 45;
 
             if (svgElement) {
-                let targetX = null;
-                let targetY = null;
-
                 const groups = svgElement.querySelectorAll('g[transform]');
                 for (let g of groups) {
                     const txt = g.textContent;
@@ -1029,17 +1025,11 @@
                         }
                     }
                 }
-
-                if (targetX !== null && targetY !== null) {
-                    posX = vw / 2 - targetX * scale;
-                    posY = vh / 2 - targetY * scale;
-                } else {
-                    const vb = svgElement.viewBox.baseVal;
-                    posX = vw / 2 - (vb.width / 2) * scale;
-                    posY = vh / 2 - (vb.height / 2) * scale;
-                }
             }
-            renderTransform();
+
+            posX = vw / 2 - targetX * scale;
+            posY = vh / 2 - targetY * scale;
+            updateTransform();
         }
 
         function zoom(factor, clientX, clientY) {
@@ -1047,6 +1037,9 @@
             let newScale = scale * factor;
             newScale = Math.min(Math.max(0.04, newScale), 10.0);
             
+            const vw = viewport.clientWidth || window.innerWidth;
+            const vh = viewport.clientHeight || (window.innerHeight - 60);
+
             if (clientX !== undefined && clientY !== undefined) {
                 const rect = viewport.getBoundingClientRect();
                 const mouseX = clientX - rect.left;
@@ -1054,25 +1047,23 @@
                 posX = mouseX - (mouseX - posX) * (newScale / oldScale);
                 posY = mouseY - (mouseY - posY) * (newScale / oldScale);
             } else {
-                const vw = viewport.clientWidth;
-                const vh = viewport.clientHeight;
                 posX = vw / 2 - (vw / 2 - posX) * (newScale / oldScale);
                 posY = vh / 2 - (vh / 2 - posY) * (newScale / oldScale);
             }
             scale = newScale;
-            renderTransform();
+            updateTransform();
         }
 
         function fitView() {
             if (!svgElement) return;
             triggerSmoothTransition();
             const vb = svgElement.viewBox.baseVal;
-            const vw = viewport.clientWidth;
-            const vh = viewport.clientHeight;
+            const vw = viewport.clientWidth || window.innerWidth;
+            const vh = viewport.clientHeight || (window.innerHeight - 60);
             scale = Math.min(vw / vb.width, vh / vb.height) * 0.95;
             posX = vw / 2 - (vb.x + vb.width / 2) * scale;
             posY = 15;
-            renderTransform();
+            updateTransform();
         }
 
         /* ── MOUSE EVENTS (DESKTOP) ── */
@@ -1087,7 +1078,7 @@
             if (!isDragging) return;
             posX = e.clientX - startX;
             posY = e.clientY - startY;
-            requestUpdateTransform();
+            updateTransform();
         });
 
         window.addEventListener('mouseup', () => {
@@ -1100,7 +1091,7 @@
             zoom(factor, e.clientX, e.clientY);
         }, { passive: false });
 
-        /* ── TOUCH EVENTS (FLICKER-FREE PINCH & PAN) ── */
+        /* ── TOUCH EVENTS (PINCH & PAN) ── */
         let initialDistance = 0;
         let initialScale = 1;
         let lastTouchX = 0;
@@ -1124,7 +1115,7 @@
         viewport.addEventListener('touchstart', (e) => {
             if (e.target.closest('.controls-toolbar') || e.target.closest('.info-pill') || e.target.closest('.modal-overlay') || e.target.closest('.side-drawer')) return;
             
-            wrapper.classList.remove('smooth-transition'); // Disable CSS transitions during active drag
+            wrapper.classList.remove('smooth-transition');
 
             if (e.touches.length === 1) {
                 const now = Date.now();
@@ -1149,7 +1140,7 @@
             if (touchMode === 'pan' && e.touches.length === 1) {
                 posX = e.touches[0].clientX - lastTouchX;
                 posY = e.touches[0].clientY - lastTouchY;
-                requestUpdateTransform();
+                updateTransform();
             } else if (touchMode === 'pinch' && e.touches.length === 2) {
                 const currentDistance = getTouchDistance(e);
                 if (initialDistance > 0) {
@@ -1166,7 +1157,7 @@
                     posX = mouseX - (mouseX - posX) * (newScale / scale);
                     posY = mouseY - (mouseY - posY) * (newScale / scale);
                     scale = newScale;
-                    requestUpdateTransform();
+                    updateTransform();
                 }
             }
         }, { passive: true });
@@ -1312,11 +1303,11 @@
         function focusCoords(x, y) {
             triggerSmoothTransition();
             scale = isMobile() ? 1.65 : 1.35;
-            const vw = viewport.clientWidth;
-            const vh = viewport.clientHeight;
+            const vw = viewport.clientWidth || window.innerWidth;
+            const vh = viewport.clientHeight || (window.innerHeight - 60);
             posX = vw / 2 - (x + 119) * scale;
             posY = vh / 2 - (y + 35) * scale;
-            renderTransform();
+            updateTransform();
         }
 
         // Welcome / About Modal
@@ -1422,10 +1413,10 @@
 
         // Window resize adapter
         window.addEventListener('resize', () => {
-            renderTransform();
+            updateTransform();
         });
 
-        // Initialize & Check First-time Welcome Popup
+        // Initialize & Load tree
         loadTree('Porodicno_Stablo_Zehic_A0.svg', null, 'main');
 
         window.addEventListener('DOMContentLoaded', () => {
