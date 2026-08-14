@@ -453,8 +453,10 @@ def render_illustrator_svg(nodes, lines, max_height, top_offset):
             initial = name[0] if name else "?"
 
             badge = ""
-            if "Poginu" in notes:
-                badge = f'''<rect x="{w - 74}" y="6" width="68" height="18" rx="9" fill="#FEE2E2" stroke="#EF4444" stroke-width="1"/><text x="{w - 40}" y="19" font-size="9.5" font-weight="800" fill="#B91C1C" text-anchor="middle">Poginuo</text>'''
+            if "Pogin" in notes:
+                badge_text = "Poginula" if not is_male else "Poginuo"
+                badge_w = 72 if badge_text == "Poginula" else 64
+                badge = f'''<rect x="{w - badge_w - 6}" y="6" width="{badge_w}" height="18" rx="9" fill="#FEE2E2" stroke="#EF4444" stroke-width="1"/><text x="{w - badge_w/2 - 6}" y="19" font-size="9.5" font-weight="800" fill="#B91C1C" text-anchor="middle">{badge_text}</text>'''
             elif notes and notes not in ["Supruga", "Suprug"]:
                 clean_n = notes.replace("u. ", "u. ").replace("r. ", "r. ")
                 if len(clean_n) > 22:
@@ -479,7 +481,7 @@ def render_illustrator_svg(nodes, lines, max_height, top_offset):
 ''')
             if dates:
                 svg.append(f'''<text x="44" y="42" font-size="10.5" font-weight="700" fill="#64748B">🗓 {dates}</text>''')
-            elif notes and "Poginu" not in notes and notes not in ["Supruga", "Suprug"]:
+            elif notes and "Pogin" not in notes and notes not in ["Supruga", "Suprug"]:
                 display_note = notes
                 if len(display_note) > 24:
                     display_note = display_note[:22] + "…"
@@ -508,8 +510,10 @@ def render_illustrator_svg(nodes, lines, max_height, top_offset):
             sp_notes = spouse.get("notes", "")
 
             badge = ""
-            if "Poginu" in notes:
-                badge = f'''<rect x="{w - 74}" y="6" width="68" height="18" rx="9" fill="#FEE2E2" stroke="#EF4444" stroke-width="1"/><text x="{w - 40}" y="19" font-size="9.5" font-weight="800" fill="#B91C1C" text-anchor="middle">Poginuo</text>'''
+            if "Pogin" in notes:
+                badge_text = "Poginula" if not is_male_p else "Poginuo"
+                badge_w = 72 if badge_text == "Poginula" else 64
+                badge = f'''<rect x="{w - badge_w - 6}" y="6" width="{badge_w}" height="18" rx="9" fill="#FEE2E2" stroke="#EF4444" stroke-width="1"/><text x="{w - badge_w/2 - 6}" y="19" font-size="9.5" font-weight="800" fill="#B91C1C" text-anchor="middle">{badge_text}</text>'''
 
             has_real_sp_note = sp_notes and sp_notes not in ["Supruga", "Suprug"]
             sp_y_name = 62 if not has_real_sp_note else 59

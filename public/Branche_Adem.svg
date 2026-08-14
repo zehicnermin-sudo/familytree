@@ -118,7 +118,7 @@
     <circle cx="22" cy="26.0" r="13" fill="#DBEAFE" />
     <text x="22" y="30.5" font-size="11" font-weight="900" fill="#1E40AF" text-anchor="middle">O</text>
     
-    <rect x="164" y="6" width="68" height="18" rx="9" fill="#FEE2E2" stroke="#EF4444" stroke-width="1"/><text x="198" y="19" font-size="9.5" font-weight="800" fill="#B91C1C" text-anchor="middle">Poginuo</text>
+    <rect x="168" y="6" width="64" height="18" rx="9" fill="#FEE2E2" stroke="#EF4444" stroke-width="1"/><text x="200.0" y="19" font-size="9.5" font-weight="800" fill="#B91C1C" text-anchor="middle">Poginuo</text>
     
     <text x="44" y="27" font-size="15" font-weight="900" fill="#1D4ED8">Osman</text>
 </g>
@@ -131,7 +131,7 @@
     <circle cx="22" cy="26.0" r="13" fill="#DBEAFE" />
     <text x="22" y="30.5" font-size="11" font-weight="900" fill="#1E40AF" text-anchor="middle">N</text>
     
-    <rect x="164" y="6" width="68" height="18" rx="9" fill="#FEE2E2" stroke="#EF4444" stroke-width="1"/><text x="198" y="19" font-size="9.5" font-weight="800" fill="#B91C1C" text-anchor="middle">Poginuo</text>
+    <rect x="168" y="6" width="64" height="18" rx="9" fill="#FEE2E2" stroke="#EF4444" stroke-width="1"/><text x="200.0" y="19" font-size="9.5" font-weight="800" fill="#B91C1C" text-anchor="middle">Poginuo</text>
     
     <text x="44" y="27" font-size="15" font-weight="900" fill="#1D4ED8">Nurija</text>
 </g>
@@ -1924,7 +1924,7 @@
     <circle cx="22" cy="26.0" r="13" fill="#DBEAFE" />
     <text x="22" y="30.5" font-size="11" font-weight="900" fill="#1E40AF" text-anchor="middle">A</text>
     
-    <rect x="164" y="6" width="68" height="18" rx="9" fill="#FEE2E2" stroke="#EF4444" stroke-width="1"/><text x="198" y="19" font-size="9.5" font-weight="800" fill="#B91C1C" text-anchor="middle">Poginuo</text>
+    <rect x="168" y="6" width="64" height="18" rx="9" fill="#FEE2E2" stroke="#EF4444" stroke-width="1"/><text x="200.0" y="19" font-size="9.5" font-weight="800" fill="#B91C1C" text-anchor="middle">Poginuo</text>
     
     <text x="44" y="27" font-size="15" font-weight="900" fill="#1D4ED8">Adem</text>
 </g>
@@ -1937,7 +1937,7 @@
     <circle cx="22" cy="26.0" r="13" fill="#DBEAFE" />
     <text x="22" y="30.5" font-size="11" font-weight="900" fill="#1E40AF" text-anchor="middle">H</text>
     
-    <rect x="164" y="6" width="68" height="18" rx="9" fill="#FEE2E2" stroke="#EF4444" stroke-width="1"/><text x="198" y="19" font-size="9.5" font-weight="800" fill="#B91C1C" text-anchor="middle">Poginuo</text>
+    <rect x="168" y="6" width="64" height="18" rx="9" fill="#FEE2E2" stroke="#EF4444" stroke-width="1"/><text x="200.0" y="19" font-size="9.5" font-weight="800" fill="#B91C1C" text-anchor="middle">Poginuo</text>
     
     <text x="44" y="27" font-size="15" font-weight="900" fill="#1D4ED8">Halil</text>
 </g>
