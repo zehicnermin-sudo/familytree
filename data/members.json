@@ -705,21 +705,6 @@
     "je_supruznik": 0
   },
   {
-    "id": "izet_sajtan",
-    "ime": "Izet",
-    "prezime": "Zehić",
-    "spol": "M",
-    "generacija": 4,
-    "grana": "Grana Adem",
-    "datumi": "",
-    "napomene": "",
-    "roditelj_id": "sajtan_adem",
-    "ime_roditelja": "Sajtan",
-    "supruznik_ime": "",
-    "supruznik_napomene": "",
-    "je_supruznik": 0
-  },
-  {
     "id": "izeta_ibrahim_a",
     "ime": "Izeta",
     "prezime": "Zehić",
@@ -777,21 +762,6 @@
     "ime_roditelja": "Sajtan",
     "supruznik_ime": "Šuhra",
     "supruznik_napomene": "Supruga",
-    "je_supruznik": 0
-  },
-  {
-    "id": "muzijet_sajtan",
-    "ime": "Muzijet",
-    "prezime": "Zehić",
-    "spol": "M",
-    "generacija": 4,
-    "grana": "Grana Adem",
-    "datumi": "",
-    "napomene": "",
-    "roditelj_id": "sajtan_adem",
-    "ime_roditelja": "Sajtan",
-    "supruznik_ime": "",
-    "supruznik_napomene": "",
     "je_supruznik": 0
   },
   {
@@ -1785,36 +1755,6 @@
     "je_supruznik": 0
   },
   {
-    "id": "admir_muzijet",
-    "ime": "Admir",
-    "prezime": "Zehić",
-    "spol": "M",
-    "generacija": 5,
-    "grana": "Grana Adem",
-    "datumi": "",
-    "napomene": "",
-    "roditelj_id": "muzijet_sajtan",
-    "ime_roditelja": "Muzijet",
-    "supruznik_ime": "",
-    "supruznik_napomene": "",
-    "je_supruznik": 0
-  },
-  {
-    "id": "almir_muzijet",
-    "ime": "Almir",
-    "prezime": "Zehić",
-    "spol": "M",
-    "generacija": 5,
-    "grana": "Grana Adem",
-    "datumi": "",
-    "napomene": "",
-    "roditelj_id": "muzijet_sajtan",
-    "ime_roditelja": "Muzijet",
-    "supruznik_ime": "",
-    "supruznik_napomene": "",
-    "je_supruznik": 0
-  },
-  {
     "id": "asmir_hadzaga",
     "ime": "Asmir",
     "prezime": "Zehić",
@@ -2115,6 +2055,21 @@
     "je_supruznik": 0
   },
   {
+    "id": "izet_sajtan",
+    "ime": "Izet",
+    "prezime": "Zehić",
+    "spol": "M",
+    "generacija": 5,
+    "grana": "Grana Adem",
+    "datumi": "",
+    "napomene": "",
+    "roditelj_id": "ismet_sajtan",
+    "ime_roditelja": "Ismet",
+    "supruznik_ime": "",
+    "supruznik_napomene": "",
+    "je_supruznik": 0
+  },
+  {
     "id": "izeta_husnija",
     "ime": "Izeta",
     "prezime": "Zehić",
@@ -2280,6 +2235,21 @@
     "je_supruznik": 0
   },
   {
+    "id": "muzijet_sajtan",
+    "ime": "Muzijet",
+    "prezime": "Zehić",
+    "spol": "M",
+    "generacija": 5,
+    "grana": "Grana Adem",
+    "datumi": "",
+    "napomene": "",
+    "roditelj_id": "ismet_sajtan",
+    "ime_roditelja": "Ismet",
+    "supruznik_ime": "",
+    "supruznik_napomene": "",
+    "je_supruznik": 0
+  },
+  {
     "id": "nesad_beriz",
     "ime": "Nešad",
     "prezime": "Zehić",
@@ -2410,36 +2380,6 @@
     "napomene": "",
     "roditelj_id": "mustafa_sajtan",
     "ime_roditelja": "Mustafa",
-    "supruznik_ime": "",
-    "supruznik_napomene": "",
-    "je_supruznik": 0
-  },
-  {
-    "id": "senad_izet_s",
-    "ime": "Senad",
-    "prezime": "Zehić",
-    "spol": "M",
-    "generacija": 5,
-    "grana": "Grana Adem",
-    "datumi": "",
-    "napomene": "",
-    "roditelj_id": "izet_sajtan",
-    "ime_roditelja": "Izet",
-    "supruznik_ime": "",
-    "supruznik_napomene": "",
-    "je_supruznik": 0
-  },
-  {
-    "id": "senada_izet_s",
-    "ime": "Senada",
-    "prezime": "Zehić",
-    "spol": "Ž",
-    "generacija": 5,
-    "grana": "Grana Adem",
-    "datumi": "",
-    "napomene": "",
-    "roditelj_id": "izet_sajtan",
-    "ime_roditelja": "Izet",
     "supruznik_ime": "",
     "supruznik_napomene": "",
     "je_supruznik": 0
@@ -3645,6 +3585,21 @@
     "je_supruznik": 0
   },
   {
+    "id": "admir_muzijet",
+    "ime": "Admir",
+    "prezime": "Zehić",
+    "spol": "M",
+    "generacija": 6,
+    "grana": "Grana Adem",
+    "datumi": "",
+    "napomene": "",
+    "roditelj_id": "muzijet_sajtan",
+    "ime_roditelja": "Muzijet",
+    "supruznik_ime": "",
+    "supruznik_napomene": "",
+    "je_supruznik": 0
+  },
+  {
     "id": "admir_adem_at",
     "ime": "Admir",
     "prezime": "Zehić",
@@ -3705,21 +3660,6 @@
     "je_supruznik": 0
   },
   {
-    "id": "ajla_senad_s",
-    "ime": "Ajla",
-    "prezime": "Zehić",
-    "spol": "Ž",
-    "generacija": 6,
-    "grana": "Grana Adem",
-    "datumi": "",
-    "napomene": "",
-    "roditelj_id": "senad_izet_s",
-    "ime_roditelja": "Senad",
-    "supruznik_ime": "",
-    "supruznik_napomene": "",
-    "je_supruznik": 0
-  },
-  {
     "id": "almedina_nesad",
     "ime": "Almedina",
     "prezime": "Zehić",
@@ -3730,6 +3670,21 @@
     "napomene": "",
     "roditelj_id": "nesad_beriz",
     "ime_roditelja": "Nešad",
+    "supruznik_ime": "",
+    "supruznik_napomene": "",
+    "je_supruznik": 0
+  },
+  {
+    "id": "almir_muzijet",
+    "ime": "Almir",
+    "prezime": "Zehić",
+    "spol": "M",
+    "generacija": 6,
+    "grana": "Grana Adem",
+    "datumi": "",
+    "napomene": "",
+    "roditelj_id": "muzijet_sajtan",
+    "ime_roditelja": "Muzijet",
     "supruznik_ime": "",
     "supruznik_napomene": "",
     "je_supruznik": 0
@@ -3805,21 +3760,6 @@
     "napomene": "",
     "roditelj_id": "asmir_hadzaga",
     "ime_roditelja": "Asmir",
-    "supruznik_ime": "",
-    "supruznik_napomene": "",
-    "je_supruznik": 0
-  },
-  {
-    "id": "anela_almir_m",
-    "ime": "Anela",
-    "prezime": "Zehić",
-    "spol": "Ž",
-    "generacija": 6,
-    "grana": "Grana Adem",
-    "datumi": "",
-    "napomene": "",
-    "roditelj_id": "almir_muzijet",
-    "ime_roditelja": "Almir",
     "supruznik_ime": "",
     "supruznik_napomene": "",
     "je_supruznik": 0
@@ -3930,21 +3870,6 @@
     "je_supruznik": 0
   },
   {
-    "id": "dalila_admir_m",
-    "ime": "Dalila",
-    "prezime": "Zehić",
-    "spol": "Ž",
-    "generacija": 6,
-    "grana": "Grana Adem",
-    "datumi": "",
-    "napomene": "",
-    "roditelj_id": "admir_muzijet",
-    "ime_roditelja": "Admir",
-    "supruznik_ime": "",
-    "supruznik_napomene": "",
-    "je_supruznik": 0
-  },
-  {
     "id": "dzenan_nesad",
     "ime": "Dženan",
     "prezime": "Zehić",
@@ -4045,21 +3970,6 @@
     "napomene": "",
     "roditelj_id": "sadik_hadzaga",
     "ime_roditelja": "Sadik",
-    "supruznik_ime": "",
-    "supruznik_napomene": "",
-    "je_supruznik": 0
-  },
-  {
-    "id": "ilda_admir_m",
-    "ime": "Ilda",
-    "prezime": "Zehić",
-    "spol": "Ž",
-    "generacija": 6,
-    "grana": "Grana Adem",
-    "datumi": "",
-    "napomene": "",
-    "roditelj_id": "admir_muzijet",
-    "ime_roditelja": "Admir",
     "supruznik_ime": "",
     "supruznik_napomene": "",
     "je_supruznik": 0
@@ -4183,21 +4093,6 @@
     "supruznik_ime": "Azra",
     "supruznik_napomene": "r. Zehić",
     "je_supruznik": 1
-  },
-  {
-    "id": "najla_senad_s",
-    "ime": "Najla",
-    "prezime": "Zehić",
-    "spol": "Ž",
-    "generacija": 6,
-    "grana": "Grana Adem",
-    "datumi": "",
-    "napomene": "",
-    "roditelj_id": "senad_izet_s",
-    "ime_roditelja": "Senad",
-    "supruznik_ime": "",
-    "supruznik_napomene": "",
-    "je_supruznik": 0
   },
   {
     "id": "nedzad_dzevad",
@@ -4330,6 +4225,36 @@
     "napomene": "",
     "roditelj_id": "bekrija_mustafa",
     "ime_roditelja": "Bekrija",
+    "supruznik_ime": "",
+    "supruznik_napomene": "",
+    "je_supruznik": 0
+  },
+  {
+    "id": "senad_izet_s",
+    "ime": "Senad",
+    "prezime": "Zehić",
+    "spol": "M",
+    "generacija": 6,
+    "grana": "Grana Adem",
+    "datumi": "",
+    "napomene": "",
+    "roditelj_id": "izet_sajtan",
+    "ime_roditelja": "Izet",
+    "supruznik_ime": "",
+    "supruznik_napomene": "",
+    "je_supruznik": 0
+  },
+  {
+    "id": "senada_izet_s",
+    "ime": "Senada",
+    "prezime": "Zehić",
+    "spol": "Ž",
+    "generacija": 6,
+    "grana": "Grana Adem",
+    "datumi": "",
+    "napomene": "",
+    "roditelj_id": "izet_sajtan",
+    "ime_roditelja": "Izet",
     "supruznik_ime": "",
     "supruznik_napomene": "",
     "je_supruznik": 0
@@ -5520,6 +5445,36 @@
     "je_supruznik": 0
   },
   {
+    "id": "ajla_senad_s",
+    "ime": "Ajla",
+    "prezime": "Zehić",
+    "spol": "Ž",
+    "generacija": 7,
+    "grana": "Grana Adem",
+    "datumi": "",
+    "napomene": "",
+    "roditelj_id": "senad_izet_s",
+    "ime_roditelja": "Senad",
+    "supruznik_ime": "",
+    "supruznik_napomene": "",
+    "je_supruznik": 0
+  },
+  {
+    "id": "anela_almir_m",
+    "ime": "Anela",
+    "prezime": "Zehić",
+    "spol": "Ž",
+    "generacija": 7,
+    "grana": "Grana Adem",
+    "datumi": "",
+    "napomene": "",
+    "roditelj_id": "almir_muzijet",
+    "ime_roditelja": "Almir",
+    "supruznik_ime": "",
+    "supruznik_napomene": "",
+    "je_supruznik": 0
+  },
+  {
     "id": "armin_zaim",
     "ime": "Armin",
     "prezime": "Zehić",
@@ -5575,6 +5530,21 @@
     "napomene": "",
     "roditelj_id": "haris_izet_h",
     "ime_roditelja": "Haris",
+    "supruznik_ime": "",
+    "supruznik_napomene": "",
+    "je_supruznik": 0
+  },
+  {
+    "id": "dalila_admir_m",
+    "ime": "Dalila",
+    "prezime": "Zehić",
+    "spol": "Ž",
+    "generacija": 7,
+    "grana": "Grana Adem",
+    "datumi": "",
+    "napomene": "",
+    "roditelj_id": "admir_muzijet",
+    "ime_roditelja": "Admir",
     "supruznik_ime": "",
     "supruznik_napomene": "",
     "je_supruznik": 0
@@ -5685,6 +5655,21 @@
     "je_supruznik": 0
   },
   {
+    "id": "ilda_admir_m",
+    "ime": "Ilda",
+    "prezime": "Zehić",
+    "spol": "Ž",
+    "generacija": 7,
+    "grana": "Grana Adem",
+    "datumi": "",
+    "napomene": "",
+    "roditelj_id": "admir_muzijet",
+    "ime_roditelja": "Admir",
+    "supruznik_ime": "",
+    "supruznik_napomene": "",
+    "je_supruznik": 0
+  },
+  {
     "id": "lejla_nedzad_h",
     "ime": "Lejla",
     "prezime": "Zehić",
@@ -5710,6 +5695,21 @@
     "napomene": "",
     "roditelj_id": "adnan_fahrudin",
     "ime_roditelja": "Adnan",
+    "supruznik_ime": "",
+    "supruznik_napomene": "",
+    "je_supruznik": 0
+  },
+  {
+    "id": "najla_senad_s",
+    "ime": "Najla",
+    "prezime": "Zehić",
+    "spol": "Ž",
+    "generacija": 7,
+    "grana": "Grana Adem",
+    "datumi": "",
+    "napomene": "",
+    "roditelj_id": "senad_izet_s",
+    "ime_roditelja": "Senad",
     "supruznik_ime": "",
     "supruznik_napomene": "",
     "je_supruznik": 0
