@@ -353,7 +353,7 @@
         .dropdown-meta { font-size: 0.74rem; color: var(--text-muted); }
 
         /* ══════════════════════════════════════════════════════
-           CANVAS VIEWPORT
+           CANVAS VIEWPORT & HIGH PERFORMANCE LAYER
            ══════════════════════════════════════════════════════ */
         #canvasViewport {
             flex: 1;
@@ -375,13 +375,35 @@
             left: 0;
             transform-origin: 0 0;
             will-change: transform;
-            display: inline-block;
-        }
-        #svgWrapper svg {
             display: block;
         }
+        #treeImg {
+            display: block;
+            pointer-events: none;
+            user-select: none;
+            -webkit-user-drag: none;
+        }
         #svgWrapper.smooth-transition {
-            transition: transform 0.35s cubic-bezier(0.2, 0.9, 0.3, 1);
+            transition: transform 0.32s cubic-bezier(0.2, 0.9, 0.3, 1);
+        }
+
+        /* Pulse Target Indicator (For Pinpointing Search Members) */
+        #targetPin {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 4px solid #ef4444;
+            background: rgba(239, 68, 68, 0.3);
+            pointer-events: none;
+            display: none;
+            transform: translate(-50%, -50%);
+            animation: pulsePin 1.5s infinite;
+            z-index: 10;
+        }
+        @keyframes pulsePin {
+            0% { transform: translate(-50%, -50%) scale(0.6); opacity: 1; }
+            100% { transform: translate(-50%, -50%) scale(2.0); opacity: 0; }
         }
 
         /* ── Controls Toolbar (Desktop & Mobile) ── */
@@ -656,10 +678,10 @@
         </div>
 
         <div class="btn-group">
-            <button class="tab-btn active btn-tab-main" onclick="loadTree('Porodicno_Stablo_Zehic_A0.svg', this, 'main')">🌳 Bilateralni Poster A0/A1 <span class="badge">416</span></button>
-            <button class="tab-btn btn-tab-adem" onclick="loadTree('Branche_Adem.svg', this, 'branch')" style="border-left: 3px solid #16a34a;">Grana Adem <span class="badge">177</span></button>
-            <button class="tab-btn btn-tab-osman" onclick="loadTree('Branche_Osman.svg', this, 'branch')" style="border-left: 3px solid #0284c7;">Grana Osman <span class="badge">167</span></button>
-            <button class="tab-btn btn-tab-meho" onclick="loadTree('Branche_Meho.svg', this, 'branch')" style="border-left: 3px solid #d97706;">Grana Meho <span class="badge">69</span></button>
+            <button class="tab-btn active btn-tab-main" onclick="loadTree('Porodicno_Stablo_Zehic_A0.svg', this, 'main', 4546, 8504)">🌳 Bilateralni Poster A0/A1 <span class="badge">416</span></button>
+            <button class="tab-btn btn-tab-adem" onclick="loadTree('Branche_Adem.svg', this, 'adem', 2102, 6724)" style="border-left: 3px solid #16a34a;">Grana Adem <span class="badge">177</span></button>
+            <button class="tab-btn btn-tab-osman" onclick="loadTree('Branche_Osman.svg', this, 'osman', 2102, 6092)" style="border-left: 3px solid #0284c7;">Grana Osman <span class="badge">167</span></button>
+            <button class="tab-btn btn-tab-meho" onclick="loadTree('Branche_Meho.svg', this, 'meho', 1534, 2432)" style="border-left: 3px solid #d97706;">Grana Meho <span class="badge">69</span></button>
         </div>
 
         <div class="btn-group">
@@ -709,19 +731,19 @@
             <div>
                 <div class="drawer-section-title">🌿 Odaberi Prikaz / Granu</div>
                 <div class="drawer-nav-list">
-                    <button class="drawer-item-btn active btn-tab-main" onclick="loadTree('Porodicno_Stablo_Zehic_A0.svg', this, 'main'); closeDrawer();">
+                    <button class="drawer-item-btn active btn-tab-main" onclick="loadTree('Porodicno_Stablo_Zehic_A0.svg', this, 'main', 4546, 8504); closeDrawer();">
                         <span>🌳 Bilateralni Poster</span>
                         <span class="badge">416</span>
                     </button>
-                    <button class="drawer-item-btn btn-tab-adem" onclick="loadTree('Branche_Adem.svg', this, 'branch'); closeDrawer();" style="border-left: 3px solid #16a34a;">
+                    <button class="drawer-item-btn btn-tab-adem" onclick="loadTree('Branche_Adem.svg', this, 'adem', 2102, 6724); closeDrawer();" style="border-left: 3px solid #16a34a;">
                         <span>🌿 Grana Adem</span>
                         <span class="badge">177</span>
                     </button>
-                    <button class="drawer-item-btn btn-tab-osman" onclick="loadTree('Branche_Osman.svg', this, 'branch'); closeDrawer();" style="border-left: 3px solid #0284c7;">
+                    <button class="drawer-item-btn btn-tab-osman" onclick="loadTree('Branche_Osman.svg', this, 'osman', 2102, 6092); closeDrawer();" style="border-left: 3px solid #0284c7;">
                         <span>🌊 Grana Osman</span>
                         <span class="badge">167</span>
                     </button>
-                    <button class="drawer-item-btn btn-tab-meho" onclick="loadTree('Branche_Meho.svg', this, 'branch'); closeDrawer();" style="border-left: 3px solid #d97706;">
+                    <button class="drawer-item-btn btn-tab-meho" onclick="loadTree('Branche_Meho.svg', this, 'meho', 1534, 2432); closeDrawer();" style="border-left: 3px solid #d97706;">
                         <span>🍯 Grana Meho</span>
                         <span class="badge">69</span>
                     </button>
@@ -751,7 +773,10 @@
 
     <!-- Canvas Viewport -->
     <div id="canvasViewport">
-        <div id="svgWrapper"></div>
+        <div id="svgWrapper">
+            <img id="treeImg" src="Porodicno_Stablo_Zehic_A0.svg" width="4546" height="8504" alt="Porodicno Stablo Zehic" />
+            <div id="targetPin"></div>
+        </div>
     </div>
 
     <!-- Floating Zoom / Control Buttons -->
@@ -904,12 +929,16 @@
         let posY = 0;
         let isDragging = false;
         let startX = 0, startY = 0;
-        let currentSvgUrl = 'Porodicno_Stablo_Zehic_A0.svg';
-        let svgElement = null;
+        let currentTreeMode = 'main';
+        let currentSvgWidth = 4546;
+        let currentSvgHeight = 8504;
         let allSqlMembers = [];
+        let treeCoords = null;
 
         const viewport = document.getElementById('canvasViewport');
         const wrapper = document.getElementById('svgWrapper');
+        const treeImg = document.getElementById('treeImg');
+        const targetPin = document.getElementById('targetPin');
         const zoomLabel = document.getElementById('zoomLevel');
         const viewLabel = document.getElementById('viewName');
 
@@ -918,7 +947,7 @@
         }
 
         function updateTransform() {
-            wrapper.style.transform = `translate(${posX}px, ${posY}px) scale(${scale})`;
+            wrapper.style.transform = `translate3d(${posX}px, ${posY}px, 0) scale(${scale})`;
             if (zoomLabel) zoomLabel.textContent = Math.round(scale * 100) + '%';
         }
 
@@ -926,18 +955,18 @@
             wrapper.classList.add('smooth-transition');
             setTimeout(() => {
                 wrapper.classList.remove('smooth-transition');
-            }, 360);
+            }, 340);
         }
 
-        function syncActiveTabs(url) {
+        function syncActiveTabs(mode) {
             document.querySelectorAll('.tab-btn, .drawer-item-btn').forEach(b => b.classList.remove('active'));
-            if (url.includes('Adem')) {
+            if (mode === 'adem') {
                 document.querySelectorAll('.btn-tab-adem').forEach(b => b.classList.add('active'));
                 if (viewLabel) viewLabel.textContent = 'Grana Adem (177)';
-            } else if (url.includes('Osman')) {
+            } else if (mode === 'osman') {
                 document.querySelectorAll('.btn-tab-osman').forEach(b => b.classList.add('active'));
                 if (viewLabel) viewLabel.textContent = 'Grana Osman (167)';
-            } else if (url.includes('Meho')) {
+            } else if (mode === 'meho') {
                 document.querySelectorAll('.btn-tab-meho').forEach(b => b.classList.add('active'));
                 if (viewLabel) viewLabel.textContent = 'Grana Meho (69)';
             } else {
@@ -946,57 +975,39 @@
             }
         }
 
-        function loadTree(url, btnElement, mode) {
-            currentSvgUrl = url;
-            syncActiveTabs(url);
+        function loadTree(src, btnElement, mode, w, h) {
+            currentTreeMode = mode;
+            currentSvgWidth = w || 4546;
+            currentSvgHeight = h || 8504;
+            syncActiveTabs(mode);
 
-            fetch(url)
-                .then(res => {
-                    if (!res.ok) throw new Error("HTTP error " + res.status);
-                    return res.text();
-                })
-                .then(svgText => {
-                    wrapper.innerHTML = svgText;
-                    svgElement = wrapper.querySelector('svg');
-                    
-                    setTimeout(() => {
-                        if (mode === 'branch') {
-                            focusBranchStart();
-                        } else {
-                            focusIbrahimDirect();
-                        }
-                    }, 50);
-                })
-                .catch(err => {
-                    console.error("Error loading SVG:", err);
-                });
+            treeImg.width = currentSvgWidth;
+            treeImg.height = currentSvgHeight;
+            treeImg.src = src;
+
+            targetPin.style.display = 'none';
+
+            if (mode === 'main') {
+                focusIbrahimDirect();
+            } else {
+                focusBranchStart();
+            }
         }
 
         function focusBranchStart() {
             triggerSmoothTransition();
-            scale = isMobile() ? 1.4 : 0.95;
+            scale = isMobile() ? 1.35 : 0.95;
             const vw = viewport.clientWidth || window.innerWidth;
             const vh = viewport.clientHeight || (window.innerHeight - 60);
 
-            if (svgElement) {
-                const firstCard = svgElement.querySelector('g[transform]');
-                let targetY = 320;
-                if (firstCard) {
-                    const tr = firstCard.getAttribute('transform');
-                    const m = tr ? tr.match(/translate\(([^,]+),\s*([^)]+)\)/) : null;
-                    if (m) {
-                        targetY = parseFloat(m[2]) + 40;
-                    }
-                }
-                posX = isMobile() ? 20 : 80;
-                posY = vh / 2 - targetY * scale;
-            }
+            posX = isMobile() ? 20 : 60;
+            posY = vh / 2 - 360 * scale;
             updateTransform();
         }
 
         function clickCentarButton() {
-            if (currentSvgUrl !== 'Porodicno_Stablo_Zehic_A0.svg' && currentSvgUrl !== 'Arbre_Genealogique_A0_Bilateral.svg') {
-                loadTree('Porodicno_Stablo_Zehic_A0.svg', null, 'main');
+            if (currentTreeMode !== 'main') {
+                loadTree('Porodicno_Stablo_Zehic_A0.svg', null, 'main', 4546, 8504);
                 return;
             }
             focusIbrahimDirect();
@@ -1008,24 +1019,9 @@
             const vw = viewport.clientWidth || window.innerWidth;
             const vh = viewport.clientHeight || (window.innerHeight - 60);
 
-            let targetX = 2154 + 119;
-            let targetY = 4297 + 45;
-
-            if (svgElement) {
-                const groups = svgElement.querySelectorAll('g[transform]');
-                for (let g of groups) {
-                    const txt = g.textContent;
-                    if (txt.includes('Ibrahim') && (txt.includes('Osnivač') || txt.includes('👑'))) {
-                        const tr = g.getAttribute('transform');
-                        const m = tr ? tr.match(/translate\(([^,]+),\s*([^)]+)\)/) : null;
-                        if (m) {
-                            targetX = parseFloat(m[1]) + 119;
-                            targetY = parseFloat(m[2]) + 45;
-                            break;
-                        }
-                    }
-                }
-            }
+            // Ibrahim center in master poster: x = 2273, y = 4342
+            const targetX = 2273;
+            const targetY = 4342;
 
             posX = vw / 2 - targetX * scale;
             posY = vh / 2 - targetY * scale;
@@ -1055,13 +1051,11 @@
         }
 
         function fitView() {
-            if (!svgElement) return;
             triggerSmoothTransition();
-            const vb = svgElement.viewBox.baseVal;
             const vw = viewport.clientWidth || window.innerWidth;
             const vh = viewport.clientHeight || (window.innerHeight - 60);
-            scale = Math.min(vw / vb.width, vh / vb.height) * 0.95;
-            posX = vw / 2 - (vb.x + vb.width / 2) * scale;
+            scale = Math.min(vw / currentSvgWidth, vh / currentSvgHeight) * 0.95;
+            posX = vw / 2 - (currentSvgWidth / 2) * scale;
             posY = 15;
             updateTransform();
         }
@@ -1091,7 +1085,7 @@
             zoom(factor, e.clientX, e.clientY);
         }, { passive: false });
 
-        /* ── TOUCH EVENTS (PINCH & PAN) ── */
+        /* ── TOUCH EVENTS (PINCH & PAN - 0MS LAG) ── */
         let initialDistance = 0;
         let initialScale = 1;
         let lastTouchX = 0;
@@ -1228,86 +1222,59 @@
                     }
                 })
                 .catch(err => {
-                    onDomSearch(val, dropdownId);
+                    dropdown.style.display = 'none';
                 });
         }
 
-        function onDomSearch(val, dropdownId) {
-            const dropdown = document.getElementById(dropdownId);
-            val = val.toLowerCase().trim();
-            const cards = wrapper.querySelectorAll('g[transform]');
-            const results = [];
-
-            cards.forEach(card => {
-                const texts = card.querySelectorAll('text');
-                texts.forEach(t => {
-                    const name = t.textContent.trim();
-                    const fontSize = parseFloat(t.getAttribute('font-size') || "0");
-                    if (name.toLowerCase().includes(val) && fontSize >= 13) {
-                        const tr = card.getAttribute('transform');
-                        const m = tr ? tr.match(/translate\(([^,]+),\s*([^)]+)\)/) : null;
-                        if (m && !results.some(r => r.name === name)) {
-                            results.push({
-                                name: name,
-                                x: parseFloat(m[1]),
-                                y: parseFloat(m[2])
-                            });
-                        }
-                    }
-                });
-            });
-
-            if (results.length > 0) {
-                dropdown.innerHTML = results.slice(0, 10).map(r => `
-                    <div class="dropdown-item" onclick="focusCoords(${r.x}, ${r.y})">
-                        <div class="dropdown-name" style="color:#60a5fa;">${r.name}</div>
-                        <div class="dropdown-meta">Kliknite za prikaz na stablu</div>
-                    </div>
-                `).join('');
-                dropdown.style.display = 'flex';
-            } else {
-                dropdown.innerHTML = '<div class="dropdown-item" style="color:#94a3b8;">Nema rezultata</div>';
-                dropdown.style.display = 'flex';
-            }
-        }
-
+        // Exact Pinpoint Navigation using precomputed coordinates
         function locateMemberOnTree(name, grana) {
             document.querySelectorAll('.dropdown').forEach(d => d.style.display = 'none');
             closeDrawer();
-            const cards = wrapper.querySelectorAll('g[transform]');
-            let target = null;
 
-            cards.forEach(card => {
-                const texts = card.querySelectorAll('text');
-                texts.forEach(t => {
-                    if (t.textContent.trim().toLowerCase() === name.toLowerCase()) {
-                        const tr = card.getAttribute('transform');
-                        const m = tr ? tr.match(/translate\(([^,]+),\s*([^)]+)\)/) : null;
-                        if (m) {
-                            target = { x: parseFloat(m[1]), y: parseFloat(m[2]) };
-                        }
-                    }
-                });
-            });
-
-            if (target) {
-                focusCoords(target.x, target.y);
+            if (!treeCoords) {
+                fetch('data/tree_coords.json')
+                    .then(r => r.json())
+                    .then(data => {
+                        treeCoords = data;
+                        doLocate(name, grana);
+                    });
             } else {
-                loadTree('Porodicno_Stablo_Zehic_A0.svg', null, 'main');
-                setTimeout(() => {
-                    locateMemberOnTree(name, grana);
-                }, 400);
+                doLocate(name, grana);
             }
         }
 
-        function focusCoords(x, y) {
+        function doLocate(name, grana) {
+            if (currentTreeMode !== 'main') {
+                loadTree('Porodicno_Stablo_Zehic_A0.svg', null, 'main', 4546, 8504);
+            }
+
+            const mainNodes = (treeCoords && treeCoords.main) ? treeCoords.main.nodes : [];
+            const target = mainNodes.find(n => n.name.toLowerCase() === name.toLowerCase() || (n.spouse && n.spouse.toLowerCase() === name.toLowerCase()));
+
+            if (target) {
+                focusCoords(target.cx, target.cy);
+            } else {
+                focusIbrahimDirect();
+            }
+        }
+
+        function focusCoords(cx, cy) {
             triggerSmoothTransition();
             scale = isMobile() ? 1.65 : 1.35;
             const vw = viewport.clientWidth || window.innerWidth;
             const vh = viewport.clientHeight || (window.innerHeight - 60);
-            posX = vw / 2 - (x + 119) * scale;
-            posY = vh / 2 - (y + 35) * scale;
+            
+            posX = vw / 2 - cx * scale;
+            posY = vh / 2 - cy * scale;
             updateTransform();
+
+            // Show pulsing target pin
+            targetPin.style.left = cx + 'px';
+            targetPin.style.top = cy + 'px';
+            targetPin.style.display = 'block';
+            setTimeout(() => {
+                targetPin.style.display = 'none';
+            }, 3500);
         }
 
         // Welcome / About Modal
@@ -1416,8 +1383,14 @@
             updateTransform();
         });
 
-        // Initialize & Load tree
-        loadTree('Porodicno_Stablo_Zehic_A0.svg', null, 'main');
+        // Preload tree coordinates for instant lookup
+        fetch('data/tree_coords.json')
+            .then(r => r.json())
+            .then(data => { treeCoords = data; })
+            .catch(() => {});
+
+        // Initial setup
+        focusIbrahimDirect();
 
         window.addEventListener('DOMContentLoaded', () => {
             if (!localStorage.getItem('zehic_welcome_seen')) {
