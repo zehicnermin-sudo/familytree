@@ -3,7 +3,7 @@ const path = require('path');
 
 module.exports = (req, res) => {
     try {
-        const filePath = path.join(__dirname, 'members.json');
+        const filePath = path.join(process.cwd(), 'data', 'members.json');
         const raw = fs.readFileSync(filePath, 'utf8');
         const members = JSON.parse(raw);
 
