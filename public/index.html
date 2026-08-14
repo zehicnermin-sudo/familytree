@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORODIČNO STABLO ZEHIĆ - Izbor Rasporeda &amp; SQL Baza</title>
+    <title>PORODIČNO STABLO ZEHIĆ - Bilateralni Poster &amp; SQL Baza</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -29,16 +29,16 @@
             background: rgba(15, 23, 42, 0.95);
             backdrop-filter: blur(14px);
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 9px 18px;
+            padding: 10px 20px;
             display: flex;
             align-items: center;
             justify-content: space-between;
             z-index: 50;
-            gap: 10px;
+            gap: 12px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.4);
         }
         .brand h1 {
-            font-size: 1.02rem;
+            font-size: 1.05rem;
             font-weight: 900;
             background: linear-gradient(135deg, #ffffff, #cbd5e1);
             -webkit-background-clip: text;
@@ -46,44 +46,27 @@
             letter-spacing: 0.5px;
         }
         .brand p {
-            font-size: 0.72rem;
+            font-size: 0.75rem;
             color: var(--text-muted);
         }
         .btn-group {
             display: flex;
             align-items: center;
-            gap: 6px;
-            flex-wrap: wrap;
-        }
-        .layout-select {
-            background: #1e293b;
-            color: #f8fafc;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            padding: 7px 12px;
-            border-radius: 8px;
-            font-size: 0.8rem;
-            font-weight: 800;
-            cursor: pointer;
-            outline: none;
-            transition: all 0.2s;
-        }
-        .layout-select:focus {
-            border-color: #3b82f6;
-            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+            gap: 8px;
         }
         .tab-btn {
             background: var(--surface);
             color: var(--text-main);
             border: 1px solid rgba(255, 255, 255, 0.12);
-            padding: 7px 11px;
+            padding: 7px 14px;
             border-radius: 8px;
-            font-size: 0.78rem;
+            font-size: 0.8rem;
             font-weight: 700;
             cursor: pointer;
             transition: all 0.2s;
             display: inline-flex;
             align-items: center;
-            gap: 5px;
+            gap: 6px;
         }
         .tab-btn:hover {
             background: var(--surface-hover);
@@ -125,9 +108,9 @@
         }
         .badge {
             background: rgba(255, 255, 255, 0.15);
-            padding: 2px 6px;
+            padding: 2px 7px;
             border-radius: 12px;
-            font-size: 0.68rem;
+            font-size: 0.7rem;
         }
         .search-container {
             position: relative;
@@ -136,26 +119,25 @@
             background: var(--surface);
             border: 1px solid rgba(255, 255, 255, 0.15);
             border-radius: 8px;
-            padding: 7px 10px 7px 32px;
+            padding: 7px 12px 7px 34px;
             color: #fff;
-            font-size: 0.8rem;
-            width: 190px;
+            font-size: 0.82rem;
+            width: 220px;
             outline: none;
             transition: all 0.2s;
         }
         .search-box:focus {
-            width: 240px;
+            width: 270px;
             border-color: #3b82f6;
             box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
         }
         .search-icon {
             position: absolute;
-            left: 10px;
+            left: 11px;
             top: 50%;
             transform: translateY(-50%);
             color: var(--text-muted);
             pointer-events: none;
-            font-size: 0.8rem;
         }
         .dropdown {
             position: absolute;
@@ -304,7 +286,7 @@
             border: 1px solid rgba(255, 255, 255, 0.15);
             border-radius: 16px;
             width: 100%;
-            max-width: 900px;
+            max-width: 800px;
             max-height: 85vh;
             display: flex;
             flex-direction: column;
@@ -488,13 +470,7 @@
         </div>
 
         <div class="btn-group">
-            <!-- Layout Selector Dropdown -->
-            <select class="layout-select" id="layoutSelect" onchange="onLayoutChange(this.value)">
-                <option value="Porodicno_Stablo_Zehic_Gore_Dole.svg">↕️ Ibrahim u Sredini (2 Loze Gore ⬆ / 2 Loze Dole ⬇)</option>
-                <option value="Porodicno_Stablo_Zehic_A0.svg">↔️ Bilateralni Poster (Lijevo ⬅ / Desno ➡)</option>
-                <option value="Porodicno_Stablo_Zehic_Vertikalno.svg">⬇️ Uspravno / Vertikalno (Od Vrha ka Dnu)</option>
-            </select>
-
+            <button id="tabPoster" class="tab-btn active" onclick="loadTree('Porodicno_Stablo_Zehic_A0.svg', this, 'main')">🌳 Bilateralni Poster A0/A1 <span class="badge">401</span></button>
             <button id="tabAdem" class="tab-btn" onclick="loadTree('Branche_Adem.svg', this, 'branch')" style="border-left: 3px solid #16a34a;">Grana Adem <span class="badge">177</span></button>
             <button id="tabOsman" class="tab-btn" onclick="loadTree('Branche_Osman.svg', this, 'branch')" style="border-left: 3px solid #0284c7;">Grana Osman <span class="badge">152</span></button>
             <button id="tabMeho" class="tab-btn" onclick="loadTree('Branche_Meho.svg', this, 'branch')" style="border-left: 3px solid #d97706;">Grana Meho <span class="badge">69</span></button>
@@ -527,51 +503,31 @@
     <div class="info-pill">
         <div>Zoom: <strong id="zoomLevel">100%</strong></div>
         <div>SQL Baza: <strong>416 članova</strong></div>
-        <div>Raspored: <strong id="viewName">Ibrahim u Sredini (2 Gore / 2 Dole)</strong></div>
+        <div>Prikaz: <strong id="viewName">Bilateralni Poster A0/A1</strong></div>
     </div>
 
     <!-- Download Modal -->
     <div class="modal-overlay" id="downloadModal">
-        <div class="modal-content" style="max-width: 840px;">
+        <div class="modal-content" style="max-width: 780px;">
             <div class="modal-header">
                 <h2>📥 Preuzmi PDF (1 List - Originalna Veličina) &amp; SVG</h2>
                 <button class="close-btn" onclick="closeDownloadModal()">✕</button>
             </div>
             <div class="download-grid">
-                <!-- Up / Down Poster -->
-                <div class="download-card" style="border-top: 3px solid #10b981;">
-                    <div class="download-title">↕️ Ibrahim u Sredini (Gore / Dole)</div>
-                    <div class="download-desc">Ibrahim u sredini, Adem gore, Osman &amp; Meho dole. Vodoravne kartice.</div>
-                    <div class="download-actions">
-                        <a href="Porodicno_Stablo_Zehic_Gore_Dole.pdf" download="Porodicno_Stablo_Zehic_Gore_Dole.pdf" class="btn-download-pdf">📄 PDF</a>
-                        <a href="Porodicno_Stablo_Zehic_Gore_Dole.svg" download="Porodicno_Stablo_Zehic_Gore_Dole.svg" class="btn-download-svg">SVG</a>
-                    </div>
-                </div>
-
-                <!-- Bilateral Poster (Left/Right) -->
+                <!-- Bilateral Poster -->
                 <div class="download-card" style="border-top: 3px solid #3b82f6;">
-                    <div class="download-title">↔️ Bilateralni Poster (Lijevo / Desno)</div>
-                    <div class="download-desc">Ibrahim u sredini, Adem lijevo, Osman/Meho desno. Format A0/A1.</div>
+                    <div class="download-title">🌳 Bilateralni Poster A0/A1 (Cijelo Stablo)</div>
+                    <div class="download-desc">Ibrahim u sredini, Adem lijevo, Osman/Meho desno. 8 generacija.</div>
                     <div class="download-actions">
                         <a href="Porodicno_Stablo_Zehic_A0.pdf" download="Porodicno_Stablo_Zehic_Bilateralni.pdf" class="btn-download-pdf">📄 PDF</a>
                         <a href="Porodicno_Stablo_Zehic_A0.svg" download="Porodicno_Stablo_Zehic_Bilateralni.svg" class="btn-download-svg">SVG</a>
                     </div>
                 </div>
 
-                <!-- Vertical Poster -->
-                <div class="download-card" style="border-top: 3px solid #8b5cf6;">
-                    <div class="download-title">⬇️ Uspravno / Vertikalno</div>
-                    <div class="download-desc">Ibrahim na vrhu (Gen 1) sa granama prema dnu.</div>
-                    <div class="download-actions">
-                        <a href="Porodicno_Stablo_Zehic_Vertikalno.pdf" download="Porodicno_Stablo_Zehic_Vertikalno.pdf" class="btn-download-pdf">📄 PDF</a>
-                        <a href="Porodicno_Stablo_Zehic_Vertikalno.svg" download="Porodicno_Stablo_Zehic_Vertikalno.svg" class="btn-download-svg">SVG</a>
-                    </div>
-                </div>
-
                 <!-- Grana Adem -->
                 <div class="download-card" style="border-top: 3px solid #16a34a;">
                     <div class="download-title">🌿 Grana Adem (177 članova)</div>
-                    <div class="download-desc">Horizontalno stablo loze Adema i Mejre.</div>
+                    <div class="download-desc">Horizontalno stablo loze Adema i Mejre kroz generacije.</div>
                     <div class="download-actions">
                         <a href="Grana_Adem.pdf" download="Grana_Adem_Zehic.pdf" class="btn-download-pdf">📄 PDF</a>
                         <a href="Branche_Adem.svg" download="Grana_Adem_Zehic.svg" class="btn-download-svg">SVG</a>
@@ -581,7 +537,7 @@
                 <!-- Grana Osman -->
                 <div class="download-card" style="border-top: 3px solid #0284c7;">
                     <div class="download-title">🌊 Grana Osman (152 člana)</div>
-                    <div class="download-desc">Horizontalno stablo loze Osmana i Hate.</div>
+                    <div class="download-desc">Horizontalno stablo loze Osmana i Hate kroz generacije.</div>
                     <div class="download-actions">
                         <a href="Grana_Osman.pdf" download="Grana_Osman_Zehic.pdf" class="btn-download-pdf">📄 PDF</a>
                         <a href="Branche_Osman.svg" download="Grana_Osman_Zehic.svg" class="btn-download-svg">SVG</a>
@@ -591,7 +547,7 @@
                 <!-- Grana Meho -->
                 <div class="download-card" style="border-top: 3px solid #d97706;">
                     <div class="download-title">🍯 Grana Meho (69 članova)</div>
-                    <div class="download-desc">Horizontalno stablo loze Mehe i Cure.</div>
+                    <div class="download-desc">Horizontalno stablo loze Mehe i Cure kroz generacije.</div>
                     <div class="download-actions">
                         <a href="Grana_Meho.pdf" download="Grana_Meho_Zehic.pdf" class="btn-download-pdf">📄 PDF</a>
                         <a href="Branche_Meho.svg" download="Grana_Meho_Zehic.svg" class="btn-download-svg">SVG</a>
@@ -599,7 +555,7 @@
                 </div>
             </div>
             <div style="padding: 14px 24px; background: #1e293b; border-top: 1px solid rgba(255,255,255,0.08); display: flex; justify-content: space-between; align-items: center;">
-                <span style="font-size: 0.78rem; color: var(--text-muted);">💡 Svi PDF fajlovi su vektorski u originalnoj punoj veličini (bez sječenja).</span>
+                <span style="font-size: 0.78rem; color: var(--text-muted);">💡 Svi PDF fajlovi su vektorski u originalnoj punoj veličini (1 list, spremno za štampu).</span>
                 <button class="tab-btn" onclick="window.print()">🖨 Štampaj</button>
             </div>
         </div>
@@ -665,7 +621,7 @@
         let posY = 0;
         let isDragging = false;
         let startX, startY;
-        let currentSvgUrl = 'Porodicno_Stablo_Zehic_Gore_Dole.svg';
+        let currentSvgUrl = 'Porodicno_Stablo_Zehic_A0.svg';
         let svgElement = null;
         let allSqlMembers = [];
 
@@ -673,7 +629,6 @@
         const wrapper = document.getElementById('svgWrapper');
         const zoomLabel = document.getElementById('zoomLevel');
         const viewLabel = document.getElementById('viewName');
-        const layoutSelect = document.getElementById('layoutSelect');
 
         function updateTransform() {
             wrapper.style.transform = `translate(${posX}px, ${posY}px) scale(${scale})`;
@@ -687,26 +642,17 @@
             }, 460);
         }
 
-        function onLayoutChange(url) {
-            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-            loadTree(url, null, 'main');
-        }
-
         function loadTree(url, btnElement, mode) {
             currentSvgUrl = url;
             if (btnElement) {
                 document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
                 btnElement.classList.add('active');
-            } else {
-                layoutSelect.value = url;
             }
 
-            if (url.includes('Adem')) viewLabel.textContent = 'Grana Adem';
-            else if (url.includes('Osman')) viewLabel.textContent = 'Grana Osman';
-            else if (url.includes('Meho')) viewLabel.textContent = 'Grana Meho';
-            else if (url.includes('Gore_Dole')) viewLabel.textContent = 'Ibrahim u Sredini (2 Gore / 2 Dole)';
-            else if (url.includes('Vertikalno')) viewLabel.textContent = 'Uspravno / Vertikalno (Vrh ➔ Dno)';
-            else viewLabel.textContent = 'Bilateralni Poster (Lijevo / Desno)';
+            if (url.includes('Adem')) viewLabel.textContent = 'Grana Adem (177)';
+            else if (url.includes('Osman')) viewLabel.textContent = 'Grana Osman (152)';
+            else if (url.includes('Meho')) viewLabel.textContent = 'Grana Meho (69)';
+            else viewLabel.textContent = 'Bilateralni Poster A0/A1 (401)';
 
             fetch(url)
                 .then(res => res.text())
@@ -745,8 +691,9 @@
         }
 
         function clickCentarButton() {
-            if (!currentSvgUrl.startsWith('Porodicno_Stablo_Zehic')) {
-                loadTree('Porodicno_Stablo_Zehic_Gore_Dole.svg', null, 'main');
+            if (currentSvgUrl !== 'Porodicno_Stablo_Zehic_A0.svg' && currentSvgUrl !== 'Arbre_Genealogique_A0_Bilateral.svg') {
+                const mainBtn = document.getElementById('tabPoster');
+                loadTree('Porodicno_Stablo_Zehic_A0.svg', mainBtn, 'main');
                 return;
             }
             focusIbrahimDirect();
@@ -953,7 +900,8 @@
             if (target) {
                 focusCoords(target.x, target.y);
             } else {
-                loadTree('Porodicno_Stablo_Zehic_Gore_Dole.svg', null, 'main');
+                const mainBtn = document.getElementById('tabPoster');
+                loadTree('Porodicno_Stablo_Zehic_A0.svg', mainBtn, 'main');
                 setTimeout(() => {
                     locateMemberOnTree(name, grana);
                 }, 400);
@@ -1054,8 +1002,8 @@
             }).join('');
         }
 
-        // Initialize with default Up/Down layout
-        loadTree('Porodicno_Stablo_Zehic_Gore_Dole.svg', null, 'main');
+        // Initialize on Bilateral Poster
+        loadTree('Porodicno_Stablo_Zehic_A0.svg', document.getElementById('tabPoster'), 'main');
     </script>
 </body>
 </html>
