@@ -732,7 +732,85 @@
                     "notes": "Supruga",
                     "gender": "F"
                   },
-                  "gender": "M"
+                  "gender": "M",
+                  "children": [
+                    {
+                      "id": "izet_sajtan",
+                      "name": "Izet",
+                      "gen": 5,
+                      "children": [
+                        {
+                          "id": "senada_izet_s",
+                          "name": "Senada",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "senad_izet_s",
+                          "name": "Senad",
+                          "gen": 6,
+                          "children": [
+                            {
+                              "id": "ajla_senad_s",
+                              "name": "Ajla",
+                              "gen": 7,
+                              "gender": "F"
+                            },
+                            {
+                              "id": "najla_senad_s",
+                              "name": "Najla",
+                              "gen": 7,
+                              "gender": "F"
+                            }
+                          ],
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    },
+                    {
+                      "id": "muzijet_sajtan",
+                      "name": "Muzijet",
+                      "gen": 5,
+                      "children": [
+                        {
+                          "id": "almir_muzijet",
+                          "name": "Almir",
+                          "gen": 6,
+                          "children": [
+                            {
+                              "id": "anela_almir_m",
+                              "name": "Anela",
+                              "gen": 7,
+                              "gender": "F"
+                            }
+                          ],
+                          "gender": "M"
+                        },
+                        {
+                          "id": "admir_muzijet",
+                          "name": "Admir",
+                          "gen": 6,
+                          "children": [
+                            {
+                              "id": "dalila_admir_m",
+                              "name": "Dalila",
+                              "gen": 7,
+                              "gender": "F"
+                            },
+                            {
+                              "id": "ilda_admir_m",
+                              "name": "Ilda",
+                              "gen": 7,
+                              "gender": "F"
+                            }
+                          ],
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    }
+                  ]
                 },
                 {
                   "id": "selima_sajtan",
@@ -745,82 +823,6 @@
                   "name": "Fatima",
                   "gen": 4,
                   "gender": "F"
-                },
-                {
-                  "id": "izet_sajtan",
-                  "name": "Izet",
-                  "gen": 4,
-                  "children": [
-                    {
-                      "id": "senada_izet_s",
-                      "name": "Senada",
-                      "gen": 5,
-                      "gender": "F"
-                    },
-                    {
-                      "id": "senad_izet_s",
-                      "name": "Senad",
-                      "gen": 5,
-                      "children": [
-                        {
-                          "id": "ajla_senad_s",
-                          "name": "Ajla",
-                          "gen": 6,
-                          "gender": "F"
-                        },
-                        {
-                          "id": "najla_senad_s",
-                          "name": "Najla",
-                          "gen": 6,
-                          "gender": "F"
-                        }
-                      ],
-                      "gender": "M"
-                    }
-                  ],
-                  "gender": "M"
-                },
-                {
-                  "id": "muzijet_sajtan",
-                  "name": "Muzijet",
-                  "gen": 4,
-                  "children": [
-                    {
-                      "id": "almir_muzijet",
-                      "name": "Almir",
-                      "gen": 5,
-                      "children": [
-                        {
-                          "id": "anela_almir_m",
-                          "name": "Anela",
-                          "gen": 6,
-                          "gender": "F"
-                        }
-                      ],
-                      "gender": "M"
-                    },
-                    {
-                      "id": "admir_muzijet",
-                      "name": "Admir",
-                      "gen": 5,
-                      "children": [
-                        {
-                          "id": "dalila_admir_m",
-                          "name": "Dalila",
-                          "gen": 6,
-                          "gender": "F"
-                        },
-                        {
-                          "id": "ilda_admir_m",
-                          "name": "Ilda",
-                          "gen": 6,
-                          "gender": "F"
-                        }
-                      ],
-                      "gender": "M"
-                    }
-                  ],
-                  "gender": "M"
                 }
               ],
               "gender": "M"
@@ -859,19 +861,19 @@
                           "id": "amira_ibrahim_p",
                           "name": "Amira",
                           "gen": 6,
-                          "gender": "M"
+                          "gender": "F"
                         },
                         {
                           "id": "bahira_ibrahim_p",
                           "name": "Bahira",
                           "gen": 6,
-                          "gender": "M"
+                          "gender": "F"
                         },
                         {
                           "id": "sahza_ibrahim_p",
                           "name": "Šahza",
                           "gen": 6,
-                          "gender": "M"
+                          "gender": "F"
                         }
                       ],
                       "gender": "M"
@@ -993,7 +995,7 @@
                       "gender": "M"
                     }
                   ],
-                  "gender": "F"
+                  "gender": "M"
                 },
                 {
                   "id": "adem_ibrahim_a",
@@ -1312,7 +1314,7 @@
                           "id": "samira_zehrudin",
                           "name": "Samira",
                           "gen": 6,
-                          "gender": "M"
+                          "gender": "F"
                         },
                         {
                           "id": "alisa_zehrudin",
@@ -1726,7 +1728,7 @@
                               "id": "majda_mersudin",
                               "name": "Majda",
                               "gen": 7,
-                              "gender": "M"
+                              "gender": "F"
                             },
                             {
                               "id": "adi_mersudin",
@@ -1833,7 +1835,7 @@
                           "id": "sanela_muhidin",
                           "name": "Sanela",
                           "gen": 6,
-                          "gender": "M"
+                          "gender": "F"
                         },
                         {
                           "id": "jasmin_muhidin",
@@ -2436,7 +2438,7 @@
                           "id": "sanela_rizvo",
                           "name": "Sanela",
                           "gen": 6,
-                          "gender": "M"
+                          "gender": "F"
                         },
                         {
                           "id": "admira_rizvo",

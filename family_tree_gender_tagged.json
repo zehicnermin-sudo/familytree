@@ -732,7 +732,85 @@
                     "notes": "Supruga",
                     "gender": "F"
                   },
-                  "gender": "M"
+                  "gender": "M",
+                  "children": [
+                    {
+                      "id": "izet_sajtan",
+                      "name": "Izet",
+                      "gen": 5,
+                      "children": [
+                        {
+                          "id": "senada_izet_s",
+                          "name": "Senada",
+                          "gen": 6,
+                          "gender": "F"
+                        },
+                        {
+                          "id": "senad_izet_s",
+                          "name": "Senad",
+                          "gen": 6,
+                          "children": [
+                            {
+                              "id": "ajla_senad_s",
+                              "name": "Ajla",
+                              "gen": 7,
+                              "gender": "F"
+                            },
+                            {
+                              "id": "najla_senad_s",
+                              "name": "Najla",
+                              "gen": 7,
+                              "gender": "F"
+                            }
+                          ],
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    },
+                    {
+                      "id": "muzijet_sajtan",
+                      "name": "Muzijet",
+                      "gen": 5,
+                      "children": [
+                        {
+                          "id": "almir_muzijet",
+                          "name": "Almir",
+                          "gen": 6,
+                          "children": [
+                            {
+                              "id": "anela_almir_m",
+                              "name": "Anela",
+                              "gen": 7,
+                              "gender": "F"
+                            }
+                          ],
+                          "gender": "M"
+                        },
+                        {
+                          "id": "admir_muzijet",
+                          "name": "Admir",
+                          "gen": 6,
+                          "children": [
+                            {
+                              "id": "dalila_admir_m",
+                              "name": "Dalila",
+                              "gen": 7,
+                              "gender": "F"
+                            },
+                            {
+                              "id": "ilda_admir_m",
+                              "name": "Ilda",
+                              "gen": 7,
+                              "gender": "F"
+                            }
+                          ],
+                          "gender": "M"
+                        }
+                      ],
+                      "gender": "M"
+                    }
+                  ]
                 },
                 {
                   "id": "selima_sajtan",
@@ -745,82 +823,6 @@
                   "name": "Fatima",
                   "gen": 4,
                   "gender": "F"
-                },
-                {
-                  "id": "izet_sajtan",
-                  "name": "Izet",
-                  "gen": 4,
-                  "children": [
-                    {
-                      "id": "senada_izet_s",
-                      "name": "Senada",
-                      "gen": 5,
-                      "gender": "F"
-                    },
-                    {
-                      "id": "senad_izet_s",
-                      "name": "Senad",
-                      "gen": 5,
-                      "children": [
-                        {
-                          "id": "ajla_senad_s",
-                          "name": "Ajla",
-                          "gen": 6,
-                          "gender": "F"
-                        },
-                        {
-                          "id": "najla_senad_s",
-                          "name": "Najla",
-                          "gen": 6,
-                          "gender": "F"
-                        }
-                      ],
-                      "gender": "M"
-                    }
-                  ],
-                  "gender": "M"
-                },
-                {
-                  "id": "muzijet_sajtan",
-                  "name": "Muzijet",
-                  "gen": 4,
-                  "children": [
-                    {
-                      "id": "almir_muzijet",
-                      "name": "Almir",
-                      "gen": 5,
-                      "children": [
-                        {
-                          "id": "anela_almir_m",
-                          "name": "Anela",
-                          "gen": 6,
-                          "gender": "F"
-                        }
-                      ],
-                      "gender": "M"
-                    },
-                    {
-                      "id": "admir_muzijet",
-                      "name": "Admir",
-                      "gen": 5,
-                      "children": [
-                        {
-                          "id": "dalila_admir_m",
-                          "name": "Dalila",
-                          "gen": 6,
-                          "gender": "F"
-                        },
-                        {
-                          "id": "ilda_admir_m",
-                          "name": "Ilda",
-                          "gen": 6,
-                          "gender": "F"
-                        }
-                      ],
-                      "gender": "M"
-                    }
-                  ],
-                  "gender": "M"
                 }
               ],
               "gender": "M"
