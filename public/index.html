@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORODIČNO STABLO ZEHIĆ - SQL Baza &amp; Interaktivni Prikaz</title>
+    <title>PORODIČNO STABLO ZEHIĆ - PDF Preuzimanje &amp; SQL Baza</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -14,10 +14,6 @@
             --primary: #3b82f6;
             --text-main: #f8fafc;
             --text-muted: #94a3b8;
-            --male-blue: #1d4ed8;
-            --male-bg: #dbeafe;
-            --female-pink: #be185d;
-            --female-bg: #fce7f3;
         }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
@@ -62,7 +58,7 @@
             background: var(--surface);
             color: var(--text-main);
             border: 1px solid rgba(255, 255, 255, 0.12);
-            padding: 7px 14px;
+            padding: 7px 13px;
             border-radius: 8px;
             font-size: 0.8rem;
             font-weight: 700;
@@ -92,6 +88,15 @@
             color: #fff;
             box-shadow: 0 0 16px rgba(59, 130, 246, 0.5);
         }
+        .tab-btn.pdf-btn {
+            background: linear-gradient(135deg, #b91c1c, #dc2626);
+            border: 1px solid #f87171;
+            color: #fff;
+        }
+        .tab-btn.pdf-btn:hover {
+            background: #ef4444;
+            box-shadow: 0 0 16px rgba(239, 68, 68, 0.5);
+        }
         .tab-btn.sql-btn {
             background: linear-gradient(135deg, #065f46, #047857);
             border: 1px solid #34d399;
@@ -117,12 +122,12 @@
             padding: 7px 12px 7px 34px;
             color: #fff;
             font-size: 0.82rem;
-            width: 230px;
+            width: 220px;
             outline: none;
             transition: all 0.2s;
         }
         .search-box:focus {
-            width: 280px;
+            width: 270px;
             border-color: #3b82f6;
             box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
         }
@@ -264,7 +269,7 @@
             color: #fff;
         }
 
-        /* SQL Database Modal */
+        /* Modals */
         .modal-overlay {
             position: fixed;
             top: 0; left: 0; right: 0; bottom: 0;
@@ -281,7 +286,7 @@
             border: 1px solid rgba(255, 255, 255, 0.15);
             border-radius: 16px;
             width: 100%;
-            max-width: 1000px;
+            max-width: 900px;
             max-height: 85vh;
             display: flex;
             flex-direction: column;
@@ -377,13 +382,90 @@
             background: #3b82f6;
             transform: scale(1.05);
         }
+
+        /* Download Card Grid */
+        .download-grid {
+            padding: 24px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 16px;
+        }
+        .download-card {
+            background: #1e293b;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            transition: all 0.2s;
+        }
+        .download-card:hover {
+            border-color: #3b82f6;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+        }
+        .download-title {
+            font-size: 1rem;
+            font-weight: 800;
+            color: #fff;
+        }
+        .download-desc {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+        }
+        .download-actions {
+            display: flex;
+            gap: 8px;
+            margin-top: auto;
+        }
+        .btn-download-pdf {
+            flex: 1;
+            background: #dc2626;
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-align: center;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            transition: background 0.15s;
+        }
+        .btn-download-pdf:hover { background: #ef4444; }
+
+        .btn-download-svg {
+            background: #334155;
+            color: #cbd5e1;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-align: center;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            transition: all 0.15s;
+        }
+        .btn-download-svg:hover { background: #475569; color: #fff; }
+
+        @media print {
+            header, .controls-toolbar, .info-pill, .modal-overlay { display: none !important; }
+            body, #canvasViewport { height: auto; overflow: visible; background: #fff; }
+            #svgWrapper { transform: none !important; position: static; }
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="brand">
             <h1>PORODIČNO STABLO ZEHIĆ</h1>
-            <p>Potomstvo Ibrahima Zehića • 8 Generacija • SQL Baza (416 Zapisa)</p>
+            <p>Potomstvo Ibrahima Zehića • 8 Generacija • 416 Članova</p>
         </div>
 
         <div class="btn-group">
@@ -396,12 +478,12 @@
         <div class="btn-group">
             <div class="search-container">
                 <span class="search-icon">🔍</span>
-                <input type="text" class="search-box" id="searchInput" placeholder="SQL Pretraga imena, supružnika..." oninput="onSqlSearch(this.value)">
+                <input type="text" class="search-box" id="searchInput" placeholder="SQL Pretraga..." oninput="onSqlSearch(this.value)">
                 <div class="dropdown" id="searchDropdown"></div>
             </div>
+            <button class="tab-btn pdf-btn" onclick="openDownloadModal()" title="Preuzmi visokorezolucijski PDF za štampu">📥 Preuzmi PDF</button>
             <button class="tab-btn sql-btn" onclick="openSqlModal()" title="Otvori tabelarni pregled SQL baze">📊 SQL Baza</button>
             <button class="tab-btn focus-btn" onclick="clickCentarButton()" title="Fokusiraj direktno na Ibrahima">👑 Centar</button>
-            <button class="tab-btn" onclick="window.print()" title="Štampaj ili sačuvaj u PDF">🖨 Štampaj (A0/A1)</button>
         </div>
     </header>
 
@@ -412,6 +494,7 @@
     <div class="controls-toolbar">
         <button class="tool-btn" onclick="zoom(1.35)" title="Zoomiraj (ili točkić miša)">+</button>
         <button class="tool-btn" onclick="zoom(0.74)" title="Odalji">−</button>
+        <button class="tool-btn" onclick="openDownloadModal()" title="Preuzmi PDF">📥</button>
         <button class="tool-btn" onclick="clickCentarButton()" title="Fokus na Ibrahima">👑</button>
         <button class="tool-btn" onclick="fitView()" title="Cjelokupan pregled">⛶</button>
     </div>
@@ -420,6 +503,61 @@
         <div>Zoom: <strong id="zoomLevel">100%</strong></div>
         <div>SQL Baza: <strong>416 članova</strong></div>
         <div>Prikaz: <strong id="viewName">Glavni Poster A0/A1</strong></div>
+    </div>
+
+    <!-- Download Modal -->
+    <div class="modal-overlay" id="downloadModal">
+        <div class="modal-content" style="max-width: 740px;">
+            <div class="modal-header">
+                <h2>📥 Preuzmi PDF &amp; Vektorske Fajlove (Spremno za Štampu)</h2>
+                <button class="close-btn" onclick="closeDownloadModal()">✕</button>
+            </div>
+            <div class="download-grid">
+                <!-- Master Poster -->
+                <div class="download-card" style="border-top: 3px solid #3b82f6;">
+                    <div class="download-title">🌳 Cijelo Stablo (Poster A0 / A1)</div>
+                    <div class="download-desc">Kompletan bilateralni poster sa svih 401 članom, kodiran po granama i spolovima.</div>
+                    <div class="download-actions">
+                        <a href="Porodicno_Stablo_Zehic_A0.pdf" download="Porodicno_Stablo_Zehic_A0.pdf" class="btn-download-pdf">📄 Preuzmi PDF</a>
+                        <a href="Porodicno_Stablo_Zehic_A0.svg" download="Porodicno_Stablo_Zehic_A0.svg" class="btn-download-svg">SVG</a>
+                    </div>
+                </div>
+
+                <!-- Grana Adem -->
+                <div class="download-card" style="border-top: 3px solid #16a34a;">
+                    <div class="download-title">🌿 Grana Adem (177 članova)</div>
+                    <div class="download-desc">Horizontalno stablo loze Adema i Mejre kroz generacije.</div>
+                    <div class="download-actions">
+                        <a href="Grana_Adem.pdf" download="Grana_Adem_Zehic.pdf" class="btn-download-pdf">📄 Preuzmi PDF</a>
+                        <a href="Branche_Adem.svg" download="Grana_Adem_Zehic.svg" class="btn-download-svg">SVG</a>
+                    </div>
+                </div>
+
+                <!-- Grana Osman -->
+                <div class="download-card" style="border-top: 3px solid #0284c7;">
+                    <div class="download-title">🌊 Grana Osman (152 člana)</div>
+                    <div class="download-desc">Horizontalno stablo loze Osmana i Hate kroz generacije.</div>
+                    <div class="download-actions">
+                        <a href="Grana_Osman.pdf" download="Grana_Osman_Zehic.pdf" class="btn-download-pdf">📄 Preuzmi PDF</a>
+                        <a href="Branche_Osman.svg" download="Grana_Osman_Zehic.svg" class="btn-download-svg">SVG</a>
+                    </div>
+                </div>
+
+                <!-- Grana Meho -->
+                <div class="download-card" style="border-top: 3px solid #d97706;">
+                    <div class="download-title">🍯 Grana Meho (69 članova)</div>
+                    <div class="download-desc">Horizontalno stablo loze Mehe i Cure kroz generacije.</div>
+                    <div class="download-actions">
+                        <a href="Grana_Meho.pdf" download="Grana_Meho_Zehic.pdf" class="btn-download-pdf">📄 Preuzmi PDF</a>
+                        <a href="Branche_Meho.svg" download="Grana_Meho_Zehic.svg" class="btn-download-svg">SVG</a>
+                    </div>
+                </div>
+            </div>
+            <div style="padding: 16px 24px; background: #1e293b; border-top: 1px solid rgba(255,255,255,0.08); display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-size: 0.8rem; color: var(--text-muted);">💡 PDF fajlovi su vektorski i spremni za štampanje na velikim formatima (A0, A1, A2).</span>
+                <button class="tab-btn" onclick="window.print()">🖨 Štampaj direktno</button>
+            </div>
+        </div>
     </div>
 
     <!-- SQL Database Modal -->
@@ -652,7 +790,7 @@
             zoom(factor, e.clientX, e.clientY);
         }, { passive: false });
 
-        // SQL API Search
+        // SQL Search
         function onSqlSearch(val) {
             const dropdown = document.getElementById('searchDropdown');
             if (!val || val.trim().length < 2) {
@@ -691,12 +829,11 @@
                         }).join('');
                         dropdown.style.display = 'flex';
                     } else {
-                        dropdown.innerHTML = '<div class="dropdown-item" style="color:#94a3b8;">Nema pronađenih članova u SQL bazi</div>';
+                        dropdown.innerHTML = '<div class="dropdown-item" style="color:#94a3b8;">Nema rezultata</div>';
                         dropdown.style.display = 'flex';
                     }
                 })
                 .catch(err => {
-                    // Fallback to DOM search
                     onDomSearch(val);
                 });
         }
@@ -742,7 +879,6 @@
 
         function locateMemberOnTree(name, grana) {
             document.getElementById('searchDropdown').style.display = 'none';
-            // Search inside current SVG
             const cards = wrapper.querySelectorAll('g[transform]');
             let target = null;
 
@@ -762,7 +898,6 @@
             if (target) {
                 focusCoords(target.x, target.y);
             } else {
-                // If not found in current SVG (e.g. on single branch), switch to main poster
                 const mainBtn = document.getElementById('tabPoster');
                 loadTree('Porodicno_Stablo_Zehic_A0.svg', mainBtn, 'main');
                 setTimeout(() => {
@@ -781,7 +916,15 @@
             updateTransform();
         }
 
-        // SQL Modal Management
+        // Modals
+        function openDownloadModal() {
+            document.getElementById('downloadModal').style.display = 'flex';
+        }
+
+        function closeDownloadModal() {
+            document.getElementById('downloadModal').style.display = 'none';
+        }
+
         function openSqlModal() {
             document.getElementById('sqlModal').style.display = 'flex';
             if (allSqlMembers.length === 0) {
@@ -790,6 +933,14 @@
                     .then(data => {
                         allSqlMembers = data.members || [];
                         renderSqlTable(allSqlMembers);
+                    })
+                    .catch(() => {
+                        fetch('data/members.json')
+                            .then(r => r.json())
+                            .then(data => {
+                                allSqlMembers = data;
+                                renderSqlTable(allSqlMembers);
+                            });
                     });
             } else {
                 filterSqlTable();
@@ -849,7 +1000,7 @@
             }).join('');
         }
 
-        // Initialize on main tree
+        // Initialize
         loadTree('Porodicno_Stablo_Zehic_A0.svg', document.getElementById('tabPoster'), 'main');
     </script>
 </body>
