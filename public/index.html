@@ -387,23 +387,24 @@
             transition: transform 0.32s cubic-bezier(0.2, 0.9, 0.3, 1);
         }
 
-        /* Pulse Target Indicator (For Pinpointing Search Members) */
+        /* Pulse Target Indicator */
         #targetPin {
             position: absolute;
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
             border: 4px solid #ef4444;
-            background: rgba(239, 68, 68, 0.3);
+            background: rgba(239, 68, 68, 0.35);
             pointer-events: none;
             display: none;
             transform: translate(-50%, -50%);
-            animation: pulsePin 1.5s infinite;
+            animation: pulsePin 1.4s infinite;
             z-index: 10;
+            box-shadow: 0 0 20px rgba(239, 68, 68, 0.8);
         }
         @keyframes pulsePin {
             0% { transform: translate(-50%, -50%) scale(0.6); opacity: 1; }
-            100% { transform: translate(-50%, -50%) scale(2.0); opacity: 0; }
+            100% { transform: translate(-50%, -50%) scale(2.2); opacity: 0; }
         }
 
         /* ── Controls Toolbar (Desktop & Mobile) ── */
@@ -616,7 +617,7 @@
             text-align: center; display: inline-flex; align-items: center; justify-content: center;
         }
 
-        /* SQL Table Modal */
+        /* ── SQL Table Modal ── */
         .modal-filters {
             padding: 12px 20px; background: #1e293b;
             display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
@@ -625,20 +626,28 @@
         }
         .filter-input, .filter-select {
             background: #0f172a; border: 1px solid rgba(255, 255, 255, 0.15);
-            color: #fff; padding: 6px 10px; border-radius: 8px; font-size: 0.8rem; outline: none;
+            color: #fff; padding: 7px 12px; border-radius: 8px; font-size: 0.82rem; outline: none;
         }
-        .filter-input { flex: 1; min-width: 140px; }
-        .modal-table-container { flex: 1; overflow-y: auto; }
-        .sql-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; text-align: left; }
+        .filter-input { flex: 1; min-width: 160px; }
+        .modal-table-container {
+            flex: 1;
+            overflow-y: auto;
+            max-height: 60vh;
+        }
+        .sql-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; text-align: left; }
         .sql-table th {
-            background: #1e293b; padding: 9px 12px; color: #94a3b8; font-weight: 700;
+            background: #1e293b; padding: 10px 14px; color: #94a3b8; font-weight: 700;
             position: sticky; top: 0; border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            z-index: 5;
         }
-        .sql-table td { padding: 9px 12px; border-bottom: 1px solid rgba(255, 255, 255, 0.06); color: #e2e8f0; }
+        .sql-table td { padding: 10px 14px; border-bottom: 1px solid rgba(255, 255, 255, 0.06); color: #e2e8f0; }
+        .sql-table tr:hover { background: rgba(255, 255, 255, 0.04); }
         .jump-btn {
-            background: #2563eb; color: #fff; border: none; padding: 4px 8px;
-            border-radius: 6px; font-size: 0.72rem; font-weight: 700; cursor: pointer;
+            background: #2563eb; color: #fff; border: none; padding: 5px 12px;
+            border-radius: 6px; font-size: 0.74rem; font-weight: 700; cursor: pointer;
+            transition: all 0.15s;
         }
+        .jump-btn:hover { background: #3b82f6; transform: scale(1.05); }
 
         /* ══════════════════════════════════════════════════════
            BREAKPOINTS
@@ -889,7 +898,7 @@
                 <button class="close-btn" onclick="closeSqlModal()">✕</button>
             </div>
             <div class="modal-filters">
-                <input type="text" class="filter-input" id="tableFilterInput" placeholder="Pretraži po imenu..." oninput="filterSqlTable()">
+                <input type="text" class="filter-input" id="tableFilterInput" placeholder="Pretraži po imenu, roditelju, supružniku, napomeni..." oninput="filterSqlTable()">
                 <select class="filter-select" id="tableBranchSelect" onchange="filterSqlTable()">
                     <option value="">Sve Grane</option>
                     <option value="Grana Adem">Grana Adem</option>
@@ -903,6 +912,17 @@
                     <option value="M">Muški (M)</option>
                     <option value="Ž">Ženski (Ž)</option>
                 </select>
+                <select class="filter-select" id="tableGenSelect" onchange="filterSqlTable()">
+                    <option value="">Sve Generacije</option>
+                    <option value="1">Gen 1</option>
+                    <option value="2">Gen 2</option>
+                    <option value="3">Gen 3</option>
+                    <option value="4">Gen 4</option>
+                    <option value="5">Gen 5</option>
+                    <option value="6">Gen 6</option>
+                    <option value="7">Gen 7</option>
+                    <option value="8">Gen 8</option>
+                </select>
             </div>
             <div class="modal-table-container">
                 <table class="sql-table">
@@ -910,10 +930,11 @@
                         <tr>
                             <th>Ime</th>
                             <th>Spol</th>
-                            <th>Gen.</th>
+                            <th>Generacija</th>
                             <th>Grana</th>
                             <th>Roditelj</th>
                             <th>Supružnik</th>
+                            <th>Napomene / Lokacija</th>
                             <th>Akcija</th>
                         </tr>
                     </thead>
@@ -1178,52 +1199,69 @@
             document.getElementById('sideDrawer').classList.remove('open');
         }
 
-        // SQL Search
+        // Search Autocomplete (Client-Side + Server API)
         function onSqlSearch(val, dropdownId) {
             const dropdown = document.getElementById(dropdownId);
             if (!val || val.trim().length < 2) {
                 dropdown.style.display = 'none';
                 return;
             }
-            val = val.trim();
+            val = val.trim().toLowerCase();
 
-            fetch(`/api/search?q=${encodeURIComponent(val)}`)
-                .then(r => r.json())
-                .then(data => {
-                    const results = data.results || [];
-                    if (results.length > 0) {
-                        dropdown.innerHTML = results.slice(0, 10).map(m => {
-                            const isM = m.spol === 'M';
-                            const genderClass = isM ? 'male' : 'female';
-                            const genderIcon = isM ? '🔵' : '🌸';
-                            const noteHtml = m.napomene ? `<span class="tag-pill tag-note">${m.napomene}</span>` : '';
-                            const spouseHtml = m.supruznik_ime ? `<div class="dropdown-meta">💍 Supružnik: <strong>${m.supruznik_ime}</strong></div>` : '';
-                            const parentHtml = m.ime_roditelja ? `<div class="dropdown-meta">👨‍👩‍👧 Roditelj: <strong>${m.ime_roditelja}</strong></div>` : '';
-
-                            return `
-                                <div class="dropdown-item" onclick="locateMemberOnTree('${m.ime}', '${m.grana}')">
-                                    <div class="dropdown-header">
-                                        <span class="dropdown-name ${genderClass}">${genderIcon} ${m.ime}</span>
-                                        <div style="display:flex; gap:4px;">
-                                            <span class="tag-pill tag-gen">G${m.generacija}</span>
-                                            <span class="tag-pill tag-branch">${m.grana}</span>
-                                            ${noteHtml}
-                                        </div>
-                                    </div>
-                                    ${parentHtml}
-                                    ${spouseHtml}
-                                </div>
-                            `;
-                        }).join('');
-                        dropdown.style.display = 'flex';
-                    } else {
-                        dropdown.innerHTML = '<div class="dropdown-item" style="color:#94a3b8;">Nema rezultata</div>';
-                        dropdown.style.display = 'flex';
-                    }
-                })
-                .catch(err => {
-                    dropdown.style.display = 'none';
+            // Client-side search through all 416 members
+            if (allSqlMembers && allSqlMembers.length > 0) {
+                const results = allSqlMembers.filter(m => {
+                    const matchName = m.ime && m.ime.toLowerCase().includes(val);
+                    const matchParent = m.ime_roditelja && m.ime_roditelja.toLowerCase().includes(val);
+                    const matchSpouse = m.supruznik_ime && m.supruznik_ime.toLowerCase().includes(val);
+                    const matchNotes = m.napomene && m.napomene.toLowerCase().includes(val);
+                    const matchBranch = m.grana && m.grana.toLowerCase().includes(val);
+                    return matchName || matchParent || matchSpouse || matchNotes || matchBranch;
                 });
+                renderDropdownResults(results, dropdown);
+            } else {
+                fetch(`/api/search?q=${encodeURIComponent(val)}`)
+                    .then(r => r.json())
+                    .then(data => {
+                        const results = data.results || [];
+                        renderDropdownResults(results, dropdown);
+                    })
+                    .catch(() => {
+                        dropdown.style.display = 'none';
+                    });
+            }
+        }
+
+        function renderDropdownResults(results, dropdown) {
+            if (results.length > 0) {
+                dropdown.innerHTML = results.slice(0, 10).map(m => {
+                    const isM = m.spol === 'M';
+                    const genderClass = isM ? 'male' : 'female';
+                    const genderIcon = isM ? '🔵' : '🌸';
+                    const noteHtml = m.napomene ? `<span class="tag-pill tag-note">${m.napomene}</span>` : '';
+                    const spouseHtml = m.supruznik_ime ? `<div class="dropdown-meta">💍 Supružnik: <strong>${m.supruznik_ime}</strong></div>` : '';
+                    const parentHtml = m.ime_roditelja ? `<div class="dropdown-meta">👨‍👩‍👧 Roditelj: <strong>${m.ime_roditelja}</strong></div>` : '';
+
+                    return `
+                        <div class="dropdown-item" onclick="locateMemberOnTree('${m.ime}', '${m.grana}')">
+                            <div class="dropdown-header">
+                                <span class="dropdown-name ${genderClass}">${genderIcon} ${m.ime}</span>
+                                <div style="display:flex; gap:4px;">
+                                    <span class="tag-pill tag-gen">G${m.generacija}</span>
+                                    <span class="tag-pill tag-branch">${m.grana}</span>
+                                    ${noteHtml}
+                                </div>
+                            </div>
+                            ${parentHtml}
+                            ${spouseHtml}
+                        </div>
+                    `;
+                }).join('');
+                dropdown.style.display = 'flex';
+            } else {
+                dropdown.innerHTML = '<div class="dropdown-item" style="color:#94a3b8;">Nema rezultata</div>';
+                dropdown.style.display = 'flex';
+            }
         }
 
         // Exact Pinpoint Navigation using precomputed coordinates
@@ -1236,6 +1274,9 @@
                     .then(r => r.json())
                     .then(data => {
                         treeCoords = data;
+                        doLocate(name, grana);
+                    })
+                    .catch(() => {
                         doLocate(name, grana);
                     });
             } else {
@@ -1277,7 +1318,7 @@
             }, 3500);
         }
 
-        // Welcome / About Modal
+        // Welcome Modal
         function openWelcomeModal() {
             document.getElementById('welcomeModal').style.display = 'flex';
         }
@@ -1299,19 +1340,19 @@
         // SQL Modal
         function openSqlModal() {
             document.getElementById('sqlModal').style.display = 'flex';
-            if (allSqlMembers.length === 0) {
-                fetch('/api/members')
+            if (!allSqlMembers || allSqlMembers.length === 0) {
+                fetch('data/members.json')
                     .then(r => r.json())
                     .then(data => {
-                        allSqlMembers = data.members || [];
-                        renderSqlTable(allSqlMembers);
+                        allSqlMembers = Array.isArray(data) ? data : (data.members || []);
+                        filterSqlTable();
                     })
                     .catch(() => {
-                        fetch('data/members.json')
+                        fetch('/api/members')
                             .then(r => r.json())
                             .then(data => {
-                                allSqlMembers = data;
-                                renderSqlTable(allSqlMembers);
+                                allSqlMembers = Array.isArray(data) ? data : (data.members || []);
+                                filterSqlTable();
                             });
                     });
             } else {
@@ -1324,19 +1365,22 @@
         }
 
         function filterSqlTable() {
-            const q = document.getElementById('tableFilterInput').value.toLowerCase().trim();
-            const branch = document.getElementById('tableBranchSelect').value;
-            const gender = document.getElementById('tableGenderSelect').value;
+            const q = document.getElementById('tableFilterInput') ? document.getElementById('tableFilterInput').value.toLowerCase().trim() : "";
+            const branch = document.getElementById('tableBranchSelect') ? document.getElementById('tableBranchSelect').value : "";
+            const gender = document.getElementById('tableGenderSelect') ? document.getElementById('tableGenderSelect').value : "";
+            const gen = document.getElementById('tableGenSelect') ? document.getElementById('tableGenSelect').value : "";
 
-            const filtered = allSqlMembers.filter(m => {
+            const filtered = (allSqlMembers || []).filter(m => {
                 if (branch && m.grana !== branch) return false;
                 if (gender && m.spol !== gender) return false;
+                if (gen && String(m.generacija) !== gen) return false;
                 if (q) {
                     const matchName = m.ime && m.ime.toLowerCase().includes(q);
                     const matchParent = m.ime_roditelja && m.ime_roditelja.toLowerCase().includes(q);
                     const matchSpouse = m.supruznik_ime && m.supruznik_ime.toLowerCase().includes(q);
                     const matchNotes = m.napomene && m.napomene.toLowerCase().includes(q);
-                    if (!matchName && !matchParent && !matchSpouse && !matchNotes) return false;
+                    const matchBranch = m.grana && m.grana.toLowerCase().includes(q);
+                    if (!matchName && !matchParent && !matchSpouse && !matchNotes && !matchBranch) return false;
                 }
                 return true;
             });
@@ -1346,22 +1390,31 @@
 
         function renderSqlTable(members) {
             const tbody = document.getElementById('sqlTableBody');
-            tbody.innerHTML = members.slice(0, 100).map(m => {
+            if (!tbody) return;
+
+            if (!members || members.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="8" style="text-align:center; padding: 24px; color:#94a3b8;">Nema pronađenih članova za zadati filter.</td></tr>';
+                return;
+            }
+
+            tbody.innerHTML = members.slice(0, 150).map(m => {
                 const isM = m.spol === 'M';
                 const genderBadge = isM ? '<span style="color:#60a5fa; font-weight:800;">🔵 M</span>' : '<span style="color:#f472b6; font-weight:800;">🌸 Ž</span>';
                 const parent = m.ime_roditelja || '-';
                 const spouse = m.supruznik_ime || '-';
+                const notes = m.napomene || '-';
 
                 return `
                     <tr>
                         <td><strong>${m.ime}</strong></td>
                         <td>${genderBadge}</td>
-                        <td>G${m.generacija}</td>
+                        <td>GEN. ${m.generacija}</td>
                         <td><span class="tag-pill tag-branch">${m.grana}</span></td>
                         <td>${parent}</td>
                         <td>${spouse}</td>
+                        <td>${notes}</td>
                         <td>
-                            <button class="jump-btn" onclick="closeSqlModal(); locateMemberOnTree('${m.ime}', '${m.grana}')">Vidi</button>
+                            <button class="jump-btn" onclick="closeSqlModal(); locateMemberOnTree('${m.ime}', '${m.grana}')">Prikaži</button>
                         </td>
                     </tr>
                 `;
@@ -1383,7 +1436,20 @@
             updateTransform();
         });
 
-        // Preload tree coordinates for instant lookup
+        // Preload database and coordinates immediately on start
+        fetch('data/members.json')
+            .then(r => r.json())
+            .then(data => {
+                allSqlMembers = Array.isArray(data) ? data : (data.members || []);
+            })
+            .catch(() => {
+                fetch('/api/members')
+                    .then(r => r.json())
+                    .then(data => {
+                        allSqlMembers = Array.isArray(data) ? data : (data.members || []);
+                    });
+            });
+
         fetch('data/tree_coords.json')
             .then(r => r.json())
             .then(data => { treeCoords = data; })
