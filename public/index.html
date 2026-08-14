@@ -1242,8 +1242,13 @@
                     const spouseHtml = m.supruznik_ime ? `<div class="dropdown-meta">💍 Supružnik: <strong>${m.supruznik_ime}</strong></div>` : '';
                     const parentHtml = m.ime_roditelja ? `<div class="dropdown-meta">👨‍👩‍👧 Roditelj: <strong>${m.ime_roditelja}</strong></div>` : '';
 
+                    const safeName = (m.ime || '').replace(/'/g, "\\'");
+                    const safeBranch = (m.grana || '').replace(/'/g, "\\'");
+                    const safeParent = (m.ime_roditelja || '').replace(/'/g, "\\'");
+                    const safeSpouse = (m.supruznik_ime || '').replace(/'/g, "\\'");
+
                     return `
-                        <div class="dropdown-item" onclick="locateMemberOnTree('${m.ime}', '${m.grana}')">
+                        <div class="dropdown-item" onclick="locateMemberOnTree('${safeName}', '${safeBranch}', '${safeParent}', '${safeSpouse}')">
                             <div class="dropdown-header">
                                 <span class="dropdown-name ${genderClass}">${genderIcon} ${m.ime}</span>
                                 <div style="display:flex; gap:4px;">
@@ -1265,7 +1270,7 @@
         }
 
         // Exact Pinpoint Navigation using precomputed coordinates
-        function locateMemberOnTree(name, grana) {
+        function locateMemberOnTree(name, grana, parentName, spouseName) {
             document.querySelectorAll('.dropdown').forEach(d => d.style.display = 'none');
             closeDrawer();
 
@@ -1275,21 +1280,38 @@
                 }
 
                 const mainNodes = (coordsObj && coordsObj.main) ? coordsObj.main.nodes : [];
-                const cleanQuery = (name || '').toLowerCase().trim();
-                
-                // 1. Exact match on name or spouse
-                let target = mainNodes.find(n => n.name.toLowerCase().trim() === cleanQuery || (n.spouse && n.spouse.toLowerCase().trim() === cleanQuery));
-                
-                // 2. Substring match
-                if (!target) {
-                    target = mainNodes.find(n => n.name.toLowerCase().includes(cleanQuery) || cleanQuery.includes(n.name.toLowerCase()));
-                }
-                
-                // 3. Match first word (first name)
-                if (!target) {
-                    const firstWord = cleanQuery.split(' ')[0];
-                    if (firstWord.length >= 3) {
-                        target = mainNodes.find(n => n.name.toLowerCase().startsWith(firstWord) || (n.spouse && n.spouse.toLowerCase().startsWith(firstWord)));
+                const cleanName = (name || '').toLowerCase().trim();
+                const cleanBranch = (grana || '').toLowerCase().trim();
+                const cleanParent = (parentName || '').toLowerCase().trim();
+                const cleanSpouse = (spouseName || '').toLowerCase().trim();
+
+                // 1. Find all candidate nodes matching name
+                let candidates = mainNodes.filter(n => {
+                    const nName = (n.name || '').toLowerCase().trim();
+                    const nSpouse = (n.spouse || '').toLowerCase().trim();
+                    return nName === cleanName || nSpouse === cleanName || nName.includes(cleanName) || cleanName.includes(nName);
+                });
+
+                let target = null;
+
+                if (candidates.length === 1) {
+                    target = candidates[0];
+                } else if (candidates.length > 1) {
+                    // Match branch and parent/spouse
+                    target = candidates.find(n => {
+                        const nBranch = (n.branch || '').toLowerCase();
+                        const nParent = (n.parent || '').toLowerCase();
+                        const nSpouse = (n.spouse || '').toLowerCase();
+                        const bMatch = !cleanBranch || nBranch.includes(cleanBranch) || cleanBranch.includes(nBranch);
+                        const pMatch = cleanParent && (nParent.includes(cleanParent) || cleanParent.includes(nParent));
+                        const sMatch = cleanSpouse && (nSpouse.includes(cleanSpouse) || cleanSpouse.includes(nSpouse));
+                        return bMatch && (pMatch || sMatch);
+                    });
+                    if (!target) {
+                        target = candidates.find(n => !cleanBranch || (n.branch || '').toLowerCase().includes(cleanBranch));
+                    }
+                    if (!target) {
+                        target = candidates[0];
                     }
                 }
 
@@ -1421,6 +1443,11 @@
                 const spouse = m.supruznik_ime || '-';
                 const notes = m.napomene || '-';
 
+                const safeName = (m.ime || '').replace(/'/g, "\\'");
+                const safeBranch = (m.grana || '').replace(/'/g, "\\'");
+                const safeParent = (m.ime_roditelja || '').replace(/'/g, "\\'");
+                const safeSpouse = (m.supruznik_ime || '').replace(/'/g, "\\'");
+
                 return `
                     <tr>
                         <td><strong>${m.ime}</strong></td>
@@ -1431,7 +1458,7 @@
                         <td>${spouse}</td>
                         <td>${notes}</td>
                         <td>
-                            <button class="jump-btn" onclick="closeSqlModal(); locateMemberOnTree('${m.ime}', '${m.grana}')">Prikaži</button>
+                            <button class="jump-btn" onclick="closeSqlModal(); locateMemberOnTree('${safeName}', '${safeBranch}', '${safeParent}', '${safeSpouse}')">Prikaži</button>
                         </td>
                     </tr>
                 `;
