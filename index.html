@@ -29,77 +29,118 @@
             position: fixed;
         }
 
-        /* ── Header ── */
-        header {
+        /* ══════════════════════════════════════════════════════
+           DESKTOP HEADER (Jednoredni, prostrani originalni meni)
+           ══════════════════════════════════════════════════════ */
+        header.desktop-header {
             background: rgba(15, 23, 42, 0.96);
             backdrop-filter: blur(14px);
             -webkit-backdrop-filter: blur(14px);
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 8px 16px;
+            padding: 10px 20px;
             display: flex;
             align-items: center;
             justify-content: space-between;
             z-index: 60;
-            gap: 8px;
+            gap: 12px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.4);
             flex-shrink: 0;
         }
-        .brand {
-            display: flex;
-            flex-direction: column;
-            cursor: pointer;
+        .desktop-header .brand h1 {
+            font-size: 1.05rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #ffffff, #cbd5e1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
         }
-        .brand h1 {
-            font-size: 1rem;
+        .desktop-header .brand p {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            white-space: nowrap;
+        }
+        .desktop-header .btn-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* ══════════════════════════════════════════════════════
+           MOBILE HEADER (Dvoredni prilagođeni meni za telefon)
+           ══════════════════════════════════════════════════════ */
+        header.mobile-header {
+            display: none;
+            background: rgba(15, 23, 42, 0.96);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 8px 12px;
+            flex-direction: column;
+            gap: 6px;
+            z-index: 60;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+            flex-shrink: 0;
+        }
+        .mobile-header .mobile-top-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .mobile-header .mobile-brand h1 {
+            font-size: 0.92rem;
             font-weight: 900;
             background: linear-gradient(135deg, #ffffff, #cbd5e1);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             letter-spacing: 0.3px;
-            white-space: nowrap;
         }
-        .brand p {
-            font-size: 0.7rem;
+        .mobile-header .mobile-brand p {
+            font-size: 0.65rem;
             color: var(--text-muted);
-            white-space: nowrap;
         }
-
-        /* Horizontal scrollable nav tabs on mobile */
-        .tabs-wrapper {
+        .mobile-header .mobile-bottom-row {
             display: flex;
             align-items: center;
-            gap: 6px;
+            justify-content: space-between;
+            gap: 8px;
+            width: 100%;
+        }
+        .mobile-tabs-scroll {
+            display: flex;
+            align-items: center;
+            gap: 5px;
             overflow-x: auto;
             scrollbar-width: none;
             -webkit-overflow-scrolling: touch;
-            padding: 2px 0;
+            flex: 1;
         }
-        .tabs-wrapper::-webkit-scrollbar { display: none; }
+        .mobile-tabs-scroll::-webkit-scrollbar { display: none; }
 
+        /* ── Buttons & Tabs ── */
         .tab-btn {
             background: var(--surface);
             color: var(--text-main);
             border: 1px solid rgba(255, 255, 255, 0.12);
-            padding: 6px 12px;
+            padding: 7px 14px;
             border-radius: 8px;
-            font-size: 0.78rem;
+            font-size: 0.8rem;
             font-weight: 700;
             cursor: pointer;
             transition: all 0.2s;
             display: inline-flex;
             align-items: center;
-            gap: 5px;
+            gap: 6px;
             white-space: nowrap;
             flex-shrink: 0;
         }
-        .tab-btn:hover {
-            background: var(--surface-hover);
-        }
+        .tab-btn:hover { background: var(--surface-hover); transform: translateY(-1px); }
         .tab-btn.active {
             background: #2563eb;
             border-color: #60a5fa;
             color: #fff;
-            box-shadow: 0 0 12px rgba(37, 99, 235, 0.45);
+            box-shadow: 0 0 14px rgba(37, 99, 235, 0.45);
         }
         .tab-btn.focus-btn {
             background: linear-gradient(135deg, #1e293b, #0f172a);
@@ -123,45 +164,43 @@
         }
         .badge {
             background: rgba(255, 255, 255, 0.15);
-            padding: 1px 6px;
-            border-radius: 10px;
-            font-size: 0.68rem;
+            padding: 2px 7px;
+            border-radius: 12px;
+            font-size: 0.7rem;
         }
 
-        /* Search Bar */
-        .search-container {
-            position: relative;
-        }
+        /* ── Search Bar ── */
+        .search-container { position: relative; }
         .search-box {
             background: var(--surface);
             border: 1px solid rgba(255, 255, 255, 0.15);
             border-radius: 8px;
-            padding: 6px 10px 6px 30px;
+            padding: 7px 12px 7px 34px;
             color: #fff;
-            font-size: 0.78rem;
-            width: 170px;
+            font-size: 0.82rem;
+            width: 190px;
             outline: none;
-            transition: width 0.2s;
+            transition: all 0.2s;
         }
         .search-box:focus {
-            width: 210px;
+            width: 240px;
             border-color: #3b82f6;
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
         }
         .search-icon {
             position: absolute;
-            left: 9px;
+            left: 11px;
             top: 50%;
             transform: translateY(-50%);
             color: var(--text-muted);
             pointer-events: none;
-            font-size: 0.75rem;
         }
         .dropdown {
             position: absolute;
-            top: 40px;
+            top: 42px;
             right: 0;
-            width: 340px;
-            max-height: 380px;
+            width: 360px;
+            max-height: 420px;
             overflow-y: auto;
             background: var(--surface-card);
             border: 1px solid rgba(255, 255, 255, 0.15);
@@ -172,44 +211,35 @@
             z-index: 100;
         }
         .dropdown-item {
-            padding: 10px 12px;
+            padding: 10px 14px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.06);
             cursor: pointer;
             transition: background 0.15s;
             display: flex;
             flex-direction: column;
-            gap: 3px;
+            gap: 4px;
         }
-        .dropdown-item:hover, .dropdown-item:active {
-            background: var(--surface-hover);
-        }
-        .dropdown-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
+        .dropdown-item:hover, .dropdown-item:active { background: var(--surface-hover); }
+        .dropdown-header { display: flex; align-items: center; justify-content: space-between; }
         .dropdown-name {
             font-weight: 800;
-            font-size: 0.88rem;
+            font-size: 0.9rem;
             display: flex;
             align-items: center;
-            gap: 5px;
+            gap: 6px;
         }
         .dropdown-name.male { color: #60a5fa; }
         .dropdown-name.female { color: #f472b6; }
         .tag-pill {
-            font-size: 0.65rem;
+            font-size: 0.68rem;
             font-weight: 700;
-            padding: 1px 6px;
-            border-radius: 5px;
+            padding: 2px 7px;
+            border-radius: 6px;
         }
         .tag-branch { background: rgba(59, 130, 246, 0.15); color: #93c5fd; border: 1px solid rgba(59, 130, 246, 0.3); }
         .tag-gen { background: rgba(255, 255, 255, 0.1); color: #cbd5e1; }
         .tag-note { background: rgba(239, 68, 68, 0.15); color: #fca5a5; border: 1px solid rgba(239, 68, 68, 0.3); }
-        .dropdown-meta {
-            font-size: 0.72rem;
-            color: var(--text-muted);
-        }
+        .dropdown-meta { font-size: 0.74rem; color: var(--text-muted); }
 
         /* ── Canvas Viewport ── */
         #canvasViewport {
@@ -222,9 +252,7 @@
             user-select: none;
             -webkit-user-select: none;
         }
-        #canvasViewport:active {
-            cursor: grabbing;
-        }
+        #canvasViewport:active { cursor: grabbing; }
         #svgWrapper {
             position: absolute;
             top: 0;
@@ -233,29 +261,28 @@
             will-change: transform;
         }
         #svgWrapper.smooth-transition {
-            transition: transform 0.4s cubic-bezier(0.2, 0.9, 0.3, 1);
+            transition: transform 0.45s cubic-bezier(0.2, 0.9, 0.3, 1);
         }
 
-        /* ── Floating Controls Toolbar (Adaptive) ── */
+        /* ── Desktop Controls Toolbar (Desni ugao) ── */
         .controls-toolbar {
             position: absolute;
-            bottom: 20px;
-            right: 20px;
-            background: rgba(15, 23, 42, 0.94);
+            bottom: 24px;
+            right: 24px;
+            background: rgba(15, 23, 42, 0.92);
             backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.12);
             border-radius: 14px;
             padding: 6px;
             display: flex;
             flex-direction: column;
             gap: 6px;
-            box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.35);
             z-index: 40;
         }
         .tool-btn {
-            width: 42px;
-            height: 42px;
+            width: 40px;
+            height: 40px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -265,56 +292,53 @@
             border-radius: 10px;
             cursor: pointer;
             font-weight: 800;
-            font-size: 1.15rem;
+            font-size: 1.1rem;
             transition: all 0.15s;
         }
-        .tool-btn:hover, .tool-btn:active {
-            background: #2563eb;
-            color: #fff;
-        }
+        .tool-btn:hover, .tool-btn:active { background: #2563eb; color: #fff; }
+
         .info-pill {
             position: absolute;
-            bottom: 20px;
-            left: 20px;
+            bottom: 24px;
+            left: 24px;
             background: rgba(15, 23, 42, 0.92);
             backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.12);
             border-radius: 12px;
-            padding: 8px 14px;
-            font-size: 0.76rem;
+            padding: 10px 18px;
+            font-size: 0.8rem;
             color: var(--text-muted);
             display: flex;
-            gap: 12px;
+            gap: 16px;
             z-index: 40;
             pointer-events: none;
         }
         .info-pill strong { color: #fff; }
 
-        /* ── Mobile Floating Quick Bar (Bottom on Small Screens) ── */
+        /* ── Mobile Floating Quick Bar (Prikazuje se samo na mobitelima) ── */
         .mobile-quick-bar {
             display: none;
             position: absolute;
             bottom: 14px;
             left: 50%;
             transform: translateX(-50%);
-            background: rgba(15, 23, 42, 0.94);
+            background: rgba(15, 23, 42, 0.95);
             backdrop-filter: blur(14px);
             -webkit-backdrop-filter: blur(14px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.16);
             border-radius: 24px;
-            padding: 5px 8px;
+            padding: 6px 10px;
             gap: 6px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+            box-shadow: 0 12px 32px rgba(0,0,0,0.65);
             z-index: 50;
         }
         .mobile-quick-btn {
             background: var(--surface);
             color: #fff;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.12);
             padding: 8px 12px;
-            border-radius: 18px;
-            font-size: 0.78rem;
+            border-radius: 16px;
+            font-size: 0.76rem;
             font-weight: 700;
             cursor: pointer;
             display: inline-flex;
@@ -322,12 +346,9 @@
             gap: 4px;
             white-space: nowrap;
         }
-        .mobile-quick-btn:active {
-            background: #2563eb;
-            transform: scale(0.96);
-        }
+        .mobile-quick-btn:active { background: #2563eb; transform: scale(0.96); }
 
-        /* ── Generic Modals ── */
+        /* ── Modals ── */
         .modal-overlay {
             position: fixed;
             top: 0; left: 0; right: 0; bottom: 0;
@@ -370,7 +391,7 @@
             flex-shrink: 0;
         }
         .modal-header h2 {
-            font-size: 1.05rem;
+            font-size: 1.08rem;
             font-weight: 800;
             color: #fff;
             display: flex;
@@ -395,11 +416,11 @@
 
         /* Welcome Body */
         .welcome-body {
-            padding: 20px;
+            padding: 22px;
             overflow-y: auto;
-            line-height: 1.6;
+            line-height: 1.62;
             color: #cbd5e1;
-            font-size: 0.85rem;
+            font-size: 0.86rem;
             display: flex;
             flex-direction: column;
             gap: 14px;
@@ -411,14 +432,14 @@
             padding: 12px 16px;
         }
         .credits-banner h3 {
-            font-size: 0.85rem;
+            font-size: 0.86rem;
             font-weight: 800;
             color: #93c5fd;
             text-transform: uppercase;
             letter-spacing: 0.5px;
             margin-bottom: 4px;
         }
-        .credits-banner p { font-size: 0.84rem; color: #f1f5f9; }
+        .credits-banner p { font-size: 0.85rem; color: #f1f5f9; }
         .quote-box {
             background: rgba(255, 255, 255, 0.03);
             border-left: 3px solid #3b82f6;
@@ -428,7 +449,7 @@
             flex-direction: column;
             gap: 10px;
         }
-        .quote-box p { margin: 0; font-size: 0.83rem; text-align: justify; }
+        .quote-box p { margin: 0; font-size: 0.84rem; text-align: justify; }
         .welcome-footer {
             padding: 12px 20px;
             background: #1e293b;
@@ -441,9 +462,9 @@
             background: linear-gradient(135deg, #2563eb, #1d4ed8);
             color: #fff;
             border: 1px solid #60a5fa;
-            padding: 9px 20px;
+            padding: 9px 22px;
             border-radius: 10px;
-            font-size: 0.85rem;
+            font-size: 0.86rem;
             font-weight: 800;
             cursor: pointer;
             box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
@@ -509,43 +530,29 @@
             border-radius: 6px; font-size: 0.72rem; font-weight: 700; cursor: pointer;
         }
 
-        /* ── RESPONSIVE MOBILE ADJUSTMENTS ── */
-        @media (max-width: 820px) {
-            header {
-                padding: 8px 10px;
-                flex-direction: column;
-                align-items: stretch;
-                gap: 6px;
-            }
-            .header-top {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                width: 100%;
-            }
-            .header-bottom {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                gap: 6px;
-                width: 100%;
-            }
-            .brand h1 { font-size: 0.95rem; }
-            .brand p { font-size: 0.65rem; }
-            .search-box { width: 120px; font-size: 0.75rem; padding: 5px 8px 5px 26px; }
-            .search-box:focus { width: 150px; }
-            .dropdown { width: calc(100vw - 24px); right: -10px; }
-            .info-pill { display: none; }
-            .controls-toolbar {
-                bottom: 74px;
-                right: 14px;
-                padding: 4px;
-                gap: 4px;
-            }
+        /* ══════════════════════════════════════════════════════
+           MEDIA QUERIES: ADAPTACIJA PREMA REZOLUCIJI EKRANA
+           ══════════════════════════════════════════════════════ */
+        /* Telefon / Manji ekrani (<= 900px) */
+        @media (max-width: 900px) {
+            header.desktop-header { display: none !important; }
+            header.mobile-header { display: flex !important; }
+            .info-pill { display: none !important; }
+            .controls-toolbar { bottom: 76px; right: 14px; padding: 4px; gap: 4px; }
             .tool-btn { width: 38px; height: 38px; font-size: 1.05rem; }
-            .mobile-quick-bar { display: flex; }
+            .mobile-quick-bar { display: flex !important; }
+            .dropdown { width: calc(100vw - 24px); right: -10px; }
             .modal-content { max-height: 92vh; border-radius: 14px; }
             .quote-box p { text-align: left; }
+        }
+
+        /* Računar / Veliki ekrani (> 900px) */
+        @media (min-width: 901px) {
+            header.desktop-header { display: flex !important; }
+            header.mobile-header { display: none !important; }
+            .mobile-quick-bar { display: none !important; }
+            .info-pill { display: flex !important; }
+            .controls-toolbar { bottom: 24px; right: 24px; }
         }
 
         @media print {
@@ -556,31 +563,59 @@
     </style>
 </head>
 <body>
-    <header>
-        <div class="header-top">
-            <div class="brand" onclick="clickCentarButton()">
-                <h1>PORODIČNO STABLO ZEHIĆ</h1>
-                <p>Potomstvo Ibrahima Zehića • 8 Gen. • 416 Članova</p>
+    <!-- 1. DESKTOP HEADER (Originalni prostrani meni za PC/Laptop) -->
+    <header class="desktop-header">
+        <div class="brand" onclick="clickCentarButton()">
+            <h1>PORODIČNO STABLO ZEHIĆ</h1>
+            <p>Potomstvo Ibrahima Zehića • 8 Generacija • 416 Članova</p>
+        </div>
+
+        <div class="btn-group">
+            <button class="tab-btn active btn-tab-main" onclick="loadTree('Porodicno_Stablo_Zehic_A0.svg', this, 'main')">🌳 Bilateralni Poster A0/A1 <span class="badge">416</span></button>
+            <button class="tab-btn btn-tab-adem" onclick="loadTree('Branche_Adem.svg', this, 'branch')" style="border-left: 3px solid #16a34a;">Grana Adem <span class="badge">177</span></button>
+            <button class="tab-btn btn-tab-osman" onclick="loadTree('Branche_Osman.svg', this, 'branch')" style="border-left: 3px solid #0284c7;">Grana Osman <span class="badge">167</span></button>
+            <button class="tab-btn btn-tab-meho" onclick="loadTree('Branche_Meho.svg', this, 'branch')" style="border-left: 3px solid #d97706;">Grana Meho <span class="badge">69</span></button>
+        </div>
+
+        <div class="btn-group">
+            <div class="search-container">
+                <span class="search-icon">🔍</span>
+                <input type="text" class="search-box" id="desktopSearchInput" placeholder="SQL Pretraga..." oninput="onSqlSearch(this.value, 'desktopSearchDropdown')">
+                <div class="dropdown" id="desktopSearchDropdown"></div>
             </div>
-            <div style="display: flex; gap: 6px; align-items: center;">
-                <button class="tab-btn info-btn" onclick="openWelcomeModal()" title="O projektu">📜 Info</button>
-                <button class="tab-btn pdf-btn" onclick="openDownloadModal()" title="Preuzmi PDF">📥 PDF</button>
-                <button class="tab-btn sql-btn" onclick="openSqlModal()" title="SQL Baza">📊 Baza</button>
+            <button class="tab-btn info-btn" onclick="openWelcomeModal()" title="O projektu i poruka o rodbinskim vezama">📜 O Projektu</button>
+            <button class="tab-btn pdf-btn" onclick="openDownloadModal()" title="Preuzmi PDF u A3 ili A0/A1 formatu">📥 Preuzmi PDF</button>
+            <button class="tab-btn sql-btn" onclick="openSqlModal()" title="Otvori tabelarni pregled SQL baze">📊 SQL Baza</button>
+            <button class="tab-btn focus-btn" onclick="clickCentarButton()" title="Fokusiraj direktno na Ibrahima">👑 Centar</button>
+        </div>
+    </header>
+
+    <!-- 2. MOBILE HEADER (Kompaktni dvoredni meni sa swipe tabovima za telefon) -->
+    <header class="mobile-header">
+        <div class="mobile-top-row">
+            <div class="mobile-brand" onclick="clickCentarButton()">
+                <h1>PORODIČNO STABLO ZEHIĆ</h1>
+                <p>8 Generacija • 416 Članova</p>
+            </div>
+            <div style="display: flex; gap: 5px;">
+                <button class="tab-btn info-btn" onclick="openWelcomeModal()" style="padding: 5px 8px; font-size: 0.72rem;">📜 Info</button>
+                <button class="tab-btn pdf-btn" onclick="openDownloadModal()" style="padding: 5px 8px; font-size: 0.72rem;">📥 PDF</button>
+                <button class="tab-btn sql-btn" onclick="openSqlModal()" style="padding: 5px 8px; font-size: 0.72rem;">📊 Baza</button>
             </div>
         </div>
 
-        <div class="header-bottom">
-            <div class="tabs-wrapper">
-                <button id="tabPoster" class="tab-btn active" onclick="loadTree('Porodicno_Stablo_Zehic_A0.svg', this, 'main')">🌳 Cijelo Stablo <span class="badge">416</span></button>
-                <button id="tabAdem" class="tab-btn" onclick="loadTree('Branche_Adem.svg', this, 'branch')" style="border-left: 3px solid #16a34a;">Grana Adem <span class="badge">177</span></button>
-                <button id="tabOsman" class="tab-btn" onclick="loadTree('Branche_Osman.svg', this, 'branch')" style="border-left: 3px solid #0284c7;">Grana Osman <span class="badge">167</span></button>
-                <button id="tabMeho" class="tab-btn" onclick="loadTree('Branche_Meho.svg', this, 'branch')" style="border-left: 3px solid #d97706;">Grana Meho <span class="badge">69</span></button>
+        <div class="mobile-bottom-row">
+            <div class="mobile-tabs-scroll">
+                <button class="tab-btn active btn-tab-main" onclick="loadTree('Porodicno_Stablo_Zehic_A0.svg', this, 'main')" style="padding: 5px 10px; font-size: 0.75rem;">🌳 Cijelo Stablo</button>
+                <button class="tab-btn btn-tab-adem" onclick="loadTree('Branche_Adem.svg', this, 'branch')" style="padding: 5px 10px; font-size: 0.75rem; border-left: 3px solid #16a34a;">Adem</button>
+                <button class="tab-btn btn-tab-osman" onclick="loadTree('Branche_Osman.svg', this, 'branch')" style="padding: 5px 10px; font-size: 0.75rem; border-left: 3px solid #0284c7;">Osman</button>
+                <button class="tab-btn btn-tab-meho" onclick="loadTree('Branche_Meho.svg', this, 'branch')" style="padding: 5px 10px; font-size: 0.75rem; border-left: 3px solid #d97706;">Meho</button>
             </div>
 
             <div class="search-container">
-                <span class="search-icon">🔍</span>
-                <input type="text" class="search-box" id="searchInput" placeholder="Traži..." oninput="onSqlSearch(this.value)">
-                <div class="dropdown" id="searchDropdown"></div>
+                <span class="search-icon" style="font-size: 0.7rem; left: 8px;">🔍</span>
+                <input type="text" class="search-box" id="mobileSearchInput" placeholder="Traži..." oninput="onSqlSearch(this.value, 'mobileSearchDropdown')" style="width: 105px; padding: 5px 6px 5px 24px; font-size: 0.72rem;">
+                <div class="dropdown" id="mobileSearchDropdown"></div>
             </div>
         </div>
     </header>
@@ -589,15 +624,17 @@
         <div id="svgWrapper"></div>
     </div>
 
-    <!-- Floating Zoom / Control Buttons -->
+    <!-- Desktop Tool Controls -->
     <div class="controls-toolbar">
-        <button class="tool-btn" onclick="zoom(1.35)" title="Uvećaj (+)">+</button>
+        <button class="tool-btn" onclick="zoom(1.35)" title="Zoomiraj (+)">+</button>
         <button class="tool-btn" onclick="zoom(0.74)" title="Odalji (−)">−</button>
-        <button class="tool-btn" onclick="clickCentarButton()" title="Fokus na Ibrahima (Centar)">👑</button>
-        <button class="tool-btn" onclick="fitView()" title="Cijeli pregled (Fit)">⛶</button>
+        <button class="tool-btn" onclick="openWelcomeModal()" title="O projektu">📜</button>
+        <button class="tool-btn" onclick="openDownloadModal()" title="Preuzmi PDF">📥</button>
+        <button class="tool-btn" onclick="clickCentarButton()" title="Fokus na Ibrahima">👑</button>
+        <button class="tool-btn" onclick="fitView()" title="Cijelo stablo (Fit)">⛶</button>
     </div>
 
-    <!-- Mobile Quick Navigation Bar -->
+    <!-- Mobile Quick Bar (Samo za mobitel) -->
     <div class="mobile-quick-bar">
         <button class="mobile-quick-btn" onclick="zoom(1.35)">🔍 +</button>
         <button class="mobile-quick-btn" onclick="zoom(0.74)">🔍 −</button>
@@ -606,13 +643,14 @@
         <button class="mobile-quick-btn" onclick="openDownloadModal()">📥 PDF</button>
     </div>
 
+    <!-- Desktop Info Pill -->
     <div class="info-pill">
         <div>Zoom: <strong id="zoomLevel">100%</strong></div>
         <div>SQL Baza: <strong>416 članova</strong></div>
         <div>Prikaz: <strong id="viewName">Bilateralni Poster A0/A1</strong></div>
     </div>
 
-    <!-- 1. Welcome / About Modal (Shown once on page load) -->
+    <!-- 1. Welcome / About Modal -->
     <div class="modal-overlay" id="welcomeModal" onclick="if(event.target===this) closeWelcomeModal()">
         <div class="modal-content" style="max-width: 680px;">
             <div class="modal-header">
@@ -751,11 +789,14 @@
         let svgElement = null;
         let allSqlMembers = [];
 
-        const isMobileDevice = window.innerWidth <= 820;
         const viewport = document.getElementById('canvasViewport');
         const wrapper = document.getElementById('svgWrapper');
         const zoomLabel = document.getElementById('zoomLevel');
         const viewLabel = document.getElementById('viewName');
+
+        function isMobile() {
+            return window.innerWidth <= 900;
+        }
 
         function updateTransform() {
             wrapper.style.transform = `translate(${posX}px, ${posY}px) scale(${scale})`;
@@ -766,20 +807,29 @@
             wrapper.classList.add('smooth-transition');
             setTimeout(() => {
                 wrapper.classList.remove('smooth-transition');
-            }, 420);
+            }, 440);
+        }
+
+        function syncActiveTabs(url) {
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            if (url.includes('Adem')) {
+                document.querySelectorAll('.btn-tab-adem').forEach(b => b.classList.add('active'));
+                if (viewLabel) viewLabel.textContent = 'Grana Adem (177)';
+            } else if (url.includes('Osman')) {
+                document.querySelectorAll('.btn-tab-osman').forEach(b => b.classList.add('active'));
+                if (viewLabel) viewLabel.textContent = 'Grana Osman (167)';
+            } else if (url.includes('Meho')) {
+                document.querySelectorAll('.btn-tab-meho').forEach(b => b.classList.add('active'));
+                if (viewLabel) viewLabel.textContent = 'Grana Meho (69)';
+            } else {
+                document.querySelectorAll('.btn-tab-main').forEach(b => b.classList.add('active'));
+                if (viewLabel) viewLabel.textContent = 'Bilateralni Poster A0/A1 (416)';
+            }
         }
 
         function loadTree(url, btnElement, mode) {
             currentSvgUrl = url;
-            if (btnElement) {
-                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-                btnElement.classList.add('active');
-            }
-
-            if (url.includes('Adem') && viewLabel) viewLabel.textContent = 'Grana Adem (177)';
-            else if (url.includes('Osman') && viewLabel) viewLabel.textContent = 'Grana Osman (167)';
-            else if (url.includes('Meho') && viewLabel) viewLabel.textContent = 'Grana Meho (69)';
-            else if (viewLabel) viewLabel.textContent = 'Bilateralni Poster A0/A1 (416)';
+            syncActiveTabs(url);
 
             fetch(url)
                 .then(res => res.text())
@@ -797,7 +847,7 @@
 
         function focusBranchStart() {
             triggerSmoothTransition();
-            scale = isMobileDevice ? 0.75 : 0.92;
+            scale = isMobile() ? 0.75 : 0.92;
             const vw = viewport.clientWidth;
             const vh = viewport.clientHeight;
 
@@ -811,7 +861,7 @@
                         targetY = parseFloat(m[2]) + 40;
                     }
                 }
-                posX = isMobileDevice ? 30 : 80;
+                posX = isMobile() ? 30 : 80;
                 posY = vh / 2 - targetY * scale;
             }
             updateTransform();
@@ -819,8 +869,7 @@
 
         function clickCentarButton() {
             if (currentSvgUrl !== 'Porodicno_Stablo_Zehic_A0.svg' && currentSvgUrl !== 'Arbre_Genealogique_A0_Bilateral.svg') {
-                const mainBtn = document.getElementById('tabPoster');
-                loadTree('Porodicno_Stablo_Zehic_A0.svg', mainBtn, 'main');
+                loadTree('Porodicno_Stablo_Zehic_A0.svg', null, 'main');
                 return;
             }
             focusIbrahimDirect();
@@ -828,7 +877,7 @@
 
         function focusIbrahimDirect() {
             triggerSmoothTransition();
-            scale = isMobileDevice ? 0.80 : 1.05;
+            scale = isMobile() ? 0.82 : 1.05;
             const vw = viewport.clientWidth;
             const vh = viewport.clientHeight;
 
@@ -895,7 +944,7 @@
             updateTransform();
         }
 
-        /* ── MOUSE DRAG & WHEEL ZOOM (DESKTOP) ── */
+        /* ── MOUSE EVENTS (DESKTOP) ── */
         viewport.addEventListener('mousedown', (e) => {
             if (e.target.closest('.controls-toolbar') || e.target.closest('.info-pill') || e.target.closest('.modal-overlay') || e.target.closest('.mobile-quick-bar')) return;
             isDragging = true;
@@ -920,12 +969,12 @@
             zoom(factor, e.clientX, e.clientY);
         }, { passive: false });
 
-        /* ── TOUCH GESTURES: PINCH-TO-ZOOM, PAN & DOUBLE TAP (MOBILE) ── */
+        /* ── TOUCH EVENTS: PINCH-TO-ZOOM, PAN & DOUBLE TAP (MOBILE) ── */
         let initialDistance = 0;
         let initialScale = 1;
         let lastTouchX = 0;
         let lastTouchY = 0;
-        let touchMode = 'none'; // 'pan' | 'pinch'
+        let touchMode = 'none';
         let lastTapTime = 0;
 
         function getTouchDistance(e) {
@@ -945,10 +994,8 @@
             if (e.target.closest('.controls-toolbar') || e.target.closest('.info-pill') || e.target.closest('.modal-overlay') || e.target.closest('.mobile-quick-bar')) return;
             
             if (e.touches.length === 1) {
-                // Check double-tap
                 const now = Date.now();
                 if (now - lastTapTime < 300) {
-                    // Double tap: zoom in on tap position
                     zoom(1.8, e.touches[0].clientX, e.touches[0].clientY);
                     lastTapTime = 0;
                     return;
@@ -1003,8 +1050,8 @@
         }, { passive: true });
 
         // SQL Search
-        function onSqlSearch(val) {
-            const dropdown = document.getElementById('searchDropdown');
+        function onSqlSearch(val, dropdownId) {
+            const dropdown = document.getElementById(dropdownId);
             if (!val || val.trim().length < 2) {
                 dropdown.style.display = 'none';
                 return;
@@ -1029,7 +1076,7 @@
                                     <div class="dropdown-header">
                                         <span class="dropdown-name ${genderClass}">${genderIcon} ${m.ime}</span>
                                         <div style="display:flex; gap:4px;">
-                                            <span class="tag-pill tag-gen">GEN. ${m.generacija}</span>
+                                            <span class="tag-pill tag-gen">G${m.generacija}</span>
                                             <span class="tag-pill tag-branch">${m.grana}</span>
                                             ${noteHtml}
                                         </div>
@@ -1046,12 +1093,12 @@
                     }
                 })
                 .catch(err => {
-                    onDomSearch(val);
+                    onDomSearch(val, dropdownId);
                 });
         }
 
-        function onDomSearch(val) {
-            const dropdown = document.getElementById('searchDropdown');
+        function onDomSearch(val, dropdownId) {
+            const dropdown = document.getElementById(dropdownId);
             val = val.toLowerCase().trim();
             const cards = wrapper.querySelectorAll('g[transform]');
             const results = [];
@@ -1090,7 +1137,7 @@
         }
 
         function locateMemberOnTree(name, grana) {
-            document.getElementById('searchDropdown').style.display = 'none';
+            document.querySelectorAll('.dropdown').forEach(d => d.style.display = 'none');
             const cards = wrapper.querySelectorAll('g[transform]');
             let target = null;
 
@@ -1110,8 +1157,7 @@
             if (target) {
                 focusCoords(target.x, target.y);
             } else {
-                const mainBtn = document.getElementById('tabPoster');
-                loadTree('Porodicno_Stablo_Zehic_A0.svg', mainBtn, 'main');
+                loadTree('Porodicno_Stablo_Zehic_A0.svg', null, 'main');
                 setTimeout(() => {
                     locateMemberOnTree(name, grana);
                 }, 400);
@@ -1120,7 +1166,7 @@
 
         function focusCoords(x, y) {
             triggerSmoothTransition();
-            scale = isMobileDevice ? 1.15 : 1.35;
+            scale = isMobile() ? 1.15 : 1.35;
             const vw = viewport.clientWidth;
             const vh = viewport.clientHeight;
             posX = vw / 2 - (x + 119) * scale;
@@ -1228,8 +1274,16 @@
             }
         });
 
+        // Window resize adapter
+        window.addEventListener('resize', () => {
+            if (isMobile()) {
+                scale = Math.min(scale, 1.8);
+            }
+            updateTransform();
+        });
+
         // Initialize & Check First-time Welcome Popup
-        loadTree('Porodicno_Stablo_Zehic_A0.svg', document.getElementById('tabPoster'), 'main');
+        loadTree('Porodicno_Stablo_Zehic_A0.svg', null, 'main');
 
         window.addEventListener('DOMContentLoaded', () => {
             if (!localStorage.getItem('zehic_welcome_seen')) {
