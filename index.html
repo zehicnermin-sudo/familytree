@@ -286,8 +286,8 @@
             border: 1px solid rgba(255, 255, 255, 0.15);
             border-radius: 16px;
             width: 100%;
-            max-width: 800px;
-            max-height: 85vh;
+            max-width: 860px;
+            max-height: 88vh;
             display: flex;
             flex-direction: column;
             box-shadow: 0 24px 60px rgba(0,0,0,0.8);
@@ -385,9 +385,9 @@
 
         /* Download Card Grid */
         .download-grid {
-            padding: 24px;
+            padding: 20px 24px;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 14px;
             overflow-y: auto;
         }
@@ -417,40 +417,58 @@
         }
         .download-actions {
             display: flex;
-            gap: 8px;
+            gap: 6px;
             margin-top: auto;
+            flex-wrap: wrap;
         }
-        .btn-download-pdf {
+        .btn-download-a3 {
             flex: 1;
-            background: #dc2626;
+            background: #2563eb;
             color: #fff;
             text-decoration: none;
-            padding: 7px 10px;
+            padding: 7px 8px;
             border-radius: 8px;
-            font-size: 0.78rem;
-            font-weight: 700;
-            text-align: center;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 5px;
-            transition: background 0.15s;
-        }
-        .btn-download-pdf:hover { background: #ef4444; }
-
-        .btn-download-svg {
-            background: #334155;
-            color: #cbd5e1;
-            text-decoration: none;
-            padding: 7px 10px;
-            border-radius: 8px;
-            font-size: 0.78rem;
+            font-size: 0.75rem;
             font-weight: 700;
             text-align: center;
             display: inline-flex;
             align-items: center;
             justify-content: center;
             gap: 4px;
+            transition: background 0.15s;
+        }
+        .btn-download-a3:hover { background: #3b82f6; }
+
+        .btn-download-a0 {
+            flex: 1;
+            background: #dc2626;
+            color: #fff;
+            text-decoration: none;
+            padding: 7px 8px;
+            border-radius: 8px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-align: center;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            transition: background 0.15s;
+        }
+        .btn-download-a0:hover { background: #ef4444; }
+
+        .btn-download-svg {
+            background: #334155;
+            color: #cbd5e1;
+            text-decoration: none;
+            padding: 7px 9px;
+            border-radius: 8px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-align: center;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
             transition: all 0.15s;
         }
         .btn-download-svg:hover { background: #475569; color: #fff; }
@@ -482,7 +500,7 @@
                 <input type="text" class="search-box" id="searchInput" placeholder="SQL Pretraga..." oninput="onSqlSearch(this.value)">
                 <div class="dropdown" id="searchDropdown"></div>
             </div>
-            <button class="tab-btn pdf-btn" onclick="openDownloadModal()" title="Preuzmi visokorezolucijski PDF za štampu">📥 Preuzmi PDF</button>
+            <button class="tab-btn pdf-btn" onclick="openDownloadModal()" title="Preuzmi PDF u A3 ili A0/A1 formatu">📥 Preuzmi PDF (A3 / A0)</button>
             <button class="tab-btn sql-btn" onclick="openSqlModal()" title="Otvori tabelarni pregled SQL baze">📊 SQL Baza</button>
             <button class="tab-btn focus-btn" onclick="clickCentarButton()" title="Fokusiraj direktno na Ibrahima">👑 Centar</button>
         </div>
@@ -508,19 +526,20 @@
 
     <!-- Download Modal -->
     <div class="modal-overlay" id="downloadModal">
-        <div class="modal-content" style="max-width: 780px;">
+        <div class="modal-content">
             <div class="modal-header">
-                <h2>📥 Preuzmi PDF (1 List - Originalna Veličina) &amp; SVG</h2>
+                <h2>📥 Preuzmi PDF (A3 i A0/A1 Formati) &amp; Vektorski SVG</h2>
                 <button class="close-btn" onclick="closeDownloadModal()">✕</button>
             </div>
             <div class="download-grid">
-                <!-- Bilateral Poster -->
+                <!-- Glavno Stablo -->
                 <div class="download-card" style="border-top: 3px solid #3b82f6;">
-                    <div class="download-title">🌳 Bilateralni Poster A0/A1 (Cijelo Stablo)</div>
-                    <div class="download-desc">Ibrahim u sredini, Adem lijevo, Osman/Meho desno. 8 generacija.</div>
+                    <div class="download-title">🌳 Glavno Stablo (Cijeli Poster)</div>
+                    <div class="download-desc">Bilateralni prikaz sa svih 401 članom, kodiran po granama i spolovima.</div>
                     <div class="download-actions">
-                        <a href="Porodicno_Stablo_Zehic_A0.pdf" download="Porodicno_Stablo_Zehic_Bilateralni.pdf" class="btn-download-pdf">📄 PDF</a>
-                        <a href="Porodicno_Stablo_Zehic_A0.svg" download="Porodicno_Stablo_Zehic_Bilateralni.svg" class="btn-download-svg">SVG</a>
+                        <a href="Porodicno_Stablo_Zehic_A3.pdf" download="Porodicno_Stablo_Zehic_A3.pdf" class="btn-download-a3">📄 Format A3</a>
+                        <a href="Porodicno_Stablo_Zehic_A0.pdf" download="Porodicno_Stablo_Zehic_A0_Poster.pdf" class="btn-download-a0">🏛 Format A0/A1</a>
+                        <a href="Porodicno_Stablo_Zehic_A0.svg" download="Porodicno_Stablo_Zehic.svg" class="btn-download-svg">SVG</a>
                     </div>
                 </div>
 
@@ -529,8 +548,9 @@
                     <div class="download-title">🌿 Grana Adem (177 članova)</div>
                     <div class="download-desc">Horizontalno stablo loze Adema i Mejre kroz generacije.</div>
                     <div class="download-actions">
-                        <a href="Grana_Adem.pdf" download="Grana_Adem_Zehic.pdf" class="btn-download-pdf">📄 PDF</a>
-                        <a href="Branche_Adem.svg" download="Grana_Adem_Zehic.svg" class="btn-download-svg">SVG</a>
+                        <a href="Grana_Adem_A3.pdf" download="Grana_Adem_A3.pdf" class="btn-download-a3">📄 Format A3</a>
+                        <a href="Grana_Adem.pdf" download="Grana_Adem_Poster.pdf" class="btn-download-a0">🏛 Poster</a>
+                        <a href="Branche_Adem.svg" download="Grana_Adem.svg" class="btn-download-svg">SVG</a>
                     </div>
                 </div>
 
@@ -539,8 +559,9 @@
                     <div class="download-title">🌊 Grana Osman (152 člana)</div>
                     <div class="download-desc">Horizontalno stablo loze Osmana i Hate kroz generacije.</div>
                     <div class="download-actions">
-                        <a href="Grana_Osman.pdf" download="Grana_Osman_Zehic.pdf" class="btn-download-pdf">📄 PDF</a>
-                        <a href="Branche_Osman.svg" download="Grana_Osman_Zehic.svg" class="btn-download-svg">SVG</a>
+                        <a href="Grana_Osman_A3.pdf" download="Grana_Osman_A3.pdf" class="btn-download-a3">📄 Format A3</a>
+                        <a href="Grana_Osman.pdf" download="Grana_Osman_Poster.pdf" class="btn-download-a0">🏛 Poster</a>
+                        <a href="Branche_Osman.svg" download="Grana_Osman.svg" class="btn-download-svg">SVG</a>
                     </div>
                 </div>
 
@@ -549,13 +570,14 @@
                     <div class="download-title">🍯 Grana Meho (69 članova)</div>
                     <div class="download-desc">Horizontalno stablo loze Mehe i Cure kroz generacije.</div>
                     <div class="download-actions">
-                        <a href="Grana_Meho.pdf" download="Grana_Meho_Zehic.pdf" class="btn-download-pdf">📄 PDF</a>
-                        <a href="Branche_Meho.svg" download="Grana_Meho_Zehic.svg" class="btn-download-svg">SVG</a>
+                        <a href="Grana_Meho_A3.pdf" download="Grana_Meho_A3.pdf" class="btn-download-a3">📄 Format A3</a>
+                        <a href="Grana_Meho.pdf" download="Grana_Meho_Poster.pdf" class="btn-download-a0">🏛 Poster</a>
+                        <a href="Branche_Meho.svg" download="Grana_Meho.svg" class="btn-download-svg">SVG</a>
                     </div>
                 </div>
             </div>
             <div style="padding: 14px 24px; background: #1e293b; border-top: 1px solid rgba(255,255,255,0.08); display: flex; justify-content: space-between; align-items: center;">
-                <span style="font-size: 0.78rem; color: var(--text-muted);">💡 Svi PDF fajlovi su vektorski u originalnoj punoj veličini (1 list, spremno za štampu).</span>
+                <span style="font-size: 0.78rem; color: var(--text-muted);">💡 <strong>Format A3</strong> je prilagođen za standardne kancelarijske/kućne A3 printere na 1 list.</span>
                 <button class="tab-btn" onclick="window.print()">🖨 Štampaj</button>
             </div>
         </div>
