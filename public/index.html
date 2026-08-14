@@ -58,11 +58,11 @@
         .layout-select {
             background: #1e293b;
             color: #f8fafc;
-            border: 1px solid rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             padding: 7px 12px;
             border-radius: 8px;
             font-size: 0.8rem;
-            font-weight: 700;
+            font-weight: 800;
             cursor: pointer;
             outline: none;
             transition: all 0.2s;
@@ -488,11 +488,11 @@
         </div>
 
         <div class="btn-group">
-            <!-- Layout Selector -->
+            <!-- Layout Selector Dropdown -->
             <select class="layout-select" id="layoutSelect" onchange="onLayoutChange(this.value)">
-                <option value="Porodicno_Stablo_Zehic_A0.svg">↔️ Bilateralni Poster (A0/A1)</option>
+                <option value="Porodicno_Stablo_Zehic_Gore_Dole.svg">↕️ Ibrahim u Sredini (2 Loze Gore ⬆ / 2 Loze Dole ⬇)</option>
+                <option value="Porodicno_Stablo_Zehic_A0.svg">↔️ Bilateralni Poster (Lijevo ⬅ / Desno ➡)</option>
                 <option value="Porodicno_Stablo_Zehic_Vertikalno.svg">⬇️ Uspravno / Vertikalno (Od Vrha ka Dnu)</option>
-                <option value="Porodicno_Stablo_Zehic_Horizontalno.svg">➡️ Horizontalno (S Lijeva na Desno)</option>
             </select>
 
             <button id="tabAdem" class="tab-btn" onclick="loadTree('Branche_Adem.svg', this, 'branch')" style="border-left: 3px solid #16a34a;">Grana Adem <span class="badge">177</span></button>
@@ -527,21 +527,31 @@
     <div class="info-pill">
         <div>Zoom: <strong id="zoomLevel">100%</strong></div>
         <div>SQL Baza: <strong>416 članova</strong></div>
-        <div>Raspored: <strong id="viewName">Bilateralni Poster (A0/A1)</strong></div>
+        <div>Raspored: <strong id="viewName">Ibrahim u Sredini (2 Gore / 2 Dole)</strong></div>
     </div>
 
     <!-- Download Modal -->
     <div class="modal-overlay" id="downloadModal">
-        <div class="modal-content" style="max-width: 820px;">
+        <div class="modal-content" style="max-width: 840px;">
             <div class="modal-header">
                 <h2>📥 Preuzmi PDF (1 List - Originalna Veličina) &amp; SVG</h2>
                 <button class="close-btn" onclick="closeDownloadModal()">✕</button>
             </div>
             <div class="download-grid">
-                <!-- Bilateral Poster -->
+                <!-- Up / Down Poster -->
+                <div class="download-card" style="border-top: 3px solid #10b981;">
+                    <div class="download-title">↕️ Ibrahim u Sredini (Gore / Dole)</div>
+                    <div class="download-desc">Ibrahim u sredini, Adem gore, Osman &amp; Meho dole. Vodoravne kartice.</div>
+                    <div class="download-actions">
+                        <a href="Porodicno_Stablo_Zehic_Gore_Dole.pdf" download="Porodicno_Stablo_Zehic_Gore_Dole.pdf" class="btn-download-pdf">📄 PDF</a>
+                        <a href="Porodicno_Stablo_Zehic_Gore_Dole.svg" download="Porodicno_Stablo_Zehic_Gore_Dole.svg" class="btn-download-svg">SVG</a>
+                    </div>
+                </div>
+
+                <!-- Bilateral Poster (Left/Right) -->
                 <div class="download-card" style="border-top: 3px solid #3b82f6;">
-                    <div class="download-title">↔️ Bilateralni Poster (A0/A1)</div>
-                    <div class="download-desc">Ibrahim u sredini, Adem lijevo, Osman/Meho desno.</div>
+                    <div class="download-title">↔️ Bilateralni Poster (Lijevo / Desno)</div>
+                    <div class="download-desc">Ibrahim u sredini, Adem lijevo, Osman/Meho desno. Format A0/A1.</div>
                     <div class="download-actions">
                         <a href="Porodicno_Stablo_Zehic_A0.pdf" download="Porodicno_Stablo_Zehic_Bilateralni.pdf" class="btn-download-pdf">📄 PDF</a>
                         <a href="Porodicno_Stablo_Zehic_A0.svg" download="Porodicno_Stablo_Zehic_Bilateralni.svg" class="btn-download-svg">SVG</a>
@@ -555,16 +565,6 @@
                     <div class="download-actions">
                         <a href="Porodicno_Stablo_Zehic_Vertikalno.pdf" download="Porodicno_Stablo_Zehic_Vertikalno.pdf" class="btn-download-pdf">📄 PDF</a>
                         <a href="Porodicno_Stablo_Zehic_Vertikalno.svg" download="Porodicno_Stablo_Zehic_Vertikalno.svg" class="btn-download-svg">SVG</a>
-                    </div>
-                </div>
-
-                <!-- Horizontal Poster -->
-                <div class="download-card" style="border-top: 3px solid #06b6d4;">
-                    <div class="download-title">➡️ Horizontalno (Lijevo ➔ Desno)</div>
-                    <div class="download-desc">Ibrahim na lijevoj strani sa granama udesno.</div>
-                    <div class="download-actions">
-                        <a href="Porodicno_Stablo_Zehic_Horizontalno.pdf" download="Porodicno_Stablo_Zehic_Horizontalno.pdf" class="btn-download-pdf">📄 PDF</a>
-                        <a href="Porodicno_Stablo_Zehic_Horizontalno.svg" download="Porodicno_Stablo_Zehic_Horizontalno.svg" class="btn-download-svg">SVG</a>
                     </div>
                 </div>
 
@@ -665,7 +665,7 @@
         let posY = 0;
         let isDragging = false;
         let startX, startY;
-        let currentSvgUrl = 'Porodicno_Stablo_Zehic_A0.svg';
+        let currentSvgUrl = 'Porodicno_Stablo_Zehic_Gore_Dole.svg';
         let svgElement = null;
         let allSqlMembers = [];
 
@@ -704,9 +704,9 @@
             if (url.includes('Adem')) viewLabel.textContent = 'Grana Adem';
             else if (url.includes('Osman')) viewLabel.textContent = 'Grana Osman';
             else if (url.includes('Meho')) viewLabel.textContent = 'Grana Meho';
+            else if (url.includes('Gore_Dole')) viewLabel.textContent = 'Ibrahim u Sredini (2 Gore / 2 Dole)';
             else if (url.includes('Vertikalno')) viewLabel.textContent = 'Uspravno / Vertikalno (Vrh ➔ Dno)';
-            else if (url.includes('Horizontalno')) viewLabel.textContent = 'Horizontalno (Lijevo ➔ Desno)';
-            else viewLabel.textContent = 'Bilateralni Poster (A0/A1)';
+            else viewLabel.textContent = 'Bilateralni Poster (Lijevo / Desno)';
 
             fetch(url)
                 .then(res => res.text())
@@ -746,7 +746,7 @@
 
         function clickCentarButton() {
             if (!currentSvgUrl.startsWith('Porodicno_Stablo_Zehic')) {
-                loadTree('Porodicno_Stablo_Zehic_A0.svg', null, 'main');
+                loadTree('Porodicno_Stablo_Zehic_Gore_Dole.svg', null, 'main');
                 return;
             }
             focusIbrahimDirect();
@@ -953,7 +953,7 @@
             if (target) {
                 focusCoords(target.x, target.y);
             } else {
-                loadTree('Porodicno_Stablo_Zehic_A0.svg', null, 'main');
+                loadTree('Porodicno_Stablo_Zehic_Gore_Dole.svg', null, 'main');
                 setTimeout(() => {
                     locateMemberOnTree(name, grana);
                 }, 400);
@@ -1054,8 +1054,8 @@
             }).join('');
         }
 
-        // Initialize
-        loadTree('Porodicno_Stablo_Zehic_A0.svg', null, 'main');
+        // Initialize with default Up/Down layout
+        loadTree('Porodicno_Stablo_Zehic_Gore_Dole.svg', null, 'main');
     </script>
 </body>
 </html>
