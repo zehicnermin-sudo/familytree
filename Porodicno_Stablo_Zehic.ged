@@ -5,7 +5,7 @@
 2 CORP Porodica Zehić - Tursunovo Brdo (Teočak)
 1 DEST MyHeritage
 1 DATE 19 AUG 2026
-2 TIME 22:52:27
+2 TIME 23:55:59
 1 GEDC
 2 VERS 5.5.1
 2 FORM LINEAGE-LINKED
@@ -2467,7 +2467,22 @@
 1 NOTE Generacija: 4 | Grana: Grana Osman
 1 NOTE u. Mujagić (Centar)
 1 FAMC @F89@
+1 FAMS @F90@
 0 @I329@ INDI
+1 NAME Mirsad /Zehić/
+2 GIVN Mirsad
+2 SURN Zehić
+1 SEX M
+1 NOTE Generacija: 5 | Grana: Grana Osman
+1 FAMC @F90@
+0 @I330@ INDI
+1 NAME Mirsada /Zehić/
+2 GIVN Mirsada
+2 SURN Zehić
+1 SEX F
+1 NOTE Generacija: 5 | Grana: Grana Osman
+1 FAMC @F90@
+0 @I331@ INDI
 1 NAME Seida /Zehić/
 2 GIVN Seida
 2 SURN Zehić
@@ -2475,133 +2490,148 @@
 1 NOTE Generacija: 4 | Grana: Grana Osman
 1 NOTE u. Omerović (Šepak)
 1 FAMC @F89@
-0 @I330@ INDI
+1 FAMS @F91@
+0 @I332@ INDI
+1 NAME Mirsad /Zehić/
+2 GIVN Mirsad
+2 SURN Zehić
+1 SEX M
+1 NOTE Generacija: 5 | Grana: Grana Osman
+1 FAMC @F91@
+0 @I333@ INDI
+1 NAME Ahmet /Zehić/
+2 GIVN Ahmet
+2 SURN Zehić
+1 SEX M
+1 NOTE Generacija: 5 | Grana: Grana Osman
+1 FAMC @F91@
+0 @I334@ INDI
 1 NAME Avdo /Zehić/
 2 GIVN Avdo
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 4 | Grana: Grana Osman
 1 FAMC @F89@
-1 FAMS @F90@
-0 @I331@ INDI
+1 FAMS @F92@
+0 @I335@ INDI
 1 NAME Izeta /Avdić/
 2 GIVN Izeta
 2 SURN Avdić
 1 SEX F
 1 NOTE Generacija: 4 | Grana: Grana Osman
 1 NOTE r. Avdić
-1 FAMS @F90@
-0 @I332@ INDI
+1 FAMS @F92@
+0 @I336@ INDI
 1 NAME Izudin /Zehić/
 2 GIVN Izudin
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 5 | Grana: Grana Osman
-1 FAMC @F90@
-1 FAMS @F91@
-0 @I333@ INDI
+1 FAMC @F92@
+1 FAMS @F93@
+0 @I337@ INDI
 1 NAME Maksida /Krezić/
 2 GIVN Maksida
 2 SURN Krezić
 1 SEX F
 1 NOTE Generacija: 5 | Grana: Grana Osman
 1 NOTE r. Krezić
-1 FAMS @F91@
-0 @I334@ INDI
+1 FAMS @F93@
+0 @I338@ INDI
 1 NAME Alma /Zehić/
 2 GIVN Alma
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 6 | Grana: Grana Osman
 1 NOTE u. Muslić (Brnjik)
-1 FAMC @F91@
-1 FAMS @F92@
-0 @I335@ INDI
+1 FAMC @F93@
+1 FAMS @F94@
+0 @I339@ INDI
 1 NAME Adin /Zehić/
 2 GIVN Adin
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 7 | Grana: Grana Osman
-1 FAMC @F92@
-0 @I336@ INDI
+1 FAMC @F94@
+0 @I340@ INDI
 1 NAME Amra /Zehić/
 2 GIVN Amra
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 6 | Grana: Grana Osman
 1 NOTE u. Čajlaković (Mumbašići)
-1 FAMC @F91@
-1 FAMS @F93@
-0 @I337@ INDI
+1 FAMC @F93@
+1 FAMS @F95@
+0 @I341@ INDI
 1 NAME Faris /Zehić/
 2 GIVN Faris
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 7 | Grana: Grana Osman
-1 FAMC @F93@
-0 @I338@ INDI
+1 FAMC @F95@
+0 @I342@ INDI
 1 NAME Mevludin /Zehić/
 2 GIVN Mevludin
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 5 | Grana: Grana Osman
-1 FAMC @F90@
-1 FAMS @F94@
-0 @I339@ INDI
+1 FAMC @F92@
+1 FAMS @F96@
+0 @I343@ INDI
 1 NAME Remzija /Šabačkić/
 2 GIVN Remzija
 2 SURN Šabačkić
 1 SEX F
 1 NOTE Generacija: 5 | Grana: Grana Osman
 1 NOTE r. Šabačkić
-1 FAMS @F94@
-0 @I340@ INDI
+1 FAMS @F96@
+0 @I344@ INDI
 1 NAME Samra /Zehić/
 2 GIVN Samra
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 6 | Grana: Grana Osman
 1 NOTE u. Smajić (Bijeljina)
-1 FAMC @F94@
-1 FAMS @F95@
-0 @I341@ INDI
+1 FAMC @F96@
+1 FAMS @F97@
+0 @I345@ INDI
 1 NAME Ajla /Zehić/
 2 GIVN Ajla
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 7 | Grana: Grana Osman
-1 FAMC @F95@
-0 @I342@ INDI
+1 FAMC @F97@
+0 @I346@ INDI
 1 NAME Dženan /Zehić/
 2 GIVN Dženan
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 7 | Grana: Grana Osman
-1 FAMC @F95@
-0 @I343@ INDI
+1 FAMC @F97@
+0 @I347@ INDI
 1 NAME Asmir /Zehić/
 2 GIVN Asmir
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 6 | Grana: Grana Osman
-1 FAMC @F94@
-1 FAMS @F96@
-0 @I344@ INDI
+1 FAMC @F96@
+1 FAMS @F98@
+0 @I348@ INDI
 1 NAME Admira /Nukić/
 2 GIVN Admira
 2 SURN Nukić
 1 SEX F
 1 NOTE Generacija: 6 | Grana: Grana Osman
 1 NOTE r. Nukić
-1 FAMS @F96@
-0 @I345@ INDI
+1 FAMS @F98@
+0 @I349@ INDI
 1 NAME Lejla /Zehić/
 2 GIVN Lejla
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 7 | Grana: Grana Osman
-1 FAMC @F96@
-0 @I346@ INDI
+1 FAMC @F98@
+0 @I350@ INDI
 1 NAME Azijada /Zehić/
 2 GIVN Azijada
 2 SURN Zehić
@@ -2609,7 +2639,22 @@
 1 NOTE Generacija: 4 | Grana: Grana Osman
 1 NOTE u. Hamidović (Atmačići)
 1 FAMC @F89@
-0 @I347@ INDI
+1 FAMS @F99@
+0 @I351@ INDI
+1 NAME Enes /Zehić/
+2 GIVN Enes
+2 SURN Zehić
+1 SEX M
+1 NOTE Generacija: 5 | Grana: Grana Osman
+1 FAMC @F99@
+0 @I352@ INDI
+1 NAME Emina /Zehić/
+2 GIVN Emina
+2 SURN Zehić
+1 SEX F
+1 NOTE Generacija: 5 | Grana: Grana Osman
+1 FAMC @F99@
+0 @I353@ INDI
 1 NAME Omer /Zehić/
 2 GIVN Omer
 2 SURN Zehić
@@ -2620,196 +2665,196 @@
 2 DATE 1995
 2 CAUS Poginuo/la u ratu
 1 FAMC @F89@
-1 FAMS @F97@
-0 @I348@ INDI
+1 FAMS @F100@
+0 @I354@ INDI
 1 NAME Fatima /Bilalić/
 2 GIVN Fatima
 2 SURN Bilalić
 1 SEX F
 1 NOTE Generacija: 4 | Grana: Grana Osman
 1 NOTE r. Bilalić
-1 FAMS @F97@
-0 @I349@ INDI
+1 FAMS @F100@
+0 @I355@ INDI
 1 NAME Zekira /Zehić/
 2 GIVN Zekira
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 5 | Grana: Grana Osman
 1 NOTE u. Karasuljić (Čelić)
-1 FAMC @F97@
-1 FAMS @F98@
-0 @I350@ INDI
+1 FAMC @F100@
+1 FAMS @F101@
+0 @I356@ INDI
 1 NAME Aldin /Zehić/
 2 GIVN Aldin
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 6 | Grana: Grana Osman
-1 FAMC @F98@
-0 @I351@ INDI
+1 FAMC @F101@
+0 @I357@ INDI
 1 NAME Naida /Zehić/
 2 GIVN Naida
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 6 | Grana: Grana Osman
-1 FAMC @F98@
-0 @I352@ INDI
+1 FAMC @F101@
+0 @I358@ INDI
 1 NAME Zehrina /Zehić/
 2 GIVN Zehrina
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 5 | Grana: Grana Osman
 1 NOTE u. Jatić (Kozluk)
-1 FAMC @F97@
-1 FAMS @F99@
-0 @I353@ INDI
+1 FAMC @F100@
+1 FAMS @F102@
+0 @I359@ INDI
 1 NAME Emina /Zehić/
 2 GIVN Emina
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 6 | Grana: Grana Osman
-1 FAMC @F99@
-0 @I354@ INDI
+1 FAMC @F102@
+0 @I360@ INDI
 1 NAME Edina /Zehić/
 2 GIVN Edina
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 6 | Grana: Grana Osman
-1 FAMC @F99@
-0 @I355@ INDI
+1 FAMC @F102@
+0 @I361@ INDI
 1 NAME Nermina /Zehić/
 2 GIVN Nermina
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 5 | Grana: Grana Osman
 1 NOTE u. Hrustanović (Glinje)
-1 FAMC @F97@
-1 FAMS @F100@
-0 @I356@ INDI
+1 FAMC @F100@
+1 FAMS @F103@
+0 @I362@ INDI
 1 NAME Almin /Zehić/
 2 GIVN Almin
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 6 | Grana: Grana Osman
-1 FAMC @F100@
-0 @I357@ INDI
+1 FAMC @F103@
+0 @I363@ INDI
 1 NAME Kenan /Zehić/
 2 GIVN Kenan
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 6 | Grana: Grana Osman
-1 FAMC @F100@
-0 @I358@ INDI
+1 FAMC @F103@
+0 @I364@ INDI
 1 NAME Neyla /Zehić/
 2 GIVN Neyla
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 6 | Grana: Grana Osman
-1 FAMC @F100@
-0 @I359@ INDI
+1 FAMC @F103@
+0 @I365@ INDI
 1 NAME Nermin /Zehić/
 2 GIVN Nermin
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 5 | Grana: Grana Osman
-1 FAMC @F97@
-1 FAMS @F101@
-0 @I360@ INDI
+1 FAMC @F100@
+1 FAMS @F104@
+0 @I366@ INDI
 1 NAME Ševala /Kadrić/
 2 GIVN Ševala
 2 SURN Kadrić
 1 SEX F
 1 NOTE Generacija: 5 | Grana: Grana Osman
 1 NOTE r. Kadrić
-1 FAMS @F101@
-0 @I361@ INDI
+1 FAMS @F104@
+0 @I367@ INDI
 1 NAME Aylin /Zehić/
 2 GIVN Aylin
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 6 | Grana: Grana Osman
-1 FAMC @F101@
-0 @I362@ INDI
+1 FAMC @F104@
+0 @I368@ INDI
 1 NAME Dawud /Zehić/
 2 GIVN Dawud
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 6 | Grana: Grana Osman
-1 FAMC @F101@
-0 @I363@ INDI
+1 FAMC @F104@
+0 @I369@ INDI
 1 NAME Muharem /Zehić/
 2 GIVN Muharem
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 3 | Grana: Grana Osman
 1 FAMC @F67@
-1 FAMS @F102@
-0 @I364@ INDI
+1 FAMS @F105@
+0 @I370@ INDI
 1 NAME Mejra //
 2 GIVN Mejra
 1 SEX F
 1 NOTE Generacija: 3 | Grana: Grana Osman
 1 NOTE Supruga
-1 FAMS @F102@
-0 @I365@ INDI
+1 FAMS @F105@
+0 @I371@ INDI
 1 NAME Rešid /Zehić/
 2 GIVN Rešid
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 4 | Grana: Grana Osman
-1 FAMC @F102@
-1 FAMS @F103@
-0 @I366@ INDI
+1 FAMC @F105@
+1 FAMS @F106@
+0 @I372@ INDI
 1 NAME Aiša //
 2 GIVN Aiša
 1 SEX F
 1 NOTE Generacija: 4 | Grana: Grana Osman
 1 NOTE Supruga
-1 FAMS @F103@
-0 @I367@ INDI
+1 FAMS @F106@
+0 @I373@ INDI
 1 NAME Zikreta /Zehić/
 2 GIVN Zikreta
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 5 | Grana: Grana Osman
-1 FAMC @F103@
-0 @I368@ INDI
+1 FAMC @F106@
+0 @I374@ INDI
 1 NAME Zekerijah /Zehić/
 2 GIVN Zekerijah
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 5 | Grana: Grana Osman
-1 FAMC @F103@
-0 @I369@ INDI
+1 FAMC @F106@
+0 @I375@ INDI
 1 NAME Mensur /Zehić/
 2 GIVN Mensur
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 5 | Grana: Grana Osman
-1 FAMC @F103@
-0 @I370@ INDI
+1 FAMC @F106@
+0 @I376@ INDI
 1 NAME Rasim /Zehić/
 2 GIVN Rasim
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 4 | Grana: Grana Osman
-1 FAMC @F102@
-1 FAMS @F104@
-0 @I371@ INDI
+1 FAMC @F105@
+1 FAMS @F107@
+0 @I377@ INDI
 1 NAME Kadira //
 2 GIVN Kadira
 1 SEX F
 1 NOTE Generacija: 4 | Grana: Grana Osman
 1 NOTE Supruga
-1 FAMS @F104@
-0 @I372@ INDI
+1 FAMS @F107@
+0 @I378@ INDI
 1 NAME Ramiz /Zehić/
 2 GIVN Ramiz
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 5 | Grana: Grana Osman
-1 FAMC @F104@
-1 FAMS @F105@
-0 @I373@ INDI
+1 FAMC @F107@
+1 FAMS @F108@
+0 @I379@ INDI
 1 NAME Selma /Zehić/
 2 GIVN Selma
 2 SURN Zehić
@@ -2818,371 +2863,371 @@
 1 NOTE n. Poginula
 1 DEAT Y
 2 CAUS Poginuo/la u ratu
-1 FAMC @F105@
-0 @I374@ INDI
+1 FAMC @F108@
+0 @I380@ INDI
 1 NAME Almir /Zehić/
 2 GIVN Almir
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 6 | Grana: Grana Osman
-1 FAMC @F105@
-1 FAMS @F106@
-0 @I375@ INDI
+1 FAMC @F108@
+1 FAMS @F109@
+0 @I381@ INDI
 1 NAME Amra /Zehić/
 2 GIVN Amra
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 7 | Grana: Grana Osman
-1 FAMC @F106@
-0 @I376@ INDI
+1 FAMC @F109@
+0 @I382@ INDI
 1 NAME Adna /Zehić/
 2 GIVN Adna
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 7 | Grana: Grana Osman
-1 FAMC @F106@
-0 @I377@ INDI
+1 FAMC @F109@
+0 @I383@ INDI
 1 NAME Hanifa /Zehić/
 2 GIVN Hanifa
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 5 | Grana: Grana Osman
-1 FAMC @F104@
-0 @I378@ INDI
+1 FAMC @F107@
+0 @I384@ INDI
 1 NAME Džemila /Zehić/
 2 GIVN Džemila
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 5 | Grana: Grana Osman
-1 FAMC @F104@
-0 @I379@ INDI
+1 FAMC @F107@
+0 @I385@ INDI
 1 NAME Rizvo /Zehić/
 2 GIVN Rizvo
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 5 | Grana: Grana Osman
-1 FAMC @F104@
-1 FAMS @F107@
-0 @I380@ INDI
+1 FAMC @F107@
+1 FAMS @F110@
+0 @I386@ INDI
 1 NAME Sanela /Zehić/
 2 GIVN Sanela
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 6 | Grana: Grana Osman
-1 FAMC @F107@
-0 @I381@ INDI
+1 FAMC @F110@
+0 @I387@ INDI
 1 NAME Admira /Zehić/
 2 GIVN Admira
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 6 | Grana: Grana Osman
-1 FAMC @F107@
-0 @I382@ INDI
+1 FAMC @F110@
+0 @I388@ INDI
 1 NAME Admir /Zehić/
 2 GIVN Admir
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 6 | Grana: Grana Osman
-1 FAMC @F107@
-1 FAMS @F108@
-0 @I383@ INDI
+1 FAMC @F110@
+1 FAMS @F111@
+0 @I389@ INDI
 1 NAME Armina /Zehić/
 2 GIVN Armina
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 7 | Grana: Grana Osman
-1 FAMC @F108@
-0 @I384@ INDI
+1 FAMC @F111@
+0 @I390@ INDI
 1 NAME Amina /Zehić/
 2 GIVN Amina
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 7 | Grana: Grana Osman
-1 FAMC @F108@
-0 @I385@ INDI
+1 FAMC @F111@
+0 @I391@ INDI
 1 NAME Irfan /Zehić/
 2 GIVN Irfan
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 5 | Grana: Grana Osman
-1 FAMC @F104@
-1 FAMS @F109@
-0 @I386@ INDI
+1 FAMC @F107@
+1 FAMS @F112@
+0 @I392@ INDI
 1 NAME Sabina /Zehić/
 2 GIVN Sabina
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 6 | Grana: Grana Osman
-1 FAMC @F109@
-0 @I387@ INDI
+1 FAMC @F112@
+0 @I393@ INDI
 1 NAME Jasmina /Zehić/
 2 GIVN Jasmina
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 6 | Grana: Grana Osman
-1 FAMC @F109@
-0 @I388@ INDI
+1 FAMC @F112@
+0 @I394@ INDI
 1 NAME Jasmin /Zehić/
 2 GIVN Jasmin
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 6 | Grana: Grana Osman
-1 FAMC @F109@
-1 FAMS @F110@
-0 @I389@ INDI
+1 FAMC @F112@
+1 FAMS @F113@
+0 @I395@ INDI
 1 NAME Konstantin /Zehić/
 2 GIVN Konstantin
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 7 | Grana: Grana Osman
-1 FAMC @F110@
-0 @I390@ INDI
+1 FAMC @F113@
+0 @I396@ INDI
 1 NAME Viktor /Zehić/
 2 GIVN Viktor
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 7 | Grana: Grana Osman
-1 FAMC @F110@
-0 @I391@ INDI
+1 FAMC @F113@
+0 @I397@ INDI
 1 NAME Hanka /Zehić/
 2 GIVN Hanka
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 4 | Grana: Grana Osman
-1 FAMC @F102@
-0 @I392@ INDI
+1 FAMC @F105@
+0 @I398@ INDI
 1 NAME Malka /Zehić/
 2 GIVN Malka
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 4 | Grana: Grana Osman
-1 FAMC @F102@
-0 @I393@ INDI
+1 FAMC @F105@
+0 @I399@ INDI
 1 NAME Tifa /Zehić/
 2 GIVN Tifa
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 4 | Grana: Grana Osman
-1 FAMC @F102@
-0 @I394@ INDI
+1 FAMC @F105@
+0 @I400@ INDI
 1 NAME Mehmedalija /Zehić/
 2 GIVN Mehmedalija
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 4 | Grana: Grana Osman
-1 FAMC @F102@
-1 FAMS @F111@
-0 @I395@ INDI
+1 FAMC @F105@
+1 FAMS @F114@
+0 @I401@ INDI
 1 NAME Rajfa //
 2 GIVN Rajfa
 1 SEX F
 1 NOTE Generacija: 4 | Grana: Grana Osman
 1 NOTE Supruga
-1 FAMS @F111@
-0 @I396@ INDI
+1 FAMS @F114@
+0 @I402@ INDI
 1 NAME Seudin /Zehić/
 2 GIVN Seudin
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 5 | Grana: Grana Osman
-1 FAMC @F111@
-1 FAMS @F112@
-0 @I397@ INDI
+1 FAMC @F114@
+1 FAMS @F115@
+0 @I403@ INDI
 1 NAME Suvad /Zehić/
 2 GIVN Suvad
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 6 | Grana: Grana Osman
-1 FAMC @F112@
-1 FAMS @F113@
-0 @I398@ INDI
+1 FAMC @F115@
+1 FAMS @F116@
+0 @I404@ INDI
 1 NAME Sara /Zehić/
 2 GIVN Sara
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 7 | Grana: Grana Osman
-1 FAMC @F113@
-0 @I399@ INDI
+1 FAMC @F116@
+0 @I405@ INDI
 1 NAME Malik /Zehić/
 2 GIVN Malik
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 7 | Grana: Grana Osman
-1 FAMC @F113@
-0 @I400@ INDI
+1 FAMC @F116@
+0 @I406@ INDI
 1 NAME Dževida /Zehić/
 2 GIVN Dževida
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 6 | Grana: Grana Osman
-1 FAMC @F112@
-0 @I401@ INDI
+1 FAMC @F115@
+0 @I407@ INDI
 1 NAME Dževad /Zehić/
 2 GIVN Dževad
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 6 | Grana: Grana Osman
-1 FAMC @F112@
-1 FAMS @F114@
-0 @I402@ INDI
+1 FAMC @F115@
+1 FAMS @F117@
+0 @I408@ INDI
 1 NAME Eldin /Zehić/
 2 GIVN Eldin
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 7 | Grana: Grana Osman
-1 FAMC @F114@
-0 @I403@ INDI
+1 FAMC @F117@
+0 @I409@ INDI
 1 NAME Anel /Zehić/
 2 GIVN Anel
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 7 | Grana: Grana Osman
-1 FAMC @F114@
-0 @I404@ INDI
+1 FAMC @F117@
+0 @I410@ INDI
 1 NAME Elma /Zehić/
 2 GIVN Elma
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 7 | Grana: Grana Osman
-1 FAMC @F114@
-0 @I405@ INDI
+1 FAMC @F117@
+0 @I411@ INDI
 1 NAME Remza /Zehić/
 2 GIVN Remza
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 5 | Grana: Grana Osman
-1 FAMC @F111@
-0 @I406@ INDI
+1 FAMC @F114@
+0 @I412@ INDI
 1 NAME Jusuf /Zehić/
 2 GIVN Jusuf
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 5 | Grana: Grana Osman
-1 FAMC @F111@
-1 FAMS @F115@
-0 @I407@ INDI
+1 FAMC @F114@
+1 FAMS @F118@
+0 @I413@ INDI
 1 NAME Emina /Zehić/
 2 GIVN Emina
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 6 | Grana: Grana Osman
-1 FAMC @F115@
-0 @I408@ INDI
+1 FAMC @F118@
+0 @I414@ INDI
 1 NAME Mehmedalija /Zehić/
 2 GIVN Mehmedalija
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 6 | Grana: Grana Osman
-1 FAMC @F115@
-0 @I409@ INDI
+1 FAMC @F118@
+0 @I415@ INDI
 1 NAME Amir /Zehić/
 2 GIVN Amir
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 6 | Grana: Grana Osman
-1 FAMC @F115@
-0 @I410@ INDI
+1 FAMC @F118@
+0 @I416@ INDI
 1 NAME Amra /Zehić/
 2 GIVN Amra
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 6 | Grana: Grana Osman
-1 FAMC @F115@
-0 @I411@ INDI
+1 FAMC @F118@
+0 @I417@ INDI
 1 NAME Almedina /Zehić/
 2 GIVN Almedina
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 6 | Grana: Grana Osman
-1 FAMC @F115@
-0 @I412@ INDI
+1 FAMC @F118@
+0 @I418@ INDI
 1 NAME Senad /Zehić/
 2 GIVN Senad
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 6 | Grana: Grana Osman
-1 FAMC @F115@
-0 @I413@ INDI
+1 FAMC @F118@
+0 @I419@ INDI
 1 NAME Nasiha /Zehić/
 2 GIVN Nasiha
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 5 | Grana: Grana Osman
-1 FAMC @F111@
-0 @I414@ INDI
+1 FAMC @F114@
+0 @I420@ INDI
 1 NAME Šefik /Zehić/
 2 GIVN Šefik
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 5 | Grana: Grana Osman
-1 FAMC @F111@
-1 FAMS @F116@
-0 @I415@ INDI
+1 FAMC @F114@
+1 FAMS @F119@
+0 @I421@ INDI
 1 NAME Edina /Zehić/
 2 GIVN Edina
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 6 | Grana: Grana Osman
-1 FAMC @F116@
-0 @I416@ INDI
+1 FAMC @F119@
+0 @I422@ INDI
 1 NAME Edin /Zehić/
 2 GIVN Edin
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 6 | Grana: Grana Osman
-1 FAMC @F116@
-1 FAMS @F117@
-0 @I417@ INDI
+1 FAMC @F119@
+1 FAMS @F120@
+0 @I423@ INDI
 1 NAME Mubina //
 2 GIVN Mubina
 1 SEX F
 1 NOTE Generacija: 6 | Grana: Grana Osman
 1 NOTE Supruga
-1 FAMS @F117@
-0 @I418@ INDI
+1 FAMS @F120@
+0 @I424@ INDI
 1 NAME Dženana /Zehić/
 2 GIVN Dženana
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 7 | Grana: Grana Osman
-1 FAMC @F117@
-0 @I419@ INDI
+1 FAMC @F120@
+0 @I425@ INDI
 1 NAME Mirsad /Zehić/
 2 GIVN Mirsad
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 7 | Grana: Grana Osman
-1 FAMC @F117@
-0 @I420@ INDI
+1 FAMC @F120@
+0 @I426@ INDI
 1 NAME Elmir /Zehić/
 2 GIVN Elmir
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 7 | Grana: Grana Osman
-1 FAMC @F117@
-0 @I421@ INDI
+1 FAMC @F120@
+0 @I427@ INDI
 1 NAME Elma /Zehić/
 2 GIVN Elma
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 7 | Grana: Grana Osman
-1 FAMC @F117@
-0 @I422@ INDI
+1 FAMC @F120@
+0 @I428@ INDI
 1 NAME Adis /Zehić/
 2 GIVN Adis
 2 SURN Zehić
 1 SEX M
 1 NOTE Generacija: 7 | Grana: Grana Osman
-1 FAMC @F117@
-1 FAMS @F118@
-0 @I423@ INDI
+1 FAMC @F120@
+1 FAMS @F121@
+0 @I429@ INDI
 1 NAME Maja /Zehić/
 2 GIVN Maja
 2 SURN Zehić
 1 SEX F
 1 NOTE Generacija: 8 | Grana: Grana Osman
-1 FAMC @F118@
-0 @I424@ INDI
+1 FAMC @F121@
+0 @I430@ INDI
 1 NAME Nurif /Zehić/
 2 GIVN Nurif
 2 SURN Zehić
@@ -3192,7 +3237,7 @@
 1 BIRT
 2 DATE r. 1863
 1 FAMC @F1@
-0 @I425@ INDI
+0 @I431@ INDI
 1 NAME Paša /Zehić/
 2 GIVN Paša
 2 SURN Zehić
@@ -3207,8 +3252,8 @@
 1 CHIL @I3@
 1 CHIL @I180@
 1 CHIL @I250@
-1 CHIL @I424@
-1 CHIL @I425@
+1 CHIL @I430@
+1 CHIL @I431@
 0 @F2@ FAM
 1 HUSB @I3@
 1 WIFE @I4@
@@ -3635,7 +3680,7 @@
 1 CHIL @I253@
 1 CHIL @I290@
 1 CHIL @I326@
-1 CHIL @I363@
+1 CHIL @I369@
 0 @F68@ FAM
 1 HUSB @I253@
 1 WIFE @I254@
@@ -3766,167 +3811,179 @@
 1 WIFE @I327@
 1 MARR Y
 1 CHIL @I328@
+1 CHIL @I331@
+1 CHIL @I334@
+1 CHIL @I350@
+1 CHIL @I353@
+0 @F90@ FAM
+1 WIFE @I328@
 1 CHIL @I329@
 1 CHIL @I330@
-1 CHIL @I346@
-1 CHIL @I347@
-0 @F90@ FAM
-1 HUSB @I330@
-1 WIFE @I331@
-1 MARR Y
-1 CHIL @I332@
-1 CHIL @I338@
 0 @F91@ FAM
-1 HUSB @I332@
-1 WIFE @I333@
-1 MARR Y
-1 CHIL @I334@
-1 CHIL @I336@
+1 WIFE @I331@
+1 CHIL @I332@
+1 CHIL @I333@
 0 @F92@ FAM
-1 WIFE @I334@
-1 CHIL @I335@
-0 @F93@ FAM
-1 WIFE @I336@
-1 CHIL @I337@
-0 @F94@ FAM
-1 HUSB @I338@
-1 WIFE @I339@
+1 HUSB @I334@
+1 WIFE @I335@
 1 MARR Y
+1 CHIL @I336@
+1 CHIL @I342@
+0 @F93@ FAM
+1 HUSB @I336@
+1 WIFE @I337@
+1 MARR Y
+1 CHIL @I338@
 1 CHIL @I340@
-1 CHIL @I343@
+0 @F94@ FAM
+1 WIFE @I338@
+1 CHIL @I339@
 0 @F95@ FAM
 1 WIFE @I340@
 1 CHIL @I341@
-1 CHIL @I342@
 0 @F96@ FAM
-1 HUSB @I343@
-1 WIFE @I344@
+1 HUSB @I342@
+1 WIFE @I343@
 1 MARR Y
-1 CHIL @I345@
+1 CHIL @I344@
+1 CHIL @I347@
 0 @F97@ FAM
+1 WIFE @I344@
+1 CHIL @I345@
+1 CHIL @I346@
+0 @F98@ FAM
 1 HUSB @I347@
 1 WIFE @I348@
 1 MARR Y
 1 CHIL @I349@
-1 CHIL @I352@
-1 CHIL @I355@
-1 CHIL @I359@
-0 @F98@ FAM
-1 WIFE @I349@
-1 CHIL @I350@
-1 CHIL @I351@
 0 @F99@ FAM
-1 WIFE @I352@
-1 CHIL @I353@
-1 CHIL @I354@
+1 WIFE @I350@
+1 CHIL @I351@
+1 CHIL @I352@
 0 @F100@ FAM
+1 HUSB @I353@
+1 WIFE @I354@
+1 MARR Y
+1 CHIL @I355@
+1 CHIL @I358@
+1 CHIL @I361@
+1 CHIL @I365@
+0 @F101@ FAM
 1 WIFE @I355@
 1 CHIL @I356@
 1 CHIL @I357@
-1 CHIL @I358@
-0 @F101@ FAM
-1 HUSB @I359@
-1 WIFE @I360@
-1 MARR Y
-1 CHIL @I361@
-1 CHIL @I362@
 0 @F102@ FAM
-1 HUSB @I363@
-1 WIFE @I364@
-1 MARR Y
-1 CHIL @I365@
-1 CHIL @I370@
-1 CHIL @I391@
-1 CHIL @I392@
-1 CHIL @I393@
-1 CHIL @I394@
+1 WIFE @I358@
+1 CHIL @I359@
+1 CHIL @I360@
 0 @F103@ FAM
+1 WIFE @I361@
+1 CHIL @I362@
+1 CHIL @I363@
+1 CHIL @I364@
+0 @F104@ FAM
 1 HUSB @I365@
 1 WIFE @I366@
 1 MARR Y
 1 CHIL @I367@
 1 CHIL @I368@
-1 CHIL @I369@
-0 @F104@ FAM
-1 HUSB @I370@
-1 WIFE @I371@
-1 MARR Y
-1 CHIL @I372@
-1 CHIL @I377@
-1 CHIL @I378@
-1 CHIL @I379@
-1 CHIL @I385@
 0 @F105@ FAM
-1 HUSB @I372@
+1 HUSB @I369@
+1 WIFE @I370@
+1 MARR Y
+1 CHIL @I371@
+1 CHIL @I376@
+1 CHIL @I397@
+1 CHIL @I398@
+1 CHIL @I399@
+1 CHIL @I400@
+0 @F106@ FAM
+1 HUSB @I371@
+1 WIFE @I372@
+1 MARR Y
 1 CHIL @I373@
 1 CHIL @I374@
-0 @F106@ FAM
-1 HUSB @I374@
 1 CHIL @I375@
-1 CHIL @I376@
 0 @F107@ FAM
-1 HUSB @I379@
-1 CHIL @I380@
-1 CHIL @I381@
-1 CHIL @I382@
-0 @F108@ FAM
-1 HUSB @I382@
+1 HUSB @I376@
+1 WIFE @I377@
+1 MARR Y
+1 CHIL @I378@
 1 CHIL @I383@
 1 CHIL @I384@
+1 CHIL @I385@
+1 CHIL @I391@
+0 @F108@ FAM
+1 HUSB @I378@
+1 CHIL @I379@
+1 CHIL @I380@
 0 @F109@ FAM
+1 HUSB @I380@
+1 CHIL @I381@
+1 CHIL @I382@
+0 @F110@ FAM
 1 HUSB @I385@
 1 CHIL @I386@
 1 CHIL @I387@
 1 CHIL @I388@
-0 @F110@ FAM
+0 @F111@ FAM
 1 HUSB @I388@
 1 CHIL @I389@
 1 CHIL @I390@
-0 @F111@ FAM
-1 HUSB @I394@
-1 WIFE @I395@
-1 MARR Y
-1 CHIL @I396@
-1 CHIL @I405@
-1 CHIL @I406@
-1 CHIL @I413@
-1 CHIL @I414@
 0 @F112@ FAM
-1 HUSB @I396@
-1 CHIL @I397@
-1 CHIL @I400@
-1 CHIL @I401@
+1 HUSB @I391@
+1 CHIL @I392@
+1 CHIL @I393@
+1 CHIL @I394@
 0 @F113@ FAM
-1 HUSB @I397@
-1 CHIL @I398@
-1 CHIL @I399@
+1 HUSB @I394@
+1 CHIL @I395@
+1 CHIL @I396@
 0 @F114@ FAM
-1 HUSB @I401@
+1 HUSB @I400@
+1 WIFE @I401@
+1 MARR Y
 1 CHIL @I402@
-1 CHIL @I403@
-1 CHIL @I404@
+1 CHIL @I411@
+1 CHIL @I412@
+1 CHIL @I419@
+1 CHIL @I420@
 0 @F115@ FAM
-1 HUSB @I406@
+1 HUSB @I402@
+1 CHIL @I403@
+1 CHIL @I406@
 1 CHIL @I407@
+0 @F116@ FAM
+1 HUSB @I403@
+1 CHIL @I404@
+1 CHIL @I405@
+0 @F117@ FAM
+1 HUSB @I407@
 1 CHIL @I408@
 1 CHIL @I409@
 1 CHIL @I410@
-1 CHIL @I411@
-1 CHIL @I412@
-0 @F116@ FAM
-1 HUSB @I414@
+0 @F118@ FAM
+1 HUSB @I412@
+1 CHIL @I413@
+1 CHIL @I414@
 1 CHIL @I415@
 1 CHIL @I416@
-0 @F117@ FAM
-1 HUSB @I416@
-1 WIFE @I417@
-1 MARR Y
+1 CHIL @I417@
 1 CHIL @I418@
-1 CHIL @I419@
-1 CHIL @I420@
+0 @F119@ FAM
+1 HUSB @I420@
 1 CHIL @I421@
 1 CHIL @I422@
-0 @F118@ FAM
+0 @F120@ FAM
 1 HUSB @I422@
-1 CHIL @I423@
+1 WIFE @I423@
+1 MARR Y
+1 CHIL @I424@
+1 CHIL @I425@
+1 CHIL @I426@
+1 CHIL @I427@
+1 CHIL @I428@
+0 @F121@ FAM
+1 HUSB @I428@
+1 CHIL @I429@
 0 TRLR

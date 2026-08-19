@@ -342,7 +342,11 @@ INSERT INTO "clanovi" VALUES('emka_ohro_sahbaz','Emka','Zehić','Ž',5,'Grana Os
 INSERT INTO "clanovi" VALUES('sp_sacir_osman','Alta','','Ž',3,'Grana Osman','','Supruga','sacir_osman','Šaćir','Šaćir','',1);
 INSERT INTO "clanovi" VALUES('sacir_osman','Šaćir','Zehić','M',3,'Grana Osman','1914 – 1999','','osman_1','Osman','Alta','Supruga',0);
 INSERT INTO "clanovi" VALUES('mevla_sacir','Mevla','Zehić','Ž',4,'Grana Osman','','u. Mujagić (Centar)','sacir_osman','Šaćir','','',0);
+INSERT INTO "clanovi" VALUES('mirsad_mevla','Mirsad','Zehić','M',5,'Grana Osman','','','mevla_sacir','Mevla','','',0);
+INSERT INTO "clanovi" VALUES('mirsada_mevla','Mirsada','Zehić','Ž',5,'Grana Osman','','','mevla_sacir','Mevla','','',0);
 INSERT INTO "clanovi" VALUES('seida_sacir','Seida','Zehić','Ž',4,'Grana Osman','','u. Omerović (Šepak)','sacir_osman','Šaćir','','',0);
+INSERT INTO "clanovi" VALUES('mirsad_seida','Mirsad','Zehić','M',5,'Grana Osman','','','seida_sacir','Seida','','',0);
+INSERT INTO "clanovi" VALUES('ahmet_seida','Ahmet','Zehić','M',5,'Grana Osman','','','seida_sacir','Seida','','',0);
 INSERT INTO "clanovi" VALUES('sp_avdo_sacir','Izeta','','Ž',4,'Grana Osman','','r. Avdić','avdo_sacir','Avdo','Avdo','',1);
 INSERT INTO "clanovi" VALUES('avdo_sacir','Avdo','Zehić','M',4,'Grana Osman','','','sacir_osman','Šaćir','Izeta','r. Avdić',0);
 INSERT INTO "clanovi" VALUES('sp_izudin_avdo_sacir','Maksida','','Ž',5,'Grana Osman','','r. Krezić','izudin_avdo_sacir','Izudin','Izudin','',1);
@@ -360,6 +364,8 @@ INSERT INTO "clanovi" VALUES('sp_asmir_mevludin','Admira','','Ž',6,'Grana Osman
 INSERT INTO "clanovi" VALUES('asmir_mevludin','Asmir','Zehić','M',6,'Grana Osman','','','mevludin_avdo_sacir','Mevludin','Admira','r. Nukić',0);
 INSERT INTO "clanovi" VALUES('lejla_asmir_m','Lejla','Zehić','Ž',7,'Grana Osman','','','asmir_mevludin','Asmir','','',0);
 INSERT INTO "clanovi" VALUES('azijada_sacir','Azijada','Zehić','Ž',4,'Grana Osman','','u. Hamidović (Atmačići)','sacir_osman','Šaćir','','',0);
+INSERT INTO "clanovi" VALUES('enes_azijada','Enes','Zehić','M',5,'Grana Osman','','','azijada_sacir','Azijada','','',0);
+INSERT INTO "clanovi" VALUES('emina_azijada','Emina','Zehić','Ž',5,'Grana Osman','','','azijada_sacir','Azijada','','',0);
 INSERT INTO "clanovi" VALUES('sp_omer_sacir','Fatima','','Ž',4,'Grana Osman','','r. Bilalić','omer_sacir','Omer','Omer','n. Poginuo 1995',1);
 INSERT INTO "clanovi" VALUES('omer_sacir','Omer','Zehić','M',4,'Grana Osman','1995','n. Poginuo 1995','sacir_osman','Šaćir','Fatima','r. Bilalić',0);
 INSERT INTO "clanovi" VALUES('zekira_omer_sacir','Zekira','Zehić','Ž',5,'Grana Osman','','u. Karasuljić (Čelić)','omer_sacir','Omer','','',0);

@@ -2132,14 +2132,46 @@
                   "name": "Mevla",
                   "gen": 4,
                   "gender": "F",
-                  "notes": "u. Mujagić (Centar)"
+                  "notes": "u. Mujagić (Centar)",
+                  "children": [
+                    {
+                      "id": "mirsad_mevla",
+                      "name": "Mirsad",
+                      "gen": 5,
+                      "gender": "M",
+                      "notes": ""
+                    },
+                    {
+                      "id": "mirsada_mevla",
+                      "name": "Mirsada",
+                      "gen": 5,
+                      "gender": "F",
+                      "notes": ""
+                    }
+                  ]
                 },
                 {
                   "id": "seida_sacir",
                   "name": "Seida",
                   "gen": 4,
                   "gender": "F",
-                  "notes": "u. Omerović (Šepak)"
+                  "notes": "u. Omerović (Šepak)",
+                  "children": [
+                    {
+                      "id": "mirsad_seida",
+                      "name": "Mirsad",
+                      "gen": 5,
+                      "gender": "M",
+                      "notes": ""
+                    },
+                    {
+                      "id": "ahmet_seida",
+                      "name": "Ahmet",
+                      "gen": 5,
+                      "gender": "M",
+                      "notes": ""
+                    }
+                  ]
                 },
                 {
                   "id": "avdo_sacir",
@@ -2259,7 +2291,23 @@
                   "name": "Azijada",
                   "gen": 4,
                   "gender": "F",
-                  "notes": "u. Hamidović (Atmačići)"
+                  "notes": "u. Hamidović (Atmačići)",
+                  "children": [
+                    {
+                      "id": "enes_azijada",
+                      "name": "Enes",
+                      "gen": 5,
+                      "gender": "M",
+                      "notes": ""
+                    },
+                    {
+                      "id": "emina_azijada",
+                      "name": "Emina",
+                      "gen": 5,
+                      "gender": "F",
+                      "notes": ""
+                    }
+                  ]
                 },
                 {
                   "id": "omer_sacir",
