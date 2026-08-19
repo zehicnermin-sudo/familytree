@@ -495,8 +495,8 @@ def render_illustrator_svg(nodes, lines, max_height, top_offset):
             note_s_svg = ""
             if sp_notes and sp_notes not in ["Supruga", "Suprug"]:
                 clean_sn = sp_notes.replace("r. ", "r. ").replace("u. ", "u. ")
-                if len(clean_sn) > 16: clean_sn = clean_sn[:15] + "…"
-                note_s_svg = f'''<text x="{w-8}" y="42" font-size="9" font-weight="800" fill="#BE185D" text-anchor="end">{clean_sn}</text>'''
+                if len(clean_sn) > 28: clean_sn = clean_sn[:27] + "…"
+                note_s_svg = f'''<text x="{w-8}" y="44" font-size="8.5" font-weight="800" fill="#BE185D" text-anchor="end">{clean_sn}</text>'''
 
             svg.append(f'''
 <g transform="translate({x}, {y})">
