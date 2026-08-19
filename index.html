@@ -692,10 +692,10 @@
         </div>
 
         <div class="btn-group">
-            <button class="tab-btn active btn-tab-main" onclick="loadTree('Porodicno_Stablo_Zehic_A0.svg', this, 'main', 5138, 10056)">🌳 Bilateralni Poster A0/A1 <span class="badge">425</span></button>
-            <button class="tab-btn btn-tab-adem" onclick="loadTree('Branche_Adem.svg', this, 'adem', 2374, 7784)" style="border-left: 3px solid #16a34a;">Grana Adem <span class="badge">177</span></button>
-            <button class="tab-btn btn-tab-osman" onclick="loadTree('Branche_Osman.svg', this, 'osman', 2374, 7258)" style="border-left: 3px solid #0284c7;">Grana Osman <span class="badge">174</span></button>
-            <button class="tab-btn btn-tab-meho" onclick="loadTree('Branche_Meho.svg', this, 'meho', 1726, 2778)" style="border-left: 3px solid #d97706;">Grana Meho <span class="badge">70</span></button>
+            <button class="tab-btn active btn-tab-main" onclick="loadTree('Porodicno_Stablo_Zehic_A0.svg', this, 'main', 3414, 5346)">🌳 Bilateralni Poster A0/A1 <span class="badge">425</span></button>
+            <button class="tab-btn btn-tab-adem" onclick="loadTree('Branche_Adem.svg', this, 'adem', 1572, 4146)" style="border-left: 3px solid #16a34a;">Grana Adem <span class="badge">177</span></button>
+            <button class="tab-btn btn-tab-osman" onclick="loadTree('Branche_Osman.svg', this, 'osman', 1572, 3865)" style="border-left: 3px solid #0284c7;">Grana Osman <span class="badge">174</span></button>
+            <button class="tab-btn btn-tab-meho" onclick="loadTree('Branche_Meho.svg', this, 'meho', 1140, 1497)" style="border-left: 3px solid #d97706;">Grana Meho <span class="badge">70</span></button>
         </div>
 
         <div class="btn-group">
@@ -745,19 +745,19 @@
             <div>
                 <div class="drawer-section-title">🌿 Odaberi Prikaz / Granu</div>
                 <div class="drawer-nav-list">
-                    <button class="drawer-item-btn active btn-tab-main" onclick="loadTree('Porodicno_Stablo_Zehic_A0.svg', this, 'main', 5138, 10056); closeDrawer();">
+                    <button class="drawer-item-btn active btn-tab-main" onclick="loadTree('Porodicno_Stablo_Zehic_A0.svg', this, 'main', 3414, 5346); closeDrawer();">
                         <span>🌳 Bilateralni Poster</span>
                         <span class="badge">425</span>
                     </button>
-                    <button class="drawer-item-btn btn-tab-adem" onclick="loadTree('Branche_Adem.svg', this, 'adem', 2374, 7784); closeDrawer();" style="border-left: 3px solid #16a34a;">
+                    <button class="drawer-item-btn btn-tab-adem" onclick="loadTree('Branche_Adem.svg', this, 'adem', 1572, 4146); closeDrawer();" style="border-left: 3px solid #16a34a;">
                         <span>🌿 Grana Adem</span>
                         <span class="badge">177</span>
                     </button>
-                    <button class="drawer-item-btn btn-tab-osman" onclick="loadTree('Branche_Osman.svg', this, 'osman', 2374, 7258); closeDrawer();" style="border-left: 3px solid #0284c7;">
+                    <button class="drawer-item-btn btn-tab-osman" onclick="loadTree('Branche_Osman.svg', this, 'osman', 1572, 3865); closeDrawer();" style="border-left: 3px solid #0284c7;">
                         <span>🌊 Grana Osman</span>
                         <span class="badge">174</span>
                     </button>
-                    <button class="drawer-item-btn btn-tab-meho" onclick="loadTree('Branche_Meho.svg', this, 'meho', 1726, 2778); closeDrawer();" style="border-left: 3px solid #d97706;">
+                    <button class="drawer-item-btn btn-tab-meho" onclick="loadTree('Branche_Meho.svg', this, 'meho', 1140, 1497); closeDrawer();" style="border-left: 3px solid #d97706;">
                         <span>🍯 Grana Meho</span>
                         <span class="badge">70</span>
                     </button>
@@ -788,7 +788,7 @@
     <!-- Canvas Viewport -->
     <div id="canvasViewport">
         <div id="svgWrapper">
-            <img id="treeImg" src="Porodicno_Stablo_Zehic_A0.svg" width="5138" height="10056" alt="Porodicno Stablo Zehic" />
+            <img id="treeImg" src="Porodicno_Stablo_Zehic_A0.svg" width="3414" height="5346" alt="Porodicno Stablo Zehic" />
             <div id="targetPin"></div>
         </div>
     </div>
@@ -844,35 +844,21 @@
                 <button class="close-btn" onclick="closeDownloadModal()">✕</button>
             </div>
             <div class="download-grid">
-                <!-- 1. Najbolja A3 Opcija: Porodični Atlas -->
-                <div class="download-card" style="border-top: 4px solid #10b981; background: #0f172a; grid-column: 1 / -1;">
-                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
-                        <div class="download-title" style="color: #34d399; font-size: 1.1rem;">📖 Porodični Atlas A3 (Preporučeno za štampanje — 100% Čitljivo)</div>
-                        <span style="background: #065f46; color: #6ee7b7; font-size: 0.72rem; font-weight: 800; padding: 3px 8px; rx: 4px; border-radius: 4px;">⭐ NAJBOLJI ISPIS NA A3</span>
-                    </div>
-                    <div class="download-desc" style="color: #cbd5e1; font-size: 0.84rem;">
-                        Kompletno stablo raspoređeno na <strong>6 prostranih A3 stranica</strong> sa <strong>krupnim, podebljanim fontovima</strong> i visokim kontrastom. Imena, datumi, supružnici i rodbinske veze su kristalno jasni i čitljivi na svakom A3 štampaču!
-                    </div>
-                    <div class="download-actions" style="margin-top: 12px;">
-                        <a href="Porodicno_Stablo_Zehic_A3_Atlas.pdf" download="Porodicno_Stablo_Zehic_A3_Atlas.pdf" class="btn-download-a3" style="background: linear-gradient(135deg, #059669, #10b981); color: #fff; font-weight: 800; padding: 10px 16px;">📥 Preuzmi A3 Atlas PDF (6 Stranica)</a>
-                        <a href="Porodicno_Stablo_Zehic_Poster_Tiled_6xA3.pdf" download="Porodicno_Stablo_Zehic_Poster_Tiled_6xA3.pdf" class="btn-download-a0" style="background: #334155; color: #f1f5f9;">🧩 A3 Poster u dijelovima (6x A3 za zupčasto spajanje)</a>
-                    </div>
-                </div>
-
-                <!-- Glavno Stablo A0 -->
-                <div class="download-card" style="border-top: 3px solid #3b82f6;">
-                    <div class="download-title">🏛 Glavni Poster (1 Veliki List A0 / Štamparija)</div>
-                    <div class="download-desc">Za profesionalnu štampu velikog formata (120 × 84 cm).</div>
+                <!-- Glavno Stablo -->
+                <div class="download-card" style="border-top: 4px solid #3b82f6;">
+                    <div class="download-title">🌳 Glavno Stablo (1 A3 List — Kompaktan &amp; Čitljiv ispis)</div>
+                    <div class="download-desc">Kompletno stablo sa 425 članova optimizovano za <strong>jedan A3 list</strong> sa skraćenim linijama i krupnim imenima.</div>
                     <div class="download-actions">
-                        <a href="Porodicno_Stablo_Zehic_A0.pdf" download="Porodicno_Stablo_Zehic_A0_Poster.pdf" class="btn-download-a0">🏛 Poster A0 (PDF)</a>
-                        <a href="Porodicno_Stablo_Zehic_A0.svg" download="Porodicno_Stablo_Zehic.svg" class="btn-download-svg">Vector SVG</a>
+                        <a href="Porodicno_Stablo_Zehic_A3.pdf" download="Porodicno_Stablo_Zehic_A3.pdf" class="btn-download-a3">📄 Format A3 (1 List)</a>
+                        <a href="Porodicno_Stablo_Zehic_A0.pdf" download="Porodicno_Stablo_Zehic_A0_Poster.pdf" class="btn-download-a0">🏛 Poster A0</a>
+                        <a href="Porodicno_Stablo_Zehic_A0.svg" download="Porodicno_Stablo_Zehic.svg" class="btn-download-svg">SVG</a>
                     </div>
                 </div>
 
                 <!-- Grana Adem -->
                 <div class="download-card" style="border-top: 3px solid #16a34a;">
                     <div class="download-title">🌿 Grana Adem (177 članova)</div>
-                    <div class="download-desc">Horizontalno stablo loze Adema i Mejre.</div>
+                    <div class="download-desc">Horizontalno stablo loze Adema i Mejre na 1 listu.</div>
                     <div class="download-actions">
                         <a href="Grana_Adem_A3.pdf" download="Grana_Adem_A3.pdf" class="btn-download-a3">📄 Format A3</a>
                         <a href="Grana_Adem.pdf" download="Grana_Adem_Poster.pdf" class="btn-download-a0">🏛 Poster</a>
@@ -883,7 +869,7 @@
                 <!-- Grana Osman -->
                 <div class="download-card" style="border-top: 3px solid #0284c7;">
                     <div class="download-title">🌊 Grana Osman (174 člana)</div>
-                    <div class="download-desc">Horizontalno stablo loze Osmana i Hate.</div>
+                    <div class="download-desc">Horizontalno stablo loze Osmana i Hate na 1 listu.</div>
                     <div class="download-actions">
                         <a href="Grana_Osman_A3.pdf" download="Grana_Osman_A3.pdf" class="btn-download-a3">📄 Format A3</a>
                         <a href="Grana_Osman.pdf" download="Grana_Osman_Poster.pdf" class="btn-download-a0">🏛 Poster</a>
@@ -894,7 +880,7 @@
                 <!-- Grana Meho -->
                 <div class="download-card" style="border-top: 3px solid #d97706;">
                     <div class="download-title">🍯 Grana Meho (70 članova)</div>
-                    <div class="download-desc">Horizontalno stablo loze Mehe i Cure.</div>
+                    <div class="download-desc">Horizontalno stablo loze Mehe i Cure na 1 listu.</div>
                     <div class="download-actions">
                         <a href="Grana_Meho_A3.pdf" download="Grana_Meho_A3.pdf" class="btn-download-a3">📄 Format A3</a>
                         <a href="Grana_Meho.pdf" download="Grana_Meho_Poster.pdf" class="btn-download-a0">🏛 Poster</a>
@@ -903,7 +889,7 @@
                 </div>
             </div>
             <div style="padding: 12px 20px; background: #1e293b; border-top: 1px solid rgba(255,255,255,0.08); display: flex; justify-content: space-between; align-items: center;">
-                <span style="font-size: 0.76rem; color: var(--text-muted);">💡 <strong>A3 Atlas</strong> omogućava maksimalnu čitljivost svakog pojedinačnog imena na kućnim i kancelarijskim A3 štampačima.</span>
+                <span style="font-size: 0.76rem; color: var(--text-muted);">💡 <strong>Format A3</strong> je prilagođen za maksimalnu čitljivost na 1 listu standardnog A3 štampača.</span>
                 <button class="tab-btn" onclick="window.print()">🖨 Štampaj</button>
             </div>
         </div>
@@ -970,8 +956,8 @@
         let isDragging = false;
         let startX = 0, startY = 0;
         let currentTreeMode = 'main';
-        let currentSvgWidth = 5138;
-        let currentSvgHeight = 10056;
+        let currentSvgWidth = 3414;
+        let currentSvgHeight = 5346;
         let allSqlMembers = [];
         let treeCoords = null;
 
@@ -1017,8 +1003,8 @@
 
         function loadTree(src, btnElement, mode, w, h) {
             currentTreeMode = mode;
-            currentSvgWidth = w || 5138;
-            currentSvgHeight = h || 10056;
+            currentSvgWidth = w || 3414;
+            currentSvgHeight = h || 5346;
             syncActiveTabs(mode);
 
             treeImg.width = currentSvgWidth;

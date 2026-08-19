@@ -10,9 +10,8 @@ from generate_master_bosnian_poster import BilateralPosterEngine, raw_data
 engine = BilateralPosterEngine(raw_data)
 nodes, lines, max_h, top_off = engine.generate_full_bilateral()
 
-all_x = [n["x"] for n in nodes] + [n["x"] + n["w"] for n in nodes]
-raw_min_x = min(all_x) - 100
-shift_x = -raw_min_x  # 2293.0
+raw_min_x = min(n["x"] for n in nodes) - 40
+shift_x = -raw_min_x
 shift_y = 0
 
 parent_map = {}
