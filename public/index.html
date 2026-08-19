@@ -7,6 +7,11 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <title>PORODIČNO STABLO ZEHIĆ - Bilateralni Poster &amp; Baza Članova</title>
+    <!-- Preload SVG Assets for Instant Mobile Loading -->
+    <link rel="preload" href="Porodicno_Stablo_Zehic_A0.svg" as="image" type="image/svg+xml">
+    <link rel="preload" href="Branche_Adem.svg" as="image" type="image/svg+xml">
+    <link rel="preload" href="Branche_Osman.svg" as="image" type="image/svg+xml">
+    <link rel="preload" href="Branche_Meho.svg" as="image" type="image/svg+xml">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="members_data.js?v=20260819"></script>
     <script src="tree_coords.js?v=20260819"></script>
@@ -371,6 +376,8 @@
             touch-action: none;
             user-select: none;
             -webkit-user-select: none;
+            -webkit-touch-callout: none;
+            -webkit-tap-highlight-color: transparent;
         }
         #canvasViewport:active { cursor: grabbing; }
 
@@ -380,6 +387,12 @@
             left: 0;
             transform-origin: 0 0;
             will-change: transform;
+            transform: translateZ(0);
+            -webkit-transform: translateZ(0);
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            perspective: 1000px;
+            -webkit-perspective: 1000px;
             display: block;
         }
         #treeImg {
@@ -387,9 +400,12 @@
             pointer-events: none;
             user-select: none;
             -webkit-user-drag: none;
+            image-rendering: -webkit-optimize-contrast;
+            transform: translateZ(0);
+            -webkit-transform: translateZ(0);
         }
         #svgWrapper.smooth-transition {
-            transition: transform 0.32s cubic-bezier(0.2, 0.9, 0.3, 1);
+            transition: transform 0.28s cubic-bezier(0.2, 0.9, 0.3, 1);
         }
 
         /* Pulse Target Indicator */
@@ -972,16 +988,29 @@
             return window.innerWidth <= 900;
         }
 
-        function updateTransform() {
-            wrapper.style.transform = `translate3d(${posX}px, ${posY}px, 0) scale(${scale})`;
-            if (zoomLabel) zoomLabel.textContent = Math.round(scale * 100) + '%';
+        let isRafPending = false;
+
+        function updateTransform(immediate) {
+            if (immediate) {
+                wrapper.style.transform = `translate3d(${posX}px, ${posY}px, 0) scale(${scale})`;
+                if (zoomLabel) zoomLabel.textContent = Math.round(scale * 100) + '%';
+                return;
+            }
+            if (!isRafPending) {
+                isRafPending = true;
+                requestAnimationFrame(() => {
+                    wrapper.style.transform = `translate3d(${posX}px, ${posY}px, 0) scale(${scale})`;
+                    if (zoomLabel) zoomLabel.textContent = Math.round(scale * 100) + '%';
+                    isRafPending = false;
+                });
+            }
         }
 
         function triggerSmoothTransition() {
             wrapper.classList.add('smooth-transition');
             setTimeout(() => {
                 wrapper.classList.remove('smooth-transition');
-            }, 340);
+            }, 300);
         }
 
         function syncActiveTabs(mode) {
@@ -1009,7 +1038,7 @@
 
             treeImg.width = currentSvgWidth;
             treeImg.height = currentSvgHeight;
-            treeImg.src = src + (src.includes('?') ? '&' : '?') + 't=' + Date.now();
+            treeImg.src = src;
 
             targetPin.style.display = 'none';
 
@@ -1145,6 +1174,7 @@
 
         viewport.addEventListener('touchstart', (e) => {
             if (e.target.closest('.controls-toolbar') || e.target.closest('.info-pill') || e.target.closest('.modal-overlay') || e.target.closest('.side-drawer')) return;
+            if (e.cancelable) e.preventDefault();
             
             wrapper.classList.remove('smooth-transition');
 
@@ -1165,9 +1195,11 @@
                 initialDistance = getTouchDistance(e);
                 initialScale = scale;
             }
-        }, { passive: true });
+        }, { passive: false });
 
         viewport.addEventListener('touchmove', (e) => {
+            if (e.cancelable) e.preventDefault();
+
             if (touchMode === 'pan' && e.touches.length === 1) {
                 posX = e.touches[0].clientX - lastTouchX;
                 posY = e.touches[0].clientY - lastTouchY;
@@ -1191,7 +1223,7 @@
                     updateTransform();
                 }
             }
-        }, { passive: true });
+        }, { passive: false });
 
         viewport.addEventListener('touchend', (e) => {
             if (e.touches.length === 1) {
