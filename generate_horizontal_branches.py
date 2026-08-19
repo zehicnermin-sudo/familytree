@@ -219,8 +219,8 @@ class HorizontalBranchEngine:
                     note_text = f'''<circle cx="{w-10}" cy="16" r="3.5" fill="#EF4444" />'''
                 elif notes and notes not in ["Supruga", "Suprug"]:
                     clean_n = notes.replace("u. ", "u. ").replace("r. ", "r. ")
-                    if len(clean_n) > 16: clean_n = clean_n[:15] + "…"
-                    note_text = f'''<text x="{w-8}" y="20" font-size="9" font-weight="800" fill="#64748B" text-anchor="end">{clean_n}</text>'''
+                    if len(clean_n) > 28: clean_n = clean_n[:27] + "…"
+                    note_text = f'''<text x="{w-8}" y="{h/2 + 3.5}" font-size="8.5" font-weight="800" fill="#64748B" text-anchor="end">{clean_n}</text>'''
 
                 svg.append(f'''
 <g transform="translate({x}, {y})">

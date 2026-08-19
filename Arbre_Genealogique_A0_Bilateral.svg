@@ -629,7 +629,7 @@
     
     <!-- Big Bold Name -->
     <text x="30" y="20.5" font-size="13.5" font-weight="900" fill="#9F1239">Šemsa</text>
-    <text x="188" y="20" font-size="9" font-weight="800" fill="#64748B" text-anchor="end">u. Bilalić</text>
+    <text x="188" y="19.5" font-size="8.5" font-weight="800" fill="#64748B" text-anchor="end">u. Bilalić</text>
 </g>
 <g transform="translate(688.0, 1586.0)">
     <rect x="0" y="1.5" width="196" height="32" rx="6" fill="#E2E8F0" />
@@ -642,7 +642,7 @@
     
     <!-- Big Bold Name -->
     <text x="30" y="20.5" font-size="13.5" font-weight="900" fill="#9F1239">Zurijeta</text>
-    <text x="188" y="20" font-size="9" font-weight="800" fill="#64748B" text-anchor="end">u. Hadžić</text>
+    <text x="188" y="19.5" font-size="8.5" font-weight="800" fill="#64748B" text-anchor="end">u. Hadžić</text>
 </g>
 <g transform="translate(688.0, 1623.0)">
     <rect x="0" y="1.5" width="196" height="32" rx="6" fill="#E2E8F0" />
@@ -655,7 +655,7 @@
     
     <!-- Big Bold Name -->
     <text x="30" y="20.5" font-size="13.5" font-weight="900" fill="#9F1239">Nura</text>
-    <text x="188" y="20" font-size="9" font-weight="800" fill="#64748B" text-anchor="end">u. Aljić</text>
+    <text x="188" y="19.5" font-size="8.5" font-weight="800" fill="#64748B" text-anchor="end">u. Aljić</text>
 </g>
 <g transform="translate(688.0, 1660.0)">
     <rect x="0" y="1.5" width="196" height="32" rx="6" fill="#E2E8F0" />
@@ -668,7 +668,7 @@
     
     <!-- Big Bold Name -->
     <text x="30" y="20.5" font-size="13.5" font-weight="900" fill="#9F1239">Mensura</text>
-    <text x="188" y="20" font-size="9" font-weight="800" fill="#64748B" text-anchor="end">u. Omerović</text>
+    <text x="188" y="19.5" font-size="8.5" font-weight="800" fill="#64748B" text-anchor="end">u. Omerović</text>
 </g>
 <g transform="translate(688.0, 1697.0)">
     <rect x="0" y="1.5" width="196" height="32" rx="6" fill="#E2E8F0" />
@@ -681,7 +681,7 @@
     
     <!-- Big Bold Name -->
     <text x="30" y="20.5" font-size="13.5" font-weight="900" fill="#9F1239">Izeta</text>
-    <text x="188" y="20" font-size="9" font-weight="800" fill="#64748B" text-anchor="end">u. Murtić</text>
+    <text x="188" y="19.5" font-size="8.5" font-weight="800" fill="#64748B" text-anchor="end">u. Murtić</text>
 </g>
 <g transform="translate(688.0, 1734.0)">
     <rect x="0" y="1.5" width="196" height="32" rx="6" fill="#E2E8F0" />
@@ -694,7 +694,7 @@
     
     <!-- Big Bold Name -->
     <text x="30" y="20.5" font-size="13.5" font-weight="900" fill="#9F1239">Hatidža</text>
-    <text x="188" y="20" font-size="9" font-weight="800" fill="#64748B" text-anchor="end">u. Redžić</text>
+    <text x="188" y="19.5" font-size="8.5" font-weight="800" fill="#64748B" text-anchor="end">u. Redžić</text>
 </g>
 <g transform="translate(688.0, 1771.0)">
     <rect x="0" y="1.5" width="196" height="32" rx="6" fill="#E2E8F0" />
@@ -707,7 +707,7 @@
     
     <!-- Big Bold Name -->
     <text x="30" y="20.5" font-size="13.5" font-weight="900" fill="#9F1239">Fatima</text>
-    <text x="188" y="20" font-size="9" font-weight="800" fill="#64748B" text-anchor="end">u. Alić</text>
+    <text x="188" y="19.5" font-size="8.5" font-weight="800" fill="#64748B" text-anchor="end">u. Alić</text>
 </g>
 <g transform="translate(688.0, 1837.5)">
     <rect x="0" y="1.5" width="196" height="54" rx="8" fill="#E2E8F0" />
@@ -1025,7 +1025,7 @@
     
     <!-- Big Bold Name -->
     <text x="30" y="20.5" font-size="13.5" font-weight="900" fill="#9F1239">Halida</text>
-    <text x="188" y="20" font-size="9" font-weight="800" fill="#64748B" text-anchor="end">u. Smajić</text>
+    <text x="188" y="19.5" font-size="8.5" font-weight="800" fill="#64748B" text-anchor="end">u. Smajić</text>
 </g>
 <g transform="translate(688.0, 2370.0)">
     <rect x="0" y="1.5" width="196" height="32" rx="6" fill="#E2E8F0" />
@@ -1038,7 +1038,7 @@
     
     <!-- Big Bold Name -->
     <text x="30" y="20.5" font-size="13.5" font-weight="900" fill="#9F1239">Džemila</text>
-    <text x="188" y="20" font-size="9" font-weight="800" fill="#64748B" text-anchor="end">u. Haić</text>
+    <text x="188" y="19.5" font-size="8.5" font-weight="800" fill="#64748B" text-anchor="end">u. Haić</text>
 </g>
 <g transform="translate(688.0, 2407.0)">
     <rect x="0" y="1.5" width="196" height="32" rx="6" fill="#E2E8F0" />
@@ -1455,7 +1455,7 @@
     
     <!-- Big Bold Name -->
     <text x="30" y="20.5" font-size="13.5" font-weight="900" fill="#9F1239">Kćerka</text>
-    <text x="188" y="20" font-size="9" font-weight="800" fill="#64748B" text-anchor="end">(Non nommée)</text>
+    <text x="188" y="19.5" font-size="8.5" font-weight="800" fill="#64748B" text-anchor="end">(Non nommée)</text>
 </g>
 <g transform="translate(904.0, 3184.0)">
     <rect x="0" y="1.5" width="196" height="32" rx="6" fill="#E2E8F0" />
@@ -3193,7 +3193,7 @@
     
     <!-- Big Bold Name -->
     <text x="30" y="20.5" font-size="13.5" font-weight="900" fill="#9F1239">Fatima</text>
-    <text x="188" y="20" font-size="9" font-weight="800" fill="#64748B" text-anchor="end">u. Luke</text>
+    <text x="188" y="19.5" font-size="8.5" font-weight="800" fill="#64748B" text-anchor="end">u. Luke</text>
 </g>
 <g transform="translate(2098.0, 1867.0)">
     <rect x="0" y="1.5" width="196" height="54" rx="8" fill="#E2E8F0" />
@@ -4129,7 +4129,7 @@
     
     <!-- Big Bold Name -->
     <text x="30" y="20.5" font-size="13.5" font-weight="900" fill="#9F1239">Mevla</text>
-    <text x="188" y="20" font-size="9" font-weight="800" fill="#64748B" text-anchor="end">u. Šahići-Centar</text>
+    <text x="188" y="19.5" font-size="8.5" font-weight="800" fill="#64748B" text-anchor="end">u. Mujagić (Centar)</text>
 </g>
 <g transform="translate(2314.0, 3110.0)">
     <rect x="0" y="1.5" width="196" height="32" rx="6" fill="#E2E8F0" />
@@ -4142,7 +4142,7 @@
     
     <!-- Big Bold Name -->
     <text x="30" y="20.5" font-size="13.5" font-weight="900" fill="#9F1239">Seida</text>
-    <text x="188" y="20" font-size="9" font-weight="800" fill="#64748B" text-anchor="end">u. Šepak</text>
+    <text x="188" y="19.5" font-size="8.5" font-weight="800" fill="#64748B" text-anchor="end">u. Omerović (Šepak)</text>
 </g>
 <g transform="translate(2314.0, 3221.0)">
     <rect x="0" y="1.5" width="196" height="54" rx="8" fill="#E2E8F0" />
@@ -4199,7 +4199,7 @@
     
     <!-- Big Bold Name -->
     <text x="30" y="20.5" font-size="13.5" font-weight="900" fill="#9F1239">Alma</text>
-    <text x="188" y="20" font-size="9" font-weight="800" fill="#64748B" text-anchor="end">u. Muslić</text>
+    <text x="188" y="19.5" font-size="8.5" font-weight="800" fill="#64748B" text-anchor="end">u. Muslić (Brnjik)</text>
 </g>
 <g transform="translate(2962.0, 3147.0)">
     <rect x="0" y="1.5" width="196" height="32" rx="6" fill="#E2E8F0" />
@@ -4225,7 +4225,7 @@
     
     <!-- Big Bold Name -->
     <text x="30" y="20.5" font-size="13.5" font-weight="900" fill="#9F1239">Amra</text>
-    <text x="188" y="20" font-size="9" font-weight="800" fill="#64748B" text-anchor="end">u. Čajlaković</text>
+    <text x="188" y="19.5" font-size="8.5" font-weight="800" fill="#64748B" text-anchor="end">u. Čajlaković (Mumbašići)</text>
 </g>
 <g transform="translate(2962.0, 3184.0)">
     <rect x="0" y="1.5" width="196" height="32" rx="6" fill="#E2E8F0" />
@@ -4273,7 +4273,7 @@
     
     <!-- Big Bold Name -->
     <text x="30" y="20.5" font-size="13.5" font-weight="900" fill="#9F1239">Samra</text>
-    <text x="188" y="20" font-size="9" font-weight="800" fill="#64748B" text-anchor="end">u. Smajić</text>
+    <text x="188" y="19.5" font-size="8.5" font-weight="800" fill="#64748B" text-anchor="end">u. Smajić (Bijeljina)</text>
 </g>
 <g transform="translate(2962.0, 3221.0)">
     <rect x="0" y="1.5" width="196" height="32" rx="6" fill="#E2E8F0" />
@@ -4347,7 +4347,7 @@
     
     <!-- Big Bold Name -->
     <text x="30" y="20.5" font-size="13.5" font-weight="900" fill="#9F1239">Azijada</text>
-    <text x="188" y="20" font-size="9" font-weight="800" fill="#64748B" text-anchor="end">u. Atmačići</text>
+    <text x="188" y="19.5" font-size="8.5" font-weight="800" fill="#64748B" text-anchor="end">u. Hamidović (Atmačići)</text>
 </g>
 <g transform="translate(2314.0, 3528.0)">
     <rect x="0" y="1.5" width="196" height="54" rx="8" fill="#E2E8F0" />
@@ -4382,7 +4382,7 @@
     
     <!-- Big Bold Name -->
     <text x="30" y="20.5" font-size="13.5" font-weight="900" fill="#9F1239">Zekira</text>
-    <text x="188" y="20" font-size="9" font-weight="800" fill="#64748B" text-anchor="end">u. Čelić</text>
+    <text x="188" y="19.5" font-size="8.5" font-weight="800" fill="#64748B" text-anchor="end">u. Karasuljić (Čelić)</text>
 </g>
 <g transform="translate(2746.0, 3391.0)">
     <rect x="0" y="1.5" width="196" height="32" rx="6" fill="#E2E8F0" />
@@ -4421,7 +4421,7 @@
     
     <!-- Big Bold Name -->
     <text x="30" y="20.5" font-size="13.5" font-weight="900" fill="#9F1239">Zehrina</text>
-    <text x="188" y="20" font-size="9" font-weight="800" fill="#64748B" text-anchor="end">u. Kozluk</text>
+    <text x="188" y="19.5" font-size="8.5" font-weight="800" fill="#64748B" text-anchor="end">u. Jatić (Kozluk)</text>
 </g>
 <g transform="translate(2746.0, 3465.0)">
     <rect x="0" y="1.5" width="196" height="32" rx="6" fill="#E2E8F0" />
@@ -4460,7 +4460,7 @@
     
     <!-- Big Bold Name -->
     <text x="30" y="20.5" font-size="13.5" font-weight="900" fill="#9F1239">Nermina</text>
-    <text x="188" y="20" font-size="9" font-weight="800" fill="#64748B" text-anchor="end">u. Glinje</text>
+    <text x="188" y="19.5" font-size="8.5" font-weight="800" fill="#64748B" text-anchor="end">u. Hrustanović (Glinje)</text>
 </g>
 <g transform="translate(2746.0, 3539.0)">
     <rect x="0" y="1.5" width="196" height="32" rx="6" fill="#E2E8F0" />
@@ -5333,7 +5333,7 @@
     
     <!-- Big Bold Name -->
     <text x="30" y="20.5" font-size="13.5" font-weight="900" fill="#0F3A99">Nurif</text>
-    <text x="188" y="20" font-size="9" font-weight="800" fill="#64748B" text-anchor="end">nije se ženio</text>
+    <text x="188" y="19.5" font-size="8.5" font-weight="800" fill="#64748B" text-anchor="end">nije se ženio</text>
 </g>
 <g transform="translate(1882.0, 5234.0)">
     <rect x="0" y="1.5" width="196" height="32" rx="6" fill="#E2E8F0" />
@@ -5346,5 +5346,5 @@
     
     <!-- Big Bold Name -->
     <text x="30" y="20.5" font-size="13.5" font-weight="900" fill="#9F1239">Paša</text>
-    <text x="188" y="20" font-size="9" font-weight="800" fill="#64748B" text-anchor="end">udata u Glinje …</text>
+    <text x="188" y="19.5" font-size="8.5" font-weight="800" fill="#64748B" text-anchor="end">udata u Glinje u porodicu H…</text>
 </g></svg>

@@ -2132,14 +2132,14 @@
                   "name": "Mevla",
                   "gen": 4,
                   "gender": "F",
-                  "notes": "u. Šahići-Centar"
+                  "notes": "u. Mujagić (Centar)"
                 },
                 {
                   "id": "seida_sacir",
                   "name": "Seida",
                   "gen": 4,
                   "gender": "F",
-                  "notes": "u. Šepak"
+                  "notes": "u. Omerović (Šepak)"
                 },
                 {
                   "id": "avdo_sacir",
@@ -2161,7 +2161,7 @@
                           "name": "Alma",
                           "gen": 6,
                           "gender": "F",
-                          "notes": "u. Muslić",
+                          "notes": "u. Muslić (Brnjik)",
                           "children": [
                             {
                               "id": "adin_alma",
@@ -2177,7 +2177,7 @@
                           "name": "Amra",
                           "gen": 6,
                           "gender": "F",
-                          "notes": "u. Čajlaković",
+                          "notes": "u. Čajlaković (Mumbašići)",
                           "children": [
                             {
                               "id": "faris_amra",
@@ -2206,7 +2206,7 @@
                           "name": "Samra",
                           "gen": 6,
                           "gender": "F",
-                          "notes": "u. Smajić",
+                          "notes": "u. Smajić (Bijeljina)",
                           "children": [
                             {
                               "id": "ajla_samra",
@@ -2259,7 +2259,7 @@
                   "name": "Azijada",
                   "gen": 4,
                   "gender": "F",
-                  "notes": "u. Atmačići"
+                  "notes": "u. Hamidović (Atmačići)"
                 },
                 {
                   "id": "omer_sacir",
@@ -2276,7 +2276,7 @@
                       "name": "Zekira",
                       "gen": 5,
                       "gender": "F",
-                      "notes": "u. Čelić",
+                      "notes": "u. Karasuljić (Čelić)",
                       "children": [
                         {
                           "id": "aldin_zekira",
@@ -2299,7 +2299,7 @@
                       "name": "Zehrina",
                       "gen": 5,
                       "gender": "F",
-                      "notes": "u. Kozluk",
+                      "notes": "u. Jatić (Kozluk)",
                       "children": [
                         {
                           "id": "emina_zehrina",
@@ -2322,7 +2322,7 @@
                       "name": "Nermina",
                       "gen": 5,
                       "gender": "F",
-                      "notes": "u. Glinje",
+                      "notes": "u. Hrustanović (Glinje)",
                       "children": [
                         {
                           "id": "almin_nermina",
