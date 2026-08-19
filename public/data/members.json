@@ -581,7 +581,7 @@
     "roditelj_id": "sacir_osman",
     "ime_roditelja": "Šaćir",
     "supruznik_ime": "Izeta",
-    "supruznik_napomene": "Supruga",
+    "supruznik_napomene": "r. Avdić",
     "je_supruznik": 0
   },
   {
@@ -772,7 +772,7 @@
     "generacija": 4,
     "grana": "Grana Osman",
     "datumi": "",
-    "napomene": "Supruga",
+    "napomene": "r. Bilalić",
     "roditelj_id": "omer_sacir",
     "ime_roditelja": "Omer",
     "supruznik_ime": "Omer",
@@ -982,7 +982,7 @@
     "generacija": 4,
     "grana": "Grana Osman",
     "datumi": "",
-    "napomene": "Supruga",
+    "napomene": "r. Avdić",
     "roditelj_id": "avdo_sacir",
     "ime_roditelja": "Avdo",
     "supruznik_ime": "Avdo",
@@ -1301,7 +1301,7 @@
     "roditelj_id": "sacir_osman",
     "ime_roditelja": "Šaćir",
     "supruznik_ime": "Fatima",
-    "supruznik_napomene": "Supruga",
+    "supruznik_napomene": "r. Bilalić",
     "je_supruznik": 0
   },
   {

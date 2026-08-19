@@ -4164,7 +4164,7 @@
     <circle cx="16" cy="41" r="8" fill="#FCE7F3" />
     <text x="16" y="44" font-size="8" font-weight="900" fill="#881337" text-anchor="middle">I</text>
     <text x="29" y="45" font-size="13" font-weight="900" fill="#9F1239">Izeta</text>
-    
+    <text x="188" y="44" font-size="8.5" font-weight="800" fill="#BE185D" text-anchor="end">r. Avdić</text>
 </g>
 <g transform="translate(2530.0, 3154.5)">
     <rect x="0" y="1.5" width="196" height="54" rx="8" fill="#E2E8F0" />
@@ -4369,7 +4369,7 @@
     <circle cx="16" cy="41" r="8" fill="#FCE7F3" />
     <text x="16" y="44" font-size="8" font-weight="900" fill="#881337" text-anchor="middle">F</text>
     <text x="29" y="45" font-size="13" font-weight="900" fill="#9F1239">Fatima</text>
-    
+    <text x="188" y="44" font-size="8.5" font-weight="800" fill="#BE185D" text-anchor="end">r. Bilalić</text>
 </g>
 <g transform="translate(2530.0, 3409.5)">
     <rect x="0" y="1.5" width="196" height="32" rx="6" fill="#E2E8F0" />
