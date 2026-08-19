@@ -189,7 +189,7 @@
                       "gen": 5,
                       "spouse": {
                         "name": "Mulfeta",
-                        "notes": "r. Sniježnica",
+                        "notes": "r. Hodžić (Sniježnica)",
                         "gender": "F"
                       },
                       "children": [
@@ -199,7 +199,7 @@
                           "gen": 6,
                           "spouse": {
                             "name": "Samra",
-                            "notes": "r. Glinje",
+                            "notes": "r. Ramić (Glinje)",
                             "gender": "F"
                           },
                           "children": [
@@ -224,7 +224,7 @@
                           "gen": 6,
                           "spouse": {
                             "name": "Nedžmira",
-                            "notes": "Supruga",
+                            "notes": "r. Bilalić (T. Brdo)",
                             "gender": "F"
                           },
                           "children": [
@@ -249,7 +249,7 @@
                           "gen": 6,
                           "spouse": {
                             "name": "Mirela",
-                            "notes": "Supruga",
+                            "notes": "r. Mujić (T. Brdo)",
                             "gender": "F"
                           },
                           "children": [
@@ -2368,7 +2368,7 @@
                       "gender": "M",
                       "spouse": {
                         "name": "Ševala",
-                        "notes": "r. Kadrić",
+                        "notes": "r. Kadrić (Stari Teočak)",
                         "gender": "F"
                       }
                     }

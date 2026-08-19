@@ -344,7 +344,7 @@
     <circle cx="16" cy="41" r="8" fill="#FCE7F3" />
     <text x="16" y="44" font-size="8" font-weight="900" fill="#881337" text-anchor="middle">M</text>
     <text x="29" y="45" font-size="13" font-weight="900" fill="#9F1239">Mulfeta</text>
-    <text x="188" y="44" font-size="8.5" font-weight="800" fill="#BE185D" text-anchor="end">r. Sniježnica</text>
+    <text x="188" y="44" font-size="8.5" font-weight="800" fill="#BE185D" text-anchor="end">r. Hodžić (Sniježnica)</text>
 </g>
 <g transform="translate(904, 658.0)">
     <rect x="0" y="1.5" width="196" height="54" rx="8" fill="#E2E8F0" />
@@ -366,7 +366,7 @@
     <circle cx="16" cy="41" r="8" fill="#FCE7F3" />
     <text x="16" y="44" font-size="8" font-weight="900" fill="#881337" text-anchor="middle">S</text>
     <text x="29" y="45" font-size="13" font-weight="900" fill="#9F1239">Samra</text>
-    <text x="188" y="44" font-size="8.5" font-weight="800" fill="#BE185D" text-anchor="end">r. Glinje</text>
+    <text x="188" y="44" font-size="8.5" font-weight="800" fill="#BE185D" text-anchor="end">r. Ramić (Glinje)</text>
 </g>
 <g transform="translate(1120, 658.0)">
     <rect x="0" y="1.5" width="196" height="32" rx="6" fill="#E2E8F0" />
@@ -410,7 +410,7 @@
     <circle cx="16" cy="41" r="8" fill="#FCE7F3" />
     <text x="16" y="44" font-size="8" font-weight="900" fill="#881337" text-anchor="middle">N</text>
     <text x="29" y="45" font-size="13" font-weight="900" fill="#9F1239">Nedžmira</text>
-    
+    <text x="188" y="44" font-size="8.5" font-weight="800" fill="#BE185D" text-anchor="end">r. Bilalić (T. Brdo)</text>
 </g>
 <g transform="translate(1120, 754.0)">
     <rect x="0" y="1.5" width="196" height="32" rx="6" fill="#E2E8F0" />
@@ -454,7 +454,7 @@
     <circle cx="16" cy="41" r="8" fill="#FCE7F3" />
     <text x="16" y="44" font-size="8" font-weight="900" fill="#881337" text-anchor="middle">M</text>
     <text x="29" y="45" font-size="13" font-weight="900" fill="#9F1239">Mirela</text>
-    
+    <text x="188" y="44" font-size="8.5" font-weight="800" fill="#BE185D" text-anchor="end">r. Mujić (T. Brdo)</text>
 </g>
 <g transform="translate(1120, 828.0)">
     <rect x="0" y="1.5" width="196" height="32" rx="6" fill="#E2E8F0" />
