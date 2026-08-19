@@ -227,17 +227,25 @@
     <text x="44" y="27" font-size="15" font-weight="900" fill="#1D4ED8">Velid</text>
 </g>
 
-<g transform="translate(648, 840.0)">
-    <rect x="0" y="2" width="238" height="48" rx="10" fill="#E2E8F0" />
-    <rect x="0" y="0" width="238" height="48" rx="10" fill="#FFFFFF" stroke="#D97706" stroke-width="2" />
-    <path d="M 0 10 Q 0 0 10 0 L 228 0 Q 238 0 238 10 L 238 4 L 0 4 Z" fill="#B45309" />
+<g transform="translate(648, 824.0)">
+    <rect x="0" y="2" width="238" height="80" rx="12" fill="#E2E8F0" />
+    <rect x="0" y="0" width="238" height="80" rx="12" fill="#FFFFFF" stroke="#D97706" stroke-width="2" />
+    <path d="M 0 12 Q 0 0 12 0 L 226 0 Q 238 0 238 12 L 238 4 L 0 4 Z" fill="#B45309" />
+
+    <!-- Person Top Row -->
+    <circle cx="20" cy="22" r="11" fill="#DBEAFE" />
+    <text x="20" y="26" font-size="10.5" font-weight="900" fill="#1E40AF" text-anchor="middle">Z</text>
+    <text x="38" y="26" font-size="14.5" font-weight="900" fill="#1D4ED8">Zedin</text>
     
-    <circle cx="22" cy="26.0" r="13" fill="#DBEAFE" />
-    <text x="22" y="30.5" font-size="11" font-weight="900" fill="#1E40AF" text-anchor="middle">Z</text>
-    
-    
-    
-    <text x="44" y="27" font-size="15" font-weight="900" fill="#1D4ED8">Zedin</text>
+
+    <line x1="10" y1="41" x2="228" y2="41" stroke="#E2E8F0" stroke-width="1" />
+    <circle cx="119.0" cy="41" r="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2" />
+    <text x="119.0" y="44.5" font-size="8.5" font-weight="900" fill="#E11D48" text-anchor="middle">∞</text>
+
+    <!-- Spouse Bottom Row -->
+    <circle cx="20" cy="63" r="11" fill="#FCE7F3" />
+    <text x="20" y="67" font-size="10.5" font-weight="900" fill="#9D174D" text-anchor="middle">Z</text>
+    <text x="38" y="67" font-size="14.5" font-weight="900" fill="#BE185D">Zilka</text>
 </g>
 
 <g transform="translate(932, 674.0)">

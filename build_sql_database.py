@@ -114,6 +114,21 @@ total_count = cur.fetchone()[0]
 cur.execute("SELECT grana, COUNT(*) FROM clanovi GROUP BY grana")
 branch_counts = cur.fetchall()
 
+# Export members JSON for web
+cur.execute("SELECT id, ime, prezime, spol, generacija, grana, datumi, napomene, roditelj_id, ime_roditelja, supruznik_ime, supruznik_napomene, je_supruznik FROM clanovi ORDER BY generacija, ime")
+cols = [d[0] for d in cur.description]
+json_rows = [dict(zip(cols, row)) for row in cur.fetchall()]
+
+import os
+os.makedirs("data", exist_ok=True)
+os.makedirs("public/data", exist_ok=True)
+
+with open("data/members.json", "w", encoding="utf-8") as f:
+    json.dump(json_rows, f, ensure_ascii=False, indent=2)
+
+with open("public/data/members.json", "w", encoding="utf-8") as f:
+    json.dump(json_rows, f, ensure_ascii=False, indent=2)
+
 cur.execute("SELECT spol, COUNT(*) FROM clanovi GROUP BY spol")
 gender_counts = cur.fetchall()
 
@@ -124,3 +139,4 @@ print(f"Successfully created SQL dump: porodicno_stablo_zehic.sql")
 print(f"Total records in database: {total_count}")
 print("Grane:", branch_counts)
 print("Spol:", gender_counts)
+

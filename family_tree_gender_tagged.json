@@ -1332,7 +1332,12 @@
                       "gender": "M"
                     }
                   ],
-                  "gender": "M"
+                  "gender": "M",
+                  "spouse": {
+                    "name": "Zilka",
+                    "notes": "Supruga",
+                    "gender": "F"
+                  }
                 }
               ],
               "gender": "M"
@@ -1740,7 +1745,12 @@
                           "gender": "M"
                         }
                       ],
-                      "gender": "M"
+                      "gender": "M",
+                      "spouse": {
+                        "name": "Mina",
+                        "notes": "Supruga",
+                        "gender": "F"
+                      }
                     },
                     {
                       "id": "avdo_salkan",
@@ -1780,7 +1790,12 @@
                           "gender": "M"
                         }
                       ],
-                      "gender": "M"
+                      "gender": "M",
+                      "spouse": {
+                        "name": "Zumreta",
+                        "notes": "Supruga",
+                        "gender": "F"
+                      }
                     },
                     {
                       "id": "zekija_salkan",
@@ -1806,7 +1821,12 @@
                           "gender": "F"
                         }
                       ],
-                      "gender": "M"
+                      "gender": "M",
+                      "spouse": {
+                        "name": "Sekija",
+                        "notes": "Supruga",
+                        "gender": "F"
+                      }
                     },
                     {
                       "id": "enes_salkan",
@@ -1844,7 +1864,12 @@
                           "gender": "M"
                         }
                       ],
-                      "gender": "M"
+                      "gender": "M",
+                      "spouse": {
+                        "name": "Sabina",
+                        "notes": "Supruga",
+                        "gender": "F"
+                      }
                     }
                   ],
                   "gender": "M"
@@ -2060,6 +2085,30 @@
                         }
                       ],
                       "gender": "M"
+                    },
+                    {
+                      "id": "amela_ohro_sahbaz",
+                      "name": "Amela",
+                      "dates": "",
+                      "notes": "",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "nerka_ohro_sahbaz",
+                      "name": "Nerka",
+                      "dates": "",
+                      "notes": "",
+                      "gen": 5,
+                      "gender": "F"
+                    },
+                    {
+                      "id": "emka_ohro_sahbaz",
+                      "name": "Emka",
+                      "dates": "",
+                      "notes": "",
+                      "gen": 5,
+                      "gender": "F"
                     }
                   ],
                   "gender": "M"
@@ -2112,7 +2161,7 @@
                           "name": "Alma",
                           "gen": 6,
                           "gender": "F",
-                          "notes": "u. Brnjik",
+                          "notes": "u. Muslić",
                           "children": [
                             {
                               "id": "adin_alma",
@@ -2128,7 +2177,7 @@
                           "name": "Amra",
                           "gen": 6,
                           "gender": "F",
-                          "notes": "u. Mumbašići",
+                          "notes": "u. Čajlaković",
                           "children": [
                             {
                               "id": "faris_amra",
@@ -2143,7 +2192,7 @@
                       "gender": "M",
                       "spouse": {
                         "name": "Maksida",
-                        "notes": "Supruga",
+                        "notes": "r. Krezić",
                         "gender": "F"
                       }
                     },
@@ -2157,7 +2206,7 @@
                           "name": "Samra",
                           "gen": 6,
                           "gender": "F",
-                          "notes": "u. Bijeljina",
+                          "notes": "u. Smajić",
                           "children": [
                             {
                               "id": "ajla_samra",
@@ -2190,7 +2239,7 @@
                           "gender": "M",
                           "spouse": {
                             "name": "Admira",
-                            "notes": "Supruga",
+                            "notes": "r. Nukić",
                             "gender": "F"
                           }
                         }
@@ -2198,7 +2247,7 @@
                       "gender": "M",
                       "spouse": {
                         "name": "Remzija",
-                        "notes": "Supruga",
+                        "notes": "r. Šabačkić",
                         "gender": "F"
                       }
                     }
@@ -2319,7 +2368,7 @@
                       "gender": "M",
                       "spouse": {
                         "name": "Ševala",
-                        "notes": "Supruga",
+                        "notes": "r. Kadrić",
                         "gender": "F"
                       }
                     }
@@ -2760,6 +2809,11 @@
         }
       }
     ],
-    "gender": "M"
+    "gender": "M",
+    "spouse": {
+      "name": "Hanča",
+      "notes": "Supruga",
+      "gender": "F"
+    }
   }
 }

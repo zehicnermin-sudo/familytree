@@ -210,6 +210,7 @@ class BilateralPosterEngine:
             "gender": "M",
             "gen": 1,
             "branch": "root",
+            "spouse": root_node.get("spouse"),
             "x": root_card_left_x,
             "y": center_y,
             "w": CARD_W,
@@ -434,7 +435,24 @@ def render_illustrator_svg(nodes, lines, max_height, top_offset):
         spouse = n.get("spouse")
 
         if is_root:
-            svg.append(f'''
+            has_root_spouse = n.get("spouse") is not None
+            if has_root_spouse:
+                sp_name = n["spouse"]["name"]
+                svg.append(f'''
+<g transform="translate({x}, {y})">
+    <rect x="0" y="3" width="{w}" height="{h}" rx="16" fill="#0B0F19" opacity="0.3" />
+    <rect x="0" y="0" width="{w}" height="{h}" rx="16" fill="#1E293B" stroke="#3B82F6" stroke-width="3" />
+    <circle cx="34" cy="28" r="18" fill="#334155" />
+    <text x="34" y="34" font-size="16" font-weight="900" fill="#F8FAFC" text-anchor="middle">👑</text>
+    <text x="62" y="34" font-size="20" font-weight="900" fill="#93C5FD">{name}</text>
+    <line x1="16" y1="48" x2="{w-16}" y2="48" stroke="#334155" stroke-width="1.2" />
+    <circle cx="34" cy="68" r="14" fill="#FCE7F3" />
+    <text x="34" y="73" font-size="11" font-weight="900" fill="#BE185D" text-anchor="middle">💍</text>
+    <text x="62" y="73" font-size="16" font-weight="800" fill="#F472B6">{sp_name}</text>
+    <text x="{w-16}" y="72" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="end">Supruga</text>
+</g>''')
+            else:
+                svg.append(f'''
 <g transform="translate({x}, {y})">
     <rect x="0" y="3" width="{w}" height="{h}" rx="16" fill="#0B0F19" opacity="0.3" />
     <rect x="0" y="0" width="{w}" height="{h}" rx="16" fill="#1E293B" stroke="#3B82F6" stroke-width="3" />
