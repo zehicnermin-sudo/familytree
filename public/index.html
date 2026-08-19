@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <title>PORODIČNO STABLO ZEHIĆ - Bilateralni Poster &amp; Baza Članova</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script src="members_data.js"></script>
-    <script src="tree_coords.js"></script>
+    <script src="members_data.js?v=20260819"></script>
+    <script src="tree_coords.js?v=20260819"></script>
     <style>
         :root {
             --bg-dark: #0b0f19;
@@ -1006,7 +1009,7 @@
 
             treeImg.width = currentSvgWidth;
             treeImg.height = currentSvgHeight;
-            treeImg.src = src;
+            treeImg.src = src + (src.includes('?') ? '&' : '?') + 't=' + Date.now();
 
             targetPin.style.display = 'none';
 
