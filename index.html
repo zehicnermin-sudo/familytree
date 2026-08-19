@@ -950,7 +950,7 @@
     </div>
 
     <script>
-        let scale = 1.0;
+        let scale = 0.70; // Početni zoom 70%
         let posX = 0;
         let posY = 0;
         let isDragging = false;
@@ -1033,7 +1033,10 @@
 
         function clickCentarButton() {
             if (currentTreeMode !== 'main') {
-                loadTree('Porodicno_Stablo_Zehic_A0.svg', null, 'main', 4546, 8504);
+                loadTree('Porodicno_Stablo_Zehic_A0.svg', null, 'main', 3414, 5346);
+                setTimeout(() => {
+                    focusIbrahimDirect();
+                }, 100);
                 return;
             }
             focusIbrahimDirect();
@@ -1041,13 +1044,21 @@
 
         function focusIbrahimDirect() {
             triggerSmoothTransition();
-            scale = isMobile() ? 1.45 : 1.05;
+            scale = 0.70; // Tačno 70% zoom
             const vw = viewport.clientWidth || window.innerWidth;
             const vh = viewport.clientHeight || (window.innerHeight - 60);
 
-            // Ibrahim center in master poster: x = 2273, y = 4342
-            const targetX = 2273;
-            const targetY = 4342;
+            // Ibrahim center u master posteru: cx = 1707, cy = 2723
+            let targetX = 1707;
+            let targetY = 2723;
+
+            if (window.ZEHIC_TREE_COORDS && window.ZEHIC_TREE_COORDS.main && window.ZEHIC_TREE_COORDS.main.nodes) {
+                const ibNode = window.ZEHIC_TREE_COORDS.main.nodes.find(n => n.name === 'Ibrahim' && n.gen === 1);
+                if (ibNode) {
+                    targetX = ibNode.cx;
+                    targetY = ibNode.cy;
+                }
+            }
 
             posX = vw / 2 - targetX * scale;
             posY = vh / 2 - targetY * scale;
@@ -1513,8 +1524,20 @@
             .then(data => { treeCoords = data; })
             .catch(() => {});
 
-        // Initial setup
+        // Initial setup - Fokus na osnivača loze sa 70% zoom
         focusIbrahimDirect();
+
+        treeImg.onload = () => {
+            if (currentTreeMode === 'main') {
+                focusIbrahimDirect();
+            }
+        };
+
+        window.addEventListener('load', () => {
+            if (currentTreeMode === 'main') {
+                focusIbrahimDirect();
+            }
+        });
 
         window.addEventListener('DOMContentLoaded', () => {
             if (!localStorage.getItem('zehic_welcome_seen')) {
