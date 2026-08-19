@@ -677,20 +677,32 @@
         .download-title { font-size: 0.92rem; font-weight: 800; color: #fff; }
         .download-desc { font-size: 0.74rem; color: var(--text-muted); }
         .download-actions { display: flex; gap: 6px; margin-top: auto; flex-wrap: wrap; }
-        .btn-download-a3 {
-            flex: 1; background: #2563eb; color: #fff; text-decoration: none;
-            padding: 7px 8px; border-radius: 8px; font-size: 0.74rem; font-weight: 700;
-            text-align: center; display: inline-flex; align-items: center; justify-content: center;
-        }
         .btn-download-a0 {
-            flex: 1; background: #dc2626; color: #fff; text-decoration: none;
-            padding: 7px 8px; border-radius: 8px; font-size: 0.74rem; font-weight: 700;
+            flex: 1; min-width: 70px; background: #dc2626; color: #fff; text-decoration: none;
+            padding: 7px 8px; border-radius: 8px; font-size: 0.73rem; font-weight: 700;
             text-align: center; display: inline-flex; align-items: center; justify-content: center;
+            transition: opacity 0.15s;
+        }
+        .btn-download-a1 {
+            flex: 1; min-width: 70px; background: #2563eb; color: #fff; text-decoration: none;
+            padding: 7px 8px; border-radius: 8px; font-size: 0.73rem; font-weight: 700;
+            text-align: center; display: inline-flex; align-items: center; justify-content: center;
+            transition: opacity 0.15s;
+        }
+        .btn-download-a2 {
+            flex: 1; min-width: 70px; background: #0d9488; color: #fff; text-decoration: none;
+            padding: 7px 8px; border-radius: 8px; font-size: 0.73rem; font-weight: 700;
+            text-align: center; display: inline-flex; align-items: center; justify-content: center;
+            transition: opacity 0.15s;
         }
         .btn-download-svg {
             background: #334155; color: #cbd5e1; text-decoration: none;
-            padding: 7px 9px; border-radius: 8px; font-size: 0.74rem; font-weight: 700;
+            padding: 7px 9px; border-radius: 8px; font-size: 0.73rem; font-weight: 700;
             text-align: center; display: inline-flex; align-items: center; justify-content: center;
+            transition: opacity 0.15s;
+        }
+        .btn-download-a0:hover, .btn-download-a1:hover, .btn-download-a2:hover, .btn-download-svg:hover {
+            opacity: 0.88;
         }
 
         /* ── SQL Table Modal ── */
@@ -818,13 +830,13 @@
                 <div class="drawer-nav-list">
                     <button class="drawer-item-btn active btn-tab-main" onclick="loadTree('Porodicno_Stablo_Zehic_A0.svg', this, 'main', 3414, 5346); closeDrawer();">
                         <span>🌳 Bilateralni Poster</span>
-                        <span class="badge">425</span>
+                        <span class="badge">431</span>
                     </button>
                     <button class="drawer-item-btn btn-tab-adem" onclick="loadTree('Branche_Adem.svg', this, 'adem', 1572, 4146); closeDrawer();" style="border-left: 3px solid #16a34a;">
                         <span>🌿 Grana Adem</span>
                         <span class="badge">177</span>
                     </button>
-                    <button class="drawer-item-btn btn-tab-osman" onclick="loadTree('Branche_Osman.svg', this, 'osman', 1572, 3865); closeDrawer();" style="border-left: 3px solid #0284c7;">
+                    <button class="drawer-item-btn btn-tab-osman" onclick="loadTree('Branche_Osman.svg', this, 'osman', 1572, 3976); closeDrawer();" style="border-left: 3px solid #0284c7;">
                         <span>🌊 Grana Osman</span>
                         <span class="badge">180</span>
                     </button>
@@ -840,16 +852,13 @@
                 <div class="drawer-section-title">⚙️ Opcije &amp; Preuzimanja</div>
                 <div class="drawer-nav-list">
                     <button class="drawer-item-btn" onclick="openDownloadModal(); closeDrawer();" style="background: linear-gradient(135deg, #991b1b, #b91c1c); color:#fff;">
-                        <span>📥 Preuzmi PDF (A3 / A0)</span>
+                        <span>📥 Preuzmi PDF (A0 / A1 / A2)</span>
                     </button>
                     <button class="drawer-item-btn" onclick="openSqlModal(); closeDrawer();" style="background: linear-gradient(135deg, #065f46, #047857); color:#fff;">
                         <span>📋 Baza Članova (431)</span>
                     </button>
                     <button class="drawer-item-btn" onclick="openWelcomeModal(); closeDrawer();">
                         <span>📜 O Projektu &amp; Zasluge</span>
-                    </button>
-                    <button class="drawer-item-btn" onclick="fitView(); closeDrawer();">
-                        <span>⛶ Prikaz Cijelog Stabla</span>
                     </button>
                 </div>
             </div>
@@ -949,59 +958,63 @@
 
     <!-- 2. Download Modal -->
     <div class="modal-overlay" id="downloadModal" onclick="if(event.target===this) closeDownloadModal()">
-        <div class="modal-content">
+        <div class="modal-content" style="max-width: 780px;">
             <div class="modal-header">
-                <h2>📥 Preuzmi PDF (A3 i A0/A1 Formati) &amp; SVG</h2>
+                <h2>📥 Preuzmi Vektorske Postere (A0, A1, A2) &amp; SVG</h2>
                 <button class="close-btn" onclick="closeDownloadModal()">✕</button>
             </div>
             <div class="download-grid">
                 <!-- Glavno Stablo -->
                 <div class="download-card" style="border-top: 4px solid #3b82f6;">
-                    <div class="download-title">🌳 Glavno Stablo (1 A3 List — Kompaktan &amp; Čitljiv ispis)</div>
-                    <div class="download-desc">Kompletno stablo sa 431 članom optimizovano za <strong>jedan A3 list</strong> sa skraćenim linijama i krupnim imenima.</div>
+                    <div class="download-title">🌳 Glavno Stablo (Kompletno — 431 član)</div>
+                    <div class="download-desc">Bilateralni prikaz sa svim granama i generacijama. Visoka rezolucija za štampu velikih formata.</div>
                     <div class="download-actions">
-                        <a href="Porodicno_Stablo_Zehic_A3.pdf" download="Porodicno_Stablo_Zehic_A3.pdf" class="btn-download-a3">📄 Format A3 (1 List)</a>
-                        <a href="Porodicno_Stablo_Zehic_A0.pdf" download="Porodicno_Stablo_Zehic_A0_Poster.pdf" class="btn-download-a0">🏛 Poster A0</a>
-                        <a href="Porodicno_Stablo_Zehic_A0.svg" download="Porodicno_Stablo_Zehic.svg" class="btn-download-svg">SVG</a>
+                        <a href="Porodicno_Stablo_Zehic_A0.pdf" download="Porodicno_Stablo_Zehic_A0_Poster.pdf" class="btn-download-a0" title="Zidni poster velikog formata (84x119 cm)">🏛 Poster A0</a>
+                        <a href="Porodicno_Stablo_Zehic_A1.pdf" download="Porodicno_Stablo_Zehic_A1.pdf" class="btn-download-a1" title="Format A1 (59x84 cm)">📜 Format A1</a>
+                        <a href="Porodicno_Stablo_Zehic_A2.pdf" download="Porodicno_Stablo_Zehic_A2.pdf" class="btn-download-a2" title="Format A2 (42x59 cm)">📄 Format A2</a>
+                        <a href="Porodicno_Stablo_Zehic_A0.svg" download="Porodicno_Stablo_Zehic.svg" class="btn-download-svg" title="Neograničeno skaliranje">✨ SVG</a>
                     </div>
                 </div>
 
                 <!-- Grana Adem -->
                 <div class="download-card" style="border-top: 3px solid #16a34a;">
                     <div class="download-title">🌿 Grana Adem (177 članova)</div>
-                    <div class="download-desc">Horizontalno stablo loze Adema i Mejre na 1 listu.</div>
+                    <div class="download-desc">Horizontalno stablo loze Adema i Mejre.</div>
                     <div class="download-actions">
-                        <a href="Grana_Adem_A3.pdf" download="Grana_Adem_A3.pdf" class="btn-download-a3">📄 Format A3</a>
-                        <a href="Grana_Adem.pdf" download="Grana_Adem_Poster.pdf" class="btn-download-a0">🏛 Poster</a>
-                        <a href="Branche_Adem.svg" download="Grana_Adem.svg" class="btn-download-svg">SVG</a>
+                        <a href="Grana_Adem.pdf" download="Grana_Adem_Poster.pdf" class="btn-download-a0" title="Poster A0">🏛 Poster A0</a>
+                        <a href="Grana_Adem_A1.pdf" download="Grana_Adem_A1.pdf" class="btn-download-a1" title="Format A1">📜 Format A1</a>
+                        <a href="Grana_Adem_A2.pdf" download="Grana_Adem_A2.pdf" class="btn-download-a2" title="Format A2">📄 Format A2</a>
+                        <a href="Branche_Adem.svg" download="Grana_Adem.svg" class="btn-download-svg" title="SVG">✨ SVG</a>
                     </div>
                 </div>
 
                 <!-- Grana Osman -->
                 <div class="download-card" style="border-top: 3px solid #0284c7;">
-                    <div class="download-title">🌊 Grana Osman (174 člana)</div>
-                    <div class="download-desc">Horizontalno stablo loze Osmana i Hate na 1 listu.</div>
+                    <div class="download-title">🌊 Grana Osman (180 članova)</div>
+                    <div class="download-desc">Horizontalno stablo loze Osmana i Hate.</div>
                     <div class="download-actions">
-                        <a href="Grana_Osman_A3.pdf" download="Grana_Osman_A3.pdf" class="btn-download-a3">📄 Format A3</a>
-                        <a href="Grana_Osman.pdf" download="Grana_Osman_Poster.pdf" class="btn-download-a0">🏛 Poster</a>
-                        <a href="Branche_Osman.svg" download="Grana_Osman.svg" class="btn-download-svg">SVG</a>
+                        <a href="Grana_Osman.pdf" download="Grana_Osman_Poster.pdf" class="btn-download-a0" title="Poster A0">🏛 Poster A0</a>
+                        <a href="Grana_Osman_A1.pdf" download="Grana_Osman_A1.pdf" class="btn-download-a1" title="Format A1">📜 Format A1</a>
+                        <a href="Grana_Osman_A2.pdf" download="Grana_Osman_A2.pdf" class="btn-download-a2" title="Format A2">📄 Format A2</a>
+                        <a href="Branche_Osman.svg" download="Grana_Osman.svg" class="btn-download-svg" title="SVG">✨ SVG</a>
                     </div>
                 </div>
 
                 <!-- Grana Meho -->
                 <div class="download-card" style="border-top: 3px solid #d97706;">
                     <div class="download-title">🍯 Grana Meho (70 članova)</div>
-                    <div class="download-desc">Horizontalno stablo loze Mehe i Cure na 1 listu.</div>
+                    <div class="download-desc">Horizontalno stablo loze Mehe i Cure.</div>
                     <div class="download-actions">
-                        <a href="Grana_Meho_A3.pdf" download="Grana_Meho_A3.pdf" class="btn-download-a3">📄 Format A3</a>
-                        <a href="Grana_Meho.pdf" download="Grana_Meho_Poster.pdf" class="btn-download-a0">🏛 Poster</a>
-                        <a href="Branche_Meho.svg" download="Grana_Meho.svg" class="btn-download-svg">SVG</a>
+                        <a href="Grana_Meho.pdf" download="Grana_Meho_Poster.pdf" class="btn-download-a0" title="Poster A0">🏛 Poster A0</a>
+                        <a href="Grana_Meho_A1.pdf" download="Grana_Meho_A1.pdf" class="btn-download-a1" title="Format A1">📜 Format A1</a>
+                        <a href="Grana_Meho_A2.pdf" download="Grana_Meho_A2.pdf" class="btn-download-a2" title="Format A2">📄 Format A2</a>
+                        <a href="Branche_Meho.svg" download="Grana_Meho.svg" class="btn-download-svg" title="SVG">✨ SVG</a>
                     </div>
                 </div>
             </div>
-            <div style="padding: 12px 20px; background: #1e293b; border-top: 1px solid rgba(255,255,255,0.08); display: flex; justify-content: space-between; align-items: center;">
-                <span style="font-size: 0.76rem; color: var(--text-muted);">💡 <strong>Format A3</strong> je prilagođen za maksimalnu čitljivost na 1 listu standardnog A3 štampača.</span>
-                <button class="tab-btn" onclick="window.print()">🖨 Štampaj</button>
+            <div style="padding: 12px 20px; background: #1e293b; border-top: 1px solid rgba(255,255,255,0.08); display: flex; justify-content: space-between; align-items: center; gap: 14px; flex-wrap: wrap;">
+                <span style="font-size: 0.76rem; color: #94a3b8; line-height: 1.45;">💡 <strong>Preporuka za štampu:</strong> Za kristalno jasnu čitljivost svih 431 imena preporučujemo štampanje formata <strong>A0</strong> (zidni poster) ili <strong>A1 / A2</strong> u štamparijama ili fotokopirnicama. Za neograničeno uvećanje na ekranu bez gubitka kvaliteta koristite <strong>SVG</strong> format.</span>
+                <button class="tab-btn" onclick="window.print()" style="white-space: nowrap;">🖨 Štampaj</button>
             </div>
         </div>
     </div>
