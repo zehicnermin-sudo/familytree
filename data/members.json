@@ -2171,7 +2171,7 @@
     "roditelj_id": "husnija_mujo",
     "ime_roditelja": "Husnija",
     "supruznik_ime": "Mulfeta",
-    "supruznik_napomene": "r. Hodžić (Sniježnica)",
+    "supruznik_napomene": "r. Hodžić",
     "je_supruznik": 0
   },
   {
@@ -2797,7 +2797,7 @@
     "generacija": 5,
     "grana": "Grana Adem",
     "datumi": "",
-    "napomene": "r. Hodžić (Sniježnica)",
+    "napomene": "r. Hodžić",
     "roditelj_id": "fahrudin_husnija",
     "ime_roditelja": "Fahrudin",
     "supruznik_ime": "Fahrudin",
@@ -2906,7 +2906,7 @@
     "roditelj_id": "omer_sacir",
     "ime_roditelja": "Omer",
     "supruznik_ime": "Ševala",
-    "supruznik_napomene": "r. Kadrić (Stari Teočak)",
+    "supruznik_napomene": "r. Kadrić",
     "je_supruznik": 0
   },
   {
@@ -3682,7 +3682,7 @@
     "generacija": 5,
     "grana": "Grana Osman",
     "datumi": "",
-    "napomene": "r. Kadrić (Stari Teočak)",
+    "napomene": "r. Kadrić",
     "roditelj_id": "nermin_omer_sacir",
     "ime_roditelja": "Nermin",
     "supruznik_ime": "Nermin",
@@ -3851,7 +3851,7 @@
     "roditelj_id": "fahrudin_husnija",
     "ime_roditelja": "Fahrudin",
     "supruznik_ime": "Mirela",
-    "supruznik_napomene": "r. Mujić (T. Brdo)",
+    "supruznik_napomene": "r. Mujić",
     "je_supruznik": 0
   },
   {
@@ -5002,7 +5002,7 @@
     "generacija": 6,
     "grana": "Grana Adem",
     "datumi": "",
-    "napomene": "r. Mujić (T. Brdo)",
+    "napomene": "r. Mujić",
     "roditelj_id": "adnan_fahrudin",
     "ime_roditelja": "Adnan",
     "supruznik_ime": "Adnan",
@@ -5122,7 +5122,7 @@
     "generacija": 6,
     "grana": "Grana Adem",
     "datumi": "",
-    "napomene": "r. Bilalić (T. Brdo)",
+    "napomene": "r. Bilalić",
     "roditelj_id": "vahidin_fahrudin",
     "ime_roditelja": "Vahidin",
     "supruznik_ime": "Vahidin",
@@ -5272,7 +5272,7 @@
     "generacija": 6,
     "grana": "Grana Adem",
     "datumi": "",
-    "napomene": "r. Ramić (Glinje)",
+    "napomene": "r. Ramić",
     "roditelj_id": "zaim_fahrudin",
     "ime_roditelja": "Zaim",
     "supruznik_ime": "Zaim",
@@ -5501,7 +5501,7 @@
     "roditelj_id": "fahrudin_husnija",
     "ime_roditelja": "Fahrudin",
     "supruznik_ime": "Nedžmira",
-    "supruznik_napomene": "r. Bilalić (T. Brdo)",
+    "supruznik_napomene": "r. Bilalić",
     "je_supruznik": 0
   },
   {
@@ -5531,7 +5531,7 @@
     "roditelj_id": "fahrudin_husnija",
     "ime_roditelja": "Fahrudin",
     "supruznik_ime": "Samra",
-    "supruznik_napomene": "r. Ramić (Glinje)",
+    "supruznik_napomene": "r. Ramić",
     "je_supruznik": 0
   },
   {
