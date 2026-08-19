@@ -557,31 +557,86 @@
             flex-direction: column;
             gap: 14px;
         }
-        .credits-banner {
-            background: linear-gradient(135deg, rgba(30, 58, 138, 0.3), rgba(15, 23, 42, 0.6));
-            border: 1px solid rgba(96, 165, 250, 0.3);
+        /* Welcome & About Modal Styling */
+        .about-hero {
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.7), rgba(15, 23, 42, 0.9));
+            border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 12px;
-            padding: 12px 16px;
+            padding: 16px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 14px;
         }
-        .credits-banner h3 {
+        .about-hero-title {
+            font-size: 1.08rem;
+            font-weight: 900;
+            color: #f8fafc;
+            letter-spacing: 0.5px;
+        }
+        .about-hero-sub {
+            font-size: 0.78rem;
+            color: #94a3b8;
+            margin-top: 3px;
+        }
+        .origin-badge {
+            background: rgba(59, 130, 246, 0.15);
+            border: 1px solid rgba(96, 165, 250, 0.3);
+            border-radius: 8px;
+            padding: 6px 12px;
+            font-size: 0.74rem;
+            font-weight: 800;
+            color: #93c5fd;
+            text-align: right;
+            white-space: nowrap;
+        }
+        .about-section {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-left: 3px solid #3b82f6;
+            border-radius: 0 10px 10px 0;
+            padding: 14px 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: 0.84rem;
+            line-height: 1.65;
+            color: #cbd5e1;
+        }
+        .about-section h4 {
             font-size: 0.86rem;
             font-weight: 800;
             color: #93c5fd;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            margin-bottom: 4px;
+            margin-bottom: 2px;
         }
-        .credits-banner p { font-size: 0.85rem; color: #f1f5f9; }
-        .quote-box {
-            background: rgba(255, 255, 255, 0.03);
-            border-left: 3px solid #3b82f6;
-            border-radius: 0 10px 10px 0;
-            padding: 12px 16px;
+        .about-credits {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 14px 18px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
+        }
+        .credit-item {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 2px;
         }
-        .quote-box p { margin: 0; font-size: 0.84rem; text-align: justify; }
+        .credit-label {
+            font-size: 0.72rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #64748b;
+        }
+        .credit-name {
+            font-size: 0.85rem;
+            font-weight: 800;
+            color: #f1f5f9;
+        }
         .welcome-footer {
             padding: 12px 20px;
             background: #1e293b;
@@ -826,24 +881,64 @@
 
     <!-- 1. Welcome / About Modal -->
     <div class="modal-overlay" id="welcomeModal" onclick="if(event.target===this) closeWelcomeModal()">
-        <div class="modal-content" style="max-width: 680px;">
+        <div class="modal-content" style="max-width: 720px;">
             <div class="modal-header">
-                <h2>🌳 PORODIČNO STABLO ZEHIĆ</h2>
+                <h2>📜 O PROJEKTU • PORODIČNO STABLO ZEHIĆ</h2>
                 <button class="close-btn" onclick="closeWelcomeModal()" title="Zatvori">✕</button>
             </div>
             <div class="welcome-body">
-                <div class="credits-banner">
-                    <h3>🤝 O Projektu &amp; Zasluge</h3>
-                    <p>Ovaj projekat izrade i očuvanja porodičnog stabla pokrenuo je <strong>Kadraga Zehić</strong>, uz svesrdnu pomoć i doprinos <strong>Nermina Zehića</strong>.</p>
+                <!-- Hero Badge -->
+                <div class="about-hero">
+                    <div>
+                        <div class="about-hero-title">PORODIČNO STABLO ZEHIĆ</div>
+                        <div class="about-hero-sub">1855 – 2025 • 8 Generacija • 425 Članova</div>
+                    </div>
+                    <div class="origin-badge">
+                        <div>🏡 TURSUNOVO BRDO</div>
+                        <div style="font-size: 0.68rem; font-weight: 600; opacity: 0.85;">Mjesto porijekla familije Zehić</div>
+                    </div>
                 </div>
 
-                <div class="quote-box">
-                    <p>"Islam je uspostavio principe na kojima se bazira komunikacija među ljudima, a posebno mjesto dao je rodbinskim vezama. U islamu rodbinu sačinjavaju svi oni s kojima se ne može zasnovati bračna zajednica. Pored krvnog srodstva po uzlaznoj ili silaznoj liniji (otac, majka, djedovi, nene, sinovi, kćeri, unučad i njihovo potomstvo), postoji i krvno srodstvo po bočnoj liniji (braća, sestre, i njihovo potomstvo, amidže, daidže i tetke). U rodbinu se ubraja i rodbina po mlijeku i neki članovi po tazbinskoj (ženidbenoj) vezi.</p>
+                <!-- Predgovor: O rodbinskim vezama -->
+                <div class="about-section">
+                    <h4>📖 Predgovor — O rodbinskim vezama</h4>
+                    <p>Islam je uspostavio principe na kojima se bazira komunikacija među ljudima, a posebno mjesto dao je rodbinskim vezama. U islamu rodbinu sačinjavaju svi oni s kojima se ne može zasnovati bračna zajednica. Pored krvnog srodstva po uzlaznoj ili silaznoj liniji (otac, majka, djedovi, nene, sinovi, kćeri, unučad i njihovo potomstvo), postoji i krvno srodstvo po bočnoj liniji (braća, sestre, i njihovo potomstvo, amidže, daidže i tetke). U rodbinu se ubraja i rodbina po mlijeku i neki članovi po tazbinskoj (ženidbenoj) vezi.</p>
+                    
+                    <p style="background: rgba(255,255,255,0.03); padding: 8px 12px; border-radius: 6px;">
+                        Kur'an koristi dva izraza za označavanje krvnog srodstva:<br>
+                        <strong>a) <em style="color: #93c5fd;">erham</em></strong> &nbsp; i &nbsp; <strong>b) <em style="color: #93c5fd;">zu-l-kurba</em></strong>.
+                    </p>
 
-                    <p>Kur'an koristi dva izraza za označavanje krvnog srodstva:<br>
-                    <strong>a) erham</strong> i <strong>b) zu-l-kurba</strong>.</p>
+                    <p>Brojni su kur'anski ajeti koji ukazuju na važnost rodbinskih veza i njihovo održavanje. Kur'an govori o rodbini uglavnom u formi imperativa, što će reći da je pravo rodbine zagarantovano Allahovom naredbom i nije dobrovoljan čin. Kur'an u tom pogledu daje sasvim jasne smjernice.</p>
 
-                    <p>Brojni su kur'anski ajeti koji ukazuju na važnost rodbinskih veza i njihovo održavanje. Kur'an govori o rodbini uglavnom u formi imperativa, što će reći da je pravo rodbine zagarantovano Allahovom naredbom i nije dobrovoljan čin. Kur'an u tom pogledu daje sasvim jasne smjernice. Svim poslanicima i njihovim narodima bilo je naređivano da čuvaju rodbinske veze. Allah dž.š. u 83. ajetu Sure El-Bekare navodi naredbu o čuvanju rodbinskih veza."</p>
+                    <p>Svim poslanicima i njihovim narodima bilo je naređivano da čuvaju rodbinske veze. Allah dž.š. u <strong>83. ajetu Sure El-Bekare</strong> navodi naredbu o čuvanju rodbinskih veza.</p>
+                </div>
+
+                <!-- Porodična bilješka o porodici Zehić -->
+                <div class="about-section" style="border-left-color: #10b981;">
+                    <h4 style="color: #6ee7b7;">📜 Porodična bilješka o porodici Zehić</h4>
+                    <p style="font-size: 0.8rem; color: #94a3b8; font-weight: 700; margin-bottom: -4px;">Napomena o prikupljanju podataka:</p>
+                    <p>Prilikom prikupljanja podataka za ovo porodično stablo nisu pronađeni pouzdani pisani podaci koji bi sa sigurnošću objasnili kada je i na koji način nastalo prezime Zehić. Zbog toga je važno razlikovati ono što je porodično predanje i usmeno sačuvano sjećanje od podataka koji se mogu potvrditi dostupnim historijskim i administrativnim izvorima.</p>
+                    
+                    <p>Prema porodičnim saznanjima, naša porodica Zehić svoje porijeklo veže za selo <strong>Tursunovo Brdo</strong>, na području današnje općine <strong>Teočak</strong>. Istovremeno, prezime Zehić postoji i u drugim krajevima sjeveroistočne Bosne. U selu <strong>Nezuk</strong>, općina Sapna, živi više porodica koje nose prezime Zehić, a prezime se pojavljuje i u <strong>Gračanici</strong> na području općine Živinice. Prema dosadašnjim porodičnim saznanjima, navedene porodice nisu u rodbinskoj vezi sa našom porodicom Zehić.</p>
+
+                    <p>Ova činjenica je važna jer samo podudaranje prezimena ne predstavlja dokaz zajedničkog porijekla. Kod starijih bosanskohercegovačkih prezimena moguće je da su različite porodice, nezavisno jedna od druge, vremenom dobile isto ili slično prezime. Zbog toga ovo porodično stablo treba posmatrati prije svega kao zapis konkretne porodične loze, a ne kao dokaz da svi Zehići u Bosni i Hercegovini potječu od jednog zajedničkog pretka.</p>
+                </div>
+
+                <!-- Impresum & Zasluge -->
+                <div class="about-credits">
+                    <div class="credit-item">
+                        <span class="credit-label">Autor Projekta:</span>
+                        <span class="credit-name">Kadraga Zehić</span>
+                    </div>
+                    <div class="credit-item">
+                        <span class="credit-label">Grafička Obrada:</span>
+                        <span class="credit-name">Emir Aličić</span>
+                    </div>
+                    <div class="credit-item" style="grid-column: 1 / -1; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 8px;">
+                        <span class="credit-label">U prikupljanju podataka i izradi pomogli:</span>
+                        <span class="credit-name" style="color: #93c5fd;">Nermin Zehić, Avdo Zehić i Ahmet Zehić</span>
+                    </div>
                 </div>
             </div>
             <div class="welcome-footer">
