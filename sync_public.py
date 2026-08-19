@@ -11,6 +11,8 @@ files_to_sync = [
     "Branche_Adem.svg",
     "Branche_Osman.svg",
     "Branche_Meho.svg",
+    "Porodicno_Stablo_Zehic_A3_Atlas.pdf",
+    "Porodicno_Stablo_Zehic_Poster_Tiled_6xA3.pdf",
     "Porodicno_Stablo_Zehic_A3.pdf",
     "Grana_Adem_A3.pdf",
     "Grana_Osman_A3.pdf",

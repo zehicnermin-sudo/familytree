@@ -1,0 +1,892 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="2970px" height="2100px" viewBox="0 0 2970 2100" style="font-family: 'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif;">
+<rect x="0" y="0" width="2970" height="2100" fill="#F8FAFC" />
+
+<!-- Page Header Banner -->
+<rect x="60" y="40" width="2850" height="130" rx="20" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="3" />
+<rect x="60" y="40" width="18" height="130" rx="9" fill="#16A34A" />
+
+<text x="110" y="96" font-size="36" font-weight="900" fill="#0F172A">GRANA ADEM — DIO 1 (LOZA AVDE & MUJE)</text>
+<text x="110" y="140" font-size="20" font-weight="700" fill="#475569">Detaljno potomstvo Avde i Muje Zehića sa suprugama i svim generacijama</text>
+
+<rect x="2610" y="70" width="260" height="65" rx="32" fill="#DCFCE7" stroke="#16A34A" stroke-width="2" />
+<text x="2740" y="112" font-size="22" font-weight="900" fill="#14532D" text-anchor="middle">FORMAT A3 • JASAN ISPIS</text>
+
+<!-- Tree Content Scaled -->
+<g transform="translate(0, 127.6295585412668) scale(0.41986564299424184)">
+<line x1="420" y1="779.0" x2="450.0" y2="779.0" stroke="#16A34A" stroke-width="3" /><line x1="450.0" y1="252.5" x2="480" y2="252.5" stroke="#16A34A" stroke-width="3" /><line x1="450.0" y1="333.5" x2="480" y2="333.5" stroke="#16A34A" stroke-width="3" /><line x1="450.0" y1="414.5" x2="480" y2="414.5" stroke="#16A34A" stroke-width="3" /><line x1="800" y1="900.5" x2="830.0" y2="900.5" stroke="#16A34A" stroke-width="3" /><line x1="830.0" y1="495.5" x2="860" y2="495.5" stroke="#16A34A" stroke-width="3" /><line x1="830.0" y1="576.5" x2="860" y2="576.5" stroke="#16A34A" stroke-width="3" /><line x1="830.0" y1="657.5" x2="860" y2="657.5" stroke="#16A34A" stroke-width="3" /><line x1="830.0" y1="738.5" x2="860" y2="738.5" stroke="#16A34A" stroke-width="3" /><line x1="1180" y1="860.0" x2="1210.0" y2="860.0" stroke="#16A34A" stroke-width="3" /><line x1="1210.0" y1="819.5" x2="1240" y2="819.5" stroke="#16A34A" stroke-width="3" /><line x1="1210.0" y1="900.5" x2="1240" y2="900.5" stroke="#16A34A" stroke-width="3" /><line x1="1210.0" y1="819.5" x2="1210.0" y2="900.5" stroke="#16A34A" stroke-width="3" /><line x1="830.0" y1="860.0" x2="860" y2="860.0" stroke="#16A34A" stroke-width="3" /><line x1="830.0" y1="981.5" x2="860" y2="981.5" stroke="#16A34A" stroke-width="3" /><line x1="1180" y1="1184.0" x2="1210.0" y2="1184.0" stroke="#16A34A" stroke-width="3" /><line x1="1210.0" y1="1062.5" x2="1240" y2="1062.5" stroke="#16A34A" stroke-width="3" /><line x1="1210.0" y1="1143.5" x2="1240" y2="1143.5" stroke="#16A34A" stroke-width="3" /><line x1="1210.0" y1="1224.5" x2="1240" y2="1224.5" stroke="#16A34A" stroke-width="3" /><line x1="1210.0" y1="1305.5" x2="1240" y2="1305.5" stroke="#16A34A" stroke-width="3" /><line x1="1210.0" y1="1062.5" x2="1210.0" y2="1305.5" stroke="#16A34A" stroke-width="3" /><line x1="830.0" y1="1184.0" x2="860" y2="1184.0" stroke="#16A34A" stroke-width="3" /><line x1="830.0" y1="495.5" x2="830.0" y2="1184.0" stroke="#16A34A" stroke-width="3" /><line x1="450.0" y1="900.5" x2="480" y2="900.5" stroke="#16A34A" stroke-width="3" /><line x1="450.0" y1="252.5" x2="450.0" y2="900.5" stroke="#16A34A" stroke-width="3" /><line x1="420" y1="2878.0" x2="450.0" y2="2878.0" stroke="#16A34A" stroke-width="3" /><line x1="800" y1="2068.0" x2="830.0" y2="2068.0" stroke="#16A34A" stroke-width="3" /><line x1="1180" y1="1663.5" x2="1210.0" y2="1663.5" stroke="#16A34A" stroke-width="3" /><line x1="1560" y1="1420.5" x2="1590.0" y2="1420.5" stroke="#16A34A" stroke-width="3" /><line x1="1590.0" y1="1400.5" x2="1620" y2="1400.5" stroke="#16A34A" stroke-width="3" /><line x1="1590.0" y1="1400.5" x2="1590.0" y2="1420.5" stroke="#16A34A" stroke-width="3" /><line x1="1210.0" y1="1420.5" x2="1240" y2="1420.5" stroke="#16A34A" stroke-width="3" /><line x1="1210.0" y1="1521.5" x2="1240" y2="1521.5" stroke="#16A34A" stroke-width="3" /><line x1="1560" y1="1643.0" x2="1590.0" y2="1643.0" stroke="#16A34A" stroke-width="3" /><line x1="1590.0" y1="1602.5" x2="1620" y2="1602.5" stroke="#16A34A" stroke-width="3" /><line x1="1590.0" y1="1683.5" x2="1620" y2="1683.5" stroke="#16A34A" stroke-width="3" /><line x1="1590.0" y1="1602.5" x2="1590.0" y2="1683.5" stroke="#16A34A" stroke-width="3" /><line x1="1210.0" y1="1643.0" x2="1240" y2="1643.0" stroke="#16A34A" stroke-width="3" /><line x1="1560" y1="1845.5" x2="1590.0" y2="1845.5" stroke="#16A34A" stroke-width="3" /><line x1="1590.0" y1="1764.5" x2="1620" y2="1764.5" stroke="#16A34A" stroke-width="3" /><line x1="1590.0" y1="1845.5" x2="1620" y2="1845.5" stroke="#16A34A" stroke-width="3" /><line x1="1590.0" y1="1926.5" x2="1620" y2="1926.5" stroke="#16A34A" stroke-width="3" /><line x1="1590.0" y1="1764.5" x2="1590.0" y2="1926.5" stroke="#16A34A" stroke-width="3" /><line x1="1210.0" y1="1845.5" x2="1240" y2="1845.5" stroke="#16A34A" stroke-width="3" /><line x1="1210.0" y1="1420.5" x2="1210.0" y2="1845.5" stroke="#16A34A" stroke-width="3" /><line x1="830.0" y1="1663.5" x2="860" y2="1663.5" stroke="#16A34A" stroke-width="3" /><line x1="830.0" y1="2007.5" x2="860" y2="2007.5" stroke="#16A34A" stroke-width="3" /><line x1="830.0" y1="2088.5" x2="860" y2="2088.5" stroke="#16A34A" stroke-width="3" /><line x1="830.0" y1="2169.5" x2="860" y2="2169.5" stroke="#16A34A" stroke-width="3" /><line x1="830.0" y1="2250.5" x2="860" y2="2250.5" stroke="#16A34A" stroke-width="3" /><line x1="830.0" y1="2331.5" x2="860" y2="2331.5" stroke="#16A34A" stroke-width="3" /><line x1="830.0" y1="2412.5" x2="860" y2="2412.5" stroke="#16A34A" stroke-width="3" /><line x1="830.0" y1="2493.5" x2="860" y2="2493.5" stroke="#16A34A" stroke-width="3" /><line x1="1180" y1="2655.0" x2="1210.0" y2="2655.0" stroke="#16A34A" stroke-width="3" /><line x1="1560" y1="2594.5" x2="1590.0" y2="2594.5" stroke="#16A34A" stroke-width="3" /><line x1="1590.0" y1="2574.5" x2="1620" y2="2574.5" stroke="#16A34A" stroke-width="3" /><line x1="1590.0" y1="2574.5" x2="1590.0" y2="2594.5" stroke="#16A34A" stroke-width="3" /><line x1="1210.0" y1="2594.5" x2="1240" y2="2594.5" stroke="#16A34A" stroke-width="3" /><line x1="1560" y1="2715.5" x2="1590.0" y2="2715.5" stroke="#16A34A" stroke-width="3" /><line x1="1590.0" y1="2695.5" x2="1620" y2="2695.5" stroke="#16A34A" stroke-width="3" /><line x1="1590.0" y1="2695.5" x2="1590.0" y2="2715.5" stroke="#16A34A" stroke-width="3" /><line x1="1210.0" y1="2715.5" x2="1240" y2="2715.5" stroke="#16A34A" stroke-width="3" /><line x1="1210.0" y1="2594.5" x2="1210.0" y2="2715.5" stroke="#16A34A" stroke-width="3" /><line x1="830.0" y1="2655.0" x2="860" y2="2655.0" stroke="#16A34A" stroke-width="3" /><line x1="830.0" y1="1663.5" x2="830.0" y2="2655.0" stroke="#16A34A" stroke-width="3" /><line x1="450.0" y1="2068.0" x2="480" y2="2068.0" stroke="#16A34A" stroke-width="3" /><line x1="800" y1="3140.5" x2="830.0" y2="3140.5" stroke="#16A34A" stroke-width="3" /><line x1="1180" y1="2857.0" x2="1210.0" y2="2857.0" stroke="#16A34A" stroke-width="3" /><line x1="1210.0" y1="2816.5" x2="1240" y2="2816.5" stroke="#16A34A" stroke-width="3" /><line x1="1210.0" y1="2897.5" x2="1240" y2="2897.5" stroke="#16A34A" stroke-width="3" /><line x1="1210.0" y1="2816.5" x2="1210.0" y2="2897.5" stroke="#16A34A" stroke-width="3" /><line x1="830.0" y1="2857.0" x2="860" y2="2857.0" stroke="#16A34A" stroke-width="3" /><line x1="830.0" y1="2978.5" x2="860" y2="2978.5" stroke="#16A34A" stroke-width="3" /><line x1="830.0" y1="3059.5" x2="860" y2="3059.5" stroke="#16A34A" stroke-width="3" /><line x1="830.0" y1="3140.5" x2="860" y2="3140.5" stroke="#16A34A" stroke-width="3" /><line x1="1180" y1="3262.0" x2="1210.0" y2="3262.0" stroke="#16A34A" stroke-width="3" /><line x1="1210.0" y1="3221.5" x2="1240" y2="3221.5" stroke="#16A34A" stroke-width="3" /><line x1="1210.0" y1="3302.5" x2="1240" y2="3302.5" stroke="#16A34A" stroke-width="3" /><line x1="1210.0" y1="3221.5" x2="1210.0" y2="3302.5" stroke="#16A34A" stroke-width="3" /><line x1="830.0" y1="3262.0" x2="860" y2="3262.0" stroke="#16A34A" stroke-width="3" /><line x1="830.0" y1="3383.5" x2="860" y2="3383.5" stroke="#16A34A" stroke-width="3" /><line x1="830.0" y1="3464.5" x2="860" y2="3464.5" stroke="#16A34A" stroke-width="3" /><line x1="830.0" y1="2857.0" x2="830.0" y2="3464.5" stroke="#16A34A" stroke-width="3" /><line x1="450.0" y1="3140.5" x2="480" y2="3140.5" stroke="#16A34A" stroke-width="3" /><line x1="450.0" y1="3545.5" x2="480" y2="3545.5" stroke="#16A34A" stroke-width="3" /><line x1="450.0" y1="3626.5" x2="480" y2="3626.5" stroke="#16A34A" stroke-width="3" /><line x1="800" y1="4031.5" x2="830.0" y2="4031.5" stroke="#16A34A" stroke-width="3" /><line x1="830.0" y1="3707.5" x2="860" y2="3707.5" stroke="#16A34A" stroke-width="3" /><line x1="830.0" y1="3788.5" x2="860" y2="3788.5" stroke="#16A34A" stroke-width="3" /><line x1="830.0" y1="3869.5" x2="860" y2="3869.5" stroke="#16A34A" stroke-width="3" /><line x1="1180" y1="4153.0" x2="1210.0" y2="4153.0" stroke="#16A34A" stroke-width="3" /><line x1="1560" y1="3991.0" x2="1590.0" y2="3991.0" stroke="#16A34A" stroke-width="3" /><line x1="1590.0" y1="3950.5" x2="1620" y2="3950.5" stroke="#16A34A" stroke-width="3" /><line x1="1590.0" y1="4031.5" x2="1620" y2="4031.5" stroke="#16A34A" stroke-width="3" /><line x1="1590.0" y1="3950.5" x2="1590.0" y2="4031.5" stroke="#16A34A" stroke-width="3" /><line x1="1210.0" y1="3991.0" x2="1240" y2="3991.0" stroke="#16A34A" stroke-width="3" /><line x1="1210.0" y1="4112.5" x2="1240" y2="4112.5" stroke="#16A34A" stroke-width="3" /><line x1="1210.0" y1="4193.5" x2="1240" y2="4193.5" stroke="#16A34A" stroke-width="3" /><line x1="1560" y1="4315.0" x2="1590.0" y2="4315.0" stroke="#16A34A" stroke-width="3" /><line x1="1590.0" y1="4274.5" x2="1620" y2="4274.5" stroke="#16A34A" stroke-width="3" /><line x1="1590.0" y1="4355.5" x2="1620" y2="4355.5" stroke="#16A34A" stroke-width="3" /><line x1="1590.0" y1="4274.5" x2="1590.0" y2="4355.5" stroke="#16A34A" stroke-width="3" /><line x1="1210.0" y1="4315.0" x2="1240" y2="4315.0" stroke="#16A34A" stroke-width="3" /><line x1="1210.0" y1="3991.0" x2="1210.0" y2="4315.0" stroke="#16A34A" stroke-width="3" /><line x1="830.0" y1="4153.0" x2="860" y2="4153.0" stroke="#16A34A" stroke-width="3" /><line x1="830.0" y1="3707.5" x2="830.0" y2="4153.0" stroke="#16A34A" stroke-width="3" /><line x1="450.0" y1="4031.5" x2="480" y2="4031.5" stroke="#16A34A" stroke-width="3" /><line x1="450.0" y1="2068.0" x2="450.0" y2="4031.5" stroke="#16A34A" stroke-width="3" />
+
+<g transform="translate(100, 726.5)">
+    <rect x="0" y="4" width="320" height="105" rx="16" fill="#000" opacity="0.1" />
+    <rect x="0" y="0" width="320" height="105" rx="16" fill="#FFFFFF" stroke="#3B82F6" stroke-width="3" />
+    <rect x="0" y="0" width="10" height="105" rx="5" fill="#16A34A" />
+    
+    <!-- Primary person -->
+    <rect x="10" y="0" width="310" height="52.5" fill="#EFF6FF" rx="14" style="border-bottom-left-radius:0; border-bottom-right-radius:0;" />
+    <circle cx="38" cy="26.25" r="18" fill="#DBEAFE" />
+    <text x="38" y="32.25" font-size="16" font-weight="900" fill="#1D4ED8" text-anchor="middle">A</text>
+    <text x="68" y="33.25" font-size="22" font-weight="900" fill="#1E3A8A">Avdo (1887 – 1957)</text>
+    
+
+    <!-- Line divider -->
+    <line x1="16" y1="52.5" x2="304" y2="52.5" stroke="#CBD5E1" stroke-width="1.5" />
+    <circle cx="160.0" cy="52.5" r="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" />
+    <text x="160.0" y="57.5" font-size="12" font-weight="900" fill="#E11D48" text-anchor="middle">∞</text>
+
+    <!-- Spouse -->
+    <circle cx="38" cy="78.75" r="18" fill="#FCE7F3" />
+    <text x="38" y="84.75" font-size="15" font-weight="900" fill="#BE185D" text-anchor="middle">💍</text>
+    <text x="68" y="85.75" font-size="20" font-weight="900" fill="#831843">Azemina</text>
+    <text x="304" y="89" font-size="13" font-weight="800" fill="#BE185D" text-anchor="end">r. Husejnović</text>
+</g>
+<g transform="translate(480, 220.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#DBEAFE" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#1D4ED8" text-anchor="middle">O</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#1E3A8A">Osman</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    <rect x="200" y="8" width="112" height="26" rx="13" fill="#FEE2E2" stroke="#EF4444" stroke-width="1.5"/><text x="256" y="26" font-size="14" font-weight="900" fill="#B91C1C" text-anchor="middle">Poginuo</text>
+</g>
+<g transform="translate(480, 301.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#DBEAFE" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#1D4ED8" text-anchor="middle">N</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#1E3A8A">Nurija</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    <rect x="200" y="8" width="112" height="26" rx="13" fill="#FEE2E2" stroke="#EF4444" stroke-width="1.5"/><text x="256" y="26" font-size="14" font-weight="900" fill="#B91C1C" text-anchor="middle">Poginuo</text>
+</g>
+<g transform="translate(480, 382.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#FDF2F8" stroke="#EC4899" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#FCE7F3" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#BE185D" text-anchor="middle">H</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#831843">Hatidza</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(480, 848.0)">
+    <rect x="0" y="4" width="320" height="105" rx="16" fill="#000" opacity="0.1" />
+    <rect x="0" y="0" width="320" height="105" rx="16" fill="#FFFFFF" stroke="#3B82F6" stroke-width="3" />
+    <rect x="0" y="0" width="10" height="105" rx="5" fill="#16A34A" />
+    
+    <!-- Primary person -->
+    <rect x="10" y="0" width="310" height="52.5" fill="#EFF6FF" rx="14" style="border-bottom-left-radius:0; border-bottom-right-radius:0;" />
+    <circle cx="38" cy="26.25" r="18" fill="#DBEAFE" />
+    <text x="38" y="32.25" font-size="16" font-weight="900" fill="#1D4ED8" text-anchor="middle">B</text>
+    <text x="68" y="33.25" font-size="22" font-weight="900" fill="#1E3A8A">Beriz</text>
+    
+
+    <!-- Line divider -->
+    <line x1="16" y1="52.5" x2="304" y2="52.5" stroke="#CBD5E1" stroke-width="1.5" />
+    <circle cx="160.0" cy="52.5" r="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" />
+    <text x="160.0" y="57.5" font-size="12" font-weight="900" fill="#E11D48" text-anchor="middle">∞</text>
+
+    <!-- Spouse -->
+    <circle cx="38" cy="78.75" r="18" fill="#FCE7F3" />
+    <text x="38" y="84.75" font-size="15" font-weight="900" fill="#BE185D" text-anchor="middle">💍</text>
+    <text x="68" y="85.75" font-size="20" font-weight="900" fill="#831843">Nura</text>
+    <text x="304" y="89" font-size="13" font-weight="800" fill="#BE185D" text-anchor="end">Supruga</text>
+</g>
+<g transform="translate(860, 463.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#FDF2F8" stroke="#EC4899" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#FCE7F3" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#BE185D" text-anchor="middle">S</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#831843">Seida</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(860, 544.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#FDF2F8" stroke="#EC4899" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#FCE7F3" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#BE185D" text-anchor="middle">B</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#831843">Bahrija</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(860, 625.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#FDF2F8" stroke="#EC4899" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#FCE7F3" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#BE185D" text-anchor="middle">H</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#831843">Hatidža</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(860, 706.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#FDF2F8" stroke="#EC4899" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#FCE7F3" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#BE185D" text-anchor="middle">Z</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#831843">Zemina</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(860, 827.5)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#DBEAFE" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#1D4ED8" text-anchor="middle">D</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#1E3A8A">Dževad</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(1240, 787.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#DBEAFE" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#1D4ED8" text-anchor="middle">B</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#1E3A8A">Beriz</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(1240, 868.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#DBEAFE" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#1D4ED8" text-anchor="middle">N</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#1E3A8A">Nedžad</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(860, 949.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#FDF2F8" stroke="#EC4899" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#FCE7F3" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#BE185D" text-anchor="middle">H</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#831843">Halida</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(860, 1151.5)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#DBEAFE" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#1D4ED8" text-anchor="middle">N</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#1E3A8A">Nešad</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(1240, 1030.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#FDF2F8" stroke="#EC4899" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#FCE7F3" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#BE185D" text-anchor="middle">A</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#831843">Azra</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(1240, 1111.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#FDF2F8" stroke="#EC4899" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#FCE7F3" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#BE185D" text-anchor="middle">A</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#831843">Almedina</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(1240, 1192.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#DBEAFE" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#1D4ED8" text-anchor="middle">K</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#1E3A8A">Kenan</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(1240, 1273.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#DBEAFE" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#1D4ED8" text-anchor="middle">D</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#1E3A8A">Dženan</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(100, 2825.5)">
+    <rect x="0" y="4" width="320" height="105" rx="16" fill="#000" opacity="0.1" />
+    <rect x="0" y="0" width="320" height="105" rx="16" fill="#FFFFFF" stroke="#3B82F6" stroke-width="3" />
+    <rect x="0" y="0" width="10" height="105" rx="5" fill="#16A34A" />
+    
+    <!-- Primary person -->
+    <rect x="10" y="0" width="310" height="52.5" fill="#EFF6FF" rx="14" style="border-bottom-left-radius:0; border-bottom-right-radius:0;" />
+    <circle cx="38" cy="26.25" r="18" fill="#DBEAFE" />
+    <text x="38" y="32.25" font-size="16" font-weight="900" fill="#1D4ED8" text-anchor="middle">M</text>
+    <text x="68" y="33.25" font-size="22" font-weight="900" fill="#1E3A8A">Mujo (1897 – 1934)</text>
+    
+
+    <!-- Line divider -->
+    <line x1="16" y1="52.5" x2="304" y2="52.5" stroke="#CBD5E1" stroke-width="1.5" />
+    <circle cx="160.0" cy="52.5" r="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" />
+    <text x="160.0" y="57.5" font-size="12" font-weight="900" fill="#E11D48" text-anchor="middle">∞</text>
+
+    <!-- Spouse -->
+    <circle cx="38" cy="78.75" r="18" fill="#FCE7F3" />
+    <text x="38" y="84.75" font-size="15" font-weight="900" fill="#BE185D" text-anchor="middle">💍</text>
+    <text x="68" y="85.75" font-size="20" font-weight="900" fill="#831843">Šemsa</text>
+    <text x="304" y="89" font-size="13" font-weight="800" fill="#BE185D" text-anchor="end">r. Husejnovca</text>
+</g>
+<g transform="translate(480, 2015.5)">
+    <rect x="0" y="4" width="320" height="105" rx="16" fill="#000" opacity="0.1" />
+    <rect x="0" y="0" width="320" height="105" rx="16" fill="#FFFFFF" stroke="#3B82F6" stroke-width="3" />
+    <rect x="0" y="0" width="10" height="105" rx="5" fill="#16A34A" />
+    
+    <!-- Primary person -->
+    <rect x="10" y="0" width="310" height="52.5" fill="#EFF6FF" rx="14" style="border-bottom-left-radius:0; border-bottom-right-radius:0;" />
+    <circle cx="38" cy="26.25" r="18" fill="#DBEAFE" />
+    <text x="38" y="32.25" font-size="16" font-weight="900" fill="#1D4ED8" text-anchor="middle">H</text>
+    <text x="68" y="33.25" font-size="22" font-weight="900" fill="#1E3A8A">Husnija (1925 – 1988)</text>
+    
+
+    <!-- Line divider -->
+    <line x1="16" y1="52.5" x2="304" y2="52.5" stroke="#CBD5E1" stroke-width="1.5" />
+    <circle cx="160.0" cy="52.5" r="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" />
+    <text x="160.0" y="57.5" font-size="12" font-weight="900" fill="#E11D48" text-anchor="middle">∞</text>
+
+    <!-- Spouse -->
+    <circle cx="38" cy="78.75" r="18" fill="#FCE7F3" />
+    <text x="38" y="84.75" font-size="15" font-weight="900" fill="#BE185D" text-anchor="middle">💍</text>
+    <text x="68" y="85.75" font-size="20" font-weight="900" fill="#831843">Sajda</text>
+    <text x="304" y="89" font-size="13" font-weight="800" fill="#BE185D" text-anchor="end">r. Čilašević</text>
+</g>
+<g transform="translate(860, 1611.0)">
+    <rect x="0" y="4" width="320" height="105" rx="16" fill="#000" opacity="0.1" />
+    <rect x="0" y="0" width="320" height="105" rx="16" fill="#FFFFFF" stroke="#3B82F6" stroke-width="3" />
+    <rect x="0" y="0" width="10" height="105" rx="5" fill="#16A34A" />
+    
+    <!-- Primary person -->
+    <rect x="10" y="0" width="310" height="52.5" fill="#EFF6FF" rx="14" style="border-bottom-left-radius:0; border-bottom-right-radius:0;" />
+    <circle cx="38" cy="26.25" r="18" fill="#DBEAFE" />
+    <text x="38" y="32.25" font-size="16" font-weight="900" fill="#1D4ED8" text-anchor="middle">F</text>
+    <text x="68" y="33.25" font-size="22" font-weight="900" fill="#1E3A8A">Fahrudin</text>
+    
+
+    <!-- Line divider -->
+    <line x1="16" y1="52.5" x2="304" y2="52.5" stroke="#CBD5E1" stroke-width="1.5" />
+    <circle cx="160.0" cy="52.5" r="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" />
+    <text x="160.0" y="57.5" font-size="12" font-weight="900" fill="#E11D48" text-anchor="middle">∞</text>
+
+    <!-- Spouse -->
+    <circle cx="38" cy="78.75" r="18" fill="#FCE7F3" />
+    <text x="38" y="84.75" font-size="15" font-weight="900" fill="#BE185D" text-anchor="middle">💍</text>
+    <text x="68" y="85.75" font-size="20" font-weight="900" fill="#831843">Mulfeta</text>
+    <text x="304" y="89" font-size="13" font-weight="800" fill="#BE185D" text-anchor="end">r. Sniježnica</text>
+</g>
+<g transform="translate(1240, 1368.0)">
+    <rect x="0" y="4" width="320" height="105" rx="16" fill="#000" opacity="0.1" />
+    <rect x="0" y="0" width="320" height="105" rx="16" fill="#FFFFFF" stroke="#3B82F6" stroke-width="3" />
+    <rect x="0" y="0" width="10" height="105" rx="5" fill="#16A34A" />
+    
+    <!-- Primary person -->
+    <rect x="10" y="0" width="310" height="52.5" fill="#EFF6FF" rx="14" style="border-bottom-left-radius:0; border-bottom-right-radius:0;" />
+    <circle cx="38" cy="26.25" r="18" fill="#DBEAFE" />
+    <text x="38" y="32.25" font-size="16" font-weight="900" fill="#1D4ED8" text-anchor="middle">Z</text>
+    <text x="68" y="33.25" font-size="22" font-weight="900" fill="#1E3A8A">Zaim</text>
+    
+
+    <!-- Line divider -->
+    <line x1="16" y1="52.5" x2="304" y2="52.5" stroke="#CBD5E1" stroke-width="1.5" />
+    <circle cx="160.0" cy="52.5" r="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" />
+    <text x="160.0" y="57.5" font-size="12" font-weight="900" fill="#E11D48" text-anchor="middle">∞</text>
+
+    <!-- Spouse -->
+    <circle cx="38" cy="78.75" r="18" fill="#FCE7F3" />
+    <text x="38" y="84.75" font-size="15" font-weight="900" fill="#BE185D" text-anchor="middle">💍</text>
+    <text x="68" y="85.75" font-size="20" font-weight="900" fill="#831843">Samra</text>
+    <text x="304" y="89" font-size="13" font-weight="800" fill="#BE185D" text-anchor="end">r. Glinje</text>
+</g>
+<g transform="translate(1620, 1368.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#DBEAFE" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#1D4ED8" text-anchor="middle">A</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#1E3A8A">Armin</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(1240, 1489.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#FDF2F8" stroke="#EC4899" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#FCE7F3" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#BE185D" text-anchor="middle">E</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#831843">Emina</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(1240, 1590.5)">
+    <rect x="0" y="4" width="320" height="105" rx="16" fill="#000" opacity="0.1" />
+    <rect x="0" y="0" width="320" height="105" rx="16" fill="#FFFFFF" stroke="#3B82F6" stroke-width="3" />
+    <rect x="0" y="0" width="10" height="105" rx="5" fill="#16A34A" />
+    
+    <!-- Primary person -->
+    <rect x="10" y="0" width="310" height="52.5" fill="#EFF6FF" rx="14" style="border-bottom-left-radius:0; border-bottom-right-radius:0;" />
+    <circle cx="38" cy="26.25" r="18" fill="#DBEAFE" />
+    <text x="38" y="32.25" font-size="16" font-weight="900" fill="#1D4ED8" text-anchor="middle">V</text>
+    <text x="68" y="33.25" font-size="22" font-weight="900" fill="#1E3A8A">Vahidin</text>
+    
+
+    <!-- Line divider -->
+    <line x1="16" y1="52.5" x2="304" y2="52.5" stroke="#CBD5E1" stroke-width="1.5" />
+    <circle cx="160.0" cy="52.5" r="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" />
+    <text x="160.0" y="57.5" font-size="12" font-weight="900" fill="#E11D48" text-anchor="middle">∞</text>
+
+    <!-- Spouse -->
+    <circle cx="38" cy="78.75" r="18" fill="#FCE7F3" />
+    <text x="38" y="84.75" font-size="15" font-weight="900" fill="#BE185D" text-anchor="middle">💍</text>
+    <text x="68" y="85.75" font-size="20" font-weight="900" fill="#831843">Nedžmira</text>
+    <text x="304" y="89" font-size="13" font-weight="800" fill="#BE185D" text-anchor="end">Supruga</text>
+</g>
+<g transform="translate(1620, 1570.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#FDF2F8" stroke="#EC4899" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#FCE7F3" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#BE185D" text-anchor="middle">E</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#831843">Esma</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(1620, 1651.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#FDF2F8" stroke="#EC4899" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#FCE7F3" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#BE185D" text-anchor="middle">S</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#831843">Sajda</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(1240, 1793.0)">
+    <rect x="0" y="4" width="320" height="105" rx="16" fill="#000" opacity="0.1" />
+    <rect x="0" y="0" width="320" height="105" rx="16" fill="#FFFFFF" stroke="#3B82F6" stroke-width="3" />
+    <rect x="0" y="0" width="10" height="105" rx="5" fill="#16A34A" />
+    
+    <!-- Primary person -->
+    <rect x="10" y="0" width="310" height="52.5" fill="#EFF6FF" rx="14" style="border-bottom-left-radius:0; border-bottom-right-radius:0;" />
+    <circle cx="38" cy="26.25" r="18" fill="#DBEAFE" />
+    <text x="38" y="32.25" font-size="16" font-weight="900" fill="#1D4ED8" text-anchor="middle">A</text>
+    <text x="68" y="33.25" font-size="22" font-weight="900" fill="#1E3A8A">Adnan</text>
+    
+
+    <!-- Line divider -->
+    <line x1="16" y1="52.5" x2="304" y2="52.5" stroke="#CBD5E1" stroke-width="1.5" />
+    <circle cx="160.0" cy="52.5" r="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" />
+    <text x="160.0" y="57.5" font-size="12" font-weight="900" fill="#E11D48" text-anchor="middle">∞</text>
+
+    <!-- Spouse -->
+    <circle cx="38" cy="78.75" r="18" fill="#FCE7F3" />
+    <text x="38" y="84.75" font-size="15" font-weight="900" fill="#BE185D" text-anchor="middle">💍</text>
+    <text x="68" y="85.75" font-size="20" font-weight="900" fill="#831843">Mirela</text>
+    <text x="304" y="89" font-size="13" font-weight="800" fill="#BE185D" text-anchor="end">Supruga</text>
+</g>
+<g transform="translate(1620, 1732.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#DBEAFE" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#1D4ED8" text-anchor="middle">A</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#1E3A8A">Adel</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(1620, 1813.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#FDF2F8" stroke="#EC4899" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#FCE7F3" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#BE185D" text-anchor="middle">M</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#831843">Meliha</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(1620, 1894.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#DBEAFE" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#1D4ED8" text-anchor="middle">V</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#1E3A8A">Vedad</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(860, 1975.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#FDF2F8" stroke="#EC4899" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#FCE7F3" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#BE185D" text-anchor="middle">Š</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#831843">Šemsa</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    <rect x="160" y="8" width="152" height="26" rx="13" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.5"/><text x="236" y="26" font-size="13" font-weight="800" fill="#334155" text-anchor="middle">u. Bilalić</text>
+</g>
+<g transform="translate(860, 2056.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#FDF2F8" stroke="#EC4899" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#FCE7F3" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#BE185D" text-anchor="middle">Z</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#831843">Zurijeta</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    <rect x="160" y="8" width="152" height="26" rx="13" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.5"/><text x="236" y="26" font-size="13" font-weight="800" fill="#334155" text-anchor="middle">u. Hadžić</text>
+</g>
+<g transform="translate(860, 2137.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#FDF2F8" stroke="#EC4899" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#FCE7F3" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#BE185D" text-anchor="middle">N</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#831843">Nura</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    <rect x="160" y="8" width="152" height="26" rx="13" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.5"/><text x="236" y="26" font-size="13" font-weight="800" fill="#334155" text-anchor="middle">u. Aljić</text>
+</g>
+<g transform="translate(860, 2218.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#FDF2F8" stroke="#EC4899" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#FCE7F3" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#BE185D" text-anchor="middle">M</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#831843">Mensura</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    <rect x="160" y="8" width="152" height="26" rx="13" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.5"/><text x="236" y="26" font-size="13" font-weight="800" fill="#334155" text-anchor="middle">u. Omerović</text>
+</g>
+<g transform="translate(860, 2299.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#FDF2F8" stroke="#EC4899" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#FCE7F3" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#BE185D" text-anchor="middle">I</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#831843">Izeta</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    <rect x="160" y="8" width="152" height="26" rx="13" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.5"/><text x="236" y="26" font-size="13" font-weight="800" fill="#334155" text-anchor="middle">u. Murtić</text>
+</g>
+<g transform="translate(860, 2380.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#FDF2F8" stroke="#EC4899" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#FCE7F3" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#BE185D" text-anchor="middle">H</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#831843">Hatidža</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    <rect x="160" y="8" width="152" height="26" rx="13" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.5"/><text x="236" y="26" font-size="13" font-weight="800" fill="#334155" text-anchor="middle">u. Redžić</text>
+</g>
+<g transform="translate(860, 2461.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#FDF2F8" stroke="#EC4899" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#FCE7F3" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#BE185D" text-anchor="middle">F</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#831843">Fatima</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    <rect x="160" y="8" width="152" height="26" rx="13" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.5"/><text x="236" y="26" font-size="13" font-weight="800" fill="#334155" text-anchor="middle">u. Alić</text>
+</g>
+<g transform="translate(860, 2602.5)">
+    <rect x="0" y="4" width="320" height="105" rx="16" fill="#000" opacity="0.1" />
+    <rect x="0" y="0" width="320" height="105" rx="16" fill="#FFFFFF" stroke="#3B82F6" stroke-width="3" />
+    <rect x="0" y="0" width="10" height="105" rx="5" fill="#16A34A" />
+    
+    <!-- Primary person -->
+    <rect x="10" y="0" width="310" height="52.5" fill="#EFF6FF" rx="14" style="border-bottom-left-radius:0; border-bottom-right-radius:0;" />
+    <circle cx="38" cy="26.25" r="18" fill="#DBEAFE" />
+    <text x="38" y="32.25" font-size="16" font-weight="900" fill="#1D4ED8" text-anchor="middle">K</text>
+    <text x="68" y="33.25" font-size="22" font-weight="900" fill="#1E3A8A">Kadraga</text>
+    
+
+    <!-- Line divider -->
+    <line x1="16" y1="52.5" x2="304" y2="52.5" stroke="#CBD5E1" stroke-width="1.5" />
+    <circle cx="160.0" cy="52.5" r="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" />
+    <text x="160.0" y="57.5" font-size="12" font-weight="900" fill="#E11D48" text-anchor="middle">∞</text>
+
+    <!-- Spouse -->
+    <circle cx="38" cy="78.75" r="18" fill="#FCE7F3" />
+    <text x="38" y="84.75" font-size="15" font-weight="900" fill="#BE185D" text-anchor="middle">💍</text>
+    <text x="68" y="85.75" font-size="20" font-weight="900" fill="#831843">Zekira</text>
+    <text x="304" y="89" font-size="13" font-weight="800" fill="#BE185D" text-anchor="end">r. Janja</text>
+</g>
+<g transform="translate(1240, 2542.0)">
+    <rect x="0" y="4" width="320" height="105" rx="16" fill="#000" opacity="0.1" />
+    <rect x="0" y="0" width="320" height="105" rx="16" fill="#FFFFFF" stroke="#EC4899" stroke-width="3" />
+    <rect x="0" y="0" width="10" height="105" rx="5" fill="#16A34A" />
+    
+    <!-- Primary person -->
+    <rect x="10" y="0" width="310" height="52.5" fill="#FDF2F8" rx="14" style="border-bottom-left-radius:0; border-bottom-right-radius:0;" />
+    <circle cx="38" cy="26.25" r="18" fill="#FCE7F3" />
+    <text x="38" y="32.25" font-size="16" font-weight="900" fill="#BE185D" text-anchor="middle">A</text>
+    <text x="68" y="33.25" font-size="22" font-weight="900" fill="#831843">Azra</text>
+    <rect x="160" y="8" width="152" height="26" rx="13" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.5"/><text x="236" y="26" font-size="13" font-weight="800" fill="#334155" text-anchor="middle">r. Zehić</text>
+
+    <!-- Line divider -->
+    <line x1="16" y1="52.5" x2="304" y2="52.5" stroke="#CBD5E1" stroke-width="1.5" />
+    <circle cx="160.0" cy="52.5" r="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" />
+    <text x="160.0" y="57.5" font-size="12" font-weight="900" fill="#E11D48" text-anchor="middle">∞</text>
+
+    <!-- Spouse -->
+    <circle cx="38" cy="78.75" r="18" fill="#FCE7F3" />
+    <text x="38" y="84.75" font-size="15" font-weight="900" fill="#BE185D" text-anchor="middle">💍</text>
+    <text x="68" y="85.75" font-size="20" font-weight="900" fill="#831843">Mirza Halilović</text>
+    <text x="304" y="89" font-size="13" font-weight="800" fill="#BE185D" text-anchor="end">Suprug</text>
+</g>
+<g transform="translate(1620, 2542.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#DBEAFE" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#1D4ED8" text-anchor="middle">H</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#1E3A8A">Hamza</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(1240, 2663.0)">
+    <rect x="0" y="4" width="320" height="105" rx="16" fill="#000" opacity="0.1" />
+    <rect x="0" y="0" width="320" height="105" rx="16" fill="#FFFFFF" stroke="#3B82F6" stroke-width="3" />
+    <rect x="0" y="0" width="10" height="105" rx="5" fill="#16A34A" />
+    
+    <!-- Primary person -->
+    <rect x="10" y="0" width="310" height="52.5" fill="#EFF6FF" rx="14" style="border-bottom-left-radius:0; border-bottom-right-radius:0;" />
+    <circle cx="38" cy="26.25" r="18" fill="#DBEAFE" />
+    <text x="38" y="32.25" font-size="16" font-weight="900" fill="#1D4ED8" text-anchor="middle">S</text>
+    <text x="68" y="33.25" font-size="22" font-weight="900" fill="#1E3A8A">Samir</text>
+    
+
+    <!-- Line divider -->
+    <line x1="16" y1="52.5" x2="304" y2="52.5" stroke="#CBD5E1" stroke-width="1.5" />
+    <circle cx="160.0" cy="52.5" r="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" />
+    <text x="160.0" y="57.5" font-size="12" font-weight="900" fill="#E11D48" text-anchor="middle">∞</text>
+
+    <!-- Spouse -->
+    <circle cx="38" cy="78.75" r="18" fill="#FCE7F3" />
+    <text x="38" y="84.75" font-size="15" font-weight="900" fill="#BE185D" text-anchor="middle">💍</text>
+    <text x="68" y="85.75" font-size="20" font-weight="900" fill="#831843">Merima</text>
+    <text x="304" y="89" font-size="13" font-weight="800" fill="#BE185D" text-anchor="end">Supruga</text>
+</g>
+<g transform="translate(1620, 2663.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#FDF2F8" stroke="#EC4899" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#FCE7F3" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#BE185D" text-anchor="middle">A</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#831843">Adna</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(480, 3088.0)">
+    <rect x="0" y="4" width="320" height="105" rx="16" fill="#000" opacity="0.1" />
+    <rect x="0" y="0" width="320" height="105" rx="16" fill="#FFFFFF" stroke="#3B82F6" stroke-width="3" />
+    <rect x="0" y="0" width="10" height="105" rx="5" fill="#16A34A" />
+    
+    <!-- Primary person -->
+    <rect x="10" y="0" width="310" height="52.5" fill="#EFF6FF" rx="14" style="border-bottom-left-radius:0; border-bottom-right-radius:0;" />
+    <circle cx="38" cy="26.25" r="18" fill="#DBEAFE" />
+    <text x="38" y="32.25" font-size="16" font-weight="900" fill="#1D4ED8" text-anchor="middle">H</text>
+    <text x="68" y="33.25" font-size="22" font-weight="900" fill="#1E3A8A">Hadžaga</text>
+    
+
+    <!-- Line divider -->
+    <line x1="16" y1="52.5" x2="304" y2="52.5" stroke="#CBD5E1" stroke-width="1.5" />
+    <circle cx="160.0" cy="52.5" r="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" />
+    <text x="160.0" y="57.5" font-size="12" font-weight="900" fill="#E11D48" text-anchor="middle">∞</text>
+
+    <!-- Spouse -->
+    <circle cx="38" cy="78.75" r="18" fill="#FCE7F3" />
+    <text x="38" y="84.75" font-size="15" font-weight="900" fill="#BE185D" text-anchor="middle">💍</text>
+    <text x="68" y="85.75" font-size="20" font-weight="900" fill="#831843">Zarfa</text>
+    <text x="304" y="89" font-size="13" font-weight="800" fill="#BE185D" text-anchor="end">r. T. Brdo</text>
+</g>
+<g transform="translate(860, 2824.5)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#DBEAFE" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#1D4ED8" text-anchor="middle">S</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#1E3A8A">Sadik</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(1240, 2784.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#FDF2F8" stroke="#EC4899" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#FCE7F3" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#BE185D" text-anchor="middle">M</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#831843">Meliha</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(1240, 2865.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#DBEAFE" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#1D4ED8" text-anchor="middle">H</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#1E3A8A">Hido</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(860, 2946.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#FDF2F8" stroke="#EC4899" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#FCE7F3" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#BE185D" text-anchor="middle">Z</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#831843">Zlatka</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(860, 3027.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#FDF2F8" stroke="#EC4899" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#FCE7F3" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#BE185D" text-anchor="middle">S</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#831843">Sadika</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(860, 3108.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#FDF2F8" stroke="#EC4899" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#FCE7F3" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#BE185D" text-anchor="middle">M</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#831843">Mineta</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(860, 3229.5)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#DBEAFE" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#1D4ED8" text-anchor="middle">A</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#1E3A8A">Asmir</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(1240, 3189.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#FDF2F8" stroke="#EC4899" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#FCE7F3" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#BE185D" text-anchor="middle">A</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#831843">Amra</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(1240, 3270.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#DBEAFE" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#1D4ED8" text-anchor="middle">A</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#1E3A8A">Amir</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(860, 3351.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#FDF2F8" stroke="#EC4899" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#FCE7F3" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#BE185D" text-anchor="middle">A</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#831843">Azra</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(860, 3432.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#FDF2F8" stroke="#EC4899" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#FCE7F3" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#BE185D" text-anchor="middle">Z</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#831843">Zikreta</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(480, 3513.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#DBEAFE" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#1D4ED8" text-anchor="middle">Š</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#1E3A8A">Šaban</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(480, 3594.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#FDF2F8" stroke="#EC4899" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#FCE7F3" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#BE185D" text-anchor="middle">D</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#831843">Džemila</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(480, 3979.0)">
+    <rect x="0" y="4" width="320" height="105" rx="16" fill="#000" opacity="0.1" />
+    <rect x="0" y="0" width="320" height="105" rx="16" fill="#FFFFFF" stroke="#3B82F6" stroke-width="3" />
+    <rect x="0" y="0" width="10" height="105" rx="5" fill="#16A34A" />
+    
+    <!-- Primary person -->
+    <rect x="10" y="0" width="310" height="52.5" fill="#EFF6FF" rx="14" style="border-bottom-left-radius:0; border-bottom-right-radius:0;" />
+    <circle cx="38" cy="26.25" r="18" fill="#DBEAFE" />
+    <text x="38" y="32.25" font-size="16" font-weight="900" fill="#1D4ED8" text-anchor="middle">H</text>
+    <text x="68" y="33.25" font-size="22" font-weight="900" fill="#1E3A8A">Harnaga</text>
+    
+
+    <!-- Line divider -->
+    <line x1="16" y1="52.5" x2="304" y2="52.5" stroke="#CBD5E1" stroke-width="1.5" />
+    <circle cx="160.0" cy="52.5" r="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" />
+    <text x="160.0" y="57.5" font-size="12" font-weight="900" fill="#E11D48" text-anchor="middle">∞</text>
+
+    <!-- Spouse -->
+    <circle cx="38" cy="78.75" r="18" fill="#FCE7F3" />
+    <text x="38" y="84.75" font-size="15" font-weight="900" fill="#BE185D" text-anchor="middle">💍</text>
+    <text x="68" y="85.75" font-size="20" font-weight="900" fill="#831843">Hatidža</text>
+    <text x="304" y="89" font-size="13" font-weight="800" fill="#BE185D" text-anchor="end">Supruga</text>
+</g>
+<g transform="translate(860, 3675.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#FDF2F8" stroke="#EC4899" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#FCE7F3" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#BE185D" text-anchor="middle">H</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#831843">Halida</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    <rect x="160" y="8" width="152" height="26" rx="13" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.5"/><text x="236" y="26" font-size="13" font-weight="800" fill="#334155" text-anchor="middle">u. Smajić</text>
+</g>
+<g transform="translate(860, 3756.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#FDF2F8" stroke="#EC4899" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#FCE7F3" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#BE185D" text-anchor="middle">D</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#831843">Džemila</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    <rect x="160" y="8" width="152" height="26" rx="13" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.5"/><text x="236" y="26" font-size="13" font-weight="800" fill="#334155" text-anchor="middle">u. Haić</text>
+</g>
+<g transform="translate(860, 3837.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#FDF2F8" stroke="#EC4899" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#FCE7F3" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#BE185D" text-anchor="middle">I</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#831843">Izeta</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(860, 4120.5)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#DBEAFE" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#1D4ED8" text-anchor="middle">I</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#1E3A8A">Izet</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(1240, 3958.5)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#DBEAFE" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#1D4ED8" text-anchor="middle">A</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#1E3A8A">Admir</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(1620, 3918.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#DBEAFE" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#1D4ED8" text-anchor="middle">E</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#1E3A8A">Emrah</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(1620, 3999.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#FDF2F8" stroke="#EC4899" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#FCE7F3" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#BE185D" text-anchor="middle">E</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#831843">Emina</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(1240, 4080.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#FDF2F8" stroke="#EC4899" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#FCE7F3" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#BE185D" text-anchor="middle">S</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#831843">Sabina</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(1240, 4161.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#FDF2F8" stroke="#EC4899" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#FCE7F3" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#BE185D" text-anchor="middle">E</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#831843">Emina</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(1240, 4282.5)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#DBEAFE" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#1D4ED8" text-anchor="middle">H</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#1E3A8A">Haris</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(1620, 4242.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#DBEAFE" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#1D4ED8" text-anchor="middle">B</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#1E3A8A">Benjamin</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+<g transform="translate(1620, 4323.0)">
+    <rect x="0" y="3" width="320" height="65" rx="14" fill="#000" opacity="0.08" />
+    <rect x="0" y="0" width="320" height="65" rx="14" fill="#FDF2F8" stroke="#EC4899" stroke-width="2.5" />
+    <rect x="0" y="0" width="8" height="65" rx="4" fill="#16A34A" />
+    <circle cx="36" cy="32.5" r="20" fill="#FCE7F3" />
+    <text x="36" y="39.5" font-size="18" font-weight="900" fill="#BE185D" text-anchor="middle">H</text>
+    <text x="68" y="30.5" font-size="22" font-weight="900" fill="#831843">Hana</text>
+    <text x="68" y="54.5" font-size="14" font-weight="700" fill="#64748B">Potomak</text>
+    
+</g>
+</g>
+
+<!-- Footer -->
+<text x="100" y="2060" font-size="16" font-weight="700" fill="#94A3B8">Porodično Stablo Zehić • Visokorezolucijski A3 Format • 100% Čitljivost imena i rodbinskih veza</text>
+<text x="2870" y="2060" font-size="16" font-weight="800" fill="#64748B" text-anchor="end">Ibrahim Zehić (Osnivač loze)</text>
+</svg>

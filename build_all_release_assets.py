@@ -35,12 +35,14 @@ print("\n[4/6] Renderovanje bilateralnog master postera i grana (SVG)...")
 subprocess.run(["python", "generate_master_bosnian_poster.py"], check=True)
 subprocess.run(["python", "generate_horizontal_branches.py"], check=True)
 
-# Step 4: A3 PDFs
-print("\n[5/6] Generisanje A3 PDF formata za preuzimanje...")
+# Step 4: A3 PDFs (Standard, Ultra-Legible Multi-Page Atlas & Tiled Poster)
+print("\n[5/7] Generisanje A3 PDF formata (Standard, Atlas i Tiled)...")
 subprocess.run(["python", "generate_a3_posters.py"], check=True)
+subprocess.run(["python", "generate_a3_atlas_pdf.py"], check=True)
+subprocess.run(["python", "generate_tiled_a3_poster_pdf.py"], check=True)
 
 # Step 5: Poster PDFs
-print("\n[6/6] Generisanje Poster PDF formata (A0/A1 1-list) za preuzimanje...")
+print("\n[6/7] Generisanje Poster PDF formata (A0/A1 1-list) za preuzimanje...")
 subprocess.run(["python", "generate_single_page_pdfs.py"], check=True)
 
 # Step 6: Sync to public/

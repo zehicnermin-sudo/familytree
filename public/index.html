@@ -844,14 +844,28 @@
                 <button class="close-btn" onclick="closeDownloadModal()">✕</button>
             </div>
             <div class="download-grid">
-                <!-- Glavno Stablo -->
+                <!-- 1. Najbolja A3 Opcija: Porodični Atlas -->
+                <div class="download-card" style="border-top: 4px solid #10b981; background: #0f172a; grid-column: 1 / -1;">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+                        <div class="download-title" style="color: #34d399; font-size: 1.1rem;">📖 Porodični Atlas A3 (Preporučeno za štampanje — 100% Čitljivo)</div>
+                        <span style="background: #065f46; color: #6ee7b7; font-size: 0.72rem; font-weight: 800; padding: 3px 8px; rx: 4px; border-radius: 4px;">⭐ NAJBOLJI ISPIS NA A3</span>
+                    </div>
+                    <div class="download-desc" style="color: #cbd5e1; font-size: 0.84rem;">
+                        Kompletno stablo raspoređeno na <strong>6 prostranih A3 stranica</strong> sa <strong>krupnim, podebljanim fontovima</strong> i visokim kontrastom. Imena, datumi, supružnici i rodbinske veze su kristalno jasni i čitljivi na svakom A3 štampaču!
+                    </div>
+                    <div class="download-actions" style="margin-top: 12px;">
+                        <a href="Porodicno_Stablo_Zehic_A3_Atlas.pdf" download="Porodicno_Stablo_Zehic_A3_Atlas.pdf" class="btn-download-a3" style="background: linear-gradient(135deg, #059669, #10b981); color: #fff; font-weight: 800; padding: 10px 16px;">📥 Preuzmi A3 Atlas PDF (6 Stranica)</a>
+                        <a href="Porodicno_Stablo_Zehic_Poster_Tiled_6xA3.pdf" download="Porodicno_Stablo_Zehic_Poster_Tiled_6xA3.pdf" class="btn-download-a0" style="background: #334155; color: #f1f5f9;">🧩 A3 Poster u dijelovima (6x A3 za zupčasto spajanje)</a>
+                    </div>
+                </div>
+
+                <!-- Glavno Stablo A0 -->
                 <div class="download-card" style="border-top: 3px solid #3b82f6;">
-                    <div class="download-title">🌳 Glavno Stablo (Cijeli Poster)</div>
-                    <div class="download-desc">Bilateralni prikaz sa 425 članova i supružnika.</div>
+                    <div class="download-title">🏛 Glavni Poster (1 Veliki List A0 / Štamparija)</div>
+                    <div class="download-desc">Za profesionalnu štampu velikog formata (120 × 84 cm).</div>
                     <div class="download-actions">
-                        <a href="Porodicno_Stablo_Zehic_A3.pdf" download="Porodicno_Stablo_Zehic_A3.pdf" class="btn-download-a3">📄 Format A3</a>
-                        <a href="Porodicno_Stablo_Zehic_A0.pdf" download="Porodicno_Stablo_Zehic_A0_Poster.pdf" class="btn-download-a0">🏛 Poster A0</a>
-                        <a href="Porodicno_Stablo_Zehic_A0.svg" download="Porodicno_Stablo_Zehic.svg" class="btn-download-svg">SVG</a>
+                        <a href="Porodicno_Stablo_Zehic_A0.pdf" download="Porodicno_Stablo_Zehic_A0_Poster.pdf" class="btn-download-a0">🏛 Poster A0 (PDF)</a>
+                        <a href="Porodicno_Stablo_Zehic_A0.svg" download="Porodicno_Stablo_Zehic.svg" class="btn-download-svg">Vector SVG</a>
                     </div>
                 </div>
 
@@ -889,7 +903,7 @@
                 </div>
             </div>
             <div style="padding: 12px 20px; background: #1e293b; border-top: 1px solid rgba(255,255,255,0.08); display: flex; justify-content: space-between; align-items: center;">
-                <span style="font-size: 0.76rem; color: var(--text-muted);">💡 <strong>Format A3</strong> je za standardne A3 štampače (1 list).</span>
+                <span style="font-size: 0.76rem; color: var(--text-muted);">💡 <strong>A3 Atlas</strong> omogućava maksimalnu čitljivost svakog pojedinačnog imena na kućnim i kancelarijskim A3 štampačima.</span>
                 <button class="tab-btn" onclick="window.print()">🖨 Štampaj</button>
             </div>
         </div>
