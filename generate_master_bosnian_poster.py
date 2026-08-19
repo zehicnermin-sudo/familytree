@@ -12,12 +12,12 @@ import json
 with open("family_tree_gender_tagged.json", "r", encoding="utf-8") as f:
     raw_data = json.load(f)
 
-CARD_W = 238
-CARD_H = 48          # Single person card height
-CARD_H_COUPLE = 80   # Couple card height
-V_GAP = 12           # Gap between sibling leaf blocks
-COL_W = 284          # Column width per generation
-GAP_FROM_ROOT = 132  # Gap between Ibrahim's card and Gen 2 roots
+CARD_W = 270
+CARD_H = 56          # Single person card height
+CARD_H_COUPLE = 92   # Couple card height
+V_GAP = 14           # Gap between sibling leaf blocks
+COL_W = 324          # Column width per generation
+GAP_FROM_ROOT = 140  # Gap between Ibrahim's card and Gen 2 roots
 
 # Gender Colors (Standard Hex values natively supported by Illustrator)
 MALE_TEXT_COLOR = "#1D4ED8"     # Deep Blue
@@ -473,37 +473,37 @@ def render_illustrator_svg(nodes, lines, max_height, top_offset):
             badge = ""
             if "Pogin" in notes:
                 badge_text = "Poginula" if not is_male else "Poginuo"
-                badge_w = 72 if badge_text == "Poginula" else 64
-                badge = f'''<rect x="{w - badge_w - 6}" y="6" width="{badge_w}" height="18" rx="9" fill="#FEE2E2" stroke="#EF4444" stroke-width="1"/><text x="{w - badge_w/2 - 6}" y="19" font-size="9.5" font-weight="800" fill="#B91C1C" text-anchor="middle">{badge_text}</text>'''
+                badge_w = 80 if badge_text == "Poginula" else 72
+                badge = f'''<rect x="{w - badge_w - 6}" y="6" width="{badge_w}" height="20" rx="10" fill="#FEE2E2" stroke="#EF4444" stroke-width="1.2"/><text x="{w - badge_w/2 - 6}" y="20" font-size="11" font-weight="900" fill="#B91C1C" text-anchor="middle">{badge_text}</text>'''
             elif notes and notes not in ["Supruga", "Suprug"]:
                 clean_n = notes.replace("u. ", "u. ").replace("r. ", "r. ")
                 if len(clean_n) > 22:
                     clean_n = clean_n[:20] + "…"
-                badge = f'''<rect x="{w - 120}" y="6" width="114" height="18" rx="9" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/><text x="{w - 63}" y="19" font-size="9" font-weight="700" fill="#334155" text-anchor="middle">{clean_n}</text>'''
+                badge = f'''<rect x="{w - 130}" y="6" width="124" height="20" rx="10" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.2"/><text x="{w - 68}" y="20" font-size="10.5" font-weight="800" fill="#334155" text-anchor="middle">{clean_n}</text>'''
 
             svg.append(f'''
 <g transform="translate({x}, {y})">
     <!-- Card Shadow & Body -->
-    <rect x="0" y="2" width="{w}" height="{h}" rx="10" fill="#E2E8F0" />
-    <rect x="0" y="0" width="{w}" height="{h}" rx="10" fill="#FFFFFF" stroke="{border_c}" stroke-width="2" />
-    <path d="M 0 10 Q 0 0 10 0 L {w-10} 0 Q {w} 0 {w} 10 L {w} 4 L 0 4 Z" fill="{bar_c}" />
+    <rect x="0" y="3" width="{w}" height="{h}" rx="12" fill="#E2E8F0" />
+    <rect x="0" y="0" width="{w}" height="{h}" rx="12" fill="#FFFFFF" stroke="{border_c}" stroke-width="2.5" />
+    <path d="M 0 12 Q 0 0 12 0 L {w-12} 0 Q {w} 0 {w} 12 L {w} 5 L 0 5 Z" fill="{bar_c}" />
     
     <!-- Gender Avatar -->
-    <circle cx="22" cy="{h/2 + 2}" r="13" fill="{av_bg}" />
-    <text x="22" y="{h/2 + 6.5}" font-size="11" font-weight="900" fill="{av_text}" text-anchor="middle">{initial}</text>
+    <circle cx="26" cy="{h/2 + 2}" r="16" fill="{av_bg}" />
+    <text x="26" y="{h/2 + 7.5}" font-size="14" font-weight="900" fill="{av_text}" text-anchor="middle">{initial}</text>
     
     {badge}
     
-    <!-- Name in Blue (Male) or Pink (Female) -->
-    <text x="44" y="27" font-size="15" font-weight="900" fill="{name_color}">{name}</text>
+    <!-- Large Name in Blue (Male) or Pink (Female) -->
+    <text x="52" y="31" font-size="20" font-weight="900" fill="{name_color}">{name}</text>
 ''')
             if dates:
-                svg.append(f'''<text x="44" y="42" font-size="10.5" font-weight="700" fill="#64748B">🗓 {dates}</text>''')
+                svg.append(f'''<text x="52" y="48" font-size="12" font-weight="700" fill="#64748B">🗓 {dates}</text>''')
             elif notes and "Pogin" not in notes and notes not in ["Supruga", "Suprug"]:
                 display_note = notes
                 if len(display_note) > 24:
                     display_note = display_note[:22] + "…"
-                svg.append(f'''<text x="44" y="42" font-size="9.5" font-weight="600" fill="#64748B">{display_note}</text>''')
+                svg.append(f'''<text x="52" y="48" font-size="11.5" font-weight="700" fill="#64748B">{display_note}</text>''')
             svg.append('</g>\n')
 
         else:
@@ -530,44 +530,44 @@ def render_illustrator_svg(nodes, lines, max_height, top_offset):
             badge = ""
             if "Pogin" in notes:
                 badge_text = "Poginula" if not is_male_p else "Poginuo"
-                badge_w = 72 if badge_text == "Poginula" else 64
-                badge = f'''<rect x="{w - badge_w - 6}" y="6" width="{badge_w}" height="18" rx="9" fill="#FEE2E2" stroke="#EF4444" stroke-width="1"/><text x="{w - badge_w/2 - 6}" y="19" font-size="9.5" font-weight="800" fill="#B91C1C" text-anchor="middle">{badge_text}</text>'''
+                badge_w = 80 if badge_text == "Poginula" else 72
+                badge = f'''<rect x="{w - badge_w - 6}" y="6" width="{badge_w}" height="20" rx="10" fill="#FEE2E2" stroke="#EF4444" stroke-width="1.2"/><text x="{w - badge_w/2 - 6}" y="20" font-size="11" font-weight="900" fill="#B91C1C" text-anchor="middle">{badge_text}</text>'''
 
             has_real_sp_note = sp_notes and sp_notes not in ["Supruga", "Suprug"]
-            sp_y_name = 62 if not has_real_sp_note else 59
+            sp_y_name = 70 if not has_real_sp_note else 66
 
             svg.append(f'''
 <g transform="translate({x}, {y})">
     <!-- Card Shadow & Body -->
-    <rect x="0" y="2" width="{w}" height="{h}" rx="12" fill="#E2E8F0" />
-    <rect x="0" y="0" width="{w}" height="{h}" rx="12" fill="#FFFFFF" stroke="{border_c}" stroke-width="2" />
-    <path d="M 0 12 Q 0 0 12 0 L {w-12} 0 Q {w} 0 {w} 12 L {w} 4 L 0 4 Z" fill="{bar_c}" />
+    <rect x="0" y="3" width="{w}" height="{h}" rx="14" fill="#E2E8F0" />
+    <rect x="0" y="0" width="{w}" height="{h}" rx="14" fill="#FFFFFF" stroke="{border_c}" stroke-width="2.5" />
+    <path d="M 0 14 Q 0 0 14 0 L {w-14} 0 Q {w} 0 {w} 14 L {w} 5 L 0 5 Z" fill="{bar_c}" />
 
     <!-- Person Top Row -->
-    <circle cx="20" cy="22" r="11" fill="{av_bg_p}" />
-    <text x="20" y="26" font-size="10.5" font-weight="900" fill="{av_text_p}" text-anchor="middle">{initial_p}</text>
-    <text x="38" y="26" font-size="14.5" font-weight="900" fill="{name_color_p}">{name}</text>
+    <circle cx="24" cy="24" r="14" fill="{av_bg_p}" />
+    <text x="24" y="29" font-size="13" font-weight="900" fill="{av_text_p}" text-anchor="middle">{initial_p}</text>
+    <text x="46" y="30" font-size="19" font-weight="900" fill="{name_color_p}">{name}</text>
     {badge}
 ''')
             if dates:
-                svg.append(f'''<text x="38" y="37" font-size="9.5" font-weight="700" fill="#64748B">🗓 {dates}</text>''')
+                svg.append(f'''<text x="46" y="42" font-size="11" font-weight="700" fill="#64748B">🗓 {dates}</text>''')
 
             # Dividing Line with Marriage Symbol (∞)
             svg.append(f'''
-    <line x1="10" y1="41" x2="{w-10}" y2="41" stroke="#E2E8F0" stroke-width="1" />
-    <circle cx="{w/2}" cy="41" r="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2" />
-    <text x="{w/2}" y="44.5" font-size="8.5" font-weight="900" fill="#E11D48" text-anchor="middle">∞</text>
+    <line x1="12" y1="47" x2="{w-12}" y2="47" stroke="#E2E8F0" stroke-width="1.2" />
+    <circle cx="{w/2}" cy="47" r="9" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2" />
+    <text x="{w/2}" y="51" font-size="10" font-weight="900" fill="#E11D48" text-anchor="middle">∞</text>
 
     <!-- Spouse Bottom Row -->
-    <circle cx="20" cy="{sp_y_name + 1}" r="11" fill="{av_bg_s}" />
-    <text x="20" y="{sp_y_name + 5}" font-size="10.5" font-weight="900" fill="{av_text_s}" text-anchor="middle">{initial_s}</text>
-    <text x="38" y="{sp_y_name + 5}" font-size="14.5" font-weight="900" fill="{name_color_s}">{sp_name}</text>
+    <circle cx="24" cy="{sp_y_name + 2}" r="14" fill="{av_bg_s}" />
+    <text x="24" y="{sp_y_name + 7}" font-size="13" font-weight="900" fill="{av_text_s}" text-anchor="middle">{initial_s}</text>
+    <text x="46" y="{sp_y_name + 7}" font-size="19" font-weight="900" fill="{name_color_s}">{sp_name}</text>
 ''')
             if has_real_sp_note:
                 display_sp_note = sp_notes
                 if len(display_sp_note) > 24:
                     display_sp_note = display_sp_note[:22] + "…"
-                svg.append(f'''<text x="38" y="{sp_y_name + 16}" font-size="9.5" font-weight="600" fill="#64748B">{display_sp_note}</text>''')
+                svg.append(f'''<text x="46" y="{sp_y_name + 20}" font-size="11.5" font-weight="700" fill="#64748B">{display_sp_note}</text>''')
 
             svg.append('</g>\n')
 

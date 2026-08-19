@@ -692,10 +692,10 @@
         </div>
 
         <div class="btn-group">
-            <button class="tab-btn active btn-tab-main" onclick="loadTree('Porodicno_Stablo_Zehic_A0.svg', this, 'main', 4546, 8504)">🌳 Bilateralni Poster A0/A1 <span class="badge">425</span></button>
-            <button class="tab-btn btn-tab-adem" onclick="loadTree('Branche_Adem.svg', this, 'adem', 2102, 6724)" style="border-left: 3px solid #16a34a;">Grana Adem <span class="badge">177</span></button>
-            <button class="tab-btn btn-tab-osman" onclick="loadTree('Branche_Osman.svg', this, 'osman', 2102, 6092)" style="border-left: 3px solid #0284c7;">Grana Osman <span class="badge">174</span></button>
-            <button class="tab-btn btn-tab-meho" onclick="loadTree('Branche_Meho.svg', this, 'meho', 1534, 2432)" style="border-left: 3px solid #d97706;">Grana Meho <span class="badge">70</span></button>
+            <button class="tab-btn active btn-tab-main" onclick="loadTree('Porodicno_Stablo_Zehic_A0.svg', this, 'main', 5138, 10056)">🌳 Bilateralni Poster A0/A1 <span class="badge">425</span></button>
+            <button class="tab-btn btn-tab-adem" onclick="loadTree('Branche_Adem.svg', this, 'adem', 2374, 7784)" style="border-left: 3px solid #16a34a;">Grana Adem <span class="badge">177</span></button>
+            <button class="tab-btn btn-tab-osman" onclick="loadTree('Branche_Osman.svg', this, 'osman', 2374, 7258)" style="border-left: 3px solid #0284c7;">Grana Osman <span class="badge">174</span></button>
+            <button class="tab-btn btn-tab-meho" onclick="loadTree('Branche_Meho.svg', this, 'meho', 1726, 2778)" style="border-left: 3px solid #d97706;">Grana Meho <span class="badge">70</span></button>
         </div>
 
         <div class="btn-group">
@@ -745,19 +745,19 @@
             <div>
                 <div class="drawer-section-title">🌿 Odaberi Prikaz / Granu</div>
                 <div class="drawer-nav-list">
-                    <button class="drawer-item-btn active btn-tab-main" onclick="loadTree('Porodicno_Stablo_Zehic_A0.svg', this, 'main', 4546, 8504); closeDrawer();">
+                    <button class="drawer-item-btn active btn-tab-main" onclick="loadTree('Porodicno_Stablo_Zehic_A0.svg', this, 'main', 5138, 10056); closeDrawer();">
                         <span>🌳 Bilateralni Poster</span>
                         <span class="badge">425</span>
                     </button>
-                    <button class="drawer-item-btn btn-tab-adem" onclick="loadTree('Branche_Adem.svg', this, 'adem', 2102, 6724); closeDrawer();" style="border-left: 3px solid #16a34a;">
+                    <button class="drawer-item-btn btn-tab-adem" onclick="loadTree('Branche_Adem.svg', this, 'adem', 2374, 7784); closeDrawer();" style="border-left: 3px solid #16a34a;">
                         <span>🌿 Grana Adem</span>
                         <span class="badge">177</span>
                     </button>
-                    <button class="drawer-item-btn btn-tab-osman" onclick="loadTree('Branche_Osman.svg', this, 'osman', 2102, 6092); closeDrawer();" style="border-left: 3px solid #0284c7;">
+                    <button class="drawer-item-btn btn-tab-osman" onclick="loadTree('Branche_Osman.svg', this, 'osman', 2374, 7258); closeDrawer();" style="border-left: 3px solid #0284c7;">
                         <span>🌊 Grana Osman</span>
                         <span class="badge">174</span>
                     </button>
-                    <button class="drawer-item-btn btn-tab-meho" onclick="loadTree('Branche_Meho.svg', this, 'meho', 1534, 2432); closeDrawer();" style="border-left: 3px solid #d97706;">
+                    <button class="drawer-item-btn btn-tab-meho" onclick="loadTree('Branche_Meho.svg', this, 'meho', 1726, 2778); closeDrawer();" style="border-left: 3px solid #d97706;">
                         <span>🍯 Grana Meho</span>
                         <span class="badge">70</span>
                     </button>
@@ -788,7 +788,7 @@
     <!-- Canvas Viewport -->
     <div id="canvasViewport">
         <div id="svgWrapper">
-            <img id="treeImg" src="Porodicno_Stablo_Zehic_A0.svg" width="4546" height="8504" alt="Porodicno Stablo Zehic" />
+            <img id="treeImg" src="Porodicno_Stablo_Zehic_A0.svg" width="5138" height="10056" alt="Porodicno Stablo Zehic" />
             <div id="targetPin"></div>
         </div>
     </div>
@@ -970,8 +970,8 @@
         let isDragging = false;
         let startX = 0, startY = 0;
         let currentTreeMode = 'main';
-        let currentSvgWidth = 4546;
-        let currentSvgHeight = 8504;
+        let currentSvgWidth = 5138;
+        let currentSvgHeight = 10056;
         let allSqlMembers = [];
         let treeCoords = null;
 
@@ -1017,8 +1017,8 @@
 
         function loadTree(src, btnElement, mode, w, h) {
             currentTreeMode = mode;
-            currentSvgWidth = w || 4546;
-            currentSvgHeight = h || 8504;
+            currentSvgWidth = w || 5138;
+            currentSvgHeight = h || 10056;
             syncActiveTabs(mode);
 
             treeImg.width = currentSvgWidth;
